@@ -1,0 +1,28 @@
+{
+  "name": "al-rajjak",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^13.0.0",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remark": "^13.0.0",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^13.0.0"
+  }
+}

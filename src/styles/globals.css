@@ -1,0 +1,458 @@
+/* globals.css */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffbea;
+      color: #333;
+      padding: 0;
+      width: 100%;
+    }
+
+  /* General styles for headers and content */
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  text-align: center;
+  margin-top: 9%;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin : 3% 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+p{
+  text-align: center;
+}
+.list{
+  list-style: decimal-leading-zero;
+}
+.list h3,p{
+  text-align: center;
+}
+/* Section and overall content styles */
+section {
+  margin-bottom: 1.5rem;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.price{
+  color: darkblue;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.list section {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.list section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.list section img{
+  width: 70%;
+  text-align: center;
+}
+
+.list section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.list section p {
+  margin: 0.5rem 0;
+}
+
+.list section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.list section ul li {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Price and stars styles */
+section p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e53e3e;
+  margin-bottom: 1rem;
+}
+
+section .stars {
+  display: flex;
+  gap: 3px;
+}
+
+.stars span {
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto; /* Allow horizontal scroll if needed */
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed; /* Fix column widths */
+      text-align: center;
+      min-width: 400px; /* Prevent very narrow tables */
+    }
+
+    thead {
+      background-color: #c1fcd8;
+      color: rgb(26, 20, 20);
+      font-weight: 600;
+    }
+th, td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  white-space: normal; /* allow wrapping */
+  overflow: visible;
+  text-overflow: clip;
+}
+
+
+
+    tbody tr:hover {
+      background-color: #e9f5ff;
+    }
+
+    .buy-button {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #003d0e;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #218838;
+    }
+
+    /* General Section Styles */
+.mid, #very-long {
+  padding: 3rem 1rem;
+  background-color: #f4f4f4; /* Light gray background */
+  margin-top: 3rem;
+}
+
+.mid h2, #very-long h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333; /* Dark gray for titles */
+}
+
+/* Product Cards in the Mid and Very Long Sections */
+.mid div, #very-long div {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.mid div:hover, #very-long div:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+/* Product Name Styling */
+.mid h3, #very-long h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Product Description / Details */
+.mid p, #very-long p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Light gray for text */
+  margin-bottom: 1.5rem;
+}
+
+/* Buy Button */
+.buy-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #02350c; /* Vibrant orange */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+  transform: translateY(-3px); /* Lift the button slightly on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .mid, #very-long {
+    padding: 2rem 1rem;
+  }
+
+  .mid h2, #very-long h2 {
+    font-size: 1.5rem;
+  }
+
+  .mid div, #very-long div {
+    padding: 1.5rem;
+  }
+
+  .mid h3, #very-long h3 {
+    font-size: 1.3rem;
+  }
+
+  .mid p, #very-long p {
+    font-size: 0.95rem;
+  }
+
+  .buy-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+    /* Responsive tweaks without changing layout */
+    @media (max-width: 600px) {
+        body{
+            margin:0;
+        }
+      th, td {
+        font-size: 12px;
+        padding: 8px 6px;
+      }
+  .table-container{
+    margin: 0;
+    padding: 0;
+    width:100%;
+  }
+      table {
+        width:100%;
+        min-width: 300px; /* Slightly smaller min width */
+      }
+    }
+/* Lemon vibe CSS with a white background */
+/* Lemon vibe CSS with a white background */
+
+
+/* ------------------- */
+/* MID SECTION STYLES  */
+/* ------------------- */
+.mid {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #fff, #f7f7f7);
+  border-top: 1px solid #eee;
+}
+
+.h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Each product in mid */
+.mid div {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e6e6e6;
+}
+
+.mid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.mid h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.mid p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Buy button */
+.mid .buy-button {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mid .buy-button:hover {
+  background-color: #e67e22;
+}
+
+
+/* ------------------------- */
+/* VERY LONG SECTION STYLES */
+/* ------------------------- */
+#very-long {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+  border-top: 2px solid #ddd;
+}
+
+
+/* Each product block in very-long */
+#very-long div {
+  background-color: #fff;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#very-long h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+#very-long p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+}
+
+/* Buy button */
+#very-long .buy-button {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#very-long .buy-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mid, #very-long {
+    padding: 2rem 1rem;
+  }
+
+
+  .mid h3, #very-long h3 {
+    font-size: 1.2rem;
+  }
+}
