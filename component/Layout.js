@@ -1,25 +1,26 @@
 //Component/Layout.js
+// components/Layout.js
 import { useState, useEffect } from 'react';
-
 import Link from 'next/link';
 import styles from './Layout.module.css';
 
-
 export default function Layout({ children }) {
-  const [sidebarActive, setSidebarActive] = useState(false);  // Sidebar Active কিনা
-  const [hasShadow, setHasShadow] = useState(false);  // Navbar এর শ্যাডো
+  const [sidebarActive, setSidebarActive] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setHasShadow(window.scrollY > 0);  // Scroll হলে Navbar Shadow
+    const handleScroll = () => setHasShadow(window.scrollY > 0);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const openSidebar = () => setSidebarActive(true);  // Sidebar ওপেন
-  const closeSidebar = () => setSidebarActive(false);  // Sidebar ক্লোজ
+  const openSidebar = () => setSidebarActive(true);
+  const closeSidebar = () => setSidebarActive(false);
 
   return (
     <>
+
+ 
       <header className={`${styles.navbar} ${hasShadow ? styles.shadow : ''}`}>
         <button
           className={styles.menuButton}
@@ -32,8 +33,7 @@ export default function Layout({ children }) {
         </button>
 
         <div className={styles.middle}>lemonskn.com</div>
-    
-        <img className={styles.logo} src='/lemonskn.png'></img>
+        <img className={styles.logo} src="/lemonskn.png" alt="Logo" />
       </header>
 
       <nav
@@ -51,21 +51,29 @@ export default function Layout({ children }) {
 
         <ul>
           <li>
-            <Link href="/" onClick={closeSidebar} className={styles.navLink}>Pagrindinis (Home)</Link>
+            <Link href="/" passHref>
+              <span onClick={closeSidebar} className={styles.navLink}>Pagrindinis (Home)</span>
+            </Link>
           </li>
           <li>
-            <Link href="/about" onClick={closeSidebar} className={styles.navLink}>Apie (About)</Link>
+            <Link href="/about" passHref>
+              <span onClick={closeSidebar} className={styles.navLink}>Apie (About)</span>
+            </Link>
           </li>
           <li>
-            <Link href="/contact" onClick={closeSidebar} className={styles.navLink}>Kontaktai (Contact)</Link>
+            <Link href="/contact" passHref>
+              <span onClick={closeSidebar} className={styles.navLink}>Kontaktai (Contact)</span>
+            </Link>
           </li>
           <li>
-            <Link href="/privacy-policy" onClick={closeSidebar} className={styles.navLink}>Privatumo politika (Privacy Policy)</Link>
+            <Link href="/privacy-policy" passHref>
+              <span onClick={closeSidebar} className={styles.navLink}>Privatumo politika (Privacy Policy)</span>
+            </Link>
           </li>
         </ul>
       </nav>
 
-      {/* Sidebar Overlay */}
+      {/* Overlay */}
       {sidebarActive && (
         <div
           className={styles.overlay}

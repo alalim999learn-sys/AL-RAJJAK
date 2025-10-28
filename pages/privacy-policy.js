@@ -3,6 +3,7 @@ import Layout from '../component/Layout';
 export default function PrivacyPolicyPage() {
   return (
     <Layout>
+    
       <div className="privacy-container">
         <h1>Privacy Policy</h1>
 
@@ -33,7 +34,7 @@ export default function PrivacyPolicyPage() {
         <h2>Affiliate Links (Future Use)</h2>
         <p>
           Currently, we do not use affiliate links. In the future, we may participate in programs
-          like Awin or Zalando. If affiliate links are added, they may include tracking provided by
+          like Awin or CJ. If affiliate links are added, they may include tracking provided by
           those networks. When that happens, we will update this Privacy Policy and implement a
           proper cookie consent manager (CMP).
         </p>

@@ -1,111 +1,91 @@
-import Head from 'next/head'
-import '../src/styles/globals.css'
-import { useEffect, useState } from 'react'
+import Head from 'next/head';
+import '../src/styles/globals.css';
+
+import Script from 'next/script';
+
+// pages/_app.js
+import { useEffect, useState } from 'react';
+
 
 function MyApp({ Component, pageProps }) {
-  const [consent, setConsent] = useState(null)
+  const [cookieConsent, setCookieConsent] = useState(null);
 
-  // কুকি থেকে মান পড়ার ফাংশন
-  const getCookie = (name) => {
-    if (typeof window === 'undefined') return null
-    const value = `; ${document.cookie}`
-    const parts = value.split(`; ${name}=`)
-    if (parts.length === 2) return parts.pop().split(';').shift()
-    return null
-  }
-
-  // কুকি সেট করার ফাংশন (১ বছর মেয়াদ)
-  const setCookie = (name, value, days = 365) => {
-    const date = new Date()
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000)
-    const expires = 'expires=' + date.toUTCString()
-    document.cookie = `${name}=${value}; ${expires}; path=/`
-  }
-
-  // মাউন্ট হওয়ার সময় একবার কুকি পড়ে স্টেটে সেট করা হবে
   useEffect(() => {
-    const cookieConsent = getCookie('cookie-consent')
-    if (cookieConsent === 'true') setConsent(true)
-    else if (cookieConsent === 'false') setConsent(false)
-    else setConsent(null)
-  }, [])
+    // Check if consent cookie exists
+    const match = document.cookie.match(new RegExp('(^| )cookie-consent=([^;]+)'));
+    if (match) {
+      setCookieConsent(match[2] === 'true');
+    }
+  }, []);
 
-  // ইউজারের সিদ্ধান্ত অনুযায়ী কুকি সেট ও স্টেট আপডেট
   const acceptCookies = () => {
-    setCookie('cookie-consent', 'true')
-    setConsent(true)
-  }
+    document.cookie = 'cookie-consent=true; path=/; max-age=' + 60 * 60 * 24 * 365; // 1 year
+    setCookieConsent(true);
+  };
 
   const rejectCookies = () => {
-    setCookie('cookie-consent', 'false')
-    setConsent(false)
-  }
-
-  // এনালাইটিকস বা অন্য স্ক্রিপ্ট লোড করা (ঐচ্ছিক)
-  useEffect(() => {
-    if (consent === true) {
-      console.log('Analytics loaded because user accepted cookies.')
-      // এখানে আপনার analytics লোড কোড দিন
-    }
-  }, [consent])
-
-  // কনসেন্ট ব্যানার কম্পোনেন্ট
-  const ConsentBanner = () => (
-    <div style={{
-      position: 'fixed',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      backgroundColor: '#333',
-      color: 'white',
-      padding: '30px 40px',
-      borderRadius: '10px',
-      boxShadow: '0 2px 15px rgba(0,0,0,0.5)',
-      fontFamily: 'Arial, sans-serif',
-      textAlign: 'center',
-      maxWidth: '500px',
-      width: '70%',
-      zIndex: 1000,
-    }}>
-      <p>This website uses cookies to enhance your experience. By clicking "Accept" you agree to our <a href="/privacy-policy" style={{ color: '#e91e63' }}>Privacy Policy</a>.</p>
-      <div style={{ marginTop: 20 }}>
-        <button onClick={acceptCookies} style={{
-          backgroundColor: '#4CAF50',
-          color: 'white',
-          padding: '15px 25px',
-          marginRight: '15px',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '18px',
-        }}>Accept</button>
-        <button onClick={rejectCookies} style={{
-          backgroundColor: '#f44336',
-          color: 'white',
-          padding: '15px 25px',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '18px',
-        }}>Reject</button>
-      </div>
-    </div>
-  )
+    document.cookie = 'cookie-consent=false; path=/; max-age=' + 60 * 60 * 24 * 365;
+    setCookieConsent(false);
+  };
 
   return (
     <>
-      <Head>
-        <title>My Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/lemonskn.png" />
-      </Head>
+      {/* Cookie Banner */}
+      {cookieConsent === null && (
+        <div style={{
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          background: '#222',
+          color: '#fff',
+          padding: '1em',
+          textAlign: 'center',
+          zIndex: 9999,
+        }}>
+          <span>Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį. </span>
+          <button 
 
-      {/* কনসেন্ট না নেওয়া থাকলে ব্যানার দেখাবে */}
-      {consent === null && <ConsentBanner />}
 
-      <Component {...pageProps} />
+          onClick={acceptCookies} style={{ marginLeft: '10px',padding: "1%", }}>Priimti</button>
+          <button onClick={rejectCookies} style={{ marginLeft: '10px',padding: "1%",  }}>Atmesti </button>
+        </div>
+
+      )}
+
+      {/* App Component */}
+      <Component {...pageProps} cookieConsent={cookieConsent} />
+
+      {/* Optional: Footer for changing settings */}
+      {cookieConsent !== null && (
+        <footer style={{ textAlign: 'center', padding: '1em', fontSize: '14px' }}>
+        
+          <button
+  onClick={() => {
+    document.cookie = 'cookie-consent=; Max-Age=0; path=/';
+    window.location.reload();
+  }}
+  style={{
+    backgroundColor: '#4CAF50', // green background
+    color: 'white',             // white text
+    padding: '10px 20px',       // top-bottom 10px, left-right 20px
+    border: 'none',             // no border
+    borderRadius: '5px',        // rounded corners
+    cursor: 'pointer',          // pointer on hover
+    fontSize: '16px',           // text size
+    fontWeight: 'bold',         // bold text
+    transition: 'background-color 0.3s' // smooth hover effect
+  }}
+  onMouseOver={e => e.currentTarget.style.backgroundColor = '#45a049'}
+  onMouseOut={e => e.currentTarget.style.backgroundColor = '#4CAF50'}
+>
+  Slapukų nustatymai
+</button>
+
+        </footer>
+      )}
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

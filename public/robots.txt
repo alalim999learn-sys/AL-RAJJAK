@@ -1,0 +1,22 @@
+# --------------------------------------------
+# robots.txt for https://lemonskn.com
+# Static website - SEO friendly configuration
+# --------------------------------------------
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# --------------------------------------------
+# Sitemap location
+# --------------------------------------------
+Sitemap: https://lemonskn.com/sitemap.xml
+
+# --------------------------------------------
+# Notes:
+# - You have only public pages (/, /contact, /privacy-policy, /lt/*)
+# - So no need for Disallow rules
+# - Place this file in /public (for static export)
+# - After deployment, it will be available at:
+#   https://lemonskn.com/robots.txt
+# --------------------------------------------

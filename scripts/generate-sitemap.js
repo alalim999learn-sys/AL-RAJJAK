@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://yourdomain.com'; // তোমার সাইটের URL
+const SITE_URL = 'https://lemonskn.com'; // তোমার সাইটের URL
 
 // Static pages - এখানে তোমার static পেজের path যোগ করো
 const staticPages = ['', 'about'];

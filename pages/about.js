@@ -1,43 +1,50 @@
-import Layout from '../component/Layout';  // Layout এর সঠিক পাথ ইমপোর্ট করুন
+import Head from 'next/head';
+import Link from 'next/link';
+import Layout from '../component/Layout';
 
 export default function AboutPage() {
   return (
-    <Layout>  {/* Layout কম্পোনেন্টটি ব্যবহার করুন */}
-    <title>About</title>
-      <div className="about-container">
-        <h1>About Me</h1>
-        <p>
-          Hi! I'm owner of lemonskn.com, a fashion and beauty enthusiast who loves sharing tips on
-          makeup, skincare, and stylish outfits — from everyday looks to elegant dresses.
-        </p>
+    <Layout>
+      <Head>
+        <title>About - lemonskn.com</title>
+        <meta name="description" content="About the owner of lemonskn.com - fashion and beauty tips, honest reviews, and affordable style inspiration." />
+      </Head>
 
-        <p>
-          I started this blog to help others discover affordable beauty products, trendy clothing,
-          and honest reviews of items I personally try. Whether you're looking for the perfect
-          lipstick or a dress for a night out, I’ve got you covered.
-        </p>
+      <main className="about-container">
+    <h1>Apie mane</h1>
+<p>
+  Sveiki! Esu lemonskn.com savininkė, mados ir grožio entuziastė, mėgstanti dalintis patarimais apie
+  makiažą, odos priežiūrą ir stilingus drabužius — nuo kasdienių aprangų iki elegantiškų suknelių.
+</p>
 
-        <p>
-          Everything I post is based on real experience, not just ads. I work with trusted
-          affiliate programs like Zalando and Awin to recommend only products I truly love — 
-          and yes, I may earn a small commission if you shop through my links, at no extra cost to you.
-        </p>
+<p>
+  Šį tinklaraštį pradėjau tam, kad padėčiau kitiems atrasti prieinamus grožio produktus, madingus
+  drabužius ir sąžiningus atsiliepimus apie prekes, kurias asmeniškai išbandžiau. Nesvarbu, ar
+  ieškote idealaus lūpų dažų, ar suknelės vakarui — aš jums padėsiu.
+</p>
 
-        <p>
-          Thank you for stopping by — I hope my content inspires you to look and feel your best!
-        </p>
+<p>
+  Visi mano įrašai pagrįsti tikra patirtimi, ne reklama. Dirbsiu su patikimomis partnerystėmis, tokiomis kaip
+  Zalando ir Awin, kad rekomenduočiau tik tuos produktus, kuriuos tikrai myliu — ir taip, galiu uždirbti
+  nedidelį komisinį atlyginimą, jei pirksite per mano nuorodas, be jokių papildomų išlaidų jums.
+</p>
 
-        <p>
-          💌 Want to reach out? Head over to the <a href="/contact">Contact</a> page.
-        </p>
-      </div>
+<p>
+  Ačiū, kad apsilankėte — tikiuosi, kad mano turinys įkvėps jus atrodyti ir jaustis geriausiai!
+</p>
+
+<p>
+  💌 Norite susisiekti? Eikite į <Link href="/contact">Kontaktų</Link> puslapį.
+</p>
+
+      </main>
 
       <style jsx>{`
         .about-container {
           max-width: 700px;
           margin: 0 auto;
           padding: 2rem 1rem;
-          font-family:  ;
+          font-family: Arial, sans-serif;
           color: #333;
           line-height: 1.7;
         }
@@ -71,6 +78,6 @@ export default function AboutPage() {
           }
         }
       `}</style>
-    </Layout> 
+    </Layout>
   );
 }

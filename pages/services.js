@@ -73,10 +73,7 @@ export default function Services() {
             <p>Learn about daily skincare regimens using our curated cosmetic products for glowing skin.</p>
           </div>
 
-          <div className="service">
-            <h3>Custom Outfit Design</h3>
-            <p>Work with our designers to create unique, custom-made dresses for special occasions.</p>
-          </div>
+      
         </div>
       </div>
     </Layout>

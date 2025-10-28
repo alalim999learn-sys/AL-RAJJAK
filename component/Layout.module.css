@@ -1,29 +1,23 @@
-/* component/ Layout.module.css */
+/* Layout.module.css */
 
 .navbar {
   position: fixed;
   top: 0;
-
   width: 100%;
-  margin: 0;
-  padding: 1% 1%;
   background: #94ff9c;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 1%;
   box-sizing: border-box;
-  z-index: 1000000000;
+  z-index: 1000;
   transition: box-shadow 0.3s ease;
 }
 
-/* Shadow when scrolled */
 .shadow {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Menu button on left */
 .menuButton {
   font-size: 28px;
   background: none;
@@ -31,96 +25,94 @@
   cursor: pointer;
 }
 
-/* Text in the center */
 .middle {
   font-size: 1.4rem;
   font-weight: bold;
   color: #333333;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-.logo{
-  width: 5%;
-}
-.lemon {
-  font-size: 2.5rem;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  user-select: none; /* ইমোজি সিলেক্ট না করতে চাইলে */
-  cursor: default; /* মাউস পয়েন্টার সাধারণ থাকবে */
+  user-select: none;
 }
 
-/* Logo image on the right */
+.logo {
+  width: 50px;
+  height: auto;
+}
 
-/* Sidebar styles */
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Hide by default */
+  left: -250px; /* hidden by default */
   width: 250px;
   height: 100%;
-  background: #fff;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  background: #000005;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
-  z-index: 1100;
-  padding-top: 60px; /* To avoid overlapping navbar */
+  z-index: 2000;
+  padding-top: 60px;
+
 }
 
 .sidebar.active {
-  left: 0; /* Slide in */
+  left: 0; /* show when active */
 }
 
-/* Close button inside sidebar */
 .closeButton {
   position: absolute;
   top: 10px;
+  color: rgb(112, 1, 1);
   right: 15px;
-  font-size: 28px;
+  font-size: 500%;
   background: none;
   border: none;
   cursor: pointer;
 }
-
-/* Sidebar nav links */
+.closeButton:hover{
+  color: #ff580b;
+}
+/* Nav links */
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
+
 
 .navLink {
   display: block;
   padding: 1rem;
   color: #333;
   text-decoration: none;
-}
-.sidebar{
-  z-index: 999999999;
-}
-.navLink:hover {
-  background-color: #f0f0f0;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-/* Overlay behind sidebar */
+
+/* Overlay */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
-  z-index: 1050;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1500;
 }
 
-/* Main content padding to avoid fixed navbar */
+/* Main content */
 .mainContent {
-  padding-top: 60px;
+  padding-top: 80px; /* match navbar height */
 }
+
+/* Responsive */
 @media (max-width: 768px) {
-  .logo{
-    width: 9%;
+  .logo {
+    width: 70px;
+  }
+  .navbar{
+    padding: 1px 4px;
   }
 }

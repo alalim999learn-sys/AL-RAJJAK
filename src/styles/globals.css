@@ -19,7 +19,7 @@ html, body {
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fffbea;
+      background: #f1ffe4;
       color: #333;
       padding: 0;
       width: 100%;
@@ -28,23 +28,27 @@ html, body {
   /* General styles for headers and content */
 h1, h2, h3, h4 {
   font-family: 'Arial', sans-serif;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
 
-h1 {
-  font-size: 2.5rem;
-  color: #2d3748;
+ 
+}
+header {
+  
+  width: 100%;
   text-align: center;
-  margin-top: 9%;
-}
 
-h2 {
-  font-size: 1.8rem;
-  color: #000000;
-  margin : 3% 0;
+  padding : 2% 0%;
 }
-
+header h1{
+  color:rgb(0, 58, 17);
+  font-size:233%;
+  margin :9px 0;
+}
+header h2{
+  font-size: 199%;
+}
+header p{
+font-size: 100%;
+}
 h3 {
   font-size: 1.5rem;
   color: #000000;
@@ -56,6 +60,7 @@ h4 {
 }
 p{
   text-align: center;
+  
 }
 .list{
   list-style: decimal-leading-zero;
@@ -75,14 +80,12 @@ section img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
+
 .price{
   color: darkblue;
 }
+
+
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -144,29 +147,73 @@ section .stars {
 
 .stars span {
   font-size: 1.2rem;
-  color: #ffcc00;
+  color: #003809;
 }
-
+.a{
+  color:rgb(0, 24, 7);
+  text-align: center;
+}
+.b{
+  color: rgb(118, 255, 125);
+  text-align: center;
+}
+.c{
+  color: #02350c;
+  text-align: center;
+}
+.d{
+  color: greenyellow;
+  text-align: center;
+}
+.compare{
+  text-align: center;
+  font-weight: bold;
+}
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  header h1 {
+    font-size: 27px;
+    margin-top:9px;
+    color :rgb(0, 58, 17)
   }
 
-  h2 {
-    font-size: 1.5rem;
+  header h2 {
+    font-size :  19px;
+    margin :2px 0;
+    color:rgb(72, 73, 0)
   }
-
+  p{
+   margin :2px 0;
+  }
   h3 {
     font-size: 1.2rem;
   }
 
   .list {
-    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
   }
-}
+  .list section{
+    width: 90%;
+    margin: 0 auto;
+  }
+}    
 
-
+  .ilink {
+    width: 100%;
+    padding: 2%  9%;
+  }
+.ilink h4{
+     text-align: center;
+    color: #000000;   
+    font-size: 259%;
+   }
+    .ilink h5{
+         color: #218838;
+         text-align: left;
+         font-size: 200%;
+    }
     .table-container {
       width: 100%;
       overflow-x: auto; /* Allow horizontal scroll if needed */
@@ -220,49 +267,7 @@ th, td {
     }
 
     /* General Section Styles */
-.mid, #very-long {
-  padding: 3rem 1rem;
-  background-color: #f4f4f4; /* Light gray background */
-  margin-top: 3rem;
-}
 
-.mid h2, #very-long h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #333; /* Dark gray for titles */
-}
-
-/* Product Cards in the Mid and Very Long Sections */
-.mid div, #very-long div {
-  background-color: white;
-  border-radius: 8px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
-  transition: transform 0.3s ease-in-out;
-}
-
-.mid div:hover, #very-long div:hover {
-  transform: translateY(-5px); /* Slight hover effect */
-}
-
-/* Product Name Styling */
-.mid h3, #very-long h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-/* Product Description / Details */
-.mid p, #very-long p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555; /* Light gray for text */
-  margin-bottom: 1.5rem;
-}
 
 /* Buy Button */
 .buy-button {
@@ -285,25 +290,7 @@ th, td {
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
-  .mid, #very-long {
-    padding: 2rem 1rem;
-  }
-
-  .mid h2, #very-long h2 {
-    font-size: 1.5rem;
-  }
-
-  .mid div, #very-long div {
-    padding: 1.5rem;
-  }
-
-  .mid h3, #very-long h3 {
-    font-size: 1.3rem;
-  }
-
-  .mid p, #very-long p {
-    font-size: 0.95rem;
-  }
+  
 
   .buy-button {
     padding: 0.7rem 1.2rem;
@@ -337,11 +324,6 @@ th, td {
 /* ------------------- */
 /* MID SECTION STYLES  */
 /* ------------------- */
-.mid {
-  padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #fff, #f7f7f7);
-  border-top: 1px solid #eee;
-}
 
 .h2 {
   text-align: center;
@@ -351,108 +333,12 @@ th, td {
   font-weight: 700;
 }
 
-/* Each product in mid */
-.mid div {
-  background-color: #ffffff;
-  padding: 2rem;
-  margin: 1.5rem auto;
-  border-radius: 12px;
-  max-width: 800px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #e6e6e6;
-}
-
-.mid div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.mid h3 {
-  font-size: 1.4rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-.mid p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
 /* Buy button */
-.mid .buy-button {
-  background-color: #ff9800;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.mid .buy-button:hover {
-  background-color: #e67e22;
-}
 
 
 /* ------------------------- */
 /* VERY LONG SECTION STYLES */
 /* ------------------------- */
-#very-long {
-  padding: 4rem 2rem;
-  background-color: #f0f0f0;
-  border-top: 2px solid #ddd;
-}
 
-
-/* Each product block in very-long */
-#very-long div {
-  background-color: #fff;
-  padding: 1.8rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  border-left: 6px solid #4caf50;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-
-#very-long h3 {
-  font-size: 1.3rem;
-  color: #222;
-  margin-bottom: 1rem;
-}
-
-#very-long p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: 1.3rem;
-}
-
-/* Buy button */
-#very-long .buy-button {
-  background-color: #388e3c;
-  color: white;
-  padding: 10px 22px;
-  font-size: 0.95rem;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-#very-long .buy-button:hover {
-  background-color: #2e7d32;
-}
 
 /* Responsive */
-@media (max-width: 768px) {
-  .mid, #very-long {
-    padding: 2rem 1rem;
-  }
-
-
-  .mid h3, #very-long h3 {
-    font-size: 1.2rem;
-  }
-}
