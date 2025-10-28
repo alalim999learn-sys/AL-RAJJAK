@@ -5,7 +5,6 @@ keyword1: "Geriausi akių šešėliai pradedantiesiems"
 keyword2: "Akių šešėliai pradedantiesiems"
 keyword3: "Populiariausi akių šešėliai pradedantiesiems"
 keyword4: "Geriausia akių šešėlių parinktis pradedantiesiems"
-
 productname1: "L.A. Vibes High Performance Eyeshadow Stylo"
 image1: "/beginereyeshadow2.avif"
 price1: "9,09 €"
