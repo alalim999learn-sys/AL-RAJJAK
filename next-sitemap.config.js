@@ -21,24 +21,13 @@ module.exports = {
   generateRobotsTxt: true,
   sitemapSize: 5000,
   outDir: './out',
-
-  additionalPaths: async (config) => {
+  additionalPaths: async () => {
     const posts = getPosts();
-
+    console.log('Adding to sitemap:', posts);
     return posts.map(url => ({
       loc: url,
       changefreq: 'daily',
-      priority: 0.9, // ✅ Article এর জন্য priority বেশি
+      priority: 0.9,
     }));
-  },
-
-  robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-      },
-    ],
-    additionalSitemaps: [`${SITE_URL}/sitemap.xml`],
   },
 };

@@ -215,10 +215,26 @@ export default function Post({ post }) {
         <meta name="twitter:description" content={frontmatter.description} />
         {frontmatter.image1 && <meta name="twitter:image" content={frontmatter.image1} />}
 
+      
         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd, null, 2) }}
-        />
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lemonskn",
+        "url": "https://lemonskn.com/",
+        "logo": "https://lemonskn.com/lemonskn.png"
+      }),
+    }}
+  />
+
+  {/* Product JSON-LD */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd, null, 2) }}
+  />
+        
       </Head>
 
     

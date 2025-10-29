@@ -15,34 +15,51 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <Layout>
-      <Head>
-        <title>Fashion & Beauty Under Budget | Lemonskn</title>
-        <meta
-          name="description"
-          content="Explore top fashion and beauty picks — all under 99% budget. Smart shopping, beautiful living. Discover expert reviews and buying guides."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://lemonskn.com/" />
+<Head>
+  <title>Fashion & Beauty Under Budget | Lemonskn</title>
+  <meta
+    name="description"
+    content="Explore top fashion and beauty picks — all under 99% budget. Smart shopping, beautiful living. Discover expert reviews and buying guides."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://lemonskn.com/" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Fashion & Beauty Under Budget | Lemonskn" />
-        <meta
-          property="og:description"
-          content="Explore top fashion and beauty picks — all under 99% budget. Smart shopping, beautiful living."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lemonskn.com/" />
-        <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+  {/* ✅ Favicon / Browser Tab Icon */}
+  <link rel="icon" href="/lemonskn.png" type="image/png" />
+  <meta name="theme-color" content="#ffffff" />
 
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fashion & Beauty Under Budget | Lemonskn" />
-        <meta
-          name="twitter:description"
-          content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
-        />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
-      </Head>
+  {/* ✅ Open Graph */}
+  <meta property="og:title" content="Fashion & Beauty Under Budget | Lemonskn" />
+  <meta
+    property="og:description"
+    content="Explore top fashion and beauty picks — all under 99% budget. Smart shopping, beautiful living."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lemonskn.com/" />
+  <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+
+  {/* ✅ Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fashion & Beauty Under Budget | Lemonskn" />
+  <meta
+    name="twitter:description"
+    content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
+  />
+  <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
+<script type="application/ld+json">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lemonskn",
+      "url": "https://lemonskn.com/",
+      "logo": "https://lemonskn.com/lemonskn.png"
+    }
+  `}
+</script>
+
+</Head>
+
 
       <header className="hu">
         <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />

@@ -30,6 +30,24 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+       <Head>
+        {/* Favicon */}
+        <link rel="icon" href="/lemonskn.png" />
+        {/* Organization JSON-LD for all pages */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Lemonskn",
+              "url": "https://lemonskn.com/",
+              "logo": "https://lemonskn.com/lemonskn.png"
+            }),
+          }}
+        />
+      </Head>
+
       {/* Cookie Banner */}
       {cookieConsent === null && (
         <div style={{

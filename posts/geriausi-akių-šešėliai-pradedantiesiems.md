@@ -43,8 +43,7 @@ best2: "Aukšta kokybė ir universalumas"
 url2: "https://www.douglas.lt/lt/p/5002183038?variant=606403"
 imagetext2:  "Boho Glam 04 – universali akių šešėlių paletė aukštos kokybės makiažui"
 
-d2: 
-details2: "Boho Glam Eyeshadow Palette 04 Naked Truth – tai 9 atspalvių paletė, kuri turi matinį ir blizgantį (shimmer) efektą, leidžianti sukurti įvairius makiažo stilius. Jos aliejų neturinti, kreminė formulė lengvai tepasi ir gerai išsisklaido, todėl tinka net pradedantiesiems. Integruotas veidrodėlis ir nešiojamas dizainas daro šią paletę labai patogią kelionėms. Norint, kad makiažas laikytųsi ilgiau, kai kuriais atvejais rekomenduojama naudoti grunto (primer) priemonę."
+
 
 pros21: "9 atspalviai su matiniais ir blizgiais (shimmer) efektų deriniu suteikia didelį pasirinkimą, kuris tinka įvairiems įvaizdžiams, o lengvas naudojimas užtikrina, kad net pradedantieji galėtų lengvai pasiekti norimus rezultatus."
 
