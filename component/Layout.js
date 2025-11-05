@@ -1,8 +1,8 @@
-//Component/Layout.js
 // components/Layout.js
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Layout.module.css';
+import FooterLT from './FooterLT';
 
 export default function Layout({ children }) {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -19,8 +19,6 @@ export default function Layout({ children }) {
 
   return (
     <>
-
- 
       <header className={`${styles.navbar} ${hasShadow ? styles.shadow : ''}`}>
         <button
           className={styles.menuButton}
@@ -83,7 +81,11 @@ export default function Layout({ children }) {
         />
       )}
 
+      {/* Main Content */}
       <main className={styles.mainContent}>{children}</main>
+
+      {/* Lithuanian Footer */}
+      <FooterLT />
     </>
   );
 }

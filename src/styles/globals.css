@@ -160,10 +160,12 @@ section .stars {
 .c{
   color: #02350c;
   text-align: center;
+  margin:  1% 0;
 }
 .d{
   color: greenyellow;
   text-align: center;
+  margin: 1% 0;
 }
 .compare{
   text-align: center;

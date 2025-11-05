@@ -16,7 +16,7 @@ export default function Home({ posts }) {
   return (
     <Layout>
 <Head>
-  <title>Fashion & Beauty Under Budget | Lemonskn</title>
+  <title>Lemonskn</title>
   <meta
     name="description"
     content="Explore top fashion and beauty picks — all under 99% budget. Smart shopping, beautiful living. Discover expert reviews and buying guides."

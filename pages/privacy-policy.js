@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         <h2>Affiliate Links (Future Use)</h2>
         <p>
           Currently, we do not use affiliate links. In the future, we may participate in programs
-          like Awin or CJ. If affiliate links are added, they may include tracking provided by
+          like Awin . If affiliate links are added, they may include tracking provided by
           those networks. When that happens, we will update this Privacy Policy and implement a
           proper cookie consent manager (CMP).
         </p>
