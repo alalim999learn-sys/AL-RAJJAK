@@ -1,39 +1,62 @@
+// pages/_app.js
 import Head from 'next/head';
 import '../src/styles/globals.css';
-
-import Script from 'next/script';
-
-// pages/_app.js
 import { useEffect, useState } from 'react';
 
-
 function MyApp({ Component, pageProps }) {
-  const [cookieConsent, setCookieConsent] = useState(null);
+  const [cookieConsent, setCookieConsent] = useState(null); // null = undecided
+  const [language, setLanguage] = useState('lt');
+  const [isShortPage, setIsShortPage] = useState(false);
 
   useEffect(() => {
-    // Check if consent cookie exists
-    const match = document.cookie.match(new RegExp('(^| )cookie-consent=([^;]+)'));
-    if (match) {
-      setCookieConsent(match[2] === 'true');
-    }
+    // Detect language from URL
+    const path = window.location.pathname;
+    if (path.startsWith('/ro')) setLanguage('ro');
+    else setLanguage('lt');
+
+    // Check existing cookie consent
+    const match = document.cookie.match(/(^| )cookie-consent=([^;]+)/);
+    if (match) setCookieConsent(match[2] === 'true');
+
+    // Detect if page is shorter than viewport
+    const checkPageHeight = () => setIsShortPage(document.body.scrollHeight <= window.innerHeight);
+    checkPageHeight();
+    window.addEventListener('resize', checkPageHeight);
+
+    return () => window.removeEventListener('resize', checkPageHeight);
   }, []);
 
-  const acceptCookies = () => {
-    document.cookie = 'cookie-consent=true; path=/; max-age=' + 60 * 60 * 24 * 365; // 1 year
-    setCookieConsent(true);
+  const setConsentCookie = (value) => {
+    document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}`; // 1 year
+    setCookieConsent(value === 'true');
   };
 
-  const rejectCookies = () => {
-    document.cookie = 'cookie-consent=false; path=/; max-age=' + 60 * 60 * 24 * 365;
-    setCookieConsent(false);
+  const acceptCookies = () => setConsentCookie('true');
+  const rejectCookies = () => setConsentCookie('false');
+  const openCookieSettings = () => setCookieConsent(null); // reopen banner
+
+  // Language texts
+  const texts = {
+    lt: {
+      cookieText: 'Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį.',
+      accept: 'Priimti',
+      reject: 'Atmesti',
+      settings: 'Slapukų nustatymai'
+    },
+    ro: {
+      cookieText: 'Acest site folosește cookie-uri pentru a vă îmbunătăți experiența.',
+      accept: 'Accept',
+      reject: 'Respinge',
+      settings: 'Setări Cookie'
+    }
   };
+
+  const { cookieText, accept, reject, settings } = texts[language];
 
   return (
     <>
-       <Head>
-        {/* Favicon */}
+      <Head>
         <link rel="icon" href="/lemonskn.png" />
-        {/* Organization JSON-LD for all pages */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -48,59 +71,80 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
-      {/* Cookie Banner */}
-      {cookieConsent === null && (
-        <div style={{
-          position: 'fixed',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          background: '#222',
-          color: '#fff',
-          padding: '1em',
-          textAlign: 'center',
-          zIndex: 9999,
-        }}>
-          <span>Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį. </span>
-          <button 
-
-
-          onClick={acceptCookies} style={{ marginLeft: '10px',padding: "1%", }}>Priimti</button>
-          <button onClick={rejectCookies} style={{ marginLeft: '10px',padding: "1%",  }}>Atmesti </button>
-        </div>
-
-      )}
-
-      {/* App Component */}
       <Component {...pageProps} cookieConsent={cookieConsent} />
 
-      {/* Optional: Footer for changing settings */}
-      {cookieConsent !== null && (
-        <footer style={{ textAlign: 'center', padding: '1em', fontSize: '14px' }}>
-        
-          <button
-  onClick={() => {
-    document.cookie = 'cookie-consent=; Max-Age=0; path=/';
-    window.location.reload();
-  }}
-  style={{
-    backgroundColor: '#4CAF50', // green background
-    color: 'white',             // white text
-    padding: '10px 20px',       // top-bottom 10px, left-right 20px
-    border: 'none',             // no border
-    borderRadius: '5px',        // rounded corners
-    cursor: 'pointer',          // pointer on hover
-    fontSize: '16px',           // text size
-    fontWeight: 'bold',         // bold text
-    transition: 'background-color 0.3s' // smooth hover effect
-  }}
-  onMouseOver={e => e.currentTarget.style.backgroundColor = '#45a049'}
-  onMouseOut={e => e.currentTarget.style.backgroundColor = '#4CAF50'}
->
-  Slapukų nustatymai
-</button>
+      {/* Cookie Banner */}
+      {cookieConsent === null && (
+        <div
+          style={{
+            padding: '1em',
+            backgroundColor: '#222',
+            color: '#fff',
+            position: 'fixed',
+            bottom: 0,
+            width: '100%',
+            textAlign: 'center',
+            zIndex: 9999,
+            ...(isShortPage ? { minHeight: '50px' } : {}),
+          }}
+        >
+          <span>{cookieText}</span>
+          <div style={{ marginTop: '1em' }}>
+            <button
+              onClick={acceptCookies}
+              style={{
+                marginRight: '10px',
+                padding: '0.5em 1em',
+                cursor: 'pointer',
+                borderRadius: '4px',
+                border: 'none',
+                backgroundColor: '#4CAF50',
+                color: 'white',
+                fontWeight: 'bold'
+              }}
+            >
+              {accept}
+            </button>
+            <button
+              onClick={rejectCookies}
+              style={{
+                padding: '0.5em 1em',
+                cursor: 'pointer',
+                borderRadius: '4px',
+                border: 'none',
+                backgroundColor: '#f44336',
+                color: 'white',
+                fontWeight: 'bold'
+              }}
+            >
+              {reject}
+            </button>
+          </div>
+        </div>
+      )}
 
-        </footer>
+      {/* Inline Cookie Settings Button */}
+      {cookieConsent !== null && (
+        <div style={{ textAlign: 'center', marginTop: '2em' }}>
+          <button
+            onClick={openCookieSettings}
+            style={{
+              backgroundColor: '#4CAF50',
+              color: 'white',
+              padding: '10px 20px',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: 'bold',
+              transition: 'background-color 0.3s',
+            }}
+            onMouseOver={e => e.currentTarget.style.backgroundColor = '#45a049'}
+            onMouseOut={e => e.currentTarget.style.backgroundColor = '#4CAF50'}
+          >
+            {settings}
+          </button>
+        </div>
       )}
     </>
   );

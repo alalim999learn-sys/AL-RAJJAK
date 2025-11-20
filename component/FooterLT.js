@@ -18,7 +18,7 @@ export default function FooterLT() {
 
       {/* Navigation Links */}
       <div style={{ marginBottom: '25px' }}>
-        <Link href="/about" style={{ margin: '0 10px', color: '#555', textDecoration: 'none' }}>Apie</Link>|
+        <Link href="lt/about" style={{ margin: '0 10px', color: '#555', textDecoration: 'none' }}>Apie</Link>|
         <Link href="/contact" style={{ margin: '0 10px', color: '#555', textDecoration: 'none' }}>Kontaktai</Link>|
         <Link href="/privacy-policy" style={{ margin: '0 10px', color: '#555', textDecoration: 'none' }}>Privatumo politika</Link>
       </div>

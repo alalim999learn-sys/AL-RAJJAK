@@ -19,10 +19,11 @@ html, body {
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f1ffe4;
+   
       color: #333;
       padding: 0;
       width: 100%;
+         background: #fbfff8;
     }
 
   /* General styles for headers and content */

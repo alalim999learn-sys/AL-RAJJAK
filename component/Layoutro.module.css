@@ -1,0 +1,118 @@
+/* Layout.module.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #94ff9c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menuButton {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.middle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  user-select: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #000005;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 2000;
+  padding-top: 60px;
+
+}
+
+.sidebar.active {
+  left: 0; /* show when active */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  color: rgb(112, 1, 1);
+  right: 15px;
+  font-size: 500%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.closeButton:hover{
+  color: #ff580b;
+}
+/* Nav links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.navLink {
+  display: block;
+  padding: 1rem;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1500;
+}
+
+/* Main content */
+.mainContent {
+  padding-top: 80px; /* match navbar height */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    width: 70px;
+  }
+  .navbar{
+    padding: 1px 4px;
+  }
+}
