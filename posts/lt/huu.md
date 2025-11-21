@@ -16,7 +16,7 @@ problemList: [] # 9 problem total 5 with science with source usa based non profi
 solution: ""
 solutionList: []  # 9  solution  total 5 with science with source usa based non profit website and 4 normal
 comparisonTitle: ""
-comparisonTable: 
+
 
 comparisonTable:
 

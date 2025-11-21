@@ -4,9 +4,9 @@ title: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
 description: "Kaip Lietuvos paaugliai gali išgyventi žiemą nesusiraukydami į žmogaus krosnį – praktiniai, moksliškai pagrįsti patarimai šaltoms Baltijos žiemoms."
 date: "2025-11-18"
 img: "/6.jpeg"
-keyword: „Žiemos odos priežiūra sausai odai Lietuvoje“
+keyword1: "Žiemos odos priežiūra sausai odai Lietuvoje"
 
-keyword: „Baltijos šalių šalto oro odos priežiūros patarimai“ 
+keyword2: "Baltijos šalių šalto oro odos priežiūros patarimai"
 intro: "O, Lietuvos žiema – oras toks sausas, kad galėtum su savo kaktą sūriu tarkuoti. Sveiki atvykę į sezoną, kai kiekvieno paauglio veidas nusprendžia pasirodyti filme „Sahara: tęsinys“."
 problemTitle: "Kodėl jūsų oda nekęsti Lietuvos žiemą (tai ne tik drama)"
 problemList:

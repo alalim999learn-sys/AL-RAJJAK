@@ -7,7 +7,7 @@ date: "2025-11-17"
 img: "/9.jpeg"
 keyword1: "švytinčios odos rutina žiemą Lietuvoje"
 keyword2: "patarimai švytinčiai odai žiemą Lietuvoje"
-intro: “Klausyk. Jei tavo oda gali išgyventi lietuvišką žiemą (vėjas, kuris atrodo asmeniškai, centrinis šildymas, kuris išsiurbia kiekvieną drėgmės lašelį, ir tamsa, prasidedanti 15 val.), ji nusipelno medalio. Ar bent jau odos priežiūros rutinos, kuri nepasiduoda, kai temperatūra nukrenta žemiau -15 °C. Tai švytėjimo vadovas, kuris tikrai veikia Vilniuje, Kaune, Klaipėdoje ar bet kuriame mažame miestelyje tarp jų.”
+intro: "Klausyk. Jei tavo oda gali išgyventi lietuvišką žiemą (vėjas, kuris atrodo asmeniškai, centrinis šildymas, kuris išsiurbia kiekvieną drėgmės lašelį, ir tamsa, prasidedanti 15 val.), ji nusipelno medalio. Ar bent jau odos priežiūros rutinos, kuri nepasiduoda, kai temperatūra nukrenta žemiau -15 °C. Tai švytėjimo vadovas, kuris tikrai veikia Vilniuje, Kaune, Klaipėdoje ar bet kuriame mažame miestelyje tarp jų."
 problemTitle: "Kodėl Tavo Oda Lietuvoje Atrodo kaip Liūdna Bulvė (9 Tikros Priežastys)"
 problemList:
   - "1. Centrinis šildymas = nulinė drėgmė. Odos barjeras išgaruoja greičiau nei tavo noras gyventi sausį."

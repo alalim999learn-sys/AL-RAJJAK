@@ -7,10 +7,10 @@ img: "/5.jpeg"
 
 keyword1: "odos priežiūros patarimai pradedantiesiems"
 keyword2: "pradedančiųjų odos priežiūros patarimai"
-intro: “Jei jūsų oda ištveria lietuvišką žiemą, neatrodydama kaip išdžiūvęs cepelinas – ji nusipelno medalio. Dauguma iš mūsų medalių nelaimi, tiesiog norime, kad veidas nebeskaudėtų po plovimo. Štai paprasčiausia rutina, kuri tikrai veikia, kai 16 val. jau tamsu, o jūsų kambario oras sausesnis už Sacharą.”
+intro: "Jei jūsų oda ištveria lietuvišką žiemą, neatrodydama kaip išdžiūvęs cepelinas – ji nusipelno medalio. Dauguma iš mūsų medalių nelaimi, tiesiog norime, kad veidas nebeskaudėtų po plovimo. Štai paprasčiausia rutina, kuri tikrai veikia, kai 16 val. jau tamsu, o jūsų kambario oras sausesnis už Sacharą."
 problemTitle: "Dažniausios odos problemos pradedantiesiems"
 problemList: 
-  - “Labai sausa ir tempia oda po plovimo – kaltinkite radiatorius ir -15 °C vėją.”
+  - "Labai sausa ir tempia oda po plovimo – kaltinkite radiatorius ir -15 °C vėją."
   - "Riebus T-zonos blizgesys – jei jūsų kaktos ar nosies oda blizga labiau nei Kalėdų eglutė, nesate vieni."
   - "Spuogai ir bėrimai – jie gali atsirasti patogiausiu metu, nuo paauglystės krizės iki suaugusiųjų streso."
   - "Nelygi odos spalva – tamsios dėmės, paraudimai ar nelygios vietos gali padaryti odą netolygią."
@@ -48,5 +48,5 @@ faqList:
   - { question: "Ar galiu praleisti apsaugą nuo saulės debesuotomis dienomis?", answer: "Ne. UV spinduliai prasiskverbia per debesį, todėl apsauga nuo saulės būtina kiekvieną dieną." }
   - { question: "Kiek laiko užtrunka, kol pamatysiu rezultatus?", answer: "Nuoseklumas yra svarbiausias. Dauguma pradedančiųjų pastebi pagerėjimą per 4–6 savaites reguliarios priežiūros." }
   - { question: "Ar galiu naudoti kelis aktyvius ingredientus?", answer: "Taip, bet įveskite juos po vieną, kad išvengtumėte dirginimo ir stebėtumėte odos reakciją." }
-  - { question: "Kur Lietuvoje galima tai nusipirkti?", answer: "Kiekvienoje vaistinėje (Camelia, Eurovaistinė, Gintarinė) ir didelėje Maximoje rasite švelnų kremą valiklį, ceramidų drėkiklį ir SPF už mažiau nei 40 € iš viso. Arba užsisakykite pigu.lt / eurokos.lt – pristatymas 1–2 dienos net į kaimus." }
+ 
 ---
