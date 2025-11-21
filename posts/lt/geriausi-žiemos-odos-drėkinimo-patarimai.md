@@ -46,7 +46,8 @@ solutionList:
   - "Į vonią berk avižinių dribsnių – FDA patvirtinta nuo sausos ir niežtinčios odos."
   - "Valgyk daugiau omega-3 – lašiša, silkė, riešutai, linų sėmenys, chia."
   - "Žiemą UV niekur nedingsta – naudok SPF 30+."
-
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Žiemos odos TAIP ir NE (rinkis pusę)"
 comparisonTable:
   - {do: "Trumpi drungni dušai", dont: "Ilgi karšti dušai kaip pirtyje"}

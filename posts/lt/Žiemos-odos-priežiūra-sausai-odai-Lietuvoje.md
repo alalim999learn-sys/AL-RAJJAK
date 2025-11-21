@@ -31,7 +31,10 @@ solutionList:
   - "Trumpi, šilti dušai (5–10 min max) – karštas vanduo nuima natūralius aliejus (Mayo Clinic)"
   - "Naudokite drėkintuvą kambaryje (tikslas 40–50% drėgmės) – įrodyta, kad mažina sausumą ir pleiskanojimą (American Academy of Dermatology)"
   - "Gerkite vandenį kaip savo darbą – dehidratuota oda atrodo blogiau net su 10 kremų"
-
+  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Žiemos odos taisyklės ir klaidos (kad nesugadintum veido)"
 comparisonTable:
   - {do: "5 minučių šilti dušai" , dont: "30 minučių verdančio vandens dušai" }

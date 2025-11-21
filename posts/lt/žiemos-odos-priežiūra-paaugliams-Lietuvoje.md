@@ -32,7 +32,10 @@ solutionList:
   - "Sluoksniuokite drėkinantį serumą po drėkikliu, kad papildoma drėgmė išgyventų radiatorius"
   - "Naudokite lūpų balzamą su uždarančiomis priemonėmis kelis kartus per dieną – ypač prieš išeinant į lauką"
   - "Uždenkite veidą šalikėliu vėjyje – apsaugo nuo vėjo nudegimų ir skruostų paraudimo"
-
+  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Daryk tai vs. Nedaryk to"
 comparisonTable: 
   - {do: "Storas kremas drėkinimui", dont: "Vandens pagrindo losjonai ar geliai"}

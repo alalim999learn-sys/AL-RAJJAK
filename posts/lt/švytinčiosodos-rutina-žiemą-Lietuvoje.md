@@ -44,6 +44,10 @@ solutionList:
   - "7. Okliuzinis naktinis kremas arba miego kaukė (vakare)  
     Galvok apie slugging, bet elegantiškai. Lietuviškas posūkis: sumaišyk kremą su lašu šaltalankių aliejaus."
   - "8. Kartą per savaitę: lakštinė kaukė, įmirkyta lietuviškame mineraliniame vandenyje (kaip Vichy, bet iš Druskininkų)."
+  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Daryk Tai, Ne Tą – Baltijos Žiemos Leidimas"
 comparisonTable:
   - do: "Dviejų žingsnių valymas (aliejus + kremas valiklis)"

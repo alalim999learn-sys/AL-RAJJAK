@@ -193,7 +193,8 @@ export async function getStaticProps({ params }) {
 
 // ------------------ MAIN COMPONENT ------------------
 export default function Post({ post, products, slug }) {
-  if (!post || !post.frontmatter) return <h2>পোস্ট পাওয়া যায়নি</h2>;
+  if (!post || !post.frontmatter) return <h2>Error
+  </h2>
 
   const { frontmatter, content } = post;
   const layoutType = frontmatter.layout || 'old';

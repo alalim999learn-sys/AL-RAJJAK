@@ -11,32 +11,13 @@ export default function AboutPage() {
       </Head>
 
       <main className="about-container">
-    <h1>Apie mane</h1>
-<p>
-  Sveiki! Esu lemonskn.com savininkė, mados ir grožio entuziastė, mėgstanti dalintis patarimais apie
-  makiažą, odos priežiūrą ir stilingus drabužius — nuo kasdienių aprangų iki elegantiškų suknelių.
-</p>
-
-<p>
-  Šį tinklaraštį pradėjau tam, kad padėčiau kitiems atrasti prieinamus grožio produktus, madingus
-  drabužius ir sąžiningus atsiliepimus apie prekes, kurias asmeniškai išbandžiau. Nesvarbu, ar
-  ieškote idealaus lūpų dažų, ar suknelės vakarui — aš jums padėsiu.
-</p>
-
-<p>
-  Visi mano įrašai pagrįsti tikra patirtimi, ne reklama. Dirbsiu su patikimomis partnerystėmis, tokiomis kaip
-  Zalando ir Awin, kad rekomenduočiau tik tuos produktus, kuriuos tikrai myliu — ir taip, galiu uždirbti
-  nedidelį komisinį atlyginimą, jei pirksite per mano nuorodas, be jokių papildomų išlaidų jums.
-</p>
-
-<p>
-  Ačiū, kad apsilankėte — tikiuosi, kad mano turinys įkvėps jus atrodyti ir jaustis geriausiai!
-</p>
-
-<p>
-  💌 Norite susisiekti? Eikite į <Link href="/contact">Kontaktų</Link> puslapį.
-</p>
-
+ 
+<h1>About Me</h1> 
+<p> Hi! I’m the owner of lemonskn.com — a fashion and beauty enthusiast who loves sharing tips on makeup, skincare, and stylish outfits, from everyday looks to elegant dresses. </p>
+ <p> I started this blog to help others discover affordable beauty products, trendy clothing, and honest reviews of items I’ve personally tested. Whether you're searching for the perfect lipstick or the ideal evening dress, I’m here to help. </p>
+  <p> All my posts are based on real experience, not advertisements. I collaborate with trusted partners like Zalando and Awin to recommend only the products I truly love — and yes, I may earn a small commission if you purchase through my links, at no extra cost to you. </p>
+   <p> Thank you for visiting — I hope my articles inspire you to look and feel your best! </p>
+    <p> 💌 Want to get in touch? Visit the <Link href="/contact">Contact</Link> page. </p>
       </main>
 
       <style jsx>{`
@@ -81,3 +62,6 @@ export default function AboutPage() {
     </Layout>
   );
 }
+
+
+

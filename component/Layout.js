@@ -51,22 +51,22 @@ export default function Layout({ children }) {
         <ul>
           <li>
             <Link href="/" passHref>
-              <span onClick={closeSidebar} className={styles.navLink}>Pagrindinis (Home)</span>
+              <span onClick={closeSidebar} className={styles.navLink}> (Home)</span>
             </Link>
           </li>
           <li>
             <Link href="/about" passHref>
-              <span onClick={closeSidebar} className={styles.navLink}>Apie (About)</span>
+              <span onClick={closeSidebar} className={styles.navLink}>(About)</span>
             </Link>
           </li>
           <li>
             <Link href="/contact" passHref>
-              <span onClick={closeSidebar} className={styles.navLink}>Kontaktai (Contact)</span>
+              <span onClick={closeSidebar} className={styles.navLink}>(Contact)</span>
             </Link>
           </li>
           <li>
             <Link href="/privacy-policy" passHref>
-              <span onClick={closeSidebar} className={styles.navLink}>Privatumo politika (Privacy Policy)</span>
+              <span onClick={closeSidebar} className={styles.navLink}>(Privacy Policy)</span>
             </Link>
           </li>
         </ul>

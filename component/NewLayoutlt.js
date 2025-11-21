@@ -110,7 +110,7 @@ export default function NewLayout({
   slug = ''
 }) {
   if (!frontmatter?.title) {
-    return <h2 className="text-center text-red-500">কোনো তথ্য পাওয়া যায়নি</h2>;
+    return <h2 className="text-center text-red-500"></h2>;
   }
 
   // Safe array checks
@@ -385,12 +385,8 @@ export default function NewLayout({
       Čia nėra jokių afiliuotų nuorodų, remiamų produktų ar mokamų reklamų.
     </p>
 
-    <p className="text-gray-700 italic text-sm leading-relaxed">
-      I am not a doctor or dermatologist. All information is based on peer-reviewed studies from
-      Harvard, Oxford, PubMed, NCBI, Cochrane, etc.
-      Always consult a dermatologist before starting any skincare routine.
-      No affiliate links or sponsorships.
-    </p>
+   
+    
   </div>
 </section>
 

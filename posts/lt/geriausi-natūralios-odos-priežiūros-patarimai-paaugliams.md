@@ -57,8 +57,8 @@ solutionList:
     Omega-3 iš Baltijos silkės arba papildų.
     Šaltinis: Cleveland Clinic
   - "Miegokite 8–9 valandas."
-  - "Gerkite vandenį + lietuviškas žolelių arbatas."
-
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Paauglių oda Lietuvoje: Daryk Tai, O Ne Tai"
 comparisonTable:
   - {do: "Plaukite drungnu vandeniu", dont: "Šveiskite karštu vandeniu"}

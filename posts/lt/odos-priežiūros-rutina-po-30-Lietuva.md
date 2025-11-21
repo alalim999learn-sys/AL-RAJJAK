@@ -32,7 +32,10 @@ solutionList:
  - "Kartą per savaitę švelni fermentų eksfoliacija (papainas arba lactobacillus) vietoj aštrių šveitiklių – pašalina negyvas ląsteles nesugadindama barjero."
  - "Drėkintuvas miegamajame – pigiausias anti-senėjimo įrenginys Lietuvoje (Jysk ar Senukai, iki 40 €)."
  - "Gerkite vandenį ir miegokite – taip, nuobodu, bet dehidratacija ir kortizolis gadina kolageną greičiau nei bet kas, ką galite nusipirkti."
-
+ - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+ - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+ - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+ - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Darykite tai – ne tą (Lietuvos žiemos leidimas)"
 comparisonTable: 
  - { "do": "Kreminis, žemo pH valiklis (pH 5-6)", "dont": "Putojantis gelis su SLS kietame Baltijos vandenyje" }

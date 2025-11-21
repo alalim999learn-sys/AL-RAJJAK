@@ -11,30 +11,30 @@ export default function AboutPage() {
       </Head>
 
       <main className="about-container">
-    <h1>Apie mane</h1>
+   <h1>Despre mine</h1>
 <p>
-  Sveiki! Esu lemonskn.com savininkė, mados ir grožio entuziastė, mėgstanti dalintis patarimais apie
-  makiažą, odos priežiūrą ir stilingus drabužius — nuo kasdienių aprangų iki elegantiškų suknelių.
+  Bună! Sunt proprietara lemonskn.com, o pasionată de modă și frumusețe, care iubește să împărtășească sfaturi despre
+  machiaj, îngrijirea pielii și ținute stilate — de la outfituri de zi cu zi până la rochii elegante.
 </p>
 
 <p>
-  Šį tinklaraštį pradėjau tam, kad padėčiau kitiems atrasti prieinamus grožio produktus, madingus
-  drabužius ir sąžiningus atsiliepimus apie prekes, kurias asmeniškai išbandžiau. Nesvarbu, ar
-  ieškote idealaus lūpų dažų, ar suknelės vakarui — aš jums padėsiu.
+  Am început acest blog pentru a-i ajuta pe alții să descopere produse de frumusețe accesibile, haine la modă și recenzii
+  sincere despre articole pe care le-am testat personal. Fie că cauți rujul ideal sau rochia perfectă pentru o seară —
+  sunt aici să te ajut.
 </p>
 
 <p>
-  Visi mano įrašai pagrįsti tikra patirtimi, ne reklama. Dirbsiu su patikimomis partnerystėmis, tokiomis kaip
-  Zalando ir Awin, kad rekomenduočiau tik tuos produktus, kuriuos tikrai myliu — ir taip, galiu uždirbti
-  nedidelį komisinį atlyginimą, jei pirksite per mano nuorodas, be jokių papildomų išlaidų jums.
+  Toate postările mele sunt bazate pe experiență reală, nu pe reclame. Colaborez cu parteneri de încredere, precum
+  Zalando și Awin, pentru a recomanda doar produsele pe care le iubesc cu adevărat — și da, pot câștiga un mic comision
+  dacă cumperi prin linkurile mele, fără costuri suplimentare pentru tine.
 </p>
 
 <p>
-  Ačiū, kad apsilankėte — tikiuosi, kad mano turinys įkvėps jus atrodyti ir jaustis geriausiai!
+  Mulțumesc că ai vizitat — sper ca articolele mele să te inspire să arăți și să te simți cât mai bine!
 </p>
 
 <p>
-  💌 Norite susisiekti? Eikite į <Link href="/contact">Kontaktų</Link> puslapį.
+  💌 Vrei să iei legătura cu mine? Accesează pagina de <Link href="/contact">Contact</Link>.
 </p>
 
       </main>

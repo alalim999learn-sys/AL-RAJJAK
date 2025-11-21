@@ -29,6 +29,10 @@ solutionList:
   - "Miegokite 7–9 valandas. Naktį oda taisosi greičiausiai."
   - "Nelieskite veido be reikalo – bakterijos ir dirginimas sumažėja akimirksniu."
   - "Prauskite šiltu (ne karštu) vandeniu – karštas vanduo nuplauna natūralius aliejus ir sausina odą."
+  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Odos priežiūros taisyklės ir klaidos pradedantiesiems"
 comparisonTable: 
   - { do: "Naudokite švelnų valiklį", dont: "Naudokite agresyvius muilus, kurie sausina odą" }

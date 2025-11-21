@@ -42,7 +42,10 @@ solutionList:
   - "7. Gerk pakankamai vandens – tai mažina sausumą. (WHO / Harvard Health)"
   - "8. Dieną naudok lengvą gelį su HA/glicerinu, vakare – tirštesnį kremą. (AAD / BAD)"
   - "9. Jei naudoji rūgštis ar retinoidus, žiemą retink naudojimą iki 2–3 kartų/sav. (AAD & NHS UK)"
-
+  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Lietuviškos žiemos odos priežiūra paaugliams su akne: ką daryti ir ko vengti"
 
 comparisonTable:

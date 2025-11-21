@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import Layout from '../../component/Layoutro';
+import Layout from '../../component/Layoutlt';
 
 export default function ContactForm({ cookieConsent }) {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });

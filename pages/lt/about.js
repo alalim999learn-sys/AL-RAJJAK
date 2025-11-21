@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <Head>
-        <title>About - lemonskn.com</title>
+        <title>About </title>
         <meta name="description" content="About the owner of lemonskn.com - fashion and beauty tips, honest reviews, and affordable style inspiration." />
       </Head>
 

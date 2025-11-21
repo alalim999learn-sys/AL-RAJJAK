@@ -36,7 +36,8 @@ solutionList:
   - "4–5 % niacinamidas sumažina riebalų išsiskyrimą ~20 % per 4 savaites"
   - "Valymas + drėkinimas vieni sumažina spuogų pažeidimus 30–40 %"
   - "Produktui duok bent 6 savaites, kad išvengtum dirginimo ciklų"
-
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 comparisonTitle: "Paprasta odos priežiūra paaugliams: ką daryti ir ko vengti"
 comparisonTable:
   - {do: "Plaukite ne daugiau 2× per dieną drungnu vandeniu", dont: "Plaukite 4–5× arba karštu vandeniu"}
