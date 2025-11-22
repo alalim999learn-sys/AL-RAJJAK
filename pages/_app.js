@@ -1,4 +1,5 @@
 // pages/_app.js
+// pages/_app.js
 import Head from 'next/head';
 import '../src/styles/globals.css';
 import { useEffect, useState } from 'react';
@@ -27,15 +28,14 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   const setConsentCookie = (value) => {
-    document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}`; // 1 year
+    document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}`;
     setCookieConsent(value === 'true');
   };
 
   const acceptCookies = () => setConsentCookie('true');
   const rejectCookies = () => setConsentCookie('false');
-  const openCookieSettings = () => setCookieConsent(null); // reopen banner
+  const openCookieSettings = () => setCookieConsent(null);
 
-  // Language texts
   const texts = {
     lt: {
       cookieText: 'Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį.',
@@ -56,21 +56,68 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        {/* Favicon */}
         <link rel="icon" href="/lemonskn.png" />
+
+        {/* Open Graph & Twitter Cards – বড় লোগো (512×512) */}
+        <meta property="og:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="Lemonskn Logo" />
+        <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* ========== সঠিক Organization + WebSite Schema (2025 স্ট্যান্ডার্ড) ========== */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Lemonskn",
-              "url": "https://lemonskn.com/",
-              "logo": "https://lemonskn.com/lemonskn.png"
-            }),
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://lemonskn.com/#organization",
+                  "name": "Lemonskn",
+                  "url": "https://lemonskn.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "@id": "https://lemonskn.com/lemonskn-logo-512.png",
+                    "url": "https://lemonskn.com/lemonskn-logo-512.png",
+                    "width": 512,
+                    "height": 512,
+                    "caption": "Lemonskn"
+                  },
+                  "image": { "@id": "https://lemonskn.com/lemonskn-logo-512.png" },
+                  "sameAs": [
+                    "https://www.instagram.com/lemonskn",
+                    "https://www.facebook.com/lemonskn",
+                    "https://www.youtube.com/@lemonskn"
+                  ],
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer service",
+                    "email": "info@lemonskn.com"
+                  }
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://lemonskn.com/#website",
+                  "url": "https://lemonskn.com",
+                  "name": "Lemonskn",
+                  "publisher": { "@id": "https://lemonskn.com/#organization" },
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://lemonskn.com/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+              ]
+            })
           }}
         />
       </Head>
 
+      {/* Page Component */}
       <Component {...pageProps} cookieConsent={cookieConsent} />
 
       {/* Cookie Banner */}
@@ -85,47 +132,28 @@ function MyApp({ Component, pageProps }) {
             width: '100%',
             textAlign: 'center',
             zIndex: 9999,
-            ...(isShortPage ? { minHeight: '50px' } : {}),
+            fontSize: '14px',
+            lineHeight: '1.5',
           }}
         >
-          <span>{cookieText}</span>
-          <div style={{ marginTop: '1em' }}>
-            <button
-              onClick={acceptCookies}
-              style={{
-                marginRight: '10px',
-                padding: '0.5em 1em',
-                cursor: 'pointer',
-                borderRadius: '4px',
-                border: 'none',
-                backgroundColor: '#4CAF50',
-                color: 'white',
-                fontWeight: 'bold'
-              }}
-            >
+          <span>{cookieText} </span>
+          <a href="/lt/privacy-policy" style={{ color: '#4CAF50', textDecoration: 'underline' }}>
+            Sužinoti daugiau
+          </a>
+          <div style={{ marginTop: '10px' }}>
+            <button onClick={acceptCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#4CAF50', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
               {accept}
             </button>
-            <button
-              onClick={rejectCookies}
-              style={{
-                padding: '0.5em 1em',
-                cursor: 'pointer',
-                borderRadius: '4px',
-                border: 'none',
-                backgroundColor: '#f44336',
-                color: 'white',
-                fontWeight: 'bold'
-              }}
-            >
+            <button onClick={rejectCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#f44336', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
               {reject}
             </button>
           </div>
         </div>
       )}
 
-      {/* Inline Cookie Settings Button */}
+      {/* Cookie Settings Button (after consent) */}
       {cookieConsent !== null && (
-        <div style={{ textAlign: 'center', marginTop: '2em' }}>
+        <div style={{ textAlign: 'center', margin: '2em 0' }}>
           <button
             onClick={openCookieSettings}
             style={{
@@ -137,10 +165,7 @@ function MyApp({ Component, pageProps }) {
               cursor: 'pointer',
               fontSize: '14px',
               fontWeight: 'bold',
-              transition: 'background-color 0.3s',
             }}
-            onMouseOver={e => e.currentTarget.style.backgroundColor = '#45a049'}
-            onMouseOut={e => e.currentTarget.style.backgroundColor = '#4CAF50'}
           >
             {settings}
           </button>

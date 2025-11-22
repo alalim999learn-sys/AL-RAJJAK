@@ -5,6 +5,7 @@ import Head from 'next/head';
 export default function HomeLT() {
   return (
     <Layoutlt>
+
       <Head>
         <title>Lemonskn – Geriausi mados ir grožio produktai</title>
         <meta
@@ -36,44 +37,51 @@ export default function HomeLT() {
           content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
         />
         <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
-
+       
         {/* Organization + Website JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "name": "Lemonskn",
-                  "url": "https://lemonskn.com/",
-                  "logo": "https://lemonskn.com/lemonskn.png",
-                  "sameAs": [
-                    "https://www.instagram.com/lemonskn",
-                    "https://www.facebook.com/lemonskn",
-                    "https://www.youtube.com/@lemonskn"
-                  ],
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "customer service",
-                    "email": "info@lemonskn.com"
-                  }
-                },
-                {
-                  "@type": "WebSite",
-                  "url": "https://lemonskn.com/",
-                  "name": "Lemonskn",
-                  "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://lemonskn.com/search?q={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                  }
-                }
-              ]
-            }, null, 2),
-          }}
-        />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://lemonskn.com/#organization",   // এটা এখানে থাকবে
+          "name": "Lemonskn",
+          "url": "https://lemonskn.com/",
+          "logo": "https://lemonskn.com/lemonskn-logo-512.png",  // 512px টা দে, বেশি ভালো
+          "sameAs": [
+            "https://www.instagram.com/lemonskn",
+            "https://www.facebook.com/lemonskn",
+            "https://www.youtube.com/@lemonskn"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "info@lemonskn.com"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://lemonskn.com/#website",
+          "url": "https://lemonskn.com/",
+          "name": "Lemonskn",
+          "publisher": {
+            "@id": "https://lemonskn.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://lemonskn.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }, null, 2),
+  }}
+/> 
       </Head>
 
       <header className="hu">
