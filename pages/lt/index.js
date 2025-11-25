@@ -84,16 +84,16 @@ export default function HomeLT() {
 /> 
       </Head>
 
-      <header className="hu">
-        <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />
-      <h1>Sveiki atvykę į lemonskn.com</h1>
-<p>
-  Atraskite mūsų geriausius grožio patarimus ir išsamius gidus, kurie padės jaustis ir atrodyti nuostabiai.
-</p>
-
-
-      </header>
-
+       <header className="hu">
+  <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />
+   <h1>Welcome to lemonskn.com</h1>
+  <p>
+    We are an educational guide – we don’t sell or offer any products. 
+    We started this project to help people find reliable, clear, and science-backed information 
+    about skincare and beauty.
+  </p>
+ 
+</header>
       <style jsx>{`
         .hu {
           text-align: center;

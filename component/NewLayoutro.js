@@ -158,7 +158,7 @@ export default function NewLayoutlt({
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description || ''} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://lemonskn.com/lt/${slug}`} />
+        <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
         <meta property="og:image" content={frontmatter.image1 || "https://lemonskn.com/lemonskn-logo-512.png"} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
@@ -231,9 +231,9 @@ export default function NewLayoutlt({
 
       <div className="new-layout__container max-w-4xl mx-auto py-8">
         <header className="text-center">
-          <h1 className="new-layout__main-title">{frontmatter.keyword1}</h1>
-          <h2 className="new-layout__sub-title">{frontmatter.keyword2}</h2>
-          <img className="img" src={frontmatter.img}  alt={frontmatter.keyword1} />
+          <h1 className="new-layout__main-title">{frontmatter.title}</h1>
+          <h2 className="new-layout__sub-title">{frontmatter.subtitle}</h2>
+          <img className="img" src={frontmatter.img}  alt={frontmatter.title} />
         </header>
 
         {frontmatter.intro && (
@@ -249,6 +249,7 @@ export default function NewLayoutlt({
           </section>
         )}{(frontmatter.solution || solutionList.length > 0) && (
   <section className="new-layout__solution">
+    
     <h3 className="new-layout__section-title">Soluție</h3>
     {frontmatter.solution && <p>{frontmatter.solution}</p>}
     {solutionList.length > 0 && (

@@ -68,10 +68,12 @@ export default function Home() {
           alt="Logo Lemonskn" 
           style={{ width: '17%', maxWidth: '200px', height: 'auto', marginBottom: '1rem' }} 
         />
-        <h1 style={{ fontSize: '3rem', color: '#024308', marginBottom: '1rem' }}>Bine ați venit la Lemonskn</h1>
-        <p style={{ fontSize: '1.25rem', color: '#555', maxWidth: '600px', margin: '0 auto' }}>
-          Descoperiți cele mai bune sfaturi de frumusețe și ghiduri complete pentru a arăta și a vă simți minunat.
-        </p>
+      <h1>Welcome to lemonskn.com</h1>
+  <p>
+    We are an educational guide – we don’t sell or offer any products. 
+    We started this project to help people find reliable, clear, and science-backed information 
+    about skincare and beauty.
+  </p>
       </main>
 
       <style>

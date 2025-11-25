@@ -98,6 +98,7 @@ export default function Home({ posts }) {
     We started this project to help people find reliable, clear, and science-backed information 
     about skincare and beauty.
   </p>
+ 
 </header>
 
 

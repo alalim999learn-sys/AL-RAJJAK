@@ -1,6 +1,7 @@
 ---
 layout: new
 title: "Cele Mai Bune Sfaturi de Îngrijire a Pielii iarna pentru Adulți în România"
+subtitle: "Îngrijirea pielii iarna pentru adulți – ghid complet și practic"
 description: Un Ghid Complet, Bazat pe Știință, pentru ca Adulții să Rămână Sănătoși, Energici și Protejați în Timpul Iernii
 date: "2025-01-15"
 img: "/7.jpeg"
