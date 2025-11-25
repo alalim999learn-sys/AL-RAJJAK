@@ -90,27 +90,18 @@ export default function Home({ posts }) {
         />
       </Head>
 
-      <header className="hu">
-        <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />
-        <h1>Sveiki atvykę į lemonskn.com</h1>
-        <p>
-          Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. 
-          Išmanus apsipirkimas, gražus gyvenimas.
-        </p>
-      </header>
+     <header className="hu">
+  <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />
+  <h1>Welcome to lemonskn.com</h1>
+  <p>
+    We are an educational guide – we don’t sell or offer any products. 
+    We started this project to help people find reliable, clear, and science-backed information 
+    about skincare and beauty.
+  </p>
+</header>
 
-      <section className="section">
-        <div className="post-grid">
-          {posts.map((post) => (
-            <div className="card" key={post.slug}>
-              <h3>{post.frontmatter.title}</h3>
-              <p>{post.frontmatter.description}</p>
-              <Link href={`/lt/${post.slug}`}>Skaityti daugiau →</Link>
-            </div>
-          ))}
-        </div>
-      </section>
 
+   
       <style jsx>{`
         .hu {
           text-align: center;

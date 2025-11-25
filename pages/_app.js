@@ -44,11 +44,12 @@ function MyApp({ Component, pageProps }) {
       settings: 'Slapukų nustatymai'
     },
     ro: {
-      cookieText: 'Acest site folosește cookie-uri pentru a vă îmbunătăți experiența.',
-      accept: 'Accept',
-      reject: 'Respinge',
-      settings: 'Setări Cookie'
-    }
+  cookieText: 'Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare.',
+  accept: 'Acceptă',
+  reject: 'Refuză',
+  settings: 'Setări Cookie'
+}
+
   };
 
   const { cookieText, accept, reject, settings } = texts[language];
@@ -138,7 +139,7 @@ function MyApp({ Component, pageProps }) {
         >
           <span>{cookieText} </span>
           <a href="/lt/privacy-policy" style={{ color: '#4CAF50', textDecoration: 'underline' }}>
-            Sužinoti daugiau
+        
           </a>
           <div style={{ marginTop: '10px' }}>
             <button onClick={acceptCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#4CAF50', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>

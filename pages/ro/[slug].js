@@ -97,8 +97,7 @@
 
 
 
-
-// pages/[slug].js
+// pages/lt/[slug].js
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -108,13 +107,13 @@ import remarkRehype from 'remark-rehype';
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
 
-import OldLayout from '../../component/OldLayoutlt';
-import NewLayout from '../../component/NewLayoutlt';
-import Layoutlt from '../../component/Layoutlt';
+import OldLayout from '../../component/OldLayoutro';
+import NewLayout from '../../component/NewLayoutro';
+import Layoutlt from '../../component/Layoutro';
 
 // ------------------ STATIC PATHS ------------------
 export async function getStaticPaths() {
-  const postsDir = path.join(process.cwd(), 'posts/lt');
+  const postsDir = path.join(process.cwd(), 'posts/ro');
   if (!fs.existsSync(postsDir)) return { paths: [], fallback: false };
 
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
@@ -128,7 +127,7 @@ export async function getStaticPaths() {
 // ------------------ STATIC PROPS ------------------
 export async function getStaticProps({ params }) {
   try {
-    const fullPath = path.join(process.cwd(), 'posts/lt', `${params.slug}.md`);
+    const fullPath = path.join(process.cwd(), 'posts/ro', `${params.slug}.md`);
     if (!fs.existsSync(fullPath)) return { notFound: true };
 
     const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -195,7 +194,8 @@ export async function getStaticProps({ params }) {
 
 // ------------------ MAIN COMPONENT ------------------
 export default function Post({ post, products, slug }) {
-  if (!post || !post.frontmatter) return <h2>পোস্ট পাওয়া যায়নি</h2>;
+  if (!post || !post.frontmatter) return <h2>Error
+  </h2>
 
   const { frontmatter, content } = post;
   const layoutType = frontmatter.layout || 'old';

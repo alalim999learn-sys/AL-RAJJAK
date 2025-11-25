@@ -31,7 +31,7 @@ export default function LayoutRO({ children }) {
         </button>
 
         <div className={styles.middle}>lemonskn.com</div>
-        <img className={styles.logo} src="/lemonskn.png" alt="Siglă" />
+        <img className={styles.logo} src="/lemonskn.png" />
       </header>
 
       <nav

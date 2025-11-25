@@ -110,7 +110,7 @@ export default function NewLayoutlt({
   slug = ''
 }) {
   if (!frontmatter?.title) {
-    return <h2 className="text-center text-red-500">Trūksta pavadinimo</h2>;
+    return <h2 className="text-center text-red-500"></h2>;
   }
 
   // Safe arrays
@@ -245,23 +245,23 @@ export default function NewLayoutlt({
         {frontmatter.problemTitle && <h2 className="new-layout__section-title mt-10">{frontmatter.problemTitle}</h2>}
         {problemList.length > 0 && (
           <section className="new-layout__problem mb-10">
-            <ul>{problemList.map((item, i) => <li key={i}>Checkmark {item}</li>)}</ul>
+            <ul>{problemList.map((item, i) => <li key={i}> {item}</li>)}</ul>
           </section>
         )}
 
         {(frontmatter.solution || solutionList.length > 0) && (
           <section className="new-layout__solution">
-            <h2 className="new-layout__section-title">Sprendimas</h2>
+            <h3 className="new-layout__section-title">Sprendimas</h3>
             {frontmatter.solution && <p>{frontmatter.solution}</p>}
             {solutionList.length > 0 && (
-              <ul>{solutionList.map((item, i) => <li key={i}>Checkmark {item}</li>)}</ul>
+              <ul>{solutionList.map((item, i) => <li key={i}>{item}</li>)}</ul>
             )}
           </section>
         )}
 
         {comparisonTable.length > 0 && (
           <section>
-            <h2 className="new-layout__section-title">{frontmatter.comparisonTitle || "Daryk / Nedaryk"}</h2>
+            <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Daryk / Nedaryk"}</h3>
             <table className="new-layout__table">
               <thead>
                 <tr><th className="new-layout__th">Daryk</th><th className="new-layout__th">Nedaryk</th></tr>
@@ -280,7 +280,7 @@ export default function NewLayoutlt({
 
         {routineList.length > 0 && (
           <section>
-            <h2 className="new-layout__section-title">Rutina</h2>
+            <h4 className="new-layout__section-title">Rutina</h4>
             <ol>{routineList.map((item, i) => <li key={i}>{item}</li>)}</ol>
           </section>
         )}
