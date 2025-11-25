@@ -97,3 +97,6 @@ faqlist:
   -  {question: "Ce să fac dacă am pielea foarte uscată și deja crapă?",
      answer: "Seara: strat gros de unguent cu petrolatum, ceramide sau panthenol (gen Vaseline pur sau orice cremă foarte grasă). Ziua: cremă densă cu glicerină/ceramide + mâini în mănuși de bumbac tot timpul. Dormi cu șosete unsuroase dacă și picioarele crapă. În 3–4 zile se repară bariera și nu mai doare." }
 ---
+git add . 
+git commit -m  "update"
+git push -u  origin main
