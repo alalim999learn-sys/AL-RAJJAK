@@ -1,67 +1,83 @@
+// ro home page
 import Head from 'next/head';
 import Layoutro from '../../component/Layoutro';
 
 export default function Home() {
   return (
     <Layoutro>
-      <Head>
-        <title>Lemonskn – Cele mai bune produse</title>
-        <meta name="description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget. Cumpărături inteligente, viață frumoasă." />
-        <link rel="canonical" href="https://lemonskn.com/ro" />
-        <link rel="icon" href="/lemonskn.png" type="image/png" />
-        <meta name="theme-color" content="#ffffff" />
-    
-        {/* Open Graph */}
-        <meta property="og:title" content="Lemonskn – Cele mai bune produse" />
-        <meta property="og:description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget. Cumpărături inteligente, viață frumoasă." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lemonskn.com/ro" />
-        <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+    <Head>
+  <title>Lemonskn – Cele mai bune produse</title>
+  <meta name="description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget. Cumpărături inteligente, viață frumoasă." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  {/* Canonical & Language */}
+  <link rel="canonical" href="https://lemonskn.com/ro" />
+  
+  {/* Hreflang – খুব জরুরি (৩টা পেজেই দিবে) */}
+  <link rel="alternate" hrefLang="ro" href="https://lemonskn.com/ro" />
+  <link rel="alternate" hrefLang="lt" href="https://lemonskn.com/" />
+  <link rel="alternate" hrefLang="en" href="https://lemonskn.com/en" />
+  <link rel="alternate" hrefLang="x-default" href="https://lemonskn.com/" />
 
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lemonskn – Cele mai bune produse" />
-        <meta name="twitter:description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget. Cumpărături inteligente, viață frumoasă." />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
+  {/* Favicon – সব সাইজ দাও */}
+  <link rel="icon" href="/lemonskn.png" type="image/png" />
+  <link rel="icon" sizes="192x192" href="/lemonskn.png" />
+  <link rel="icon" sizes="512x512" href="/lemonskn.png" />
+  <link rel="apple-touch-icon" href="/lemonskn.png" />
 
-        {/* JSON-LD Structured Data */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
-        {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "name": "Lemonskn",
-              "url": "https://lemonskn.com/",
-              "logo": "https://lemonskn.com/lemonskn.png",
-              "sameAs": [
-                "https://www.instagram.com/lemonskn",
-                "https://www.facebook.com/lemonskn",
-                "https://www.youtube.com/@lemonskn"
-              ],
-              "contactPoint": [
-                {
-                  "@type": "ContactPoint",
-                  "contactType": "customer service",
-                  "email": "info@lemonskn.com"
-                }
-              ]
+  {/* Open Graph – শুধু একবার */}
+  <meta property="og:title" content="Lemonskn – Cele mai bune produse" />
+  <meta property="og:description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget. Cumpărături inteligente, viață frumoasă." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lemonskn.com/ro" />
+  <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Lemonskn Logo" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lemonskn – Cele mai bune produse" />
+  <meta name="twitter:description" content="Descoperiți cele mai bune alegeri în modă și frumusețe – toate sub 99% din buget." />
+  <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
+
+  {/* JSON-LD – সবচেয়ে গুরুত্বপূর্ণ (একই রাখো ৩টা পেজেই) */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lemonskn.com/#organization",
+            "name": "Lemonskn",
+            "url": "https://lemonskn.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://lemonskn.com/lemonskn.png",
+              "width": 512,
+              "height": 512
             },
-            {
-              "@type": "WebSite",
-              "url": "https://lemonskn.com/",
-              "name": "Lemonskn",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://lemonskn.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            }
-          ]
-        }
-        `}} />
-      </Head>
-
+            "sameAs": [
+              "https://www.instagram.com/lemonskn",
+              "https://www.facebook.com/lemonskn",
+              "https://www.youtube.com/@lemonskn"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://lemonskn.com/#website",
+            "url": "https://lemonskn.com/",
+            "name": "Lemonskn",
+            "publisher": { "@id": "https://lemonskn.com/#organization" },
+            "inLanguage": ["ro", "lt", "en"]
+          }
+        ]
+      })
+    }}
+  />
+</Head>
       <main style={{ textAlign: 'center', padding: '3rem 1rem', backgroundColor: '#f9f9f9' }}>
         <img 
           src="/lemonskn.png" 

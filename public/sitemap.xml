@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Main English version (x-default) -->
   <url>
     <loc>https://lemonskn.com/</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemonskn.com/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lemonskn.com/lt" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lemonskn.com/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lemonskn.com/" />
   </url>
 
-  <url>
-    <loc>https://lemonskn.com/about</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://lemonskn.com/contact</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
+  <!-- Lithuanian version -->
   <url>
     <loc>https://lemonskn.com/lt</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemonskn.com/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lemonskn.com/lt" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lemonskn.com/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lemonskn.com/" />
+  </url>
+
+  <!-- Romanian version -->
+  <url>
+    <loc>https://lemonskn.com/ro</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemonskn.com/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lemonskn.com/lt" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lemonskn.com/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lemonskn.com/" />
+  </url>
+
+  <!-- Static pages (English by default) -->
+  <url>
+    <loc>https://lemonskn.com/about</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lemonskn.com/contact</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

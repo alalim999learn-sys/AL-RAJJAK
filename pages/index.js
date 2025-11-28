@@ -37,7 +37,13 @@ export default function Home({ posts }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lemonskn.com/" />
         <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+{/* এই meta tag টা যোগ করো Head এর মধ্যে */}
+{/* এই meta tag টা যোগ করো Head এর মধ্যে */}
+<link rel="icon" sizes="192x192" href="/lemonskn.png" />
+<link rel="apple-touch-icon" href="/lemonskn.png" />
 
+{/* আর লোগোটা যদি 512x512 px-এর একটা ভার্সন থাকে তাহলে এটা দাও */}
+<link rel="icon" type="image/png" sizes="512x512" href="/lemonskn-512.png" />
         {/* ✅ Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fashion & Beauty Under Budget | Lemonskn" />

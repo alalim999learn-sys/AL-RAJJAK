@@ -1,6 +1,7 @@
 ---
 layout: new
 title: "Kaip Natūraliai Rūpintis Paauglių Oda Lietuvoje: Švari Oda Be Dramos"
+subtitle: ""
 description: "Praktinis, moksliškai pagrįstas gidas Lietuvos paaugliams (ir tėvams), kaip tvarkyti spuogus ir riebią odą naudojant natūralias priemones — net šalčiausiomis Baltijos žiemomis."
 date: "2025-11-18"
 img: "/1.jpeg"

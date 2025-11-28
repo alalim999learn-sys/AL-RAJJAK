@@ -1,5 +1,4 @@
 // pages/_app.js
-// pages/_app.js
 import Head from 'next/head';
 import '../src/styles/globals.css';
 import { useEffect, useState } from 'react';
@@ -12,8 +11,9 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Detect language from URL
     const path = window.location.pathname;
-    if (path.startsWith('/ro')) setLanguage('ro');
-    else setLanguage('lt');
+    if (path.startsWith('/ro')) setLanguage('ro');  // রোমানিয়ান
+    else if (path.startsWith('/lt')) setLanguage('lt'); // লিথুয়ানিয়ান
+    else setLanguage('en');  // ডিফল্ট ইংরেজি
 
     // Check existing cookie consent
     const match = document.cookie.match(/(^| )cookie-consent=([^;]+)/);
@@ -37,6 +37,12 @@ function MyApp({ Component, pageProps }) {
   const openCookieSettings = () => setCookieConsent(null);
 
   const texts = {
+    en: {
+      cookieText: 'This website uses cookies to improve your browsing experience.',
+      accept: 'Accept',
+      reject: 'Reject',
+      settings: 'Cookie Settings'
+    },
     lt: {
       cookieText: 'Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį.',
       accept: 'Priimti',
@@ -44,12 +50,11 @@ function MyApp({ Component, pageProps }) {
       settings: 'Slapukų nustatymai'
     },
     ro: {
-  cookieText: 'Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare.',
-  accept: 'Acceptă',
-  reject: 'Refuză',
-  settings: 'Setări Cookie'
-}
-
+      cookieText: 'Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare.',
+      accept: 'Acceptă',
+      reject: 'Refuză',
+      settings: 'Setări Cookie'
+    }
   };
 
   const { cookieText, accept, reject, settings } = texts[language];
@@ -57,65 +62,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        {/* Favicon */}
         <link rel="icon" href="/lemonskn.png" />
-
-        {/* Open Graph & Twitter Cards – বড় লোগো (512×512) */}
         <meta property="og:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta property="og:image:alt" content="Lemonskn Logo" />
         <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
         <meta name="twitter:card" content="summary_large_image" />
-
-        {/* ========== সঠিক Organization + WebSite Schema (2025 স্ট্যান্ডার্ড) ========== */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "@id": "https://lemonskn.com/#organization",
-                  "name": "Lemonskn",
-                  "url": "https://lemonskn.com",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "@id": "https://lemonskn.com/lemonskn-logo-512.png",
-                    "url": "https://lemonskn.com/lemonskn-logo-512.png",
-                    "width": 512,
-                    "height": 512,
-                    "caption": "Lemonskn"
-                  },
-                  "image": { "@id": "https://lemonskn.com/lemonskn-logo-512.png" },
-                  "sameAs": [
-                    "https://www.instagram.com/lemonskn",
-                    "https://www.facebook.com/lemonskn",
-                    "https://www.youtube.com/@lemonskn"
-                  ],
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "customer service",
-                    "email": "info@lemonskn.com"
-                  }
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://lemonskn.com/#website",
-                  "url": "https://lemonskn.com",
-                  "name": "Lemonskn",
-                  "publisher": { "@id": "https://lemonskn.com/#organization" },
-                  "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://lemonskn.com/search?q={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                  }
-                }
-              ]
-            })
-          }}
-        />
       </Head>
 
       {/* Page Component */}
@@ -138,9 +91,6 @@ function MyApp({ Component, pageProps }) {
           }}
         >
           <span>{cookieText} </span>
-          <a href="/lt/privacy-policy" style={{ color: '#4CAF50', textDecoration: 'underline' }}>
-        
-          </a>
           <div style={{ marginTop: '10px' }}>
             <button onClick={acceptCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#4CAF50', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
               {accept}

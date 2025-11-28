@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Layout.module.css';
-import FooterLT from './FooterLT';
+import FooterLT from './Footer';
 
 export default function Layout({ children }) {
   const [sidebarActive, setSidebarActive] = useState(false);
