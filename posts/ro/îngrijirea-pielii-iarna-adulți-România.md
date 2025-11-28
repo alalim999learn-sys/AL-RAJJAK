@@ -68,7 +68,7 @@ comparisonTable:
   - {do: "Folosește produse fără parfum" , dont: "Nu folosi crema ta de vară parfumată care ustură îngrozitor" }
   - {do: "Protejează-ți mâinile cu mănuși ȘI cremă" , dont: "Nu te duce la Piața Obor fără mănuși ca un erou" }
 long_tail_keyword4_before_routine: "cea mai bună rutină hidratantă pentru pielea uscată iarna"
-routine:
+routineList:
  - Curăță blând cu cleanser cremos (fără spumă, fără parfum)
  - Hidratează în maxim 3 minute cât pielea e încă umedă
  - Pune cremă groasă sau unguent (CeraVe, Cicaplast, Vaseline)
