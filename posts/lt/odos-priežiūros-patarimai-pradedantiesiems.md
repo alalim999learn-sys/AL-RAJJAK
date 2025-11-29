@@ -1,6 +1,8 @@
 ---
 layout: new
 title: "Paprasta namų odos priežiūros rutina pradedantiesiems Lietuvoje"
+subtitle: "Lengva odos priežiūros rutina pradedantiesiems Lietuvoje"
+
 description: "Pradedantiesiems draugiškas vadovas, kaip namuose prižiūrėti odą paprastais žingsniais, remiantis mokslo žiniomis ir lengvais patarimais."
 date: "2025-11-17"
 img: "/5.jpeg"
@@ -8,6 +10,16 @@ img: "/5.jpeg"
 keyword1: "odos priežiūros patarimai pradedantiesiems"
 keyword2: "pradedančiųjų odos priežiūros patarimai"
 intro: "Jei jūsų oda ištveria lietuvišką žiemą, neatrodydama kaip išdžiūvęs cepelinas – ji nusipelno medalio. Dauguma iš mūsų medalių nelaimi, tiesiog norime, kad veidas nebeskaudėtų po plovimo. Štai paprasčiausia rutina, kuri tikrai veikia, kai 16 val. jau tamsu, o jūsų kambario oras sausesnis už Sacharą."
+long_tail_keyword1_before_problem: "pradedanciuju-odos-prieziuros-patarimai"
+
+long_tail_keyword2_before_solution: "lengvi-odos-prieziuros-patarimai-pradedantiesiems"
+
+long_tail_keyword3_before_do_dont_table: "paprasta-odos-prieziura-pradedantiesiems"
+
+long_tail_keyword4_before_routine: "odos-prieziuros-gidas-pradedantiesiems"
+
+long_tail_keyword5_before_FAQ: "pagrindiniai-odos-prieziuros-patarimai"
+
 problemTitle: "Dažniausios odos problemos pradedantiesiems"
 problemList: 
   - "Labai sausa ir tempia oda po plovimo – kaltinkite radiatorius ir -15 °C vėją."
@@ -52,5 +64,19 @@ faqList:
   - { question: "Ar galiu praleisti apsaugą nuo saulės debesuotomis dienomis?", answer: "Ne. UV spinduliai prasiskverbia per debesį, todėl apsauga nuo saulės būtina kiekvieną dieną." }
   - { question: "Kiek laiko užtrunka, kol pamatysiu rezultatus?", answer: "Nuoseklumas yra svarbiausias. Dauguma pradedančiųjų pastebi pagerėjimą per 4–6 savaites reguliarios priežiūros." }
   - { question: "Ar galiu naudoti kelis aktyvius ingredientus?", answer: "Taip, bet įveskite juos po vieną, kad išvengtumėte dirginimo ir stebėtumėte odos reakciją." }
- 
+    
+
+
+
+
+
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
+
 ---

@@ -1,6 +1,8 @@
 ---
 layout: new
 title: "Žiemos odos priežiūra paaugliams Lietuvoje: Kaip neatrodyti kaip pleiskanojanti Baltijos snaigė"
+subtitle: "Nepleiskanojanti Baltijos snaigė: žiemos odos rutina paaugliams"
+
 description: "Realistiškas, moksliškai pagrįstas žiemos odos priežiūros gidas Lietuvos paaugliams, susidurtiems su -15–25°C vėjais, 15 % patalpų drėgnumu ir radiatoriais, kurie kepina veidą."
 date: "2025-11-18"
 
@@ -8,6 +10,16 @@ img: "/8.jpeg"
 keyword1: "žiemos odos priežiūra paaugliams Lietuvoje"
 keyword2: "sausos odos žiemą Baltijos paaugliai"
 intro: "Sveikas atvykęs į Lietuvos žiemą, kur oras toks sausas, kad ašaros užšąla ant blakstienų, kol nusileidžia…"
+long_tail_keyword1_before_problem: "ziemos-odos-prieziura-paaugliams-lietuvoje"
+
+long_tail_keyword2_before_solution: "paaugliu-ziemos-odos-prieziuros-patarimai"
+
+long_tail_keyword3_before_do_dont_table: "geriausi-ziemos-odos-prieziuros-patarimai-paaugliams"
+
+long_tail_keyword4_before_routine: "paaugliu-ziemos-odos-prieziuros-rutina"
+
+long_tail_keyword5_before_FAQ: "dažniausiai-uzduodami-ziemos-odos-prieziuros-paaugliams-klausimai"
+
 
 problemTitle: "9 žiemos odos problemos, kurias kiekvienas Lietuvos paauglys gerai žino"
 problemList: 
@@ -58,4 +70,13 @@ faqList:
   - {question: "Ar tikrai reikia saulės kremo, kai debesuota ir sninga?", answer: "Taip. Šviežias sniegas gali atspindėti iki 80–90 % UV spindulių. Veidas gauna dvigubą kepimą."}
   - {question: "Kodėl oda degina įėjus iš šalčio?", answer: "Staigus temperatūros pokytis priverčia kraujagysles per daug išsiplėsti. Naudokite švelnias priemones ir gerai drėkinkite."}
   - {question: "Ar galiu daugiau šveisti žiemą, kad pašalinčiau pleiskanas?", answer: "Tikrai ne. Suardysite barjerą ir pabloginsite situaciją. Drėkinkite vietoje to."}
+  
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 ---

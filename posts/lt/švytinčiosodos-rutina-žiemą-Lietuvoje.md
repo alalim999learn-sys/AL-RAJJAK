@@ -1,6 +1,8 @@
 ---
 layout: new
 title: "Geriausia Lietuviška Odos Priežiūros Rutina Švytinčiai Odai (Kuri Tikrai Veikia -20°C)"
+subtitle: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
+
 description: "Be BS, moksliškai pagrįsta odos priežiūros rutina, sukurta atlaikyti šaltas Baltijos žiemas, kovoti su miesto tarša ir pasiekti tą „atsikėliau Druskininkuose SPA“ švytėjimą."
 date: "2025-11-17"
 
@@ -8,6 +10,16 @@ img: "/9.jpeg"
 keyword1: "švytinčios odos rutina žiemą Lietuvoje"
 keyword2: "patarimai švytinčiai odai žiemą Lietuvoje"
 intro: "Klausyk. Jei tavo oda gali išgyventi lietuvišką žiemą (vėjas, kuris atrodo asmeniškai, centrinis šildymas, kuris išsiurbia kiekvieną drėgmės lašelį, ir tamsa, prasidedanti 15 val.), ji nusipelno medalio. Ar bent jau odos priežiūros rutinos, kuri nepasiduoda, kai temperatūra nukrenta žemiau -15 °C. Tai švytėjimo vadovas, kuris tikrai veikia Vilniuje, Kaune, Klaipėdoje ar bet kuriame mažame miestelyje tarp jų."
+long_tail_keyword1_before_problem: "spindinti-odos-rutina-ziema-lietuvoje"
+
+long_tail_keyword2_before_solution: "ziemos-odos-spindesio-patarimai-lietuvoje"
+
+long_tail_keyword3_before_do_dont_table: "spindinti-odos-prieziura-ziemos-metu-lietuvoje"
+
+long_tail_keyword4_before_routine: "ziemos-odos-prieziuros-rutina-spindincioms-odoms"
+
+long_tail_keyword5_before_FAQ: "kaip-gauti-spindincią-odą-ziemos-metu-lietuvoje"
+
 problemTitle: "Kodėl Tavo Oda Lietuvoje Atrodo kaip Liūdna Bulvė (9 Tikros Priežastys)"
 problemList:
   - "1. Centrinis šildymas = nulinė drėgmė. Odos barjeras išgaruoja greičiau nei tavo noras gyventi sausį."
@@ -96,4 +108,12 @@ faqList:
      • 2–3 mėnesiai → tikras švytėjimas, stipresnis barjeras, mažiau problemų  
      Oda turi laiką atsistatyti ir atsinaujinti – nuoseklumas visada laimi prieš brangius produktus."
 
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 ---

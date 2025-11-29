@@ -1,17 +1,34 @@
 ---
 layout: new
 title: "Kaip Natūraliai Rūpintis Paauglių Oda Lietuvoje: Švari Oda Be Dramos"
-subtitle: ""
+subtitle: "Natūralūs būdai paaugliams valdyti spuogus ir riebią odą net šalčiausiomis Baltijos žiemomis"
 description: "Praktinis, moksliškai pagrįstas gidas Lietuvos paaugliams (ir tėvams), kaip tvarkyti spuogus ir riebią odą naudojant natūralias priemones — net šalčiausiomis Baltijos žiemomis."
 date: "2025-11-18"
 img: "/1.jpeg"
 
-keyword1: "geriausi natūralios odos priežiūros patarimai paaugliams"
-keyword2: "natūrali odos priežiūra paaugliams"
+linktitle1: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
+linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
+long_tail_keyword1_before_problem: natūralūs paauglių odos priežiūros patarimai prieš problemų atsiradimą
+
+long_tail_keyword2_before_solution: efektyviausi natūralūs odos priežiūros patarimai paaugliams
+
+long_tail_keyword3_before_do_dont_table: geriausios visiškai natūralios odos priežiūros gairės paaugliams
+
+long_tail_keyword4_before_routine: pagrindinės natūralios odos priežiūros rekomendacijos paaugliams
+
+long_tail_keyword5_before_FAQ: geriausi natūralūs būdai, kaip paaugliai gali prižiūrėti savo odą
 intro: >
   Ah, paauglystė — metas, kai tavo veidas nusprendžia tapti aliejaus fabriku greičiau nei lietuviška bulvinė blynas nukrenta nuo keptuvės.
   Nesijaudink, tu nepasmerktas amžiams atrodyti kaip pica su pepperoni.
   Štai kaip nuraminti odą natūraliai, Baltijos stiliumi.
+
+
 
 problemTitle: "Kodėl Lietuvos paauglių oda elgiasi beprotiškai (9 dažniausios problemos)"
 problemList:
@@ -35,6 +52,7 @@ problemList:
   - "Spuogų spaudymas ir trynimas (visi tai darėme vidury nakties prie veidrodžio)."
   - "Naudoti 10 žingsnių Korėjos rutiną su aktyviais ingredientais."
   - "Valgyti tonas saldumynų ir tikėtis stebuklo."
+
 
 solution: >
   Gera žinia? Viską galima nuraminti švelniomis, natūraliomis įpročių pakeitimais.
@@ -60,6 +78,7 @@ solutionList:
   - "Miegokite 8–9 valandas."
   - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
   - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+
 comparisonTitle: "Paauglių oda Lietuvoje: Daryk Tai, O Ne Tai"
 comparisonTable:
   - {do: "Plaukite drungnu vandeniu", dont: "Šveiskite karštu vandeniu"}
@@ -72,7 +91,24 @@ comparisonTable:
   - {do: "Būkite kantrūs", dont: "Išbandykite 15 produktų per savaitę"}
   - {do: "Eikite pas dermatologą", dont: "Spauskite cistas naktimis"}
 
-faqlist:
+
+
+routineList:
+  - |
+    Paprasta kasdienė rutina (viso 5 eilutės, 3–4 minutės)
+
+    Rytas:  
+    1. Nuplauk veidą drungnu vandeniu  
+    2. Užtepk lengvą drėkiklį (alijošiaus gelis arba „Vaikiukas“)  
+    3. Mineralinis SPF 30–50 (net žiemą Lietuvoje privaloma!)
+
+    Vakaras:  
+    4. Nuvalyk miceliniu vandeniu arba švelniomis putomis su žaliąja arbata  
+    5. Ant spuogų – lašelis žalio medaus arba arbatmedžio aliejaus + tas pats drėkiklis
+
+    1–2 kartus per savaitę: medaus + cinamono kaukė 10 min.  
+    Viskas. Jokios Korėjos 10 žingsnių dramos. Veikia ir per lietuvišką žiemą. ❄️
+faqList:
   - {question: "Ar šaltas oras gali pabloginti spuogus?", answer: "Taip — dėl drėgmės stokos ir šildymo."}
   - {question: "Ar pienas blogina spuogus?", answer: "Kai kuriems paaugliams — taip, ypač liesas pienas."}
   - {question: "Geriausias natūralus ingredientas?", answer: "Žalias medus + linų sėmenų aliejus."}

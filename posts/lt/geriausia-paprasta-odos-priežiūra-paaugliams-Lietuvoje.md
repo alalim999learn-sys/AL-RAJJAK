@@ -1,6 +1,7 @@
 ---
 layout: new
 title: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+subtitle: "Paprasta ir efektyvi rutina paaugliams, kurie nenori sudėtingų 10 žingsnių schemų"
 description: "Realistiškas, moksliškai pagrįstas ir labai paprastas odos priežiūros gidas Lietuvos paaugliams, kurie nenori pusės kišenpinigių išleisti 15 kremams."
 date: "2025-11-18"
 img: "/3.jpeg"
@@ -12,6 +13,15 @@ intro: >
   Labas, Lietuvos paaugli! Tavo veidas šiuo metu elgiasi tarsi pigus siaubo filmas.
   Atsipalaiduok – tau nereikia 10 žingsnių rutinos ir pusės darbo užmokesčio.
   Keturi produktai ir nuoseklumas išgelbės tavo odą.
+long_tail_keyword1_before_problem: "geriausia-paaugliu-odos-prieziuros-rutina-lietuvoje"
+
+long_tail_keyword2_before_solution: "paprasta-odos-prieziura-paaugliams-lietuvoje"
+
+long_tail_keyword3_before_do_dont_table: "paaugliu-odos-prieziuros-patarimai-lietuvoje"
+
+long_tail_keyword4_before_routine: "lengvas-paaugliu-odos-prieziuros-gidas-lietuvoje"
+
+long_tail_keyword5_before_FAQ: "pradedantiesiems-skirta-paaugliu-odos-prieziura-lietuvoje"
 
 problemTitle: "9 priežastys, kodėl tavo oda šiuo metu maištauja"
 problemList:
@@ -68,4 +78,14 @@ faqList:
   - {question: "Kiek laiko iki rezultatų?", answer: "6–8 savaitės, jei laikysies rutinos."}
   - {question: "Ar brangūs produktai geresni?", answer: "Ne. Svarbu ingredientai, ne kaina."}
   - {question: "Ar vaikinams reikia odos priežiūros?", answer: "Taip. Spuogai nežiūri į lytį."}
+  
+linktitle1: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug1: odos-priežiūros-patarimai-paaugliui-su-akne
+
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje: Kaip neatrodyti kaip pleiskanojanti Baltijos snaigė"
+linkslug2:  žiemos-odos-priežiūra-paaugliams-lietuvoje
+
+linktitle3: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
+linkslug3: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
 ---
+

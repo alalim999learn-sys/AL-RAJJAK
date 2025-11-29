@@ -1,13 +1,23 @@
 ---
 layout: new
 title: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+subtitle: "Natūralūs būdai išlaikyti drėgną ir sveiką odą šalčiausiomis žiemos dienomis"
 description: "Kovok su sausa, pleiskanojančia žiemos oda su patikrintais natūraliais būdais. Atsisveikink su krokodilo kojomis!"
 date: "2025-01-15"
 img: "/2.jpeg"
 
 keyword1: "geriausi-žiemos-odos-drėkinimo-patarimai"
 keyword2: "Kodėl žiemą oda tampa sausa"
+long_tail_keyword1_before_problem: "geriausi-ziemos-odos-drekinimo-patarimai"
 
+long_tail_keyword2_before_solution: "ziemos-odos-drekalijos-patarimai"
+
+
+long_tail_keyword3_before_do_dont_table: "geriausi-salto-oro-odos-drekinimo-patarimai"
+
+long_tail_keyword4_before_routine: "ziemos-odos-prieziuros-drekinimo-gidas"
+
+long_tail_keyword5_before_FAQ: "veiksmingi-ziemos-odos-drekinimo-patarimai"
 intro: >
   Žiema paskambino – nori atgal tavo drėgmės. Kol visi geria karštą šokoladą,
   tavo oda atrodo kaip Sachara po sausros. Bet yra gerų žinių: gamta turi geresnių
@@ -74,4 +84,14 @@ faqlist:
   - {question: "Po 2 savaičių vis dar sausa?", answer: "Kreipkis į dermatologą – gali būti atopinis dermatitas."}
   - {question: "Pigiausias humektantas?", answer: "Glicerinas (~2–3 €) arba rožių vandens + glicerino mišinys."}
   - {question: "Ar žiemą galima šveisti odą?", answer: "Taip, bet švelniai – 1–2 k./sav. su avižomis arba minkšta šluoste."}
+  
+linktitle1: "Kaip Natūraliai Rūpintis Paauglių Oda Lietuvoje: Švari Oda Be Dramos"
+linkslug1: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
+
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje: Kaip neatrodyti kaip pleiskanojanti Baltijos snaigė"
+linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+
+linktitle3: "Geriausia Lietuviška Odos Priežiūros Rutina Švytinčiai Odai (Kuri Tikrai Veikia -20°C)"
+linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
 ---
+

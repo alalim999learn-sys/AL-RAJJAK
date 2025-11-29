@@ -1,18 +1,9 @@
-
-
-
-
-
-
-
-
-
-// component/OldLayoutro.js
+// component/OldLayoutro.js ← ১০০% Google-Ready 2025 ভার্সন (প্রোডাক্ট রিভিউ পেজের জন্য)
 import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
 
-export default function OldLayout({
+export default function OldLayoutro({
   frontmatter = {},
   content = '',
   products = [],
@@ -20,7 +11,6 @@ export default function OldLayout({
 }) {
   const safeProducts = Array.isArray(products) ? products : [];
 
-  // প্রাইস ক্লিন করা: স্ট্রিং → সংখ্যা
   const cleanPrice = (price) => {
     if (!price) return 0;
     const num = parseFloat(String(price).replace(/[^0-9.,]/g, '').replace(',', '.'));
@@ -29,61 +19,133 @@ export default function OldLayout({
 
   const currency = frontmatter.currency || 'EUR';
 
+  // ===== মূল Schema – প্রতিটি পেজে থাকতেই হবে =====
+
+
+
+
+
+
+  // ===== মূল Schema – ১০০% Google 2025 Platinum Version =====
+const fullSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    // 1. Organization + Logo
+    {
+      "@type": "Organization",
+      "@id": "https://lemonskn.com/#organization",
+      "name": "Lemonskn",
+      "url": "https://lemonskn.com",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://lemonskn.com/lemonskn.png",
+        "url": "https://lemonskn.com/lemonskn.png",
+        "contentUrl": "https://lemonskn.com/lemonskn.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Lemonskn Official Logo"
+      },
+      "sameAs": [
+        "https://www.instagram.com/lemonskn",
+        "https://www.facebook.com/lemonskn",
+        "https://www.youtube.com/@lemonskn",
+        "https://www.tiktok.com/@lemonskn"
+      ]
+    },
+
+    // 2. WebSite schema (নতুন যোগ হচ্ছে)
+    {
+      "@type": "WebSite",
+      "@id": "https://lemonskn.com/#website",
+      "url": "https://lemonskn.com",
+      "name": "Lemonskn",
+      "publisher": { "@id": "https://lemonskn.com/#organization" },
+      "inLanguage": ["en-US", "lt-LT", "ro-RO"]
+    },
+
+    // 3. WebPage
+    {
+      "@type": "WebPage",
+      "@id": `https://lemonskn.com/ro/${slug}#webpage`,
+      "url": `https://lemonskn.com/ro/${slug}`,
+      "name": frontmatter.title,
+      "isPartOf": { "@id": "https://lemonskn.com/#website" },
+      "inLanguage": "ro-RO"
+    },
+
+    // 4. Article
+    {
+      "@type": "Article",
+      "headline": frontmatter.title,
+      "description": frontmatter.description || "",
+      "image": frontmatter.image1 || "https://lemonskn.com/lemonskn.png",
+      "author": { "@type": "Organization", "name": "Lemonskn" },
+      "publisher": { "@id": "https://lemonskn.com/#organization" },
+      "datePublished": frontmatter.date || "2025-01-01",
+      "dateModified": frontmatter.date || new Date().toISOString().split("T")[0]
+    },
+
+    // 5. BreadcrumbList (নতুন যোগ হচ্ছে – রোমানিয়ান ভার্সন)
+    {
+      "@type": "BreadcrumbList",
+      "@id": `https://lemonskn.com/ro/${slug}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://lemonskn.com/ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": frontmatter.title,
+          "item": `https://lemonskn.com/ro/${slug}`
+        }
+      ]
+    }
+  ]
+};
   return (
     <>
-      {/* ===== SEO & Metadata ===== */}
       <Head>
-        <title>{frontmatter.title || 'Default Title'}</title>
-        <meta name="description" content={frontmatter.description || 'Default description'} />
-        <meta property="og:title" content={frontmatter.title || 'Default Title'} />
-        <meta property="og:description" content={frontmatter.description || 'Default description'} />
-        {frontmatter.image1 && <meta property="og:image" content={frontmatter.image1} />}
+        <title>{frontmatter.title} | Lemonskn</title>
+        <meta name="description" content={frontmatter.description || ''} />
+        <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
+
+        {/* Hreflang */}
+        <link rel="alternate" hrefLang="en" href={`https://lemonskn.com/${slug}`} />
+        <link rel="alternate" hrefLang="lt" href={`https://lemonskn.com/lt/${slug}`} />
+        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/${slug}`} />
+
+        {/* Favicon */}
+        <link rel="icon" sizes="512x512" href="/lemonskn.png" />
+        <link rel="apple-touch-icon" href="/lemonskn.png" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={frontmatter.description || ''} />
+        <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
+        <meta property="og:image" content={frontmatter.image1 || "https://lemonskn.com/lemonskn.png"} />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <meta property="og:type" content="article" />
+        <meta property="og:locale" content="ro_RO" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={frontmatter.title || 'Default Title'} />
-        <meta name="twitter:description" content={frontmatter.description || 'Default description'} />
-        {frontmatter.image1 && <meta name="twitter:image" content={frontmatter.image1} />}
+        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
 
-        {/* Canonical URL */}
-        <link rel="canonical" href={`https://lemonskn.com/lt/${slug}`} />
-
-        {/* Organization JSON-LD */}
+        {/* Main Schema – লোগো + ব্র্যান্ড রিকগনিশন */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              {
-                '@context': 'https://schema.org',
-                '@type': 'Organization',
-                name: 'Lemonskn',
-                url: 'https://lemonskn.com/',
-                logo: 'https://lemonskn.com/lemonskn.png'
-              },
-              null,
-              2
-            )
-          }}
-        />
-
-        {/* Author JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              {
-                '@context': 'https://schema.org',
-                '@type': 'Person',
-                name: frontmatter.author || 'Admin'
-              },
-              null,
-              2
-            )
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema, null, 2) }}
         />
       </Head>
 
+    
       <div className="old-layout container">
-
+     
         {/* ===== Header ===== */}
         <header className="page-header text-center mb-5">
           <h1 className="main-title">{frontmatter.keyword1 || 'Keyword 1'}</h1>

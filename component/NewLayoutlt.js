@@ -96,181 +96,238 @@
 
 
 
-// component/NewLayoutlt.js  ← এটাই ফাইনাল কোড
-import React, { useMemo } from 'react';
-import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import rehypeSanitize from 'rehype-sanitize';
+// components/NewLayoutlt.js
+import React from "react";
+import Head from "next/head";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeSanitize from "rehype-sanitize";
 
-export default function NewLayoutlt({
-  frontmatter = {},
-  content = '',
-  products = [],
-  slug = ''
-}) {
+export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" }) {
   if (!frontmatter?.title) {
-    return <h2 className="text-center text-red-500"></h2>;
+    return (
+      <div className="text-center text-red-500 py-20 text-2xl">
+        Puslapis nerastas
+      </div>
+    );
   }
 
   // Safe arrays
   const problemList = Array.isArray(frontmatter.problemList) ? frontmatter.problemList.filter(Boolean) : [];
   const solutionList = Array.isArray(frontmatter.solutionList) ? frontmatter.solutionList.filter(Boolean) : [];
   const comparisonTable = Array.isArray(frontmatter.comparisonTable) ? frontmatter.comparisonTable : [];
-  const routineList = Array.isArray(frontmatter.routineList) ? frontmatter.routineList : [];
-  const faqList = Array.isArray(frontmatter.faqList) ? frontmatter.faqList : [];
+  const routineList = Array.isArray(frontmatter.routineList) ? frontmatter.routineList.filter(Boolean) : [];
+  const faqList = Array.isArray(frontmatter.faqList) ? frontmatter.faqList.filter(q => q?.question && q?.answer) : [];
 
-  // এটাই সবচেয়ে গুরুত্বপূর্ণ – Google ২০২৫ সালে এই ফরম্যাট ছাড়া লোগো দেখায় না
-  const articleSchema = useMemo(() => ({
+  // Table of Contents (Auto-generated)
+  const tocItems = [
+    frontmatter.problemTitle && { id: "problema", title: frontmatter.problemTitle },
+    (frontmatter.solution || solutionList.length > 0) && { id: "sprendimas", title: "Sprendimas" },
+    comparisonTable.length > 0 && { id: "daryk-nedaryk", title: frontmatter.comparisonTitle || "Daryk / Nedaryk" },
+    routineList.length > 0 && { id: "rutina", title: frontmatter.routineTitle || "Odos priežiūros rutina" },
+    faqList.length > 0 && { id: "faq", title: "Dažniausiai užduodami klausimai" },
+  ].filter(Boolean);
+
+  // ===== Full JSON-LD Schema =====
+  const fullSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `https://lemonskn.com/lt/${slug}#article`,
-    "headline": frontmatter.title,
-    "description": frontmatter.description || "",
-    "image": frontmatter.img || "https://lemonskn.com/lemonskn-logo-512.png",
-    "author": { "@type": "Person", "name": frontmatter.author || "Lemonskn Team" },
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://lemonskn.com/#organization",   // এই লাইনটা না থাকলে লোগো আসবে না
-      "name": "Lemonskn",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://lemonskn.com/lemonskn-logo-512.png",
-        "width": 512,
-        "height": 512
-      }
-    },
-    "datePublished": frontmatter.date || new Date().toISOString().split("T")[0],
-    "dateModified": frontmatter.date || new Date().toISOString().split("T")[0],
-    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://lemonskn.com/lt/${slug}` }
-  }), [frontmatter, slug]);
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://lemonskn.com/#organization",
+        "name": "Lemonskn",
+        "url": "https://lemonskn.com",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://lemonskn.com/lemonskn.png",
+          "url": "https://lemonskn.com/lemonskn.png",
+          "width": 512,
+          "height": 512,
+          "caption": "Lemonskn Official Logo"
+        },
+        "sameAs": [
+          "https://www.instagram.com/lemonskn",
+          "https://www.facebook.com/lemonskn",
+          "https://www.youtube.com/@lemonskn",
+          "https://www.tiktok.com/@lemonskn"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "hello@lemonskn.com",
+          "contactType": "customer support"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lemonskn.com/#website",
+        "url": "https://lemonskn.com",
+        "name": "Lemonskn",
+        "publisher": { "@id": "https://lemonskn.com/#organization" },
+        "inLanguage": ["en-US", "lt-LT", "ro-RO"]
+      },
+      {
+        "@type": ["WebPage", "MedicalWebPage"],
+        "@id": `https://lemonskn.com/lt/${slug}#webpage`,
+        "url": `https://lemonskn.com/lt/${slug}`,
+        "name": frontmatter.title,
+        "description": frontmatter.description || "",
+        "inLanguage": "lt-LT",
+        "breadcrumb": { "@id": `https://lemonskn.com/lt/${slug}#breadcrumb` },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".new-layout__main-title", ".new-layout__section-title", ".faq-q"]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://lemonskn.com/lt/${slug}#breadcrumb`,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Pradžia", "item": "https://lemonskn.com/lt/" },
+          { "@type": "ListItem", "position": 2, "name": frontmatter.title, "item": `https://lemonskn.com/lt/${slug}` }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": frontmatter.title,
+        "description": frontmatter.description || "",
+        "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
+        "author": { "@type": "Organization", "name": "Lemonskn" },
+        "publisher": { "@id": "https://lemonskn.com/#organization" },
+        "datePublished": frontmatter.date || "2025-01-01",
+        "dateModified": frontmatter.updated || frontmatter.date || "2025-01-01",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://lemonskn.com/lt/${slug}#webpage` }
+      },
+      ...(faqList.length > 0 ? [{
+        "@type": "FAQPage",
+        "mainEntity": faqList.map(q => ({
+          "@type": "Question",
+          "name": String(q.question).trim(),
+          "acceptedAnswer": { "@type": "Answer", "text": String(q.answer).trim() }
+        }))
+      }] : []),
+      ...(routineList.length > 0 ? [{
+        "@type": "HowTo",
+        "name": frontmatter.routineTitle || "Odos priežiūros rutina",
+        "description": frontmatter.routineDesc || "Veiksminga kasdienė odos priežiūros rutina pagal Lemonskn",
+        "totalTime": "PT10M",
+        "step": routineList.map((step, i) => ({
+          "@type": "HowToStep",
+          "name": `Žingsnis ${i + 1}`,
+          "text": String(step).trim()
+        }))
+      }] : [])
+    ].filter(Boolean)
+  };
+
+  // Dynamic Internal Links
+  const internalLinksList = [];
+  for (let i = 1; i <= 3; i++) {
+    if (frontmatter[`linktitle${i}`] && frontmatter[`linkslug${i}`]) {
+      internalLinksList.push({
+        "@type": "ListItem",
+        "position": i,
+        "url": `https://lemonskn.com/lt/${frontmatter[`linkslug${i}`]}`,
+        "name": frontmatter[`linktitle${i}`]
+      });
+    }
+  }
+
+  if (internalLinksList.length > 0) {
+    fullSchema["@graph"].push({
+      "@type": "ItemList",
+      "@id": `https://lemonskn.com/lt/${slug}#related-links`,
+      "name": "Skaitykite taip pat",
+      "itemListElement": internalLinksList
+    });
+  }
 
   return (
     <>
       <Head>
         <title>{frontmatter.title} | Lemonskn</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="description" content={frontmatter.description || ''} />
+        <meta name="description" content={frontmatter.description || ""} />
         <link rel="canonical" href={`https://lemonskn.com/lt/${slug}`} />
-
-        {/* Open Graph – বড় লোগো + width/height (অবশ্যই থাকতে হবে) */}
+        <link rel="alternate" hrefLang="en" href={`https://lemonskn.com/${slug}`} />
+        <link rel="alternate" hrefLang="lt" href={`https://lemonskn.com/lt/${slug}`} />
+        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/${slug}`} />
+        <link rel="icon" sizes="512x512" href="/lemonskn.png" />
+        <link rel="apple-touch-icon" href="/lemonskn.png" />
         <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.description || ''} />
-        <meta property="og:type" content="article" />
+        <meta property="og:description" content={frontmatter.description || ""} />
         <meta property="og:url" content={`https://lemonskn.com/lt/${slug}`} />
-        <meta property="og:image" content={frontmatter.image1 || "https://lemonskn.com/lemonskn-logo-512.png"} />
+        <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content={frontmatter.title} />
+        <meta property="og:type" content="article" />
         <meta property="og:locale" content="lt_LT" />
-
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
-
-        {/* অন্যান্য মেটা */}
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Lemonskn" />
-        <meta name="copyright" content="© 2025 Lemonskn" />
-        <meta name="medicalDisclaimer" content="This article is for informational purposes only and is not a substitute for professional medical advice." />
-
-        {/* Article Schema – সঠিকভাবে */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-        />
-
-        {/* FAQ Schema */}
-        {faqList.length > 0 && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": faqList.map(faq => ({
-                  "@type": "Question",
-                  "name": faq.question,
-                  "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-                }))
-              })
-            }}
-          />
-        )}
+        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema, null, 2) }} />
       </Head>
-
-      {/* আপনার সব CSS + HTML ঠিক আগের মতোই থাকবে */}
-      <style jsx global>{`
-        .new-layout__container { padding: 0 8%; line-height: 1.7; color: #333; }
-        .new-layout__main-title { font-size: 2.5rem; font-weight: bold; color: #111; }
-        .new-layout__sub-title { font-size: 1.75rem; color: #555; margin-top: .3rem; }
-        .new-layout__section-title {
-          font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;
-          position: relative; padding-bottom: .5rem;
-        }
-        .new-layout__section-title::after {
-          content: ""; width: 60px; height: 4px; background: #facc15;
-          position: absolute; bottom: 0; left: 0;
-        }
-        header { text-align: center; }
-        .img { width: 50%; margin: 0 auto; display: block; border-radius: 12px; }
-        .new-layout__intro { border-left: 5px solid #facc15; background: #fffbeb; padding: 1rem; text-align: center; border-radius: .5rem; }
-        .new-layout__problem { background: #fff7f7; border: 1px solid #ffd1d1; padding: 1rem 1.2rem; border-radius: .5rem; }
-        .new-layout__solution { border-left: 5px solid #34d399; background: #ecfdf5; padding: 1rem 1.2rem; margin-top: 2rem; }
-        .faq-visible-box { padding: 1rem; border: 1px solid #ddd; background: #fafafa; border-radius: .5rem; margin-bottom: 1rem; }
-        .faq-q { font-weight: bold; margin-bottom: .5rem; }
-        .new-layout__table { width: 100%; border: 1px solid #eee; border-radius: .5rem; overflow: hidden; margin-top: 1rem; }
-        .new-layout__th { background: #f3f4f6; padding: .75rem; font-weight: 600; }
-        .new-layout__td { padding: .75rem; border-bottom: 1px solid #eee; }
-        @media (max-width: 768px) {
-          .img { width: 99%; border-radius: 9px; }
-          .new-layout__main-title { font-size: 2rem; }
-        }
+  <style jsx global>{`
+        .toc { background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; margin: 2rem 0; }
+        .toc a { color: #1d4ed8; font-weight: 500; }
+        .new-layout__container { padding: 0 8%; line-height: 1.8; color: #333; font-family: system-ui, sans-serif; }
+        .new-layout__main-title { font-size: 2.6rem; font-weight: bold; color: #111;text-align: center; }
+        .new-layout__section-title { font-size: 1.9rem; font-weight: 600; margin: 3rem 0 1rem; position: relative; padding-bottom: 0.6rem; }
+        .new-layout__section-title::after { content: ""; width: 80px; height: 5px; background: #facc15; position: absolute; bottom: 0; left: 0; border-radius: 4px; }
+        .img { width: 55%; margin: 2rem auto; display: block; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .img { width: 100%; } .new-layout__main-title { font-size: 2rem; } }
       `}</style>
+      <div className="new-layout__container">
+        {/* Table of Contents */}
+        {tocItems.length > 0 && (
+          <div className="toc my-10">
+            <h3 className="font-bold text-lg mb-4">Turinys</h3>
+            <ul>
+              {tocItems.map((item, i) => (
+                <li key={i}><a href={`#${item.id}`}>{item.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-      <div className="new-layout__container max-w-4xl mx-auto py-8">
-        <header className="text-center">
-          <h1 className="new-layout__main-title">{frontmatter.keyword1}</h1>
-          <h2 className="new-layout__sub-title">{frontmatter.keyword2}</h2>
-          <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.keyword1} />
+        <header className="text-center mb-10">
+          <h1 className="new-layout__main-title">{frontmatter.title}</h1>
+          {frontmatter.subtitle && <h2 className="text-2xl text-gray-600 mt-3">{frontmatter.subtitle}</h2>}
+          {frontmatter.img && <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.title} />}
         </header>
 
-        {frontmatter.intro && (
-          <section className="new-layout__intro">
-            <p>{frontmatter.intro}</p>
-          </section>
-        )}
+        {frontmatter.intro && <section className="my-10 text-lg leading-relaxed"><p>{frontmatter.intro}</p></section>}
 
-        {frontmatter.problemTitle && <h2 className="new-layout__section-title mt-10">{frontmatter.problemTitle}</h2>}
+        {/* Problem Section */}
+        {frontmatter.problemTitle && <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>}
         {problemList.length > 0 && (
-          <section className="new-layout__problem mb-10">
-            <ul>{problemList.map((item, i) => <li key={i}> {item}</li>)}</ul>
+          <section className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg my-8">
+            <ul className="list-disc list-inside space-y-3">{problemList.map((item, i) => <li key={i}>{item}</li>)}</ul>
           </section>
         )}
 
+        {/* Solution Section */}
         {(frontmatter.solution || solutionList.length > 0) && (
-          <section className="new-layout__solution">
+          <section id="sprendimas">
             <h3 className="new-layout__section-title">Sprendimas</h3>
-            {frontmatter.solution && <p>{frontmatter.solution}</p>}
+            {frontmatter.solution && <p className="my-6 text-lg">{frontmatter.solution}</p>}
             {solutionList.length > 0 && (
-              <ul>{solutionList.map((item, i) => <li key={i}>{item}</li>)}</ul>
+              <ul className="list-disc list-inside space-y-3 my-6 text-lg">
+                {solutionList.map((item, i) => <li key={i}>{item}</li>)}
+              </ul>
             )}
           </section>
         )}
 
+        {/* Comparison Table */}
         {comparisonTable.length > 0 && (
-          <section>
+          <section id="daryk-nedaryk">
             <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Daryk / Nedaryk"}</h3>
-            <table className="new-layout__table">
-              <thead>
-                <tr><th className="new-layout__th">Daryk</th><th className="new-layout__th">Nedaryk</th></tr>
-              </thead>
+            <table className="w-full border-collapse my-8 text-left">
+              <thead className="bg-gray-100"><tr><th className="p-4">Daryk</th><th className="p-4">Nedaryk</th></tr></thead>
               <tbody>
                 {comparisonTable.map((row, i) => (
-                  <tr key={i}>
-                    <td className="new-layout__td">{row.do || "—"}</td>
-                    <td className="new-layout__td">{row.dont || "—"}</td>
+                  <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : ""}>
+                    <td className="p-4">{row.do || "—"}</td>
+                    <td className="p-4">{row.dont || "—"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -278,43 +335,66 @@ export default function NewLayoutlt({
           </section>
         )}
 
+        {/* Routine Section */}
         {routineList.length > 0 && (
-          <section>
-            <h4 className="new-layout__section-title">Rutina</h4>
-            <ol>{routineList.map((item, i) => <li key={i}>{item}</li>)}</ol>
+          <section id="rutina">
+            <h3 className="new-layout__section-title">{frontmatter.routineTitle || "Odos priežiūros rutina"}</h3>
+            <ol className="list-decimal list-inside space-y-4 my-8 text-lg font-medium">
+              {routineList.map((item, i) => <li key={i}>{item}</li>)}
+            </ol>
           </section>
         )}
 
+        {/* FAQ Section */}
         {faqList.length > 0 && (
-          <section>
-            <h2 className="new-layout__section-title">FAQ</h2>
+          <section id="faq">
+            <h2 className="new-layout__section-title">Dažniausiai užduodami klausimai (FAQ)</h2>
             {faqList.map((faq, i) => (
-              <div className="faq-visible-box" key={i}>
-                <div className="faq-q">Klausimas: {faq.question}</div>
-                <div>Atsakymas: {faq.answer}</div>
+              <div key={i} className="bg-gray-50 p-6 rounded-lg my-6 border">
+                <div className="faq-q font-bold text-lg">{faq.question}</div>
+                <div className="mt-3 text-gray-700">{faq.answer}</div>
               </div>
             ))}
           </section>
         )}
 
-        <section className="max-w-4xl mx-auto my-12 px-5 sm:px-0">
-          <div className="bg-rose-50 border-l-4 border-rose-600 rounded-r-xl p-6 shadow-sm">
-            <h3 className="text-rose-800 font-bold text-lg mb-4">
-              Atsakomybės ribojimas / Disclaimer
-            </h3>
-            <p className="text-gray-800 leading-relaxed mb-4 text-base">
-              Aš nesu gydytojas ar dermatologas. Visa šiame straipsnyje pateikta informacija yra pagrįsta
-              moksliniais tyrimais, paskelbtais tokiose institucijose kaip Harvardas, Oksfordas, PubMed,
-              NCBI, Cochrane ir kituose recenzuojamuose žurnaluose.
-              Prieš pradėdami bet kokią odos priežiūros rutiną ar spręsdami odos problemas, būtinai
-              pasitarkite su kvalifikuotu dermatologu.
-              Čia nėra jokių afiliuotų nuorodų, remiamų produktų ar mokamų reklamų.
+        {/* Internal Links */}
+        {(frontmatter.linktitle1 || frontmatter.linktitle2 || frontmatter.linktitle3) && (
+          <section className="my-20 bg-gradient-to-b from-gray-50 to-white rounded-3xl p-10 shadow-2xl border border-gray-100">
+            <h3 className="text-3xl font-bold text-center mb-12 text-gray-800">Skaitykite taip pat</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[1,2,3].map(i => frontmatter[`linktitle${i}`] && frontmatter[`linkslug${i}`] && (
+                <a key={i} href={`/lt/${frontmatter[`linkslug${i}`]}`} className="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                  <div className={`h-40 bg-gradient-to-br ${i===1?'from-amber-100 to-yellow-200':i===2?'from-emerald-100 to-teal-200':'from-purple-100 to-pink-200'}`}></div>
+                  <div className="p-6">
+                    <h4 className={`font-bold text-xl text-gray-800 group-hover:${i===1?'text-amber-600':i===2?'text-emerald-600':'text-purple-600'} transition-colors line-clamp-2`}>
+                      {frontmatter[`linktitle${i}`]}
+                    </h4>
+                    <p className={`text-${i===1?'amber':i===2?'emerald':'purple'}-600 font-medium mt-4 inline-flex items-center`}>
+                      Skaityti daugiau →
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Disclaimer */}
+        <section className="my-20">
+          <div className="bg-blue-50 border-l-8 border-blue-600 rounded-r-xl p-8 shadow-xl">
+            <h3 className="text-blue-900 font-bold text-2xl mb-6">Svarbi medicininė pastaba</h3>
+            <p className="text-gray-800 leading-relaxed text-base">
+              Šis straipsnis parengtas remiantis moksliniais tyrimais iš <strong>PubMed, Cochrane Library, Harvard Health Publishing, Oxford Academic</strong> ir kitų recenzuojamų šaltinių. 
+              Tačiau <strong>jis nėra medicininė konsultacija</strong>. Prieš keisdami odos priežiūros rutiną ar pradėdami naudoti naujus produktus, <strong>būtinai pasitarkite su kvalifikuotu dermatologu</strong>. 
+              Čia nėra jokių afiliuotų nuorodų ar mokamos reklamos.
             </p>
           </div>
         </section>
 
+        {/* Markdown Content */}
         {content && (
-          <article>
+          <article className="prose prose-lg max-w-none mt-16">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>
               {content}
             </ReactMarkdown>

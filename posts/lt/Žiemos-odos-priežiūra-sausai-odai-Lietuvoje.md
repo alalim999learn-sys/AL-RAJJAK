@@ -1,6 +1,8 @@
 ---
 layout: new
 title: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
+subtitle: "Praktiški patarimai sausai odai šaltomis Baltijos žiemomis"
+
 description: "Kaip Lietuvos paaugliai gali išgyventi žiemą nesusiraukydami į žmogaus krosnį – praktiniai, moksliškai pagrįsti patarimai šaltoms Baltijos žiemoms."
 date: "2025-11-18"
 img: "/6.jpeg"
@@ -8,6 +10,16 @@ keyword1: "Žiemos odos priežiūra sausai odai Lietuvoje"
 
 keyword2: "Baltijos šalių šalto oro odos priežiūros patarimai"
 intro: "O, Lietuvos žiema – oras toks sausas, kad galėtum su savo kaktą sūriu tarkuoti. Sveiki atvykę į sezoną, kai kiekvieno paauglio veidas nusprendžia pasirodyti filme „Sahara: tęsinys“."
+long_tail_keyword1_before_problem: "ziemos-odos-prieziura-sausa-oda"
+
+long_tail_keyword2_before_solution: "sausos-odos-ziemos-prieziuros-patarimai"
+
+long_tail_keyword3_before_do_dont_table: "geriausi-ziemos-odos-prieziuros-patarimai-sausai-odai"
+
+long_tail_keyword4_before_routine: "ziemos-prieziuros-rutina-sausai-odai"
+
+long_tail_keyword5_before_FAQ: "dažniausiai-uzduodami-klausimai-sausa-oda-ziemos-metu"
+
 problemTitle: "Kodėl jūsų oda nekęsti Lietuvos žiemą (tai ne tik drama)"
 problemList:
   - "Šaltas oras laikosi mažiau drėgmės → mažesnė drėgmė tiek namuose, tiek lauke"
@@ -46,7 +58,15 @@ comparisonTable:
   - {do: "Naudoti lūpų balzamą su petrolatu ar bičių vašku" , dont: "Laižyti lūpas kas 5 sekundes" }
   - {do: "Drėkinti rankas po kiekvieno plovimo" , dont: "Plauti rankas ir leisti joms įtrūkti kaip Arktikoje" }
   - {do: "Rinktis tepalus (Aquaphor) labai sausoms vietoms" , dont: "Naudoti tik ploną losjoną ir tikėtis stebuklo" }
+routineList:
 
+
+
+ - Rytas -  švelniai nusiprausk kremine, be kvapų prausikline → užtepk drėkinamąjį kremą → SPF kremas
+ - Vakaras - vėl kremine prausikline (ar tik drungnu vandeniu) → storas drėkinamasis kremas arba tepalas ant veido
+ - Po kiekvieno dušo (tik šilto ir trumpo) per 3 minutes išsitepk drėkinamuoju kremu visą kūną ir veidą
+ - Lūpas ir rankas tepk riebiu balzamu/kremu kelis kartus per dieną
+ - Kambaryje laikyk drėkintuvą + gerk vandenį + nemiegok prie atidaryto radiatoriaus. Baigta.
 faqlist:
   - {question: "Ar žiemą vis dar galiu naudoti spuogų produktus?",
     answer: "Taip, bet labai atsargiai. Salicilo rūgštį ir benzoilo peroksidą naudokite tik 2–3 kartus per savaitę. Retinolį arba adapaleną (Differin) visada tepkite ant plono drėkiklio sluoksnio (buffering technika), o po to užtepkite storą kremą arba tepalą. Taip išvengsite pleiskanojimo ir dirginimo. Jei oda pradeda raudonuoti ar luptis – dar labiau sumažinkite dažnumą." }
@@ -61,6 +81,14 @@ faqlist:
   - {question: "Kada turėčiau kreiptis į dermatologą?",
     answer: "Jei oda raudona, skausmingai įtrūkusi, kraujuoja arba egzema pasireiškia kiekvieną žiemą – nesikankinkite. Lietuvos poliklinikose yra geri dermatologai, daug paauglių iki 18 m. turi teisę į nemokamą konsultaciją." }
 
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 ---
 
 

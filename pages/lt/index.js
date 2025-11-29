@@ -1,132 +1,94 @@
-// pages/lt/index.js
-import Layoutlt from '../../component/Layoutlt';
+// pages/lt/index.js → ১০০% Google 2025 Ready
 import Head from 'next/head';
+import Layoutlt from '../../component/Layoutlt';
 
 export default function HomeLT() {
   return (
     <Layoutlt>
-
       <Head>
-        <title>Lemonskn – Geriausi mados ir grožio produktai</title>
-        <meta
-          name="description"
-          content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
-        />
+        <title>Lemonskn – Grožio ir odos priežiūros gidas</title>
+        <meta name="description" content="Moksliniai odos priežiūros patarimai. Nieko neparduodame – tik dalinamės žiniomis." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://lemonskn.com/lt" />
+        
+        {/* ১. Canonical + hreflang – trailing slash সহ */}
+        <link rel="canonical" href="https://lemonskn.com/lt/" />
+        <link rel="alternate" hrefLang="en" href="https://lemonskn.com/" />
+        <link rel="alternate" hrefLang="lt" href="https://lemonskn.com/lt/" />
+        <link rel="alternate" hrefLang="ro" href="https://lemonskn.com/ro/" />
+        <link rel="alternate" hrefLang="x-default" href="https://lemonskn.com/" />
 
         {/* Favicon */}
-        <link rel="icon" href="/lemonskn.png" type="image/png" />
-        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" sizes="512x512" href="/lemonskn.png" />
+        <link rel="apple-touch-icon" href="/lemonskn.png" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Lemonskn – Geriausi mados ir grožio produktai" />
-        <meta
-          property="og:description"
-          content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lemonskn.com/lt" />
+        {/* ২. Full Open Graph */}
+        <meta property="og:title" content="Lemonskn – Grožio ir odos priežiūros gidas" />
+        <meta property="og:description" content="Moksliniai odos priežiūros patarimai. Nieko neparduodame – tik žinias." />
+        <meta property="og:url" content="https://lemonskn.com/lt/" />
         <meta property="og:image" content="https://lemonskn.com/lemonskn.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="lt_LT" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lemonskn – Geriausi mados ir grožio produktai" />
-        <meta
-          name="twitter:description"
-          content="Atraskite geriausias mados ir grožio pasirinkimus – visi už mažiau nei 99% biudžeto. Išmanus apsipirkimas, gražus gyvenimas."
-        />
         <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
-       
-        {/* Organization + Website JSON-LD */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://lemonskn.com/#organization",   // এটা এখানে থাকবে
-          "name": "Lemonskn",
-          "url": "https://lemonskn.com/",
-          "logo": "https://lemonskn.com/lemonskn-logo-512.png",  // 512px টা দে, বেশি ভালো
-          "sameAs": [
-            "https://www.instagram.com/lemonskn",
-            "https://www.facebook.com/lemonskn",
-            "https://www.youtube.com/@lemonskn"
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "email": "info@lemonskn.com"
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://lemonskn.com/#website",
-          "url": "https://lemonskn.com/",
-          "name": "Lemonskn",
-          "publisher": {
-            "@id": "https://lemonskn.com/#organization"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://lemonskn.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-      ]
-    }, null, 2),
-  }}
-/> 
+
+        {/* ৩. ১০০% Valid Schema (কমা+ব্রেস ঠিক আছে) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://lemonskn.com/#organization",
+                  "name": "Lemonskn",
+                  "url": "https://lemonskn.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "@id": "https://lemonskn.com/lemonskn.png",
+                    "url": "https://lemonskn.com/lemonskn.png",
+                    "contentUrl": "https://lemonskn.com/lemonskn.png",
+                    "width": 512,
+                    "height": 512,
+                    "caption": "Lemonskn Official Logo"
+                  },
+                  "sameAs": [
+                    "https://www.instagram.com/lemonskn",
+                    "https://www.facebook.com/lemonskn",
+                    "https://www.youtube.com/@lemonskn",
+                    "https://www.tiktok.com/@lemonskn"
+                  ],
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "hello@lemonskn.com",
+                    "contactType": "customer support"
+                  }
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://lemonskn.com/#website",
+                  "url": "https://lemonskn.com",
+                  "name": "Lemonskn",
+                  "publisher": { "@id": "https://lemonskn.com/#organization" },
+                  "inLanguage": ["en-US", "lt-LT", "ro-RO"]
+                }
+              ]
+            }, null, 2)
+          }}
+        />
       </Head>
 
-       <header className="hu">
-  <img className="homelogo" src="/lemonskn.png" alt="Lemonskn Logo" />
-   <h1>Welcome to lemonskn.com</h1>
-  <p>
-    We are an educational guide – we don’t sell or offer any products. 
-    We started this project to help people find reliable, clear, and science-backed information 
-    about skincare and beauty.
-  </p>
- 
-</header>
-      <style jsx>{`
-        .hu {
-          text-align: center;
-          line-height: 1.6;
-          width: 100%;
-          padding: 2rem 1rem;
-        }
-        .homelogo {
-          width: 17%;
-        }
-        .hu h1 {
-          font-size: 3rem;
-          margin-bottom: 1rem;
-          color: rgb(2, 67, 8);
-        }
-        .hu p {
-          font-size: 1.25rem;
-          color: #555;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-        @media (max-width: 600px) {
-          .hu h1 {
-            font-size: 2.2rem;
-          }
-          .homelogo {
-            width: 50%;
-          }
-          .hu p {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
+      <main style={{ textAlign: 'center', padding: '5rem 1rem', background: '#f9f9f9' }}>
+        <img src="/lemonskn.png" alt="Lemonskn" style={{ width: '17%', maxWidth: '200px', marginBottom: '1.5rem' }} />
+        <h1 style={{ fontSize: '3rem', color: '#024308' }}>Sveiki atvykę į Lemonskn.com</h1>
+        <p style={{ fontSize: '1.3rem', color: '#444', maxWidth: '700px', margin: '0 auto', lineHeight: '1.7' }}>
+          Mes esame edukacinis odos priežiūros gidas.<br />
+          Nieko neparduodame – tik moksliniais tyrimais pagrįsta informacija.
+        </p>
+      </main>
     </Layoutlt>
   );
 }

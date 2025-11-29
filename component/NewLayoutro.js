@@ -96,322 +96,317 @@
 
 
 
-// component/NewLayoutro.js  ← এটাই ফাইনাল কোড
-import React, { useMemo } from 'react';
-import Head from 'next/head';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import rehypeSanitize from 'rehype-sanitize';
+// components/NewLayoutro.js ← 100% FINAL Romanian Version (Google 2025 Ready)
+import React from "react";
+import Head from "next/head";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeSanitize from "rehype-sanitize";
 
-export default function NewLayoutlt({
+export default function NewLayoutro({
   frontmatter = {},
-  content = '',
-  products = [],
-  slug = ''
+  content = "",
+  slug = "",
 }) {
   if (!frontmatter?.title) {
-    return <h2 className="text-center text-red-500"></h2>;
+    return (
+      <div className="text-center text-red-500 py-20 text-2xl">
+        Pagina nu a fost găsită
+      </div>
+    );
   }
 
   // Safe arrays
-  const problemList = Array.isArray(frontmatter.problemList) ? frontmatter.problemList.filter(Boolean) : [];
-  const solutionList = Array.isArray(frontmatter.solutionList) ? frontmatter.solutionList.filter(Boolean) : [];
-  const comparisonTable = Array.isArray(frontmatter.comparisonTable) ? frontmatter.comparisonTable : [];
-  const routineList = Array.isArray(frontmatter.routineList) ? frontmatter.routineList : [];
-  const faqList = Array.isArray(frontmatter.faqList) ? frontmatter.faqList : [];
+  const problemList = Array.isArray(frontmatter.problemList)
+    ? frontmatter.problemList.filter(Boolean)
+    : [];
+  const solutionList = Array.isArray(frontmatter.solutionList)
+    ? frontmatter.solutionList.filter(Boolean)
+    : [];
+  const comparisonTable = Array.isArray(frontmatter.comparisonTable)
+    ? frontmatter.comparisonTable
+    : [];
+  const routineList = Array.isArray(frontmatter.routineList)
+    ? frontmatter.routineList.filter(Boolean)
+    : [];
+  const faqList = Array.isArray(frontmatter.faqList)
+    ? frontmatter.faqList.filter((q) => q && q.question && q.answer)
+    : [];
 
-  // এটাই সবচেয়ে গুরুত্বপূর্ণ – Google ২০২৫ সালে এই ফরম্যাট ছাড়া লোগো দেখায় না
-  
+  // Table of Contents (auto-generated)
+  const tocItems = [
+    frontmatter.problemTitle && { id: "problema", title: frontmatter.problemTitle },
+    (frontmatter.solution || solutionList.length > 0) && { id: "solutie", title: "Soluție" },
+    comparisonTable.length > 0 && { id: "fa-nuface", title: frontmatter.comparisonTitle || "Fă / Nu face" },
+    routineList.length > 0 && { id: "rutina", title: frontmatter.routineTitle || "Rutină de îngrijire" },
+    faqList.length > 0 && { id: "faq", title: "Întrebări frecvente" },
+  ].filter(Boolean);
+
+  // Full JSON-LD Schema – সবচেয়ে শক্তিশালী ভার্সন
+  const fullSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      // 1. Organization + Logo
+      {
+        "@type": "Organization",
+        "@id": "https://lemonskn.com/#organization",
+        "name": "Lemonskn",
+        "url": "https://lemonskn.com",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://lemonskn.com/lemonskn.png",
+          "url": "https://lemonskn.com/lemonskn.png",
+          "width": 512,
+          "height": 512,
+          "caption": "Lemonskn Official Logo"
+        },
+        "sameAs": [
+          "https://www.instagram.com/lemonskn",
+          "https://www.facebook.com/lemonskn",
+          "https://www.youtube.com/@lemonskn",
+          "https://www.tiktok.com/@lemonskn"
+        ]
+      },
+
+      // 2. WebSite
+      {
+        "@type": "WebSite",
+        "@id": "https://lemonskn.com/#website",
+        "url": "https://lemonskn.com",
+        "name": "Lemonskn",
+        "publisher": { "@id": "https://lemonskn.com/#organization" },
+        "inLanguage": ["en-US", "lt-LT", "ro-RO"]
+      },
+
+      // 3. MedicalWebPage + Speakable
+      {
+        "@type": ["WebPage", "MedicalWebPage"],
+        "@id": `https://lemonskn.com/ro/${slug}#webpage`,
+        "url": `https://lemonskn.com/ro/${slug}`,
+        "name": frontmatter.title,
+        "description": frontmatter.description || "",
+        "inLanguage": "ro-RO",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".new-layout__main-title", ".new-layout__section-title", ".faq-q"]
+        }
+      },
+
+      // 4. Breadcrumb
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://lemonskn.com/ro/${slug}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+           
+            "position": 1,
+            "name": "Acasă",
+            "item": "https://lemonskn.com/ro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": frontmatter.title,
+            "item": `https://lemonskn.com/ro/${slug}`
+          }
+        ]
+      },
+
+      // 5. Article
+      {
+        "@type": "Article",
+        "headline": frontmatter.title,
+        "description": frontmatter.description || "",
+        "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
+        "author": { "@type": "Organization", "name": "Lemonskn" },
+        "publisher": { "@id": "https://lemonskn.com/#organization" },
+        "datePublished": frontmatter.date || "2025-01-01",
+        "dateModified": frontmatter.updated || frontmatter.date || "2025-01-01",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://lemonskn.com/ro/${slug}#webpage` }
+      },
+
+      // 6. FAQPage
+      ...(faqList.length > 0 ? [{
+        "@type": "FAQPage",
+        "mainEntity": faqList.map(q => ({
+          "@type": "Question",
+          "name": String(q.question || "").trim(),
+          "acceptedAnswer": { "@type": "Answer", "text": String(q.answer || "").trim() }
+        }))
+      }] : []),
+
+      // 7. HowTo – Romanian "Pasul"
+      ...(routineList.length > 0 ? [{
+        "@type": "HowTo",
+        "name": frontmatter.routineTitle || "Rutină de îngrijire a pielii",
+        "description": frontmatter.routineDesc || "Rutină zilnică eficientă recomandată de Lemonskn",
+        "totalTime": "PT10M",
+        "step": routineList.map((step, i) => ({
+          "@type": "HowToStep",
+          "name": `Pasul ${i + 1}`,
+          "text": String(step).trim()
+        }))
+      }] : [])
+    ]
+  };
+
   return (
     <>
       <Head>
         <title>{frontmatter.title} | Lemonskn</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="description" content={frontmatter.description || ''} />
+        <meta name="description" content={frontmatter.description || ""} />
         <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
-{/* ← এই ৮টা লাইন শুধু যোগ করো → */}
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-<meta name="theme-color" content="#facc15" />                     {/* তোমার ব্র্যান্ড কালার */}
+        <link rel="alternate" hrefLang="en" href={`https://lemonskn.com/${slug}`} />
+        <link rel="alternate" hrefLang="lt" href={`https://lemonskn.com/lt/${slug}`} />
+        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/${slug}`} />
 
-<meta property="og:site_name" content="Lemonskn" />
-<meta property="og:image:secure_url" content={frontmatter.img || "https://lemonskn.com/lemonskn-logo-512.png"} />
+        <link rel="icon" sizes="512x512" href="/lemonskn.png" />
+        <link rel="apple-touch-icon" href="/lemonskn.png" />
 
-<meta name="twitter:title" content={frontmatter.title} />
-<meta name="twitter:description" content={frontmatter.description || ''} />
-        {/* Open Graph – বড় লোগো + width/height (অবশ্যই থাকতে হবে) */}
         <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.description || ''} />
-        <meta property="og:type" content="article" />
+        <meta property="og:description" content={frontmatter.description || ""} />
         <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
-        <meta property="og:image" content={frontmatter.image1 || "https://lemonskn.com/lemonskn-logo-512.png"} />
+        <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content={frontmatter.title} />
+        <meta property="og:type" content="article" />
         <meta property="og:locale" content="ro_RO" />
 
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
-<link rel="alternate" hreflang="lt" href="https://lemonskn.com/lt/{slug}" />
-<link rel="alternate" hreflang="ro" href="https://lemonskn.com/ro/{slug}" />
-<link rel="alternate" hreflang="x-default" href="https://lemonskn.com/en/{slug}" /> 
-        {/* অন্যান্য মেটা */}
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Lemonskn" />
-        <meta name="copyright" content="© 2025 Lemonskn" />
-        <meta name="medicalDisclaimer" content="This article is for informational purposes only and is not a substitute for professional medical advice." />
+        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
 
-        {/* Article Schema – সঠিকভাবে */}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-
-        // 1. Organization – লোগো + পাবলিশার (একবারই দাও, সব পেজে এক)
-        {
-          "@type": "Organization",
-          "@id": "https://lemonskn.com/#organization",
-          "name": "Lemonskn",
-          "url": "https://lemonskn.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://lemonskn.com/lemonskn-logo-512.png",
-            "width": 512,
-            "height": 512
-          }
-        },
-
-        // 2. Main Article – ১০০% ডাইনামিক
-        {
-          "@type": "Article",
-          "@id": `https://lemonskn.com/ro/${slug}#article`,
-          "url": `https://lemonskn.com/ro/${slug}`,
-          "headline": frontmatter.title,
-          "alternativeHeadline": frontmatter.subtitle || undefined,
-          "description": frontmatter.description || "",
-          "image": frontmatter.img ? {
-            "@type": "ImageObject",
-            "url": frontmatter.img,
-            "width": 1200,
-            "height": 630
-          } : undefined,
-          "author": {
-            "@type": "Person",
-            "name": "Lemonskn Team"
-          },
-          "publisher": { "@id": "https://lemonskn.com/#organization" },
-          "datePublished": frontmatter.date || new Date().toISOString().split("T")[0],
-          "dateModified": frontmatter.date || new Date().toISOString().split("T")[0],
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `https://lemonskn.com/ro/${slug}`
-          },
-          "keywords": [
-            frontmatter.keyword1,
-            frontmatter.keyword2,
-            frontmatter.long_tail_keyword1_before_problem,
-            frontmatter.long_tail_keyword2_before_solution,
-            frontmatter.long_tail_keyword3_before_do_dont_table,
-            frontmatter.long_tail_keyword4_before_routine,
-            frontmatter.long_tail_keyword5_before_FAQ
-          ].filter(Boolean)
-        },
-
-        // 3. HowTo – শুধু যদি routineList থাকে
-        ...(routineList.length > 0 ? [{
-          "@type": "HowTo",
-          "@id": `https://lemonskn.com/ro/${slug}#howto`,
-          "name": frontmatter.long_tail_keyword4_before_routine || "Rutină de îngrijire iarna",
-          "description": "Pas cu pas rutina recomandată pentru pielea uscată iarna",
-          "totalTime": "PT5M",
-          "step": routineList.map((step, i) => ({
-            "@type": "HowToStep",
-            "position": i + 1,
-            "name": `Pasul ${i + 1}`,
-            "text": String(step).trim()
-          }))
-        }] : []),
-
-        // 4. FAQ – শুধু যদি faqList থাকে
-        ...(faqList.length > 0 ? [{
-          "@type": "FAQPage",
-          "@id": `https://lemonskn.com/ro/${slug}#faq`,
-          "mainEntity": faqList.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": faq.answer
-            }
-          }))
-        }] : []),
-
-        // 5. Table – শুধু যদি comparisonTable থাকে
-        ...(comparisonTable.length > 0 ? [{
-          "@type": "Table",
-          "@id": `https://lemonskn.com/ro/${slug}#table`,
-          "name": frontmatter.comparisonTitle || "Fă asta / Nu asta"
-        }] : [])
-
-      ].filter(Boolean) // undefined গুলো সরিয়ে দেয়
-    })
-  }}
-/>
-
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema, null, 2) }}
+        />
       </Head>
 
-      {/* আপনার সব CSS + HTML ঠিক আগের মতোই থাকবে */}
       <style jsx global>{`
-        .new-layout__container { padding: 0 8%; line-height: 1.7; color: #333; }
-        .new-layout__main-title { font-size: 2.5rem; font-weight: bold; color: #111; }
-        .new-layout__sub-title { font-size: 1.75rem; color: #555; margin-top: .3rem; }
-        .new-layout__section-title {
-          font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;
-          position: relative; padding-bottom: .5rem;
-        }
-        .new-layout__section-title::after {
-          content: ""; width: 60px; height: 4px; background: #facc15;
-          position: absolute; bottom: 0; left: 0;
-        }
-        header { text-align: center; }
-        .img { width: 40%; margin: 0 auto; display: block; border-radius: 12px; }
-        .new-layout__intro { border-left: 5px solid #facc15; background: #fffbeb; padding: 1rem; text-align: center; border-radius: .5rem; }
-        .new-layout__problem { background: #fff7f7; border: 1px solid #ffd1d1; padding: 1rem 1.2rem; border-radius: .5rem; }
-        .new-layout__solution { border-left: 5px solid #34d399; background: #ecfdf5; padding: 1rem 1.2rem; margin-top: 2rem; }
-        .faq-visible-box { padding: 1rem; border: 1px solid #ddd; background: #fafafa; border-radius: .5rem; margin-bottom: 1rem; }
-        .faq-q { font-weight: bold; margin-bottom: .5rem; }
-        .new-layout__table { width: 100%; border: 1px solid #eee; border-radius: .5rem; overflow: hidden; margin-top: 1rem; }
-        .new-layout__th { background: #f3f4f6; padding: .75rem; font-weight: 600; }
-        .new-layout__td { padding: .75rem; border-bottom: 1px solid #eee; }
-        @media (max-width: 768px) {
-          .img { width: 99%; border-radius: 9px; }
-          .new-layout__main-title { font-size: 2rem; }
-        }
+        .toc { background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; margin: 2rem 0; }
+        .toc a { color: #1d4ed8; font-weight: 500; }
+        .new-layout__container { padding: 0 8%; line-height: 1.8; color: #333; font-family: system-ui, sans-serif; }
+        .new-layout__main-title { font-size: 2.6rem; font-weight: bold; color: #111;text-align: center; }
+        .new-layout__section-title { font-size: 1.9rem; font-weight: 600; margin: 3rem 0 1rem; position: relative; padding-bottom: 0.6rem; }
+        .new-layout__section-title::after { content: ""; width: 80px; height: 5px; background: #facc15; position: absolute; bottom: 0; left: 0; border-radius: 4px; }
+        .img { width: 55%; margin: 2rem auto; display: block; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .img { width: 100%; } .new-layout__main-title { font-size: 2rem; } }
       `}</style>
 
-      <div className="new-layout__container">
-        <header className="text-center">
+      <div className="new-layout__container max-w-5xl mx-auto py-12">
+
+      
+        {/* Table of Contents – Romanian Version */}
+{tocItems.length > 0 && (
+  <div className="toc my-10">
+    <h3 className="font-bold text-xl mb-6 text-center text-gray-800">
+      Cuprins
+    </h3>
+    <ul className="space-y-3">
+      {tocItems.map((item, i) => (
+        <li key={i}>
+          <a 
+            href={`#${item.id}`}
+            className="block py-3 px-5 bg-white rounded-xl text-lg font-semibold text-amber-700 hover:bg-amber-50 hover:text-amber-800 hover:shadow-md transition-all duration-300 border border-amber-200"
+          >
+            {i + 1}. {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+        <header className="text-center mb-12">
           <h1 className="new-layout__main-title">{frontmatter.title}</h1>
-          <h2 className="new-layout__sub-title">{frontmatter.subtitle}</h2>
-          <img className="img" src={frontmatter.img}  alt={frontmatter.title} />
+          {frontmatter.subtitle && <h2 className="text-2xl text-gray-600 mt-4">{frontmatter.subtitle}</h2>}
+          {frontmatter.img && <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.title} />}
         </header>
 
-        {frontmatter.intro && (
-          <section className="new-layout__intro">
-            <p>{frontmatter.intro}</p>
-          </section>
-        )}
-       <h2>{frontmatter.long_tail_keyword1_before_problem}</h2>
-        {frontmatter.problemTitle && <h3 className="new-layout__section-title">{frontmatter.problemTitle}</h3>}
+        {frontmatter.intro && <div className="text-lg leading-8 text-center my-10 bg-yellow-50 p-8 rounded-xl">{frontmatter.intro}</div>}
+
+        {frontmatter.long_tail_keyword1_before_problem && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword1_before_problem}</h2>}
+        {frontmatter.problemTitle && <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>}
         {problemList.length > 0 && (
-          <section className="new-layout__problem ">
-            <ul>{problemList.map((item, i) => <li key={i}> {item}</li>)}</ul>
+          <section className="bg-red-50 border-l-8 border-red-600 p-8 rounded-r-xl my-10">
+            <ul className="list-disc pl-6 space-y-3 text-lg">{problemList.map((item, i) => <li key={i}>{item}</li>)}</ul>
           </section>
         )}
-        <h2>{frontmatter.long_tail_keyword2_before_solution}</h2>
+
+        {frontmatter.long_tail_keyword2_before_solution && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword2_before_solution}</h2>}
         {(frontmatter.solution || solutionList.length > 0) && (
-  <section className="new-layout__solution">
-    
-    <h3 className="new-layout__section-title">Soluție</h3>
-    {frontmatter.solution && <p>{frontmatter.solution}</p>}
-    {solutionList.length > 0 && (
-      <ul>{solutionList.map((item, i) => <li key={i}>{item}</li>)}</ul>
-    )}
-  </section>
-)}
-<h2>{frontmatter.long_tail_keyword3_before_do_dont_table}</h2>
-{comparisonTable.length > 0 && (
-  <section>
-    <h4 className="new-layout__section-title">{frontmatter.comparisonTitle || "Fă / Nu face"}</h4>
-    <table className="new-layout__table">
-      <thead>
-        <tr><th className="new-layout__th">Fă</th><th className="new-layout__th">Nu face</th></tr>
-      </thead>
-      <tbody>
-        {comparisonTable.map((row, i) => (
-          <tr key={i}>
-            <td className="new-layout__td">{row.do || "—"}</td>
-            <td className="new-layout__td">{row.dont || "—"}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </section>
-)}
-<h2>{frontmatter.long_tail_keyword4_before_routine}</h2>
-{routineList.length > 0 && (
-  <section>
-    <h4 className="new-layout__section-title">Rutina</h4>
-    <ol>{routineList.map((item, i) => <li key={i}>{item}</li>)}</ol>
-  </section>
-)}
-<h2>{frontmatter.long_tail_keyword5_before_FAQ}</h2>
-{faqList.length > 0 && (
-  <section>
-    <h4 className="new-layout__section-title">Întrebări frecvente (FAQ)</h4>
-    {faqList.map((faq, i) => (
-      <div className="faq-visible-box" key={i}>
-        <div className="faq-q">Întrebare: {faq.question}</div>
-        <div>Răspuns: {faq.answer}</div>
-      </div>
-    ))}
-  </section>
-)}
+          <section id="solutie" className="my-10">
+            <h3 className="new-layout__section-title">Soluție</h3>
+            {frontmatter.solution && <p className="text-lg my-6">{frontmatter.solution}</p>}
+            {solutionList.length > 0 && (
+              <ul className="list-disc pl-6 space-y-4 text-lg my-6">
+                {solutionList.map((item, i) => <li key={i}>{item}</li>)}
+              </ul>
+            )}
+          </section>
+        )}
 
-<section className="max-w-4xl mx-auto my-12 px-5 sm:px-0">
-  <div className="bg-rose-50 border-l-4 border-rose-600 rounded-r-xl p-6 shadow-sm">
-    <h3 className="text-rose-800 font-bold text-lg mb-4">
-      Limitarea răspunderii / Disclaimer
-    </h3>
-    <p className="text-gray-800 leading-relaxed mb-4 text-base">
-      Nu sunt medic sau dermatolog. Toate informațiile prezentate în acest articol se bazează pe cercetări științifice
-      publicate în instituții precum Harvard, Oxford, PubMed, NCBI, Cochrane și alte jurnale de specialitate.
-      Înainte de a începe orice rutină de îngrijire a pielii sau de a aborda probleme ale pielii,
-      consultați obligatoriu un dermatolog calificat.
-      Nu există linkuri afiliate, produse sponsorizate sau reclame plătite aici.
-    </p>
-  </div>
-</section>
+        {frontmatter.long_tail_keyword3_before_do_dont_table && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword3_before_do_dont_table}</h2>}
+        {comparisonTable.length > 0 && (
+          <section id="fa-nuface">
+            <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Fă / Nu face"}</h3>
+            <table className="w-full border-collapse my-8 bg-white shadow-lg rounded-xl overflow-hidden">
+              <thead className="bg-gradient-to-r from-green-500 to-emerald-600 text-white">
+                <tr><th className="p-5 text-left">Fă</th><th className="p-5 text-left">Nu face</th></tr>
+              </thead>
+              <tbody>
+                {comparisonTable.map((row, i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                    <td className="p-5">{row.do || "—"}</td>
+                    <td className="p-5">{row.dont || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        )}
 
+        {frontmatter.long_tail_keyword4_before_routine && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword4_before_routine}</h2>}
+        {routineList.length > 0 && (
+          <section id="rutina">
+            <h3 className="new-layout__section-title">{frontmatter.routineTitle || "Rutină zilnică de îngrijire"}</h3>
+            <ol className="list-decimal pl-8 space-y-5 text-lg font-medium my-8">
+              {routineList.map((item, i) => <li key={i}>{item}</li>)}
+            </ol>
+          </section>
+        )}
 
         
+
+        {frontmatter.long_tail_keyword5_before_FAQ && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword5_before_FAQ}</h2>}
+        {faqList.length > 0 && (
+          <section id="faq">
+            <h3 className="new-layout__section-title">Întrebări frecvente (FAQ)</h3>
+            {faqList.map((faq, i) => (
+              <div key={i} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl my-6 border-l-4 border-blue-600">
+                <div className="faq-q text-xl font-bold text-gray-800">Întrebare: {faq.question}</div>
+                <div className="mt-3 text-gray-700 text-lg">Răspuns: {faq.answer}</div>
+              </div>
+            ))}
+          </section>
+        )}
+
+        {/* Super Strong E-E-A-T Disclaimer */}
+        <section className="my-20">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-8 border-indigo-600 rounded-r-2xl p-10 shadow-2xl">
+            <h3 className="text-indigo-900 font-bold text-2xl mb-6">Notă medicală importantă</h3>
+            <p className="text-gray-800 text-lg leading-relaxed">
+              Nu sunt medic dermatolog. Toate informațiile din acest articol sunt bazate pe studii științifice publicate în 
+              <strong> PubMed, Cochrane, Harvard Medical School, Oxford Academic </strong> și alte surse de încredere. 
+              Înainte de a începe orice rutină de îngrijire a pielii, <strong>consultați obligatoriu un dermatolog calificat</strong>. 
+              Aici nu există linkuri afiliate sau reclame plătite.
+            </p>
+          </div>
+        </section>
+
         {content && (
-          <article>
+          <article className="prose prose-xl max-w-none mt-16">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>
               {content}
             </ReactMarkdown>
@@ -420,4 +415,5 @@ export default function NewLayoutlt({
       </div>
     </>
   );
-} 
+}
+bread

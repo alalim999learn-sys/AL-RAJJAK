@@ -1,18 +1,29 @@
 ---
 layout: new
 title: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
+subtitle: "Švelni žiemos odos rutina paaugliams su akne"
+
 description: "Atšiaurios Lietuvos žiemos nebūtinai turi reikšti nuolatinius spuogus. Sužinok švelnius, moksliškai pagrįstus būdus išlaikyti paauglio, linkusios į aknę, odą ramią, drėkintą ir švarią net kai lauke -15°C."
 date: "2025-11-18"
 img: "/4.jpeg"
-
 keyword1: "Odos priežiūros patarimai paaugliui su akne"
 keyword2: "Geriausi odos priežiūros patarimai paaugliui su akne"
-
 intro: >
   Ah, Lietuvos žiema: romantiškos snaigės, jauki arbata ir... tavo veidas staiga primena
   pepperoni picą? Jei atrodo, kad Šaltis Džekas bendradarbiauja su tavo hormonais, kad
   sugadintų tavo odą – nusiramink. Turime švelnų, veiksmingą planą, kaip atsilaikyti
   nepadarant dar didesnės žalos.
+
+
+long_tail_keyword1_before_problem: "paaugliu-spuogu-odos-prieziuros-patarimai"
+
+long_tail_keyword2_before_solution: "paaugliu-spuogu-odos-prieziuros-gidai"
+
+long_tail_keyword3_before_do_dont_table: "geriausia-odos-prieziura-paaugliams-su-spuogais"
+
+long_tail_keyword4_before_routine: "paaugliu-spuogu-odos-prieziuros-patarimai"
+
+long_tail_keyword5_before_FAQ: "odos-prieziuros-rutina-spuoguotai-paaugliu-odai"
 
 problemTitle: "9 būdai, kaip Lietuvos žiema slapčia kenkia tavo paauglio odai"
 
@@ -70,4 +81,13 @@ faqList:
   - {question: "Ką daryti, jei kaktą išberia nuo kepurės?", answer: "Skalbti kepures reguliariai ir naudoti medvilninį įdėklą."}
   - {question: "Ar galiu daryti slugging?", answer: "Taip – plonas vazelino sluoksnis ant kremo naktį dažnai padeda atsigauti odai."}
   - {question: "Kiek laiko laukti rezultatų?", answer: "Ramesnė oda – per 2–4 savaites, švaresnė – per 6–8. Svarbiausia – nuoseklumas."}
+  
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+
+linktitle3: "Geriausia Lietuviška Odos Priežiūros Rutina Švytinčiai Odai (Kuri Tikrai Veikia -20°C)"
+linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
 ---

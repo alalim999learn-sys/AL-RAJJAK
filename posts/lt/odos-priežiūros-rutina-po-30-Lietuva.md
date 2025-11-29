@@ -1,13 +1,25 @@
 ---
 layout: new
 title: "Odos priežiūros rutina po 30 metų Lietuvoje: paprasta, realistiška ir tikrai veikia"
+subtitle: "Baltijos žiemos kasdienė anti-age rutina po 30"
+
 description: "Vienintelė odos priežiūros rutina po 30, jei gyvenate Lietuvoje – šaltos žiemos, kietas vanduo, centrinis šildymas ir nulis laiko 12 žingsnių K-beauty. Įrodyta moksliškai ir Baltijos realybėje."
 date: "2025-11-17"
-img: "7.jpeg"
+img: "/7.jpeg"
 
 keyword1: "odos priežiūros rutina po 30 Lietuva"
 keyword2: "anti-age rutina Baltijos žiema"
 intro: "Sveiki atvykę į savo 30-ies, Lietuvos leidimas: šildymas veikia pilnu pajėgumu, lauke -15 °C ir viduje kažkaip 0 % drėgmės, o jūsų oda staiga pamiršo, kaip elgtis. Nesijaudinkite – jums nereikia 47 produktų ir žiedo šviesos. Reikia 5–7, kurie tikrai veikia mūsų klimatu ir vandeniu. Pataisykime tai."
+long_tail_keyword1_before_problem: "odos-prieziuros-rutina-po-30-lietuvoje"
+
+long_tail_keyword2_before_solution: "anti-senėjimo-odos-prieziura-po-30-lietuvoje"
+
+long_tail_keyword3_before_do_dont_table: "geriausia-odos-prieziura-po-30-lietuvoje"
+
+long_tail_keyword4_before_routine: "kasdienine-odos-prieziuros-rutina-po-30"
+
+long_tail_keyword5_before_FAQ: "odos-prieziuros-patarimai-virs-30-lietuvoje"
+
 
 problemTitle: "Kodėl jūsų oda išprotėja po 30 Lietuvoje (tai ne tik jūsų problema)"
 problemList: 
@@ -60,4 +72,13 @@ faqList:
  - { question: "Man 35 metai ir dar neturiu raukšlių. Ar galiu praleisti aktyvius ingredientus?", answer: "Galite atidėti, bet prevencija geriau nei taisymas. Bent jau hialurono + SPF + drėkiklis." }
  - { question: "Nėštumas/maitinimas krūtimi – ką galiu naudoti?", answer: "Vitaminas C, hialurono rūgštis, peptidai, ceramidai, niacinamidas – visi saugūs. Praleiskite retinolį." }
  - { question: "Kiek laiko užtrunka, kol pasirodo rezultatai?", answer: "Drėgmė ir spindesys: 1–2 savaitės. Smulkios raukšlelės minkštesnės: 8–12 savaičių nuosekliai naudojant retinolį." }
+
+linktitle1: "Geriausia Lietuviška Odos Priežiūros Rutina Švytinčiai Odai (Kuri Tikrai Veikia -20°C)"
+linkslug1: švytinčiosodos-rutina-žiemą-Lietuvoje
+
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje: Kaip neatrodyti kaip pleiskanojanti Baltijos snaigė"
+linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+
+linktitle3: Saikos odos priežiūra paaugliams žiemą Lietuvoje
+linkslug3: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
 ---
