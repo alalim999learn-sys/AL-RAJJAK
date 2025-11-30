@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -26,14 +26,12 @@
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
     "sanitize-html": "^2.17.0",
-    "turbopack": "^0.0.1",
     "unified": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.0.0",
     "baseline-browser-mapping": "^2.8.32",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^13.0.0",
-    "@netlify/plugin-nextjs": "^5.14.7"
+    "eslint-config-next": "^13.0.0"
   }
 }
