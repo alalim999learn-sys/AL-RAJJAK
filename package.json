@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "export": "next export",
-    "build:export": "next build && next export"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
     "dompurify": "^3.3.0",
@@ -33,6 +33,7 @@
     "@eslint/eslintrc": "^3.0.0",
     "baseline-browser-mapping": "^2.8.32",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^13.0.0"
+    "eslint-config-next": "^13.0.0",
+    "@netlify/plugin-nextjs": "^5.14.7"
   }
 }

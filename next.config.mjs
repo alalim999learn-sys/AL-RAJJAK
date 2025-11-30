@@ -1,46 +1,34 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // SSG for Netlify
   reactStrictMode: true,
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
   trailingSlash: true,
   distDir: 'build',
 
-  // SECURITY HEADERS (Add this block)
   async headers() {
     return [
       {
-        source: '/:path*', // Apply to all pages
+        source: "/:path*",
         headers: [
-          // Prevent clickjacking
-          { key: 'X-Frame-Options', value: 'DENY' },
-
-          // Prevent MIME type sniffing
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-
-          // Control referrer leaks
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-
-          // Block dangerous content
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
-            key: 'Content-Security-Policy',
+            key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
               "script-src 'self'",
-              "style-src 'self' 'unsafe-inline'", // Needed for Tailwind/Inline CSS
+              "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https:",
               "font-src 'self'",
               "connect-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",
               "frame-ancestors 'none'",
-            ].join('; '),
+            ].join("; "),
           },
-
-          // Optional: HSTS (uncomment if using HTTPS)
-          // { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
         ],
       },
     ];
