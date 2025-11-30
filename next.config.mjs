@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  distDir: 'build',
+  output: 'export', // <-- এটা add করতে হবে
 
   async headers() {
     return [
