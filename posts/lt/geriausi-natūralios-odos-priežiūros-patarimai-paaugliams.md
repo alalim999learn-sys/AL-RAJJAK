@@ -5,7 +5,7 @@ subtitle: "Švelni odos priežiūra paaugliams su spuogais ir riebią T zoną tu
 description: "Geriausi natūralūs paauglių odos priežiūros patarimai Lietuvoje: sužinok, kaip švelniai valdyti spuogus, riebalų perteklių ir drėkinti odą net žiemą."
 date: "2025-11-18"
 img: "/1.jpeg"
-img_alt: "Paauglys prižiūri veido odą natūraliais produktais"
+
 
 linktitle1: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
 linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
@@ -16,13 +16,13 @@ linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
 linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
 linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 
-mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
+h1mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
 
-long_tail_keyword1_before_problem: natūralūs paauglių odos priežiūros patarimai prieš problemų atsiradimą
-long_tail_keyword2_before_solution: efektyviausi natūralūs odos priežiūros patarimai paaugliams
-long_tail_keyword3_before_do_dont_table: geriausios visiškai natūralios odos priežiūros gairės paaugliams
-long_tail_keyword4_before_routine: pagrindinės natūralios odos priežiūros rekomendacijos paaugliams
-long_tail_keyword5_before_FAQ: geriausi natūralūs būdai, kaip paaugliai gali prižiūrėti savo odą
+h2long_tail_keyword1_before_problem: natūralūs paauglių odos priežiūros patarimai prieš problemų atsiradimą
+h2long_tail_keyword2_before_solution: efektyviausi natūralūs odos priežiūros patarimai paaugliams
+h2long_tail_keyword3_before_do_dont_table: geriausios visiškai natūralios odos priežiūros gairės paaugliams
+h2long_tail_keyword4_before_routine: pagrindinės natūralios odos priežiūros rekomendacijos paaugliams
+h2long_tail_keyword5_before_FAQ: geriausi natūralūs būdai, kaip paaugliai gali prižiūrėti savo odą
 
 intro: >
   Ah, paauglystė — metas, kai tavo veidas nusprendžia tapti aliejaus fabriku greičiau nei lietuviška bulvinė blynas nukrenta nuo keptuvės. Nesijaudink, tu nepasmerktas amžiams atrodyti kaip pica su pepperoni. Štai kaip nuraminti odą natūraliai, Baltijos stiliumi, pasitelkiant geriausius natūralius paauglių odos priežiūros patarimus prieš problemų atsiradimą.

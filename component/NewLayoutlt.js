@@ -73,13 +73,15 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {/* Header */}
         <header className="text-center">
-          <h1 className="new-layout__main-title">{frontmatter.mainkeyword} </h1>
+          <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword} </h1>
           {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>} 
           {frontmatter.img && (
             <Image
               src={frontmatter.img}
               alt={frontmatter.mainkeyword}
-            
+              width={1000} // Original width (for aspect ratio)
+        height={600} // Original height (for aspect ratio)
+        layout="responsive" // This makes it responsive
               className="featured-img"
             
               priority
@@ -99,8 +101,8 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* PROBLEM SECTION */}
         {frontmatter.problemTitle && (
           <>
-            {frontmatter.long_tail_keyword1_before_problem && (
-              <h2>{frontmatter.long_tail_keyword1_before_problem}</h2>
+            {frontmatter.h2long_tail_keyword1_before_problem && (
+              <h2>{frontmatter.h2long_tail_keyword1_before_problem}</h2>
             )}
             <p id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</p>
             {problemList.length > 0 && (
@@ -118,8 +120,8 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* SOLUTION SECTION */}
         {(frontmatter.solution || solutionList.length > 0) && (
           <section id="sprendimas">
-            {frontmatter.long_tail_keyword2_before_solution && (
-              <h2>{frontmatter.long_tail_keyword2_before_solution}</h2>
+            {frontmatter.h2long_tail_keyword2_before_solution && (
+              <h2>{frontmatter.h2long_tail_keyword2_before_solution}</h2>
             )}
             <p className="new-layout__section-title">Sprendimas</p>
             {frontmatter.solution && (
@@ -138,8 +140,8 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* DO / DON'T SECTION */}
         {comparisonTable.length > 0 && (
           <section id="daryk-nedaryk">
-            {frontmatter.long_tail_keyword3_before_do_dont_table && (
-              <h2>{frontmatter.long_tail_keyword3_before_do_dont_table}</h2>
+            {frontmatter.h2long_tail_keyword3_before_do_dont_table && (
+              <h2>{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>
             )}
             <p className="new-layout__section-title">
               {frontmatter.comparisonTitle || "Daryk / Nedaryk"}
@@ -168,8 +170,8 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* ROUTINE SECTION */}
         {routineList.length > 0 && (
           <section id="rutina">
-            {frontmatter.long_tail_keyword4_before_routine && (
-              <h2>{frontmatter.long_tail_keyword4_before_routine}</h2>
+            {frontmatter.h2long_tail_keyword4_before_routine && (
+              <h2>{frontmatter.h2long_tail_keyword4_before_routine}</h2>
             )}
             <p className="new-layout__section-title">
               {frontmatter.routineTitle || "Odos priežiūros rutina"}
@@ -185,8 +187,8 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* FAQ SECTION */}
         {faqList.length > 0 && (
           <section id="faq">
-            {frontmatter.long_tail_keyword5_before_FAQ && (
-              <h2>{frontmatter.long_tail_keyword5_before_FAQ}</h2>
+            {frontmatter.h2long_tail_keyword5_before_FAQ && (
+              <h2>{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>
             )}
             <p className="new-layout__section-title">Dažniausiai užduodami klausimai</p>
             <div className="space-y-8 my-12">

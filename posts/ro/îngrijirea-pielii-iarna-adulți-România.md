@@ -1,19 +1,19 @@
 ---
 layout: new
-title: "Cele Mai Bune Sfaturi de Îngrijire a Pielii iarna pentru Adulți în România"
+title: "Cele Mai Bune Sfaturi de Îngrijire a Pielii Iarna pentru Adulți în România - Ghid Complet"
 subtitle: "Îngrijirea pielii iarna pentru adulți – ghid complet și practic"
 description: Un Ghid Complet, Bazat pe Știință, pentru ca Adulții să Rămână Sănătoși, Energici și Protejați în Timpul Iernii
 date: "2025-01-15"
 img: "/7.jpeg"
-keyword1: "îngrijirea pielii iarna adulți România"
-keyword2: "cele mai bune sfaturi îngrijirea pielii iarna adulți romania"
+h1mainkeyword: "îngrijirea pielii iarna adulți România"
+
 intro: Drag prieten român, a venit iarna — -12°C, vânt care te urăște și piele mai uscată decât eticheta unei sticle de țuică. Arăți acum ca un vampir transilvănean de 200 de ani care a pierdut o bătaie cu un covrig.
  Relaxează-te. Am petrecut ultimele 7 zile citind doar sursele de top
  - American Academy of Dermatology (aad.org)
  - National Eczema Association (nationaleczema.org)
  - Skin Cancer Foundation (skincancer.org)
  - Tot ce urmează este colectat și rezumat direct din recomandările lor oficiale (nu sfaturi personale).
-long_tail_keyword1_before_problem: Problemele pielii uscate la adulți în timpul iernii în România
+h2long_tail_keyword1_before_problem: Problemele pielii uscate la adulți în timpul iernii în România
 problemTitle: "De ce Îți Urăște Pielea Iarna Românească (9 Probleme Dramatice)"
 problemList: 
   - "Fața ta e mai întinsă decât un loc de parcare în București în decembrie."
@@ -25,7 +25,7 @@ problemList:
   - "Electricitate statică suficientă pentru a alimenta un sat mic din Moldova."
   - "Eczeme mai rele decât traficul de pe DN1 în minivacanță."
   - "Bariera ta cutanată e mai avariată decât sistemul feroviar românesc după iarnă."
-long_tail_keyword2_before_solution: "cele mai eficiente metode de îngrijire a pielii în sezonul rece"
+h2long_tail_keyword2_before_solution: "cele mai eficiente metode de îngrijire a pielii în sezonul rece"
 solution: "Relaxează-te, măi! Uite 9 soluții bazate pe știință care chiar funcționează când frigul vine din adâncul sufletului."
 solutionList:
   - Treci la un cleanser blând, fără parfum*
@@ -55,7 +55,7 @@ solutionList:
     Apa fierbinte îndepărtează uleiurile naturale. National Eczema Association recomandă dușuri sub 10 minute și sub 40°C pentru a preveni deteriorarea barierei.
   - 🚩Dacă ai pielea sensibilă, alergii, eczeme sau orice altă condiție dermatologică, consultă întotdeauna un dermatolog înainte de a încerca rutine noi — fiecare piele e diferită.
   - 🚩Dacă observi iritație, arsură, roșeață, mâncărime sau orice reacție neobișnuită, oprește imediat și cere sfat medical.
-long_tail_keyword3_before_do_dont_table: "ghid complet pentru rutina corectă de îngrijire a pielii iarna"
+h2long_tail_keyword3_before_do_dont_table: "ghid complet pentru rutina corectă de îngrijire a pielii iarna"
 comparisonTitle: "Îngrijirea Pielii iarna în România: Fă Asta, Nu Asta"
 comparisonTable:
   - {do: "Fă duș cu apă călduță (max 38°C)" , dont: "Nu te fierbe ca sarmalele timp de 20 de minute" }
@@ -67,14 +67,14 @@ comparisonTable:
   - {do: "Layering: serum → cremă → occlusiv (gen Vaseline)" , dont: "Nu pune un strat subțire și te rogi la Sfânta Parascheva" }
   - {do: "Folosește produse fără parfum" , dont: "Nu folosi crema ta de vară parfumată care ustură îngrozitor" }
   - {do: "Protejează-ți mâinile cu mănuși ȘI cremă" , dont: "Nu te duce la Piața Obor fără mănuși ca un erou" }
-long_tail_keyword4_before_routine: "cea mai bună rutină hidratantă pentru pielea uscată iarna"
+h2long_tail_keyword4_before_routine: "cea mai bună rutină hidratantă pentru pielea uscată iarna"
 routineList:
  - Curăță blând cu cleanser cremos (fără spumă, fără parfum)
  - Hidratează în maxim 3 minute cât pielea e încă umedă
  - Pune cremă groasă sau unguent (CeraVe, Cicaplast, Vaseline)
  - Dimineața adaugă SPF 30+ pe față și mâini
  - Seara bagă strat de Vaseline + umidificator pornit și gata, dormi ca un urs!
-long_tail_keyword5_before_FAQ: "întrebări frecvente despre protejarea pielii împotriva frigului în România"
+h2long_tail_keyword5_before_FAQ: "întrebări frecvente despre protejarea pielii împotriva frigului în România"
 faqList:
   - {question: "Pot folosi în continuare serul cu vitamina C iarna?",
     answer: "Da, dar aplică o cremă bogată deasupra. Frig + vânt + vitamina C poate irita dacă bariera este slăbită." }

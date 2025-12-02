@@ -319,22 +319,22 @@ export default function NewLayoutro({
   </div>
 )}
         <header className="text-center mb-12">
-          <h1 className="new-layout__main-title">{frontmatter.title}</h1>
+          <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword}</h1>
           {frontmatter.subtitle && <h2 className="text-2xl text-gray-600 mt-4">{frontmatter.subtitle}</h2>}
-          {frontmatter.img && <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.title} />}
+          {frontmatter.img && <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.h1mainkeyword} />}
         </header>
 
         {frontmatter.intro && <div className="text-lg leading-8 text-center my-10 bg-yellow-50 p-8 rounded-xl">{frontmatter.intro}</div>}
 
-        {frontmatter.long_tail_keyword1_before_problem && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword1_before_problem}</h2>}
-        {frontmatter.problemTitle && <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>}
+        {frontmatter.h2long_tail_keyword1_before_problem && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword1_before_problem}</h2>}
+        {frontmatter.problemTitle && <h5 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h5>}
         {problemList.length > 0 && (
           <section className="bg-red-50 border-l-8 border-red-600 p-8 rounded-r-xl my-10">
             <ul className="list-disc pl-6 space-y-3 text-lg">{problemList.map((item, i) => <li key={i}>{item}</li>)}</ul>
           </section>
         )}
 
-        {frontmatter.long_tail_keyword2_before_solution && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword2_before_solution}</h2>}
+        {frontmatter.h2long_tail_keyword2_before_solution && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword2_before_solution}</h2>}
         {(frontmatter.solution || solutionList.length > 0) && (
           <section id="solutie" className="my-10">
             <h3 className="new-layout__section-title">Soluție</h3>
@@ -347,7 +347,7 @@ export default function NewLayoutro({
           </section>
         )}
 
-        {frontmatter.long_tail_keyword3_before_do_dont_table && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword3_before_do_dont_table}</h2>}
+        {frontmatter.h2long_tail_keyword3_before_do_dont_table && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>}
         {comparisonTable.length > 0 && (
           <section id="fa-nuface">
             <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Fă / Nu face"}</h3>
@@ -367,7 +367,7 @@ export default function NewLayoutro({
           </section>
         )}
 
-        {frontmatter.long_tail_keyword4_before_routine && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword4_before_routine}</h2>}
+        {frontmatter.h2long_tail_keyword4_before_routine && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword4_before_routine}</h2>}
         {routineList.length > 0 && (
           <section id="rutina">
             <h3 className="new-layout__section-title">{frontmatter.routineTitle || "Rutină zilnică de îngrijire"}</h3>
@@ -379,7 +379,7 @@ export default function NewLayoutro({
 
         
 
-        {frontmatter.long_tail_keyword5_before_FAQ && <h2 className="my-8 text-2xl">{frontmatter.long_tail_keyword5_before_FAQ}</h2>}
+        {frontmatter.h2long_tail_keyword5_before_FAQ && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>}
         {faqList.length > 0 && (
           <section id="faq">
             <h3 className="new-layout__section-title">Întrebări frecvente (FAQ)</h3>
@@ -395,7 +395,7 @@ export default function NewLayoutro({
         {/* Super Strong E-E-A-T Disclaimer */}
         <section className="my-20">
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-8 border-indigo-600 rounded-r-2xl p-10 shadow-2xl">
-            <h3 className="text-indigo-900 font-bold text-2xl mb-6">Notă medicală importantă</h3>
+            <h6 className="text-indigo-900 font-bold text-2xl mb-6">Notă medicală importantă</h6>
             <p className="text-gray-800 text-lg leading-relaxed">
               Nu sunt medic dermatolog. Toate informațiile din acest articol sunt bazate pe studii științifice publicate în 
               <strong> PubMed, Cochrane, Harvard Medical School, Oxford Academic </strong> și alte surse de încredere. 

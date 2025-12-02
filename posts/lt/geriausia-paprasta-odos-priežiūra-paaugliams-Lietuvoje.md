@@ -1,91 +1,91 @@
 ---
 layout: new
 title: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-subtitle: "Paprasta ir efektyvi rutina paaugliams, kurie nenori sudėtingų 10 žingsnių schemų"
-description: "Realistiškas, moksliškai pagrįstas ir labai paprastas odos priežiūros gidas Lietuvos paaugliams, kurie nenori pusės kišenpinigių išleisti 15 kremams."
+subtitle: "Tik 4 žingsniai ir 5 minutės per dieną – be brangių Korėjos 10 žingsnių"
+description: "Paprasta odos priežiūros rutina paaugliams Lietuvoje: švelnus valymas, drėkinimas, SPF ir taškinis gydymas. Veikia net riebiai ir spuoguotai odai."
 date: "2025-11-18"
 img: "/3.jpeg"
+img_alt: "Paprasta odos priežiūros rutina paaugliams Lietuvoje – 4 produktai ir švari oda"
 
-keyword1: "geriausia paprasta odos priežiūra paaugliams Lietuvoje"
-keyword2: "Paprasta odos priežiūros rutina paaugliams"
+# Main keyword শুরুতেই + long-tail H2-এর জন্য
+h1mainkeyword: "paprasta odos priežiūros rutina paaugliams Lietuvoje"
+
+# Long-tail keywords – Rank Math এবং Google-এর জন্য পারফেক্ট
+h2long_tail_keyword1_before_problem: "kodėl paaugliams Lietuvoje oda maištauja žiemą"
+h2long_tail_keyword2_before_solution: "paprasta odos priežiūros rutina paaugliams Lietuvoje"
+h2long_tail_keyword3_before_do_dont_table: "geriausia paprasta odos priežiūra paaugliams"
+h2long_tail_keyword4_before_routine: "lengva odos priežiūros rutina paaugliams kasdien"
+h2long_tail_keyword5_before_FAQ: "pradedančiųjų odos priežiūra paaugliams Lietuvoje"
+
+# পেজে অবশ্যই এই H1 থাকবে (টেমপ্লেটে রাখো)
+# <h1>Paprasta odos priežiūros rutina paaugliams Lietuvoje</h1>
 
 intro: >
-  Labas, Lietuvos paaugli! Tavo veidas šiuo metu elgiasi tarsi pigus siaubo filmas.
-  Atsipalaiduok – tau nereikia 10 žingsnių rutinos ir pusės darbo užmokesčio.
-  Keturi produktai ir nuoseklumas išgelbės tavo odą.
-long_tail_keyword1_before_problem: "geriausia-paaugliu-odos-prieziuros-rutina-lietuvoje"
+  Lietuvos paaugly! Tavo veidas šiuo metu elgiasi kaip pigus siaubo filmas, bet tau nereikia 10 žingsnių Korėjos rutinos ir 200 € per mėnesį.
+  Paprasta odos priežiūros rutina paaugliams Lietuvoje – tik 4 produktai, 5 minutės per dieną ir nuoseklumas. Po 6–8 savaičių oda bus švari, rami ir be dramų.
 
-long_tail_keyword2_before_solution: "paprasta-odos-prieziura-paaugliams-lietuvoje"
-
-long_tail_keyword3_before_do_dont_table: "paaugliu-odos-prieziuros-patarimai-lietuvoje"
-
-long_tail_keyword4_before_routine: "lengvas-paaugliu-odos-prieziuros-gidas-lietuvoje"
-
-long_tail_keyword5_before_FAQ: "pradedantiesiems-skirta-paaugliu-odos-prieziura-lietuvoje"
-
-problemTitle: "9 priežastys, kodėl tavo oda šiuo metu maištauja"
+problemTitle: "9 priežastys, kodėl tavo oda Lietuvoje dabar maištauja"
 problemList:
-  - "Hormonų chaosas → Paauglystė padidina riebalų išsiskyrimą iki 500 % dėl padidėjusių androgenų lygių. [American Academy of Dermatology]"
-  - "Per dažnas plovimas → Veido plovimas daugiau nei du kartus per dieną pažeidžia odos barjerą ir skatina dar didesnį riebalų išsiskyrimą. [National Institute of Arthritis and Musculoskeletal and Skin Diseases]"
-  - "Nuolatinis veido liestimas → Žmonės liečia savo veidą apie 23 kartus per valandą. [American Academy of Dermatology]"
-  - "Miegojimas su makiažu → Užsikimšusios poros naktį gali padidinti spuogų riziką 3–5 kartus. [Journal of the American Academy of Dermatology]"
-  - "Per daug pieno → Didelio glikeminio indekso pienas susijęs su 20–30 % blogesniais spuogais. [Harvard Medical School]"
-  - "Komedogeninės kosmetikos ar apsauginių kremų naudojimas"
-  - "Stiprių priešraukšlinių kremų bandymas, kurie dirgina jauną odą"
-  - "Produktų keitimas kas kelias dienas vietoj 4–6 savaičių laukimo"
-  - "Saulės kremo vengimas → UV pablogina uždegimą ir tamsina žymes"
+  - "Hormonų chaosas → paauglystėje riebalų išsiskyrimas padidėja net 500 %. American Academy of Dermatology"
+  - "Per dažnas plovimas → daugiau nei 2× per dieną ardo odos barjerą ir riebalai gaminasi dar daugiau."
+  - "Nuolatinis veido liestimas → vidutiniškai 23 kartus per valandą. AAD"
+  - "Miegojimas su makiažu arba SPF → poros užsikemša 3–5 kartus labiau."
+  - "Per daug pieno produktų → didelis glikeminis indeksas blogina spuogus 20–30 %. Harvard"
+  - "Komedogeniniai kremai ir pigi kosmetika"
+  - "Stiprūs suaugusiųjų anti-age produktai ant jaunos odos"
+  - "Produktų keitimas kas savaitę vietoj 6 savaičių kantrybės"
+  - "SPF vengimas žiemą → UVA praeina pro debesis, sniegas atspindi 80 % spindulių"
 
-solution: "Vienintelė rutina, kurios tau kada nors prireiks Lietuvoje"
+solution: "Vienintelė paprasta odos priežiūros rutina paaugliams, kuri veikia Lietuvoje"
 solutionList:
-  - "Švelnus, nekomedogeninis prausiklis (pH ~5.5) du kartus per dieną"
-  - "Lengvas drėkiklis – taip, net riebiai odai (niacinamidas arba centella)"
-  - "Plataus spektro SPF 30–50 kiekvieną rytą, ištisus metus"
-  - "Vietinis gydymas benzolio peroksidu arba salicilo rūgštimi tik ant aktyvių spuogų"
-  - "Benzolio peroksidas 2,5 % veikia taip pat gerai kaip 10 %, bet su mažiau dirginimo"
-  - "Kasdienis SPF gali sumažinti spuogų randus beveik 50 % per 6 mėnesius"
-  - "4–5 % niacinamidas sumažina riebalų išsiskyrimą ~20 % per 4 savaites"
-  - "Valymas + drėkinimas vieni sumažina spuogų pažeidimus 30–40 %"
-  - "Produktui duok bent 6 savaites, kad išvengtum dirginimo ciklų"
+  - "Švelnus prausiklis (pH 5.5) – 2 kartus per dieną"
+  - "Lengvas drėkiklis su niacinamidu arba centella – taip pat ir riebiai odai!"
+  - "Mineralinis arba hibridinis SPF 30–50 kasdien, ištisus metus"
+  - "Taškinis gydymas: benzolio peroksidas 2.5–5 % arba salicilo rūgštis tik ant spuogų"
+  - "Niacinamidas 4–5 % mažina riebalų išsiskyrimą ~20 % per 4 savaites"
+  - "SPF kasdien sumažina randus beveik 50 % per 6 mėnesius"
+  - "Valymas + drėkinimas vieni sumažina spuogus 30–40 %"
+  - "Duok produktui bent 6 savaites"
   - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
   - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
-comparisonTitle: "Paprasta odos priežiūra paaugliams: ką daryti ir ko vengti"
+
+
+comparisonTitle: "Paprasta odos priežiūra paaugliams: TAIP ir NE"
 comparisonTable:
-  - {do: "Plaukite ne daugiau 2× per dieną drungnu vandeniu", dont: "Plaukite 4–5× arba karštu vandeniu"}
-  - {do: "Švelnus, be kvapų prausiklis", dont: "Stiprūs putojantys prausikliai ar muilas"}
-  - {do: "Drėkiklis ryte ir vakare", dont: "Nenaudoti drėkiklio, nes oda riebi"}
-  - {do: "SPF 30–50 kasdien", dont: "Debesuota = SPF nebereikia"}
-  - {do: "Vietinis gydymas tik ant spuogų", dont: "Benzolio peroksidas ant viso veido"}
-  - {do: "Produktui duoti 6 savaites", dont: "Keisti kas savaitę"}
-  - {do: "Nekomedogeninė kosmetika", dont: "Pigūs, komedogeniški produktai"}
-  - {do: "Keisti pagalvės užvalkalą 1×/sav.", dont: "Ta pati pagalvė mėnesį"}
-  - {do: "Būti kantriam", dont: "Tikėtis stebuklo per 3 dienas"}
+  - {do: "Plauk 2× per dieną drungnu vandeniu", dont: "4–5× arba karštu vandeniu"}
+  - {do: "Švelnus bekvapis prausiklis", dont: "Stiprūs putojantys muilai"}
+  - {do: "Drėkiklis net riebiai odai", dont: "„Riebi oda – be drėkiklio“"}
+  - {do: "SPF 30–50 kasdien", dont: "Žiemą debesuota – nereikia"}
+  - {do: "Gydymas tik ant spuogų", dont: "Benzolio peroksidas ant viso veido"}
+  - {do: "6 savaitės vienam produktui", dont: "Keiti kas savaitę"}
+  - {do: "Nekomedogeninė kosmetika", dont: "Pigūs komedogeniški produktai"}
+  - {do: "Pagalvės užvalkalas keičiamas kas savaitę", dont: "Ta pati pagalvė mėnesį"}
 
 routineList:
-  - "Ryte – 2 minutės"
-  - "1. Švelnus prausiklis arba tik drungnas vanduo"
-  - "2. Lengvas drėkiklis"
-  - "3. SPF 30–50 (palauk 2 min. prieš makiažą ar išeinant į lauką)"
-  - "Vakare – 3 minutės"
-  - "1. Švelnus prausiklis (dvigubas valymas tik jei buvai su sunkiu makiažu ar daug SPF)"
-  - "2. Leisk odai išdžiūti (30–60 sek.)"
-  - "3. Vietinis gydymas ant spuogų"
-  - "4. Drėkiklis ant viso veido"
+  - |
+    Paprasta odos priežiūros rutina paaugliams Lietuvoje (viso 5 minutės per dieną):
+    Rytas (2 min):
+    1. Švelnus prausiklis arba tik drungnas vanduo
+    2. Lengvas drėkiklis
+    3. SPF 30–50 (mineralinis arba hibridinis)
+    Vakaras (3 min):
+    1. Švelnus prausiklis (dvigubas valymas tik jei daug SPF/makiažo)
+    2. Taškinis gydymas ant aktyvių spuogų
+    3. Drėkiklis ant viso veido
 
 faqList:
-  - {question: "Ar galima spausti spuogus?", answer: "Ne. 7 dienų spuogas gali virsti 7 mėnesių randu."}
-  - {question: "Oda riebi, bet pleiskanoja – kodėl?", answer: "Dehidratacija. Reikia daugiau drėkiklio, ne mažiau."}
-  - {question: "Ar reikia SPF Lietuvos žiemą?", answer: "Taip. UVA praeina pro debesis ir langus; sniegas atspindi 80 % UV."}
-  - {question: "Kiek laiko iki rezultatų?", answer: "6–8 savaitės, jei laikysies rutinos."}
-  - {question: "Ar brangūs produktai geresni?", answer: "Ne. Svarbu ingredientai, ne kaina."}
-  - {question: "Ar vaikinams reikia odos priežiūros?", answer: "Taip. Spuogai nežiūri į lytį."}
-  
-linktitle1: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
-linkslug1: odos-priežiūros-patarimai-paaugliui-su-akne
+  - {question: "Ar galima spausti spuogus?", answer: "Ne. 7 dienų spuogas gali tapti 7 mėnesių randu."}
+  - {question: "Oda riebi, bet pleiskanoja?", answer: "Dehidratacija. Reikia DRĖKIKLIO, ne mažiau."}
+  - {question: "Ar reikia SPF Lietuvos žiemą?", answer: "Taip. Sniegas atspindi 80 % UV, UVA praeina pro debesis."}
+  - {question: "Kiek laiko iki rezultatų?", answer: "6–8 savaitės nuoseklumo."}
+  - {question: "Ar vaikinams reikia rutinos?", answer: "Taip. Spuogai lyčių neskiria."}
+  - {question: "Brangūs produktai geresni?", answer: "Ne. Svarbiausia ingredientai ir nuoseklumas."}
 
-linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje: Kaip neatrodyti kaip pleiskanojanti Baltijos snaigė"
-linkslug2:  žiemos-odos-priežiūra-paaugliams-lietuvoje
 
-linktitle3: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
-linkslug3: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
+linktitle1: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
+linkslug1: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
+linktitle2: "Švelnios odos priežiūros praktikos paaugliams su akne žiemą"
+linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
+linktitle3: "Žiemos odos priežiūra paaugliams Lietuvoje"
+linkslug3: žiemos-odos-priežiūra-paaugliams-lietuvoje
 ---
-

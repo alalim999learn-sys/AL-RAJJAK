@@ -1,93 +1,90 @@
 ---
 layout: new
-title: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
-subtitle: "Švelni žiemos odos rutina paaugliams su akne"
-
-description: "Atšiaurios Lietuvos žiemos nebūtinai turi reikšti nuolatinius spuogus. Sužinok švelnius, moksliškai pagrįstus būdus išlaikyti paauglio, linkusios į aknę, odą ramią, drėkintą ir švarią net kai lauke -15°C."
+title: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+subtitle: "Kaip nuraminti spuoguotą odą -15°C šaltyje be stiprių priemonių"
+description: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą: drėkinimas, barjero stiprinimas ir minimalus dirginimas. Veiksminga rutina, kuri veikia net sausame šildomame ore."
 date: "2025-11-18"
 img: "/4.jpeg"
-keyword1: "Odos priežiūros patarimai paaugliui su akne"
-keyword2: "Geriausi odos priežiūros patarimai paaugliui su akne"
+img_alt: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą – jauna oda be paraudimo ir sausumo"
+
+# Main keyword শুরুতেই
+h1mainkeyword: "švelni odos priežiūra paaugliams su akne žiemą"
+
+# Long-tail keywords – Google & Rank Math-এর জন্য পারফেক্ট
+h2long_tail_keyword1_before_problem: "kodėl žiemą spuogai paaugliams Lietuvoje pablogėja"
+h2long_tail_keyword2_before_solution: "švelni odos priežiūra paaugliams su akne žiemą"
+h2long_tail_keyword3_before_do_dont_table: "geriausi patarimai odos priežiūrai paaugliams su spuogais žiemą"
+h2long_tail_keyword4_before_routine: "žiemos odos priežiūros rutina paaugliams su akne"
+h2long_tail_keyword5_before_FAQ: "kaip nuraminti spuoguotą odą žiemą Lietuvoje"
+
+# পেজে অবশ্যই এই H1 থাকবে
+# <h1>Švelni odos priežiūra paaugliams su akne Lietuvos žiemą</h1>
+
 intro: >
-  Ah, Lietuvos žiema: romantiškos snaigės, jauki arbata ir... tavo veidas staiga primena
-  pepperoni picą? Jei atrodo, kad Šaltis Džekas bendradarbiauja su tavo hormonais, kad
-  sugadintų tavo odą – nusiramink. Turime švelnų, veiksmingą planą, kaip atsilaikyti
-  nepadarant dar didesnės žalos.
+  Lietuvos žiema + paauglystės hormonai = spuogų ir sausumo chaosas.  
+  Bet tau nereikia stiprių rūgščių ar deginančių priemonių. Švelni odos priežiūra paaugliams su akne žiemą – tai drėkinimas, barjero apsauga ir kuo mažiau dirginimo. Po 2–4 savaičių oda bus ramesnė, o po 6–8 – ženkliai švaresnė.
 
-
-long_tail_keyword1_before_problem: "paaugliu-spuogu-odos-prieziuros-patarimai"
-
-long_tail_keyword2_before_solution: "paaugliu-spuogu-odos-prieziuros-gidai"
-
-long_tail_keyword3_before_do_dont_table: "geriausia-odos-prieziura-paaugliams-su-spuogais"
-
-long_tail_keyword4_before_routine: "paaugliu-spuogu-odos-prieziuros-patarimai"
-
-long_tail_keyword5_before_FAQ: "odos-prieziuros-rutina-spuoguotai-paaugliu-odai"
-
-problemTitle: "9 būdai, kaip Lietuvos žiema slapčia kenkia tavo paauglio odai"
-
+problemTitle: "9 slapti būdai, kaip Lietuvos žiema kenkia spuoguotai paauglio odai"
 problemList:
-  - "1. Labai žema drėgmė (dažnai tik 20–30% šildomuose Lietuvos namuose) taip išdžiovina odą, kad riebalinės liaukos pradeda panikuoti ir gaminti dar daugiau riebalų. (American Academy of Dermatology)"
-  - "2. Šalti Baltijos vėjai ir žemiau nulio nukritusi temperatūra pažeidžia odos barjerą ir sukelia uždegimą. (AAD Winter Skin Survival Kit)"
-  - "3. Šildymas patalpose labai sumažina oro drėgmę ir sausina odą. (American Academy of Dermatology)"
-  - "4. Ilgi, karšti dušai nuplauna natūralius odos aliejus ir dar labiau ją išsausina. (AAD Dermatologists' Dry Skin Tips)"
-  - "5. Agresyvūs valikliai arba per dažnas gydymas nuo aknės žiemą pablogina situaciją. (AAD)"
-  - "6. Vilnoniai šalikai, aukštos apykaklės ir balaklavos trinasi į odą, sukeldami mechaninę aknę."
-  - "7. Daugiau cukraus žiemą (meduoliai, šokoladas) gali didinti uždegimą."
-  - "8. Sunkus makiažas arba veido neplovimas po šalčio palieka nešvarumus ir riebalus ant odos ilgiau."
-  - "9. Šaltis sutraukia kraujagysles ir lėtina maistinių medžiagų tiekimą odai, todėl spuogai gyja lėčiau."
+  - "Labai žema oro drėgmė (20–30 %) šildomuose namuose → riebalinės liaukos panikuoja ir gamina DAR DAUGIAU riebalų. AAD"
+  - "Šaltis + vėjas pažeidžia odos barjerą ir sukelia uždegimą"
+  - "Karšti dušai nuplauna natūralius aliejus ir dar labiau sausina odą"
+  - "Agresyvūs prausikliai ir per dažnas aknės gydymas žiemą tik pablogina situaciją"
+  - "Vilnoniai šalikai ir kepurės sukelia mechaninę aknę"
+  - "Daug saldumynų žiemą didina uždegimą"
+  - "Sunkus makiažas + neplautas veidas po šalčio"
+  - "Šaltis lėtina gijimą – spuogai gyja dvigubai ilgiau"
+  - "UV spinduliai žiemą vis tiek veikia (sniegas atspindi 80 %)"
 
-solution: >
-  Paslaptis – V-I-S-K-A daryti švelniai. Jokio alkoholio tonikuose, jokio agresyvaus
-  šveitimo, jokios 10 žingsnių deginančios rutinos. Lietuvos žiema reikalauja drėkinimo,
-  barjero stiprinimo ir kuo mažiau sudirginimo – štai 9 švelniausi ir veiksmingiausi žingsniai:
-
+solution: "Švelni žiemos rutina paaugliams su akne – tik 4–5 žingsniai, kurie tikrai veikia"
 solutionList:
-  - "1. Drėkink kasdien (net jei oda riebi). Aliejaus neturintis, nekomedogeninis kremas ryte ir vakare. (AAD)"
-  - "2. Naudok drėkintuvą naktį – jis palaiko drėgmę kambaryje. (NEA & AAD)"
-  - "3. Dušas 5–10 minučių, vanduo drungnas. (AAD)"
-  - "4. Tepk kremą ant drėgnos odos. (Mayo Clinic)"
-  - "5. Žiemą rinkis bekvapį kreminį prausiklį. (AAD)"
-  - "6. Nedėvėk vilnos tiesiai ant odos – naudok medvilnę ar bambuką po apačia. (AAD)"
-  - "7. Gerk pakankamai vandens – tai mažina sausumą. (WHO / Harvard Health)"
-  - "8. Dieną naudok lengvą gelį su HA/glicerinu, vakare – tirštesnį kremą. (AAD / BAD)"
-  - "9. Jei naudoji rūgštis ar retinoidus, žiemą retink naudojimą iki 2–3 kartų/sav. (AAD & NHS UK)"
-  - "Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
-  - "Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
-  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
-  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
-comparisonTitle: "Lietuviškos žiemos odos priežiūra paaugliams su akne: ką daryti ir ko vengti"
+  - "Drėkink net riebiai odai – nekomedogeninis kremas ryte ir vakare"
+  - "Naudok oro drėkintuvą naktį (40–60 % drėgmė)"
+  - "Trumpi (5–10 min) drungni dušai"
+  - "Kremą tepk ant drėgnos odos per 3 minutes po prausimosi"
+  - "Žiemą rinkis kreminį, bekvapį prausiklį (CeraVe, La Roche-Posay Toleriane)"
+  - "Po vilnone kepure dėvėk medvilninį įdėklą"
+  - "Vakare – tirštesnis kremas su ceramidais arba hialuronu"
+  - "Jei naudoji rūgštis/retinoidus – sumažink iki 2–3 k./sav."
+  - "SPF 30+ net žiemą (mineralinis arba hibridinis)"
+  - "🚩Jautri oda? Pasitark su gydytoju prieš naujas priemones."
 
+comparisonTitle: "Žiemos odos priežiūra paaugliams su akne: TAIP ir NE"
 comparisonTable:
-  - {do: "Švelnus kreminis prausiklis 2× per dieną", dont: "Agresyvūs putojantys prausikliai ar alkoholio servetėlės"}
-  - {do: "Aliejaus neturintis, nekomedogeninis kremas ryte ir vakare", dont: "Visai nenaudoti kremo"}
-  - {do: "5–10 min. drungni dušai", dont: "Ilgi karšti dušai"}
-  - {do: "Įjungtas drėkintuvas miegamajame", dont: "Miegoti labai sauso oro patalpoje"}
-  - {do: "Švelniai nusausinti odą", dont: "Trinti šiurkščiu rankšluosčiu"}
-  - {do: "Medvilnė prie odos", dont: "Vilna tiesiog ant žandikaulio ar kaklo"}
-  - {do: "Kremas ant drėgnos odos", dont: "Laukti, kol oda pradės tempti"}
-  - {do: "SPF net žiemą", dont: "Ignoruoti UV, nes debesuota"}
+  - {do: "Kreminis švelnus prausiklis 2× per dieną", dont: "Putų bomba ar alkoholio tonikai"}
+  - {do: "Drėkinimas net riebiai odai", dont: "„Riebi oda – be kremo“"}
+  - {do: "Drungni 5–10 min dušai", dont: "Karšti 20 min dušai"}
+  - {do: "Oro drėkintuvas įjungtas", dont: "Sausas oras miegamajame"}
+  - {do: "Kremas ant drėgnos odos", dont: "Laukti kol oda tempia"}
+  - {do: "Medvilnė po vilna", dont: "Vilna tiesiog ant veido"}
+  - {do: "SPF net žiemą", dont: "Debesuota = SPF nereikia"}
 
 routineList:
-  - "Ryto rutina (5 min): • Švelnus kreminis prausiklis • Švelniai nusausinti • Lengvas kremas • Gelinis SPF 30+"
-  - "Vakaro rutina: Tas pats prausiklis → (nebūtina: taškinis gydymas) → tirštesnis kremas → įjunk drėkintuvą"
-  - "Kartą per savaitę: Keisk pagalvės užvalkalą 2–3 kartus; švelniai nuplauk veidą grįžęs iš lauko"
+  - |
+    Švelni žiemos rutina paaugliams su akne (viso 6–7 minutės per dieną):
+    Rytas:
+    1. Kreminis prausiklis arba tik drungnas vanduo
+    2. Lengvas drėkiklis (gelinis arba su niacinamidu)
+    3. Mineralinis SPF 30–50
+    Vakaras:
+    1. Kreminis prausiklis
+    2. (Nebūtina) Taškinis gydymas ant aktyvių spuogų
+    3. Tirštesnis kremas su ceramidais
+    4. Įjunk oro drėkintuvą
 
 faqList:
-  - {question: "Mano oda sausa, bet ir išberia – ką daryti?", answer: "Tai sausumo sukelta riebalų gamybos reakcija. Reikia daugiau drėkinimo."}
-  - {question: "Ar galiu žiemą naudoti salicilo rūgštį ar retinoidus?", answer: "Taip, bet retink iki 2–3 kartų/sav. ir tepk ant kremo."}
-  - {question: "Ar tirštesni kremai tikrai netrukdo aknei?", answer: "Nekomedogeniniai tirštesni kremai žiemą ramina uždegimą ir saugo barjerą."}
-  - {question: "Ką daryti, jei kaktą išberia nuo kepurės?", answer: "Skalbti kepures reguliariai ir naudoti medvilninį įdėklą."}
-  - {question: "Ar galiu daryti slugging?", answer: "Taip – plonas vazelino sluoksnis ant kremo naktį dažnai padeda atsigauti odai."}
-  - {question: "Kiek laiko laukti rezultatų?", answer: "Ramesnė oda – per 2–4 savaites, švaresnė – per 6–8. Svarbiausia – nuoseklumas."}
-  
-linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
-linkslug1: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+  - {question: "Oda sausa, bet spuoguoja – ką daryti?", answer: "Drėkink DAR DAUGIAU. Sausumas provokuoja riebalų gamybą."}
+  - {question: "Ar galiu žiemą naudoti salicilo rūgštį?", answer: "Taip, bet tik 2–3 k./sav. ir ant kremo."}
+  - {question: "Ar tirštesni kremai kemša poras?", answer: "Nekomedogeniniai – ne. Žiemą jie net ramina uždegimą."}
+  - {question: "Kepurė išberia kaktą – kaip išvengti?", answer: "Medvilninis įdėklas + skalbti kepurę kas savaitę."}
+  - {question: "Ar galiu daryti slugging?", answer: "Taip – plonas vazelino sluoksnis ant kremo naktį puikiai atstato barjerą."}
+  - {question: "Kiek laiko iki rezultatų?", answer: "Ramesnė oda po 2–4 sav., švaresnė po 6–8 sav."}
 
-linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
-
-linktitle3: "Geriausia Lietuviška Odos Priežiūros Rutina Švytinčiai Odai (Kuri Tikrai Veikia -20°C)"
-linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
+# Internal links – সব ঠিক আছে, শুধু slug ঠিক করলাম
+linktitle1: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug1: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+linktitle2: "Kaip žiemą natūraliai sudrėkinti sausą odą"
+linkslug2: kaip-ziema-natūraliai-sudrekinti-sausa-oda
+linktitle3: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
+linkslug3: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
 ---
