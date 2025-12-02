@@ -1,10 +1,11 @@
 ---
 layout: new
-title: "Kaip Natūraliai Rūpintis Paauglių Oda Lietuvoje: Švari Oda Be Dramos"
-subtitle: "Natūralūs būdai paaugliams valdyti spuogus ir riebią odą net šalčiausiomis Baltijos žiemomis"
-description: "Praktinis, moksliškai pagrįstas gidas Lietuvos paaugliams (ir tėvams), kaip tvarkyti spuogus ir riebią odą naudojant natūralias priemones — net šalčiausiomis Baltijos žiemomis."
+title: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
+subtitle: "Švelni odos priežiūra paaugliams su spuogais ir riebią T zoną turinčiais veidais"
+description: "Geriausi natūralūs paauglių odos priežiūros patarimai Lietuvoje: sužinok, kaip švelniai valdyti spuogus, riebalų perteklių ir drėkinti odą net žiemą."
 date: "2025-11-18"
 img: "/1.jpeg"
+img_alt: "Paauglys prižiūri veido odą natūraliais produktais"
 
 linktitle1: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
 linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
@@ -14,21 +15,17 @@ linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
 
 linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
 linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
+
+mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
+
 long_tail_keyword1_before_problem: natūralūs paauglių odos priežiūros patarimai prieš problemų atsiradimą
-
 long_tail_keyword2_before_solution: efektyviausi natūralūs odos priežiūros patarimai paaugliams
-
 long_tail_keyword3_before_do_dont_table: geriausios visiškai natūralios odos priežiūros gairės paaugliams
-
 long_tail_keyword4_before_routine: pagrindinės natūralios odos priežiūros rekomendacijos paaugliams
-
 long_tail_keyword5_before_FAQ: geriausi natūralūs būdai, kaip paaugliai gali prižiūrėti savo odą
+
 intro: >
-  Ah, paauglystė — metas, kai tavo veidas nusprendžia tapti aliejaus fabriku greičiau nei lietuviška bulvinė blynas nukrenta nuo keptuvės.
-  Nesijaudink, tu nepasmerktas amžiams atrodyti kaip pica su pepperoni.
-  Štai kaip nuraminti odą natūraliai, Baltijos stiliumi.
-
-
+  Ah, paauglystė — metas, kai tavo veidas nusprendžia tapti aliejaus fabriku greičiau nei lietuviška bulvinė blynas nukrenta nuo keptuvės. Nesijaudink, tu nepasmerktas amžiams atrodyti kaip pica su pepperoni. Štai kaip nuraminti odą natūraliai, Baltijos stiliumi, pasitelkiant geriausius natūralius paauglių odos priežiūros patarimus prieš problemų atsiradimą.
 
 problemTitle: "Kodėl Lietuvos paauglių oda elgiasi beprotiškai (9 dažniausios problemos)"
 problemList:
@@ -53,9 +50,8 @@ problemList:
   - "Naudoti 10 žingsnių Korėjos rutiną su aktyviais ingredientais."
   - "Valgyti tonas saldumynų ir tikėtis stebuklo."
 
-
 solution: >
-  Gera žinia? Viską galima nuraminti švelniomis, natūraliomis įpročių pakeitimais.
+  Gera žinia? Viską galima nuraminti švelniomis, natūraliomis įpročių pakeitimais. Štai efektyviausi natūralūs odos priežiūros patarimai paaugliams Lietuvoje:
 
 solutionList:
   - "Plaukite veidą du kartus per dieną drungnu vandeniu."
@@ -90,8 +86,6 @@ comparisonTable:
   - {do: "Valgykite šaltibarščius", dont: "Valgykite daug pieno produktų"}
   - {do: "Būkite kantrūs", dont: "Išbandykite 15 produktų per savaitę"}
   - {do: "Eikite pas dermatologą", dont: "Spauskite cistas naktimis"}
-
-
 
 routineList:
   - |

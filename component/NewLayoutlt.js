@@ -73,14 +73,13 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {/* Header */}
         <header className="text-center">
-          <h1 className="new-layout__main-title">{frontmatter.title}</h1>
-          {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>}
+          <h1 className="new-layout__main-title">{frontmatter.mainkeyword} </h1>
+          {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>} 
           {frontmatter.img && (
             <Image
               src={frontmatter.img}
-              alt={frontmatter.title}
-              width={800}
-              height={500}
+              alt={frontmatter.mainkeyword}
+            
               className="featured-img"
             
               priority
