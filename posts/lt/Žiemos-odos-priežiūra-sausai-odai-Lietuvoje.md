@@ -74,6 +74,8 @@ linktitle1: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebukli
 linkslug1: odos-priežiūros-rutina-po-30-Lietuva
 linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
 linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
-linktitle3: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
-linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
+
+linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
+linkslug3: odos-priežiūros-patarimai-pradedantiesiems
+
 ---

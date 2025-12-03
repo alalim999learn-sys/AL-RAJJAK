@@ -1,6 +1,7 @@
 ---
 layout: new
 title: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
+subtitle: Įprasta odos priežiūra, pagrįsta mokslo tyrimais, kad pasiektumėte jaunatvišką ir sveiką odą, nepaisant amžiaus pokyčių
 description: "Kas vyksta su oda po 30 metų, kodėl ji staiga „pavargsta“ ir kaip lietuvaitėms sukurti veiksmingą, bet nebrangią odos priežiūros rutiną – su mokslu pagrįstais patarimais ir realiais sprendimais."
 date: "2025-12-03"
 image1: "https://images.unsplash.com/photo-1596462502278-7d8e6f0be7c4?w=1200"

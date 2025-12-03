@@ -198,7 +198,7 @@ export default function Post({ post, products, slug }) {
   return (
     <>
       <Head>
-        <title>{frontmatter.title} | Lemonskn</title>
+        <title>{frontmatter.title}</title>
         <meta name="description" content={frontmatter.description} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://lemonskn.com/lt/${slug}`} />
@@ -234,3 +234,5 @@ export default function Post({ post, products, slug }) {
     </>
   );
 }
+
+

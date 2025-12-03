@@ -12,7 +12,7 @@ export default function FooterLT() {
       {/* Logo / Brand */}
       <h1 style={{ color: '#003b08ff', marginBottom: '10px' }}>lemonskn </h1>
  <p style={{ fontSize: '14px', marginBottom: '25px' }}>
-  Your guide to Lithuanian cosmetics and beauty trends
+  Your guide to  skincare
 </p>
 
 {/* Navigation Links */}

@@ -297,7 +297,7 @@ export function getStructuredData({ frontmatter, slug }) {
         "@type": "Article",
         "@id": `https://lemonskn.com/lt/${slug}#article`,
         "headline": frontmatter.title,
-        "description": frontmatter.description || "",
+        "description": frontmatter.description,
         "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
         "author": { "@type": "Organization", "name": "Lemonskn" },
         "publisher": { "@id": "https://lemonskn.com/#organization" },
@@ -325,7 +325,7 @@ export function getStructuredData({ frontmatter, slug }) {
         "@type": "HowTo",
         "@id": `https://lemonskn.com/lt/${slug}#howto`,
         "name": frontmatter.routineTitle || "Odos priežiūros rutina",
-        "description": frontmatter.routineDesc || "Veiksminga kasdienė rutina",
+        "description": frontmatter.routineList || "Veiksminga kasdienė rutina",
         "totalTime": "PT10M",
         "step": routineList.map((text, i) => ({
           "@type": "HowToStep",

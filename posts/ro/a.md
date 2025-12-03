@@ -6,11 +6,11 @@ description: "Simple, proven winter skincare routine for oily & acne-prone teena
 date: "2025-11-28"
 img: "/images/teen-winter-acne-en.jpg"
 
-long_tail_keyword1_before_problem: ""
-long_tail_keyword2_before_solution : ""
-long_tail_keyword3_before_do_dont_table: ""
-long_tail_keyword4_before_routine: ""
-long_tail_keyword5_before_FAQ: ""
+h2long_tail_keyword1_before_problem: ""
+h2long_tail_keyword2_before_solution : ""
+h2long_tail_keyword3_before_do_dont_table: ""
+h2long_tail_keyword4_before_routine: ""
+h2long_tail_keyword5_before_FAQ: ""
 problemTitle: "Why Do Teenagers Get More Acne in Winter?"
 problemList:
   - Indoor heating + cold wind destroys the skin’s natural barrier

@@ -86,6 +86,7 @@ linktitle1: "Žiemos odos priežiūra paaugliams Lietuvoje – sausai odai"
 linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
 linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
 linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
-linktitle3: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
-linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
+
+linktitle3: "Žiemos odos priežiūra paaugliams Lietuvoje – sausai odai" # 57 simboliai, keyword pirmoje vietoje
+linkslug3: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
 ---

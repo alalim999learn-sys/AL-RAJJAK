@@ -93,5 +93,5 @@ linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
 linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 linkslug3: odos-priežiūros-patarimai-pradedantiesiems
 
-h1mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
+
 ---

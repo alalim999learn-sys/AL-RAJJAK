@@ -1,412 +1,277 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// components/NewLayoutro.js ← 100% FINAL Romanian Version (Google 2025 Ready)
+// components/NewLayoutro.js
 import React from "react";
-import Head from "next/head";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
 
-export default function NewLayoutro({
-  frontmatter = {},
-  content = "",
-  slug = "",
-}) {
+// Funcție pentru eliminarea HTML—pentru Google Rich Results
+const stripHtml = (str = "") => String(str || "").replace(/<[^>]*>/g, "").trim();
+
+export default function NewLayoutro({ frontmatter = {}, content = "", slug = "" }) {
   if (!frontmatter?.title) {
     return (
-      <div className="text-center text-red-500 py-20 text-2xl">
-        Pagina nu a fost găsită
+      <div className="text-center">
+        Pagină negăsită
       </div>
     );
   }
 
-  // Safe arrays
-  const problemList = Array.isArray(frontmatter.problemList)
-    ? frontmatter.problemList.filter(Boolean)
-    : [];
-  const solutionList = Array.isArray(frontmatter.solutionList)
-    ? frontmatter.solutionList.filter(Boolean)
-    : [];
-  const comparisonTable = Array.isArray(frontmatter.comparisonTable)
-    ? frontmatter.comparisonTable
-    : [];
-  const routineList = Array.isArray(frontmatter.routineList)
-    ? frontmatter.routineList.filter(Boolean)
-    : [];
-  const faqList = Array.isArray(frontmatter.faqList)
-    ? frontmatter.faqList.filter((q) => q && q.question && q.answer)
-    : [];
+  const problemList = Array.isArray(frontmatter.problemList) ? frontmatter.problemList.filter(Boolean) : [];
+  const solutionList = Array.isArray(frontmatter.solutionList) ? frontmatter.solutionList.filter(Boolean) : [];
+  const dermatologistsaywhatlist = Array.isArray(frontmatter.dermatologistsaywhatlist)
+  ? frontmatter.dermatologistsaywhatlist.filter(Boolean)
+  : [];
+  const comparisonTable = Array.isArray(frontmatter.comparisonTable) ? frontmatter.comparisonTable : [];
+  const routineList = Array.isArray(frontmatter.routineList) ? frontmatter.routineList.filter(Boolean) : [];
+  const faqList = Array.isArray(frontmatter.faqList) ? frontmatter.faqList.filter(q => q?.question && q?.answer) : [];
 
-  // Table of Contents (auto-generated)
+  // Cuprins
   const tocItems = [
     frontmatter.problemTitle && { id: "problema", title: frontmatter.problemTitle },
     (frontmatter.solution || solutionList.length > 0) && { id: "solutie", title: "Soluție" },
-    comparisonTable.length > 0 && { id: "fa-nuface", title: frontmatter.comparisonTitle || "Fă / Nu face" },
-    routineList.length > 0 && { id: "rutina", title: frontmatter.routineTitle || "Rutină de îngrijire" },
-    faqList.length > 0 && { id: "faq", title: "Întrebări frecvente" },
+    frontmatter.dermatologistsaywhattitle && { id: "dermatologul-spune", title: frontmatter.dermatologistsaywhattitle },
+    comparisonTable.length > 0 && { id: "fa-nu-fa", title: frontmatter.comparisonTitle || "Fă / Nu face" },
+    routineList.length > 0 && { id: "rutina", title: frontmatter.routineTitle || "Rutina de îngrijire a pielii" },
+    faqList.length > 0 && { id: "faq", title: "Întrebări frecvente" }
+    
   ].filter(Boolean);
-
-  // Full JSON-LD Schema – সবচেয়ে শক্তিশালী ভার্সন
-  const fullSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      // 1. Organization + Logo
-      {
-        "@type": "Organization",
-        "@id": "https://lemonskn.com/#organization",
-        "name": "Lemonskn",
-        "url": "https://lemonskn.com",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://lemonskn.com/lemonskn.png",
-          "url": "https://lemonskn.com/lemonskn.png",
-          "width": 512,
-          "height": 512,
-          "caption": "Lemonskn Official Logo"
-        },
-        "sameAs": [
-          "https://www.instagram.com/lemonskn",
-          "https://www.facebook.com/lemonskn",
-          "https://www.youtube.com/@lemonskn",
-          "https://www.tiktok.com/@lemonskn"
-        ]
-      },
-
-      // 2. WebSite
-      {
-        "@type": "WebSite",
-        "@id": "https://lemonskn.com/#website",
-        "url": "https://lemonskn.com",
-        "name": "Lemonskn",
-        "publisher": { "@id": "https://lemonskn.com/#organization" },
-        "inLanguage": ["en-US", "lt-LT", "ro-RO"]
-      },
-
-      // 3. MedicalWebPage + Speakable
-      {
-        "@type": ["WebPage", "MedicalWebPage"],
-        "@id": `https://lemonskn.com/ro/${slug}#webpage`,
-        "url": `https://lemonskn.com/ro/${slug}`,
-        "name": frontmatter.title,
-        "description": frontmatter.description || "",
-        "inLanguage": "ro-RO",
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".new-layout__main-title", ".new-layout__section-title", ".faq-q"]
-        }
-      },
-
-      // 4. Breadcrumb
-      {
-        "@type": "BreadcrumbList",
-        "@id": `https://lemonskn.com/ro/${slug}#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-           
-            "position": 1,
-            "name": "Acasă",
-            "item": "https://lemonskn.com/ro/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": frontmatter.title,
-            "item": `https://lemonskn.com/ro/${slug}`
-          }
-        ]
-      },
-
-      // 5. Article
-      {
-        "@type": "Article",
-        "headline": frontmatter.title,
-        "description": frontmatter.description || "",
-        "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
-        "author": { "@type": "Organization", "name": "Lemonskn" },
-        "publisher": { "@id": "https://lemonskn.com/#organization" },
-        "datePublished": frontmatter.date || "2025-01-01",
-        "dateModified": frontmatter.updated || frontmatter.date || "2025-01-01",
-        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://lemonskn.com/ro/${slug}#webpage` }
-      },
-
-      // 6. FAQPage
-      ...(faqList.length > 0 ? [{
-        "@type": "FAQPage",
-        "mainEntity": faqList.map(q => ({
-          "@type": "Question",
-          "name": String(q.question || "").trim(),
-          "acceptedAnswer": { "@type": "Answer", "text": String(q.answer || "").trim() }
-        }))
-      }] : []),
-
-      // 7. HowTo – Romanian "Pasul"
-      ...(routineList.length > 0 ? [{
-        "@type": "HowTo",
-        "name": frontmatter.routineTitle || "Rutină de îngrijire a pielii",
-        "description": frontmatter.routineDesc || "Rutină zilnică eficientă recomandată de Lemonskn",
-        "totalTime": "PT10M",
-        "step": routineList.map((step, i) => ({
-          "@type": "HowToStep",
-          "name": `Pasul ${i + 1}`,
-          "text": String(step).trim()
-        }))
-      }] : [])
-    ]
-  };
 
   return (
     <>
-      <Head>
-        <title>{frontmatter.title} | Lemonskn</title>
-        <meta name="description" content={frontmatter.description || ""} />
-        <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
-
-        <link rel="alternate" hrefLang="en" href={`https://lemonskn.com/${slug}`} />
-        <link rel="alternate" hrefLang="lt" href={`https://lemonskn.com/lt/${slug}`} />
-        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/${slug}`} />
-
-        <link rel="icon" sizes="512x512" href="/lemonskn.png" />
-        <link rel="apple-touch-icon" href="/lemonskn.png" />
-
-        <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.description || ""} />
-        <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
-        <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="ro_RO" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn.png" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema, null, 2) }}
-        />
-      </Head>
-
+      {/* Stilizare globală */}
       <style jsx global>{`
-        .toc { background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; margin: 2rem 0; }
-        .toc a { color: #1d4ed8; font-weight: 500; }
-        .new-layout__container { padding: 0 8%; line-height: 1.8; color: #333; font-family: system-ui, sans-serif; }
-        .new-layout__main-title { font-size: 2.6rem; font-weight: bold; color: #111;text-align: center; }
-        .new-layout__section-title { font-size: 1.9rem; font-weight: 600; margin: 3rem 0 1rem; position: relative; padding-bottom: 0.6rem; }
-        .new-layout__section-title::after { content: ""; width: 80px; height: 5px; background: #facc15; position: absolute; bottom: 0; left: 0; border-radius: 4px; }
-        .img { width: 55%; margin: 2rem auto; display: block; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
-        @media (max-width: 768px) { .img { width: 100%; } .new-layout__main-title { font-size: 2rem; } }
+        .new-layout__container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1rem; line-height: 1.8; color: #1f2937; font-family: system-ui, -apple-system, sans-serif; }
+        .new-layout__main-title { font-size: 2.9rem; font-weight: 800; text-align: center; color: #111; margin: 1.5rem 0 1rem; }
+        .new-layout__subtitle { font-size: 1.5rem; text-align: center; color: #4b5563; margin-bottom: 3.5rem; }
+        .new-layout__section-title { font-size: 2.2rem; font-weight: 700; margin: 4.5rem 0 1.8rem; position: relative; padding-bottom: 1rem; }
+        .new-layout__section-title::after { content: ""; position: absolute; left: 0; bottom: 0; width: 120px; height: 6px; background: #facc15; border-radius: 4px; }
+        .featured-img { width: 100%; max-width: 800px; margin: 3rem auto; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.15); display: block; }
+        .toc { background: #f8fafc; padding: 2rem; border-radius: 16px; border: 1px solid #e2e8f0; margin: 3.5rem 0; }
+        .toc h3 { margin: 0 0 1rem; font-size: 1.3rem; font-weight: 700; }
+        .toc ul { list-style: none; padding: 0; margin: 0; }
+        .toc li { margin: 0.7rem 0; }
+        .toc a { color: #1d4ed8; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+        .toc a:hover { color: #facc15; text-decoration: underline; }
+        .internal-links { background: linear-gradient(135deg, #fffbeb, #fefce8); padding: 3rem 2rem; border-radius: 20px; margin: 4rem 0; }
+        .disclaimer-box { background: #eff6ff; border-left: 6px solid #3b82f6; padding: 2rem; border-radius: 0 12px 12px 0; margin: 4rem 0; }
       `}</style>
 
-      <div className="new-layout__container max-w-5xl mx-auto py-12">
+      <div className="new-layout__container">
 
-      
-        {/* Table of Contents – Romanian Version */}
-{tocItems.length > 0 && (
-  <div className="toc my-10">
-    <h3 className="font-bold text-xl mb-6 text-center text-gray-800">
-      Cuprins
-    </h3>
-    <ul className="space-y-3">
-      {tocItems.map((item, i) => (
-        <li key={i}>
-          <a 
-            href={`#${item.id}`}
-            className="block py-3 px-5 bg-white rounded-xl text-lg font-semibold text-amber-700 hover:bg-amber-50 hover:text-amber-800 hover:shadow-md transition-all duration-300 border border-amber-200"
-          >
-            {i + 1}. {item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-)}
-        <header className="text-center mb-12">
-          <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword}</h1>
-          {frontmatter.subtitle && <h2 className="text-2xl text-gray-600 mt-4">{frontmatter.subtitle}</h2>}
-          {frontmatter.img && <img className="img" src={frontmatter.img} loading="lazy" alt={frontmatter.h1mainkeyword} />}
+        {/* Cuprins */}
+        {tocItems.length > 0 && (
+          <div className="toc">
+            <h3>Cuprins</h3>
+            <ul>
+              {tocItems.map((item, i) => (
+                <li key={i}><a href={`#${item.id}`}>{item.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Header */}
+        <header className="text-center">
+          <h1 className="new-layout__main-title">{frontmatter.title}</h1>
+
+          {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>} 
+
+          {frontmatter.img && (
+            <Image
+              src={frontmatter.img}
+              alt={frontmatter.title}
+              width={1000}
+              height={600}
+              layout="intrinsic"
+              className="featured-img"
+              priority
+            />
+          )}
         </header>
 
-        {frontmatter.intro && <div className="text-lg leading-8 text-center my-10 bg-yellow-50 p-8 rounded-xl">{frontmatter.intro}</div>}
-
-        {frontmatter.h2long_tail_keyword1_before_problem && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword1_before_problem}</h2>}
-        {frontmatter.problemTitle && <h5 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h5>}
-        {problemList.length > 0 && (
-          <section className="bg-red-50 border-l-8 border-red-600 p-8 rounded-r-xl my-10">
-            <ul className="list-disc pl-6 space-y-3 text-lg">{problemList.map((item, i) => <li key={i}>{item}</li>)}</ul>
+        {/* Introducere */}
+        {frontmatter.intro && (
+          <section className="my-12 text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
+            <div dangerouslySetInnerHTML={{ __html: frontmatter.intro }} />
           </section>
         )}
 
-        {frontmatter.h2long_tail_keyword2_before_solution && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword2_before_solution}</h2>}
+        {/* PROBLEMĂ */}
+        {frontmatter.problemTitle && (
+          <>
+            {frontmatter.h2long_tail_keyword1_before_problem && (
+              <h2>{frontmatter.h2long_tail_keyword1_before_problem}</h2>
+            )}
+            <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>
+
+            {problemList.length > 0 && (
+              <div className="bg-red-50 border-l-8 border-red-500 p-8 rounded-r-xl my-10">
+                <ul className="list-disc list-inside space-y-3 text-lg">
+                  {problemList.map((item, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                  ))}
+                </ul>
+              </div>
+            )}
+          </>
+        )}
+
+        {/* SOLUȚIE */}
         {(frontmatter.solution || solutionList.length > 0) && (
-          <section id="solutie" className="my-10">
+          <section id="solutie">
+            {frontmatter.h2long_tail_keyword2_before_solution && (
+              <h2>{frontmatter.h2long_tail_keyword2_before_solution}</h2>
+            )}
+
             <h3 className="new-layout__section-title">Soluție</h3>
-            {frontmatter.solution && <p className="text-lg my-6">{frontmatter.solution}</p>}
+
+            {frontmatter.solution && (
+              <div className="my-8 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: frontmatter.solution }} />
+            )}
+
             {solutionList.length > 0 && (
-              <ul className="list-disc pl-6 space-y-4 text-lg my-6">
-                {solutionList.map((item, i) => <li key={i}>{item}</li>)}
+              <ul className="list-disc">
+                {solutionList.map((item, i) => (
+                  <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                ))}
               </ul>
             )}
           </section>
         )}
 
-        {frontmatter.h2long_tail_keyword3_before_do_dont_table && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>}
+        {/* Dermatologul spune */}
+        {frontmatter.dermatologistsaywhattitle && (
+          <>
+            <h3 id="dermatologul-spune" className="new-layout__section-title">
+              {frontmatter.dermatologistsaywhattitle}
+            </h3>
+
+            {dermatologistsaywhatlist.length > 0 && (
+              <div className="bg-red-50 border-l-8 border-red-500 p-8 rounded-r-xl my-10">
+                <ul className="list-disc list-inside space-y-3 text-lg">
+                  {dermatologistsaywhatlist.map((item, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                  ))}
+                </ul>
+              </div>
+            )}
+          </>
+        )}
+
+        {/* Fă / Nu face */}
         {comparisonTable.length > 0 && (
-          <section id="fa-nuface">
-            <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Fă / Nu face"}</h3>
-            <table className="w-full border-collapse my-8 bg-white shadow-lg rounded-xl overflow-hidden">
-              <thead className="bg-gradient-to-r from-green-500 to-emerald-600 text-white">
-                <tr><th className="p-5 text-left">Fă</th><th className="p-5 text-left">Nu face</th></tr>
-              </thead>
-              <tbody>
-                {comparisonTable.map((row, i) => (
-                  <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    <td className="p-5">{row.do || "—"}</td>
-                    <td className="p-5">{row.dont || "—"}</td>
+          <section id="fa-nu-fa">
+            {frontmatter.h2long_tail_keyword3_before_do_dont_table && (
+              <h2>{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>
+            )}
+
+            <h3 className="new-layout__section-title">
+              {frontmatter.comparisonTitle || "Fă / Nu face"}
+            </h3>
+
+            <div className="overflow-x-auto my-10">
+              <table className="w-full border-collapse text-left">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="p-5 font-bold text-green-700">Fă</th>
+                    <th className="p-5 font-bold text-red-700">Nu face</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {comparisonTable.map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                      <td className="p-5 border-t">✓ {row.do || "—"}</td>
+                      <td className="p-5 border-t">✗ {row.dont || "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </section>
         )}
 
-        {frontmatter.h2long_tail_keyword4_before_routine && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword4_before_routine}</h2>}
+        {/* Rutină */}
         {routineList.length > 0 && (
           <section id="rutina">
-            <h3 className="new-layout__section-title">{frontmatter.routineTitle || "Rutină zilnică de îngrijire"}</h3>
-            <ol className="list-decimal pl-8 space-y-5 text-lg font-medium my-8">
-              {routineList.map((item, i) => <li key={i}>{item}</li>)}
+            {frontmatter.h2long_tail_keyword4_before_routine && (
+              <h2>{frontmatter.h2long_tail_keyword4_before_routine}</h2>
+            )}
+
+            <h3 className="new-layout__section-title">
+              {frontmatter.routineTitle || "Rutina de îngrijire a pielii"}
+            </h3>
+
+            <ol className="list-decimal">
+              {routineList.map((step, i) => (
+                <li key={i} dangerouslySetInnerHTML={{ __html: step }} />
+              ))}
             </ol>
           </section>
         )}
 
-        
-
-        {frontmatter.h2long_tail_keyword5_before_FAQ && <h2 className="my-8 text-2xl">{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>}
+        {/* FAQ */}
         {faqList.length > 0 && (
           <section id="faq">
-            <h3 className="new-layout__section-title">Întrebări frecvente (FAQ)</h3>
-            {faqList.map((faq, i) => (
-              <div key={i} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl my-6 border-l-4 border-blue-600">
-                <div className="faq-q text-xl font-bold text-gray-800">Întrebare: {faq.question}</div>
-                <div className="mt-3 text-gray-700 text-lg">Răspuns: {faq.answer}</div>
-              </div>
-            ))}
+            {frontmatter.h2long_tail_keyword5_before_FAQ && (
+              <h2>{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>
+            )}
+
+            <h3 className="new-layout__section-title">Întrebări frecvente</h3>
+
+            <div className="space-y-8 my-12">
+              {faqList.map((faq, i) => (
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-8 shadow-md hover:shadow-lg transition">
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">{faq.question}</h4>
+                  <div className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                </div>
+              ))}
+            </div>
           </section>
         )}
 
-        {/* Super Strong E-E-A-T Disclaimer */}
-        <section className="my-20">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-8 border-indigo-600 rounded-r-2xl p-10 shadow-2xl">
-            <h6 className="text-indigo-900 font-bold text-2xl mb-6">Notă medicală importantă</h6>
-            <p className="text-gray-800 text-lg leading-relaxed">
-              Nu sunt medic dermatolog. Toate informațiile din acest articol sunt bazate pe studii științifice publicate în 
-              <strong> PubMed, Cochrane, Harvard Medical School, Oxford Academic </strong> și alte surse de încredere. 
-              Înainte de a începe orice rutină de îngrijire a pielii, <strong>consultați obligatoriu un dermatolog calificat</strong>. 
-              Aici nu există linkuri afiliate sau reclame plătite.
-            </p>
-          </div>
+        {/* Linkuri interne */}
+        {(frontmatter.linktitle1 || frontmatter.linktitle2 || frontmatter.linktitle3) && (
+          <section className="internal-links text-center">
+            <h3 className="text-3xl font-bold mb-12">Citește și</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[1, 2, 3].map(i =>
+                frontmatter[`linktitle${i}`] && frontmatter[`linkslug${i}`] ? (
+                  <a
+                    key={i}
+                    href={`/ro/${frontmatter[`linkslug${i}`]}`}
+                    className="block"
+                  >
+                    <div></div>
+                    <div>
+                      <h4>{frontmatter[`linktitle${i}`]}</h4>
+                      <p>Citește mai mult →</p>
+                    </div>
+                  </a>
+                ) : null
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* Disclaimer medical */}
+        <section className="disclaimer-box my-20">
+          <h3 className="text-2xl font-bold text-blue-900 mb-6">Notă medicală importantă</h3>
+          <p className="text-lg leading-relaxed text-gray-800">
+            Acest articol este redactat pe baza studiilor științifice din
+            <strong> PubMed, Cochrane Library, Harvard Health, Oxford Academic </strong>
+            și alte surse evaluate. Totuși,
+            <strong> nu reprezintă un sfat medical.</strong>
+            Înainte de a modifica rutina de îngrijire,
+            <strong> consultați un dermatolog.</strong>
+            Nu există linkuri afiliate aici.
+          </p>
         </section>
 
+        {/* Conținut Markdown */}
         {content && (
-          <article className="prose prose-xl max-w-none mt-16">
+          <article className="prose prose-lg max-w-none mt-16">
             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>
               {content}
             </ReactMarkdown>
@@ -415,4 +280,93 @@ export default function NewLayoutro({
       </div>
     </>
   );
+}
+
+// STRUCTURED DATA COMPLET ROMÂNĂ
+export function getStructuredData({ frontmatter, slug }) {
+  const faqList = Array.isArray(frontmatter.faqList)
+    ? frontmatter.faqList.filter(q => q?.question && q?.answer)
+    : [];
+
+  const routineList = Array.isArray(frontmatter.routineList)
+    ? frontmatter.routineList.filter(Boolean)
+    : [];
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://lemonskn.com/#organization",
+        "name": "Lemonskn",
+        "url": "https://lemonskn.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lemonskn.com/lemonskn.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": `https://lemonskn.com/ro/${slug}#webpage`,
+        "url": `https://lemonskn.com/ro/${slug}`,
+        "name": frontmatter.title,
+        "description": frontmatter.description || "",
+        "inLanguage": "ro-RO",
+        "isPartOf": { "@id": "https://lemonskn.com/#website" }
+      },
+      {
+        "@type": "Article",
+        "@id": `https://lemonskn.com/ro/${slug}#article`,
+        "headline": frontmatter.title,
+        "description": frontmatter.description,
+        "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
+        "author": { "@type": "Organization", "name": "Lemonskn" },
+        "publisher": { "@id": "https://lemonskn.com/#organization" },
+        "datePublished": frontmatter.date || "2025-01-01",
+        "dateModified": frontmatter.updated || frontmatter.date || "2025-01-01"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://lemonskn.com/ro/${slug}#breadcrumbs`,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://lemonskn.com/ro/" },
+          { "@type": "ListItem", "position": 2, "name": frontmatter.title, "item": `https://lemonskn.com/ro/${slug}` }
+        ]
+      },
+      ...(faqList.length > 0 ? [{
+        "@type": "FAQPage",
+        "@id": `https://lemonskn.com/ro/${slug}#faq`,
+        "mainEntity": faqList.map(q => ({
+          "@type": "Question",
+          "name": stripHtml(q.question),
+          "acceptedAnswer": { "@type": "Answer", "text": stripHtml(q.answer) }
+        }))
+      }] : []),
+      ...(routineList.length > 0 ? [{
+        "@type": "HowTo",
+        "@id": `https://lemonskn.com/ro/${slug}#howto`,
+        "name": frontmatter.routineTitle || "Rutina de îngrijire a pielii",
+        "description": frontmatter.routineTitle || "Rutina zilnică eficientă",
+        "totalTime": "PT10M",
+        "step": routineList.map((text, i) => ({
+          "@type": "HowToStep",
+          "name": `Pasul ${i + 1}`,
+          "text": stripHtml(text)
+        }))
+      }] : []),
+      ...(frontmatter.dermatologistsaywhattitle ? [{
+        "@type": "MedicalBusiness",
+        "@id": `https://lemonskn.com/ro/${slug}#dermatologist`,
+        "name": frontmatter.dermatologistsaywhattitle,
+        "description": "Reviews from Dermatologists",
+        "mainEntityOfPage": `https://lemonskn.com/ro/${slug}`,
+        "provider": {
+          "@type": "Organization",
+          "name": "Lemonskn"
+        }
+      }] : [])
+    ]
+  };
 }
