@@ -6,7 +6,7 @@ description: "Paprasta odos priežiūros rutina paaugliams Lietuvoje: švelnus v
 date: "2025-11-18"
 img: "/3.jpeg"
 img_alt: "Paprasta odos priežiūros rutina paaugliams Lietuvoje – 4 produktai ir švari oda"
-
+url: "geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje"
 # Main keyword শুরুতেই + long-tail H2-এর জন্য
 h1mainkeyword: "paprasta odos priežiūros rutina paaugliams Lietuvoje"
 
@@ -82,10 +82,10 @@ faqList:
   - {question: "Brangūs produktai geresni?", answer: "Ne. Svarbiausia ingredientai ir nuoseklumas."}
 
 
-linktitle1: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
-linkslug1: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
-linktitle2: "Švelnios odos priežiūros praktikos paaugliams su akne žiemą"
-linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
-linktitle3: "Žiemos odos priežiūra paaugliams Lietuvoje"
-linkslug3: žiemos-odos-priežiūra-paaugliams-lietuvoje
+linktitle1: "Žiemos odos priežiūra paaugliams Lietuvoje – sausai odai"
+linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
+linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+linktitle3: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
+linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
 ---

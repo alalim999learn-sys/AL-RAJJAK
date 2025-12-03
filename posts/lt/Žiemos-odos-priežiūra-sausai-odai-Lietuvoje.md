@@ -2,12 +2,11 @@
 layout: new
 title: "Žiemos odos priežiūra paaugliams Lietuvoje – sausai odai" # 57 simboliai, keyword pirmoje vietoje
 subtitle: "Praktiški patarimai sausai odai šaltomis žiemomis"       # H1-friendly, <40 simbolių
-
 description: "Žiemos odos priežiūra paaugliams Lietuvoje: moksliškai pagrįsti patarimai sausai odai šaltomis Baltijos žiemomis, kad išvengtumėte pleiskanojimo ir sudirginimo."
 date: "2025-11-18"
 img: "/6.jpeg"
 img_alt: "Žiemos odos priežiūra paaugliams sausai odai Lietuvoje" # Alt tekstas su keyword
-
+url: "Žiemos-odos-priežiūra-sausai-odai-Lietuvoje"
 h1mainkeyword: "Žiemos odos priežiūra paaugliams Lietuvoje"
 
 intro: "O, Lietuvos žiema – oras toks sausas, kad galėtum su savo kaktą tarkuoti. Sveiki atvykę į sezoną, kai kiekvieno paauglio veidas nusprendžia pasirodyti filme „Sahara: tęsinys“."
@@ -42,6 +41,8 @@ solutionList:
   - "Naudokite drėkintuvą kambaryje (tikslas 40–50% drėgmės)"
   - "Gerkite pakankamai vandens"
   - "Pasitarkite su gydytoju, jei oda jautri ar alergiška"
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 
 comparisonTitle: "Žiemos odos taisyklės ir klaidos"
 comparisonTable:
@@ -69,13 +70,10 @@ faqlist:
   - {question: "Ar lakštinės kaukės naudingos?", answer: "Laikinas drėkinimas, bet be storos kremo užrakinimo vanduo greitai išgaruoja."}
   - {question: "Ar mityba gali padėti sausai odai?", answer: "Omega-3 riebalai (lašiša, silkė) ir pakankamai sveikų riebalų padeda barjerui iš vidaus."}
   - {question: "Kada kreiptis į dermatologą?", answer: "Jei oda raudona, įtrūkusi, kraujuoja arba egzema pasireiškia kiekvieną žiemą – nedelskite."}
-
-linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
-linkslug1: "geriausi-naturalios-odos-prieziuros-patarimai-paaugliams"
-
-linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug2: "geriausia-paprasta-odos-prieziura-paaugliams"
-
-linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne"
-linkslug3: "odos-prieziuros-patarimai-paaugliui-su-akne"
+linktitle1: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
+linkslug1: odos-priežiūros-rutina-po-30-Lietuva
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
+linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+linktitle3: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
+linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
 ---

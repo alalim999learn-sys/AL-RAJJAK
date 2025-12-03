@@ -6,7 +6,7 @@ description: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje? Patikr
 date: "2025-01-15"
 img: "/2.jpeg"
 img_alt: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje – rankos tepamos aliejumi"
-
+url: "geriausi-žiemos-odos-drėkinimo-patarimai"
 # Main & Long-tail keywords – Rank Math এবং Google-এর জন্য পারফেক্ট
 h1mainkeyword: "kaip žiemą natūraliai sudrėkinti sausą odą"
 h2long_tail_keyword1_before_problem: "kodėl žiemą oda tampa sausa Lietuvoje"
@@ -45,6 +45,8 @@ solutionList:
   - "Į vonią berk avižinių dribsnių – FDA patvirtinta nuo sausos ir niežtinčios odos."
   - "Valgyk daugiau omega-3 – Baltijos silkė, lašiša, linų sėmenys, chia."
   - "Žiemą UV niekur nedingsta – naudok mineralinį SPF 30+."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 
 comparisonTitle: "Žiemos odos TAIP ir NE"
 comparisonTable:
@@ -77,8 +79,8 @@ faqList:
 # Internal links
 linktitle1: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
 linkslug1: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
-linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje"
-linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
-linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne žiemą"
+linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+linktitle3: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
 linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 ---

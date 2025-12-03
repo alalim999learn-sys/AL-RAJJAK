@@ -199,7 +199,7 @@ export default function Post({ post, products, slug }) {
     <>
       <Head>
         <title>{frontmatter.title} | Lemonskn</title>
-        <meta name="description" content={frontmatter.description || ''} />
+        <meta name="description" content={frontmatter.description} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://lemonskn.com/lt/${slug}`} />
         <link rel="alternate" hrefLang="en" href={`https://lemonskn.com/${slug}`} />
@@ -209,7 +209,7 @@ export default function Post({ post, products, slug }) {
         <link rel="icon" href="/lemonskn.png" />
 
         <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.description || ''} />
+        <meta property="og:description" content={frontmatter.description} />
         <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
         <meta property="og:url" content={`https://lemonskn.com/lt/${slug}`} />
         <meta property="og:locale" content="lt_LT" />

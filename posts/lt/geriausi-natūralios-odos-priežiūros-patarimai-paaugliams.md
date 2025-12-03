@@ -6,15 +6,15 @@ description: "Geriausi natūralūs paauglių odos priežiūros patarimai Lietuvo
 date: "2025-11-18"
 img: "/1.jpeg"
 
+url: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
+linkslug1: geriausi-žiemos-odos-drėkinimo-patarimai
 
-linktitle1: "Saikos odos priežiūra paaugliams žiemą Lietuvoje"
-linkslug1: Žiemos-odos-priežiūra-sausai-odai-Lietuvoje
+linktitle2: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
 
-linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
-
-linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne Lietuvos žiemą"
-linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
+linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
+linkslug3: odos-priežiūros-patarimai-pradedantiesiems
 
 h1mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
 

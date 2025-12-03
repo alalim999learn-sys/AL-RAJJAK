@@ -73,12 +73,16 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {/* Header */}
         <header className="text-center">
-          <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword} </h1>
+       <h1 className="new-layout__main-title">
+  {frontmatter.h1mainkeyword}
+</h1>
+
+
           {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>} 
           {frontmatter.img && (
             <Image
               src={frontmatter.img}
-              alt={frontmatter.mainkeyword}
+              alt={frontmatter.h1mainkeyword}
               width={1000} // Original width (for aspect ratio)
         height={600} // Original height (for aspect ratio)
         layout="responsive" // This makes it responsive
@@ -104,7 +108,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
             {frontmatter.h2long_tail_keyword1_before_problem && (
               <h2>{frontmatter.h2long_tail_keyword1_before_problem}</h2>
             )}
-            <p id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</p>
+            <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>
             {problemList.length > 0 && (
               <div className="bg-red-50 border-l-8 border-red-500 p-8 rounded-r-xl my-10">
                 <ul className="list-disc list-inside space-y-3 text-lg">
@@ -123,12 +127,12 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
             {frontmatter.h2long_tail_keyword2_before_solution && (
               <h2>{frontmatter.h2long_tail_keyword2_before_solution}</h2>
             )}
-            <p className="new-layout__section-title">Sprendimas</p>
+            <h3 className="new-layout__section-title">Sprendimas</h3>
             {frontmatter.solution && (
               <div className="my-8 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: frontmatter.solution }} />
             )}
             {solutionList.length > 0 && (
-              <ul className="list-disc list-inside space-y-4 my-10 text-lg">
+              <ul className="list-disc">
                 {solutionList.map((item, i) => (
                   <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
@@ -143,9 +147,9 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
             {frontmatter.h2long_tail_keyword3_before_do_dont_table && (
               <h2>{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>
             )}
-            <p className="new-layout__section-title">
+            <h3 className="new-layout__section-title">
               {frontmatter.comparisonTitle || "Daryk / Nedaryk"}
-            </p>
+            </h3>
             <div className="overflow-x-auto my-10">
               <table className="w-full border-collapse text-left">
                 <thead className="bg-gray-100">
@@ -173,9 +177,9 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
             {frontmatter.h2long_tail_keyword4_before_routine && (
               <h2>{frontmatter.h2long_tail_keyword4_before_routine}</h2>
             )}
-            <p className="new-layout__section-title">
+            <h3 className="new-layout__section-title">
               {frontmatter.routineTitle || "Odos priežiūros rutina"}
-            </p>
+            </h3>
             <ol className="list-decimal list-inside space-y-6 my-10 text-lg font-medium">
               {routineList.map((step, i) => (
                 <li key={i} dangerouslySetInnerHTML={{ __html: step }} />
@@ -190,11 +194,11 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
             {frontmatter.h2long_tail_keyword5_before_FAQ && (
               <h2>{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>
             )}
-            <p className="new-layout__section-title">Dažniausiai užduodami klausimai</p>
+            <h3 className="new-layout__section-title">Dažniausiai užduodami klausimai</h3>
             <div className="space-y-8 my-12">
               {faqList.map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-8 shadow-md hover:shadow-lg transition">
-                  <h5 className="text-xl font-bold text-gray-900 mb-4">{faq.question}</h5>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">{faq.question}</h4>
                   <div className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </div>
               ))}
@@ -205,7 +209,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
         {/* Internal Links */}
         {(frontmatter.linktitle1 || frontmatter.linktitle2 || frontmatter.linktitle3) && (
           <section className="internal-links text-center">
-            <p className="text-3xl font-bold mb-12">Skaitykite taip pat</p>
+            <h3 className="text-3xl font-bold mb-12">Skaitykite taip pat</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[1, 2, 3].map(i =>
                 frontmatter[`linktitle${i}`] && frontmatter[`linkslug${i}`] ? (
@@ -232,7 +236,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {/* Medical Disclaimer */}
         <section className="disclaimer-box my-20">
-          <h6 className="text-2xl font-bold text-blue-900 mb-6">Svarbi medicininė pastaba</h6>
+          <h3 className="text-2xl font-bold text-blue-900 mb-6">Svarbi medicininė pastaba</h3>
           <p className="text-lg leading-relaxed text-gray-800">
             Šis straipsnis parengtas remiantis moksliniais tyrimais iš
             <strong> PubMed, Cochrane Library, Harvard Health, Oxford Academic </strong>

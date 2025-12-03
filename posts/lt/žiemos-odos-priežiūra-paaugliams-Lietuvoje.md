@@ -4,10 +4,9 @@ title: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"  # Title fi
 subtitle: "Natūrali žiemos odos priežiūra paaugliams"             # H1-friendly, <40 chars
 description: "Geriausi natūralūs žiemos odos priežiūros patarimai paaugliams Lietuvoje – kaip išlaikyti odą sveiką ir drėkinamą šaltuoju metų laiku."  # Meta with keyword
 date: "2025-11-18"
-
 img: "/8.jpeg"
 img_alt: "Žiemos odos priežiūra paaugliams Lietuvoje"            # Alt text with keyword
-
+url: "žiemos-odos-priežiūra-paaugliams-lietuvoje"
 h1mainkeyword: "žiemos odos priežiūra paaugliams Lietuvoje"
 keyword2: "sausos odos žiemą Baltijos paaugliai"
 h2long_tail_keyword1_before_problem: "ziemos-odos-prieziura-paaugliams-lietuvoje"
@@ -40,6 +39,8 @@ solutionList:
   - "Naudokite lūpų balzamą su uždarančiomis priemonėmis."
   - "Uždenkite veidą šalikėliu vėjyje."
   - "Pasitarkite su gydytoju, jei oda jautri ar alergiška."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 
 comparisonTitle: "Daryk tai vs. Nedaryk to"
 comparisonTable: 
@@ -64,12 +65,17 @@ faqList:
   - {question: "Kodėl oda degina įėjus iš šalčio?", answer: "Staigus temperatūros pokytis išplečia kraujagysles. Drėkinkite odą švelniai."}
   - {question: "Ar galiu daugiau šveisti žiemą?", answer: "Ne. Suardysite odos barjerą ir pabloginsite situaciją."}
 
-linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
-linkslug1: "geriausi-naturalios-odos-prieziuros-patarimai-paaugliams"
 
+
+
+
+linktitle1: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
+linkslug1: geriausi-natūralios-odos-priežiūros-patarimai-paaugliams
 linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug2: "geriausia-paprasta-odos-prieziura-paaugliams-Lietuvoje"
+linkslug2: geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje
+linktitle3: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+linkslug3: odos-priežiūros-patarimai-paaugliui-su-akne
 
-linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne"
-linkslug3: "odos-prieziuros-patarimai-paaugliui-su-akne"
+
+
 ---

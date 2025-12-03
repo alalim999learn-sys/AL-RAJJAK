@@ -6,7 +6,7 @@ description: "Moksliškai pagrįsta švytinčios odos rutina žiemą Lietuvoje. 
 date: "2025-12-02"
 img: "/9.jpeg"
 img_alt: "Švytinčios odos rutina žiemą Lietuvoje, drėkinimas ir apsauga nuo šalčio"
-
+url: "švytinčiosodos-rutina-žiemą-Lietuvoje"
 h1mainkeyword: "švytinčios odos rutina žiemą Lietuvoje"
 
 
@@ -41,7 +41,10 @@ solutionList:
   - "Mineralinis kremas nuo saulės SPF30+ (net žiemą) – apsaugo nuo UVA spindulių ir sniego atspindžio."
   - "Okliuzinis naktinis kremas arba miego kaukė – apsaugo drėgmę vakare, galima sumaišyti su šaltalankių aliejumi."
   - "Kartą per savaitę lakštinė kaukė mineraliniame vandenyje (pvz., Druskininkų)."
-  - "🚩Jautriai odai – pasitarkite su gydytoju prieš naudojimą."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+
+
 
 comparisonTitle: "Daryk Tai, Ne Tą – Baltijos žiemos leidimas"
 comparisonTable:
@@ -81,12 +84,14 @@ faqList:
   - question: "Kiek laiko, kol pamatysiu rezultatus?"
     answer: "1–2 sav. → minkštesnė oda, 4–6 sav. → mažesnis paraudimas, lygesnė tekstūra, 2–3 mėn. → tikras švytėjimas ir stipresnis barjeras."
 
-linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą"
-linkslug1: "geriausi-natūralios-odos-prieziuros-patarimai-paaugliams"
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
+linkslug1: geriausi-žiemos-odos-drėkinimo-patarimai
 
-linktitle2: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug2: "geriausia-paprasta-odos-prieziura-paaugliams-lietuvoje"
+linktitle2: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
 
-linktitle3: "Švelnios odos priežiūros praktikos paaugliams su akne"
-linkslug3: "odos-prieziuros-patarimai-paaugliui-su-akne"
+linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
+linkslug3: odos-priežiūros-patarimai-pradedantiesiems
+
+h1mainkeyword: "Geriausi natūralios odos priežiūros patarimai paaugliams"
 ---

@@ -2,11 +2,11 @@
 layout: new
 title: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 subtitle: "Lengva 3–4 žingsnių rutina, kuri veikia net lietuvišką žiemą"
-description: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje: švelnus valymas, drėkinimas ir SPF. Jokių 10 žingsnių – tik tai, kas tikrai veikia nuo pirmos savaitės."
+description: "Rutina Lietuvoje: valymas, drėkinimas ir SPF – efektyvu nuo pirmos savaitės."
 date: "2025-11-17"
 img: "/5.jpeg"
 img_alt: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje – švelnūs produktai ir švytinti oda"
-
+url: "odos-priežiūros-patarimai-pradedantiesiems"
 # Main keyword শুরুতেই – Google.lt এবং Rank Math এর জন্য পারফেক্ট
 h1mainkeyword: "paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 
@@ -44,7 +44,8 @@ solutionList:
   - "Švelnus šveitimas (AHA/BHA) 1–2 kartus per savaitę – jokių šveitiklių su granulėmis!"
   - "Gerk 2–2,5 l vandens ir miegok 7–9 val."
   - "Neliesk veido – bakterijų pernešama 70 % mažiau"
-  - "🚩Jautri oda? Pasitark su gydytoju prieš aktyvius ingredientus."
+  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 
 comparisonTitle: "Odos priežiūra pradedantiesiems: TAIP ir NE"
 comparisonTable:
@@ -74,10 +75,10 @@ faqList:
   - {question: "Oda išsausėjo po naujų produktų – ką daryti?", answer: "Grįžk prie „švelnios trijulės“ (valiklis + drėkiklis + SPF) 2–3 savaitėms."}
 
 # Internal links
-linktitle1: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
-linkslug1: geriausia-paprasta-odos-prieziūra-paaugliams-Lietuvoje
-linktitle2: "Švelni odos priežiūra paaugliams su akne žiemą"
-linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
-linktitle3: "Kaip žiemą natūraliai sudrėkinti sausą odą"
-linkslug3: kaip-ziema-natūraliai-sudrekinti-sausa-oda
+linktitle1: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
+linkslug1: odos-priežiūros-rutina-po-30-Lietuva
+linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
+linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+linktitle3: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
+linkslug3: švytinčiosodos-rutina-žiemą-Lietuvoje
 ---
