@@ -81,18 +81,17 @@ export default function NewLayoutro({ frontmatter = {}, content = "", slug = "" 
             <Image
               src={frontmatter.img}
               alt={frontmatter.title}
-              width={1000}
-              height={600}
+              width={700}
+              height={300}
               layout="intrinsic"
-              className="featured-img"
-              priority
+             
             />
           )}
         </header>
 
         {/* Introducere */}
         {frontmatter.intro && (
-          <section className="my-12 text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
+          <section className="">
             <div dangerouslySetInnerHTML={{ __html: frontmatter.intro }} />
           </section>
         )}
@@ -106,8 +105,8 @@ export default function NewLayoutro({ frontmatter = {}, content = "", slug = "" 
             <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>
 
             {problemList.length > 0 && (
-              <div className="bg-red-50 border-l-8 border-red-500 p-8 rounded-r-xl my-10">
-                <ul className="list-disc list-inside space-y-3 text-lg">
+              <div className="">
+                <ul className="">
                   {problemList.map((item, i) => (
                     <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
@@ -291,82 +290,102 @@ export function getStructuredData({ frontmatter, slug }) {
   const routineList = Array.isArray(frontmatter.routineList)
     ? frontmatter.routineList.filter(Boolean)
     : [];
-
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://lemonskn.com/#organization",
-        "name": "Lemonskn",
-        "url": "https://lemonskn.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://lemonskn.com/lemonskn.png",
-          "width": 512,
-          "height": 512
-        }
-      },
-      {
-        "@type": "MedicalWebPage",
-        "@id": `https://lemonskn.com/ro/${slug}#webpage`,
-        "url": `https://lemonskn.com/ro/${slug}`,
-        "name": frontmatter.title,
-        "description": frontmatter.description || "",
-        "inLanguage": "ro-RO",
-        "isPartOf": { "@id": "https://lemonskn.com/#website" }
-      },
-      {
-        "@type": "Article",
-        "@id": `https://lemonskn.com/ro/${slug}#article`,
-        "headline": frontmatter.title,
-        "description": frontmatter.description,
-        "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
-        "author": { "@type": "Organization", "name": "Lemonskn" },
-        "publisher": { "@id": "https://lemonskn.com/#organization" },
-        "datePublished": frontmatter.date || "2025-01-01",
-        "dateModified": frontmatter.updated || frontmatter.date || "2025-01-01"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `https://lemonskn.com/ro/${slug}#breadcrumbs`,
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://lemonskn.com/ro/" },
-          { "@type": "ListItem", "position": 2, "name": frontmatter.title, "item": `https://lemonskn.com/ro/${slug}` }
+return {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lemonskn.com/#website",
+      "url": "https://lemonskn.com",
+      "name": "Lemonskn",
+      "inLanguage": "ro-RO"
+    },
+    {
+      "@type": "WebPage",
+      "@id": `https://lemonskn.com/ro/${slug}#webpage`,
+      "url": `https://lemonskn.com/ro/${slug}`,
+      "name": frontmatter.title,
+      "description": frontmatter.description || "",
+      "isPartOf": { "@id": "https://lemonskn.com/#website" },
+      "inLanguage": "ro-RO",
+      "breadcrumb": { "@id": `https://lemonskn.com/ro/${slug}#breadcrumbs` },
+      "mainEntity": { "@id": `https://lemonskn.com/ro/${slug}#article` }
+    },
+    {
+      "@type": "Article",
+      "@id": `https://lemonskn.com/ro/${slug}#article`,
+      "headline": frontmatter.title,
+      "description": frontmatter.description,
+      "image": frontmatter.img,
+      "author": {
+        "@type": "Person",
+        "name": frontmatter.author || "Lemonskn Team",
+        "description": "Specialiști în îngrijirea pielii",
+        "sameAs": [
+          "https://www.harvard.edu",
+          "https://academic.oup.com",
+          "https://pubmed.ncbi.nlm.nih.gov"
         ]
       },
-      ...(faqList.length > 0 ? [{
-        "@type": "FAQPage",
-        "@id": `https://lemonskn.com/ro/${slug}#faq`,
-        "mainEntity": faqList.map(q => ({
-          "@type": "Question",
-          "name": stripHtml(q.question),
-          "acceptedAnswer": { "@type": "Answer", "text": stripHtml(q.answer) }
-        }))
-      }] : []),
-      ...(routineList.length > 0 ? [{
-        "@type": "HowTo",
-        "@id": `https://lemonskn.com/ro/${slug}#howto`,
-        "name": frontmatter.routineTitle || "Rutina de îngrijire a pielii",
-        "description": frontmatter.routineTitle || "Rutina zilnică eficientă",
-        "totalTime": "PT10M",
-        "step": routineList.map((text, i) => ({
-          "@type": "HowToStep",
-          "name": `Pasul ${i + 1}`,
-          "text": stripHtml(text)
-        }))
-      }] : []),
-      ...(frontmatter.dermatologistsaywhattitle ? [{
-        "@type": "MedicalBusiness",
-        "@id": `https://lemonskn.com/ro/${slug}#dermatologist`,
-        "name": frontmatter.dermatologistsaywhattitle,
-        "description": "Reviews from Dermatologists",
-        "mainEntityOfPage": `https://lemonskn.com/ro/${slug}`,
-        "provider": {
-          "@type": "Organization",
-          "name": "Lemonskn"
+      "publisher": {
+        "@type": "Person",
+        "name": frontmatter.author || "Lemonskn Team"
+      },
+      "datePublished": frontmatter.date,
+      "dateModified": frontmatter.updated || frontmatter.date
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `https://lemonskn.com/ro/${slug}#breadcrumbs`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://lemonskn.com/ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": frontmatter.title,
+          "item": `https://lemonskn.com/ro/${slug}`
         }
-      }] : [])
-    ]
-  };
+      ]
+    },
+
+    // FAQ Schema
+    ...(faqList.length > 0
+      ? [
+          {
+            "@type": "FAQPage",
+            "@id": `https://lemonskn.com/ro/${slug}#faq`,
+            "mainEntity": faqList.map(q => ({
+              "@type": "Question",
+              "name": stripHtml(q.question),
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": stripHtml(q.answer)
+              }
+            }))
+          }
+        ]
+      : []),
+
+    // HowTo Schema (Routine)
+    ...(routineList.length > 0
+      ? [
+          {
+            "@type": "HowTo",
+            "@id": `https://lemonskn.com/ro/${slug}#howto`,
+            "name": frontmatter.routineTitle || "Rutina de îngrijire a pielii",
+            "step": routineList.map((step, i) => ({
+              "@type": "HowToStep",
+              "name": `Pasul ${i + 1}`,
+              "text": stripHtml(step)
+            }))
+          }
+        ]
+      : [])
+  ]
+};
 }

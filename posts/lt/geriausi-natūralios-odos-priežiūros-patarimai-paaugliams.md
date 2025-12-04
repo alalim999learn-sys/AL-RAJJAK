@@ -49,6 +49,7 @@ problemList:
   - "Spuogų spaudymas ir trynimas (visi tai darėme vidury nakties prie veidrodžio)."
   - "Naudoti 10 žingsnių Korėjos rutiną su aktyviais ingredientais."
   - "Valgyti tonas saldumynų ir tikėtis stebuklo."
+  - Niacinamide may reduce inflammation, according to [Harvard Health](https://www.health.harvard.edu/newsletter_article/niacinamide-for-skin).
 
 solution: >
   Gera žinia? Viską galima nuraminti švelniomis, natūraliomis įpročių pakeitimais. Štai efektyviausi natūralūs odos priežiūros patarimai paaugliams Lietuvoje:
