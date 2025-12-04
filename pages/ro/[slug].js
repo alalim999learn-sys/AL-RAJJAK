@@ -95,6 +95,7 @@
 
 
 
+
 // pages/ro/[slug].js
 import Head from 'next/head';
 import fs from 'fs';
@@ -112,18 +113,21 @@ import NewLayoutro, { getStructuredData as getNewSchema } from '../../component/
 
 export async function getStaticPaths() {
   const postsDir = path.join(process.cwd(), 'posts/ro');
-  if (!fs.existsSync(postsDir)) return { paths: [], fallback: false };
+
+  if (!fs.existsSync(postsDir)) {
+    return { paths: [], fallback: false };
+  }
 
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
-  
-const paths = files
-  .map(file => {
-    const slug = file.replace(/\.md$/, '').trim();
-    // empty slug বা 'ro' slug এড়ান
-    if (!slug || slug.toLowerCase() === 'ro') return null;
-    return { params: { slug } };
-  })
-  .filter(Boolean); // null গুলো remove করুন
+
+  const paths = files
+    .map(file => {
+      const slug = file.replace(/\.md$/, '').trim();
+      // empty slug বা 'ro' slug এড়ান
+      if (!slug || slug.toLowerCase() === 'ro') return null;
+      return { params: { slug } };
+    })
+    .filter(Boolean);
 
   return { paths, fallback: false };
 }
@@ -136,9 +140,6 @@ export async function getStaticProps({ params }) {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data: rawFrontmatter, content: markdownContent } = matter(fileContents);
     const frontmatter = rawFrontmatter || {};
-
-
-
 
     const processedContent = await unified()
       .use(remarkParse)
@@ -203,6 +204,7 @@ export default function Post({ post, products, slug }) {
     ? getNewSchema({ frontmatter, slug })
     : getOldSchema({ frontmatter, products, slug });
 
+
   return (
     <>
       <Head>
@@ -244,4 +246,3 @@ export default function Post({ post, products, slug }) {
 }
 
 
-paths
