@@ -115,9 +115,15 @@ export async function getStaticPaths() {
   if (!fs.existsSync(postsDir)) return { paths: [], fallback: false };
 
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
-  const paths = files.map(file => ({
-    params: { slug: file.replace(/\.md$/, '') },
-  }));
+  
+const paths = files
+  .map(file => {
+    const slug = file.replace(/\.md$/, '').trim();
+    // empty slug বা 'ro' slug এড়ান
+    if (!slug || slug.toLowerCase() === 'ro') return null;
+    return { params: { slug } };
+  })
+  .filter(Boolean); // null গুলো remove করুন
 
   return { paths, fallback: false };
 }
@@ -238,3 +244,4 @@ export default function Post({ post, products, slug }) {
 }
 
 
+paths
