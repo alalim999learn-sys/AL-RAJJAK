@@ -1,6 +1,6 @@
 ---
 layout: new
-no: "2"
+no: "11"
 ## not translate topic 
 ## full translate to romanian
 topic: "morning skincare routine for glowing skin romania" 
@@ -35,15 +35,16 @@ solution: "Nu-ți face griji — aceste probleme au soluții! Iată 9 soluții b
 
 solutionList:
   - "Hidratează ca un profesionist: Folosește o cremă bogată pentru a combate aerul uscat. Hidratarea previne pierderea apei și menține pielea suplă. Sursa: aad.org"
-  - "Curăță delicat dimineața pentru a elimina impuritățile acumulate peste noapte. Curățarea îndepărtează murdăria și bacteriile pentru un început proaspăt. Sursa: aad.org"
-  - "Aplică zilnic cremă cu protecție solară cu spectru larg, chiar și iarna. Protejează împotriva razelor UV pentru o piele sănătoasă. Sursa: aad.org"
-  - "Renunță la fumat pentru a-ți reînvia tenul. Evitarea tutunului reduce ridurile și ternul. Sursa: aad.org"
+  - "Curăță delicat dimineața pentru a elimina impuritățile acumulate peste noapte. Curățarea îndepărtează murdăria și bacteriile pentru un început proaspăt. Sursa: American Academy of Dermatology"
+  - "Aplică zilnic cremă cu protecție solară cu spectru larg, chiar și iarna. Protejează împotriva razelor UV pentru o piele sănătoasă. Sursa: American Academy of Dermatology"
+  - "Renunță la fumat pentru a-ți reînvia tenul. Evitarea tutunului reduce ridurile și ternul. Sursa: American Academy of Dermatology"
   - "Consumă alimente bogate în antioxidanți, cum ar fi fructe de pădure și legume. Alimentația sănătoasă susține vitalitatea pielii. Sursa: mayoclinic.org"
-  - "Folosește apă călduță și prosoape moi la spălat. Îngrijirea delicată evită iritația și uscăciunea. Sursa: aad.org"
+  - "Folosește apă călduță și prosoape moi la spălat. Îngrijirea delicată evită iritația și uscăciunea. Sursa: American Academy of Dermatology"
   - "Dorm 7-9 ore pe noapte. Odihna permite repararea pielii pentru un aspect mai luminos. Sursa: mayoclinic.org"
   - "Folosește seruri antioxidante pentru a combate poluarea. Neutralizează radicalii liberi pentru o piele protejată și strălucitoare. Sursa: newsnetwork.mayoclinic.org"
-  - "Incorporează retinoizi sau peptide pentru efect anti-îmbătrânire. Stimulează colagenul pentru a fermiza și lumina pielea. Sursa: aad.org"
-
+  - "Incorporează retinoizi sau peptide pentru efect anti-îmbătrânire. Stimulează colagenul pentru a fermiza și lumina pielea. Sursa: American Academy of Dermatology"
+  - 🚩Dacă ai pielea sensibilă, alergii, eczeme sau orice altă condiție dermatologică, consultă întotdeauna un dermatolog înainte de a încerca rutine noi — fiecare piele e diferită.
+  - 🚩Dacă observi iritație, arsură, roșeață, mâncărime sau orice reacție neobișnuită, oprește imediat și cere sfat medical.
 comparisonTitle: "Comparație: Ce să faci vs. Ce să eviți pentru Strălucire"
 
 comparisonTable:
@@ -59,18 +60,18 @@ comparisonTable:
 
 dermatologistsaywhattitle: "Ce spun dermatologii: Sfaturi de experți pentru strălucirea ta"
 dermatologistsaywhatlist:
-  - "Spală fața dimineața pentru a îndepărta murdăria și bacteriile acumulate peste noapte. Sursa: aad.org"
+  - "Spală fața dimineața pentru a îndepărta murdăria și bacteriile acumulate peste noapte. Sursa: American Academy of Dermatology"
   - "Protejează pielea zilnic de soare pentru a preveni îmbătrânirea și ternul — e esențial! Sursa: mayoclinic.org"
-  - "Curățarea delicată de două ori pe zi menține echilibrul uleiurilor fără a deshidrata pielea. Sursa: aad.org"
-  - "Hidratează pentru a combate uscăciunea, mai ales în climatul rece. Sursa: aad.org"
-  - "Serurile cu vitamina C luminează și reduc petele pentru un glow natural. Sursa: aad.org"
+  - "Curățarea delicată de două ori pe zi menține echilibrul uleiurilor fără a deshidrata pielea. Sursa: American Academy of Dermatology"
+  - "Hidratează pentru a combate uscăciunea, mai ales în climatul rece. Sursa: American Academy of Dermatology"
+  - "Serurile cu vitamina C luminează și reduc petele pentru un glow natural. Sursa: American Academy of Dermatology"
 
 routineTitle: "Rutina de 9 Pași pentru Strălucire Dimineața: Ediție România"
 routineList:
   - "Stropire cu apă călduță: Trezește-ți fața fără șocuri — ca un pârâu blând din Carpați, nu Dunărea înghețată."
-  - "Curățare delicată: Folosește un cleanser blând pentru a elimina impuritățile de peste noapte. Masaj timp de 60 secunde ca la un mini spa. Sursa: aad.org"
+  - "Curățare delicată: Folosește un cleanser blând pentru a elimina impuritățile de peste noapte. Masaj timp de 60 secunde ca la un mini spa. Sursa: American Academy of Dermatology"
   - "Tonifiere: Aplică un toner hidratant pentru a echilibra pH-ul și a pregăti pielea pentru strălucire — cafeaua dimineții pentru tenul tău."
-  - "Ser cu vitamina C: Aplică pentru luminozitate și protecție antioxidantă împotriva poluării. Sursa: aad.org"
+  - "Ser cu vitamina C: Aplică pentru luminozitate și protecție antioxidantă împotriva poluării. Sursa: American Academy of Dermatology"
   - "Cremă pentru ochi: Aplică delicat pentru a desumfla și hidrata zona ochilor — gata cu aspectul obosit."
   - "Hidratează bogat: Fixează hidratarea cu o cremă potrivită pentru aerul uscat din România. Sursa: mayoclinic.org"
   - "Balsam de buze: Nu uita de buze — se usucă mai repede decât poți spune 'sarmale' în vântul iernii."
@@ -78,9 +79,9 @@ routineList:
   - "Spray hidratant final: Pentru un aspect proaspăt, ca de munte."
 
 faqList:
-  - {question: "Cât de des ar trebui să fac această rutină?", answer: "În fiecare dimineață! Consistența e cheia pentru o piele strălucitoare, ca spălatul pe dinți, doar mai distractiv. Sursa: aad.org"}
+  - {question: "Cât de des ar trebui să fac această rutină?", answer: "În fiecare dimineață! Consistența e cheia pentru o piele strălucitoare, ca spălatul pe dinți, doar mai distractiv. Sursa: American Academy of Dermatology"}
   - {question: "Este necesară protecția solară în iernile românești?", answer: "Absolut! Razele UV trec prin nori și se reflectă în zăpadă, atacând strălucirea. Sursa: mayoclinic.org"}
-  - {question: "Ce fac dacă am tenul gras?", answer: "Optează pentru produse ușoare, non-comedogenice. Curăță delicat pentru a controla sebumul fără a usca pielea. Sursa: aad.org"}
+  - {question: "Ce fac dacă am tenul gras?", answer: "Optează pentru produse ușoare, non-comedogenice. Curăță delicat pentru a controla sebumul fără a usca pielea. Sursa: American Academy of Dermatology"}
   - {question: "Dieta afectează cu adevărat pielea?", answer: "Da! Legumele și apa cresc hidratarea și vitaminele pentru o strălucire interioară. Sursa: mayoclinic.org"}
   - {question: "Cum fac față frigului extrem?", answer: "Folosește creme mai grase și umidificatoare în interior pentru a combate aerul uscat. Sursa: aad.org"}
   - {question: "Când voi vedea rezultate?", answer: "Dă-i 4-6 săptămâni de utilizare zilnică — răbdare, glow-ul tău se pregătește! Sursa: mcpress.mayoclinic.org"}

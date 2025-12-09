@@ -1,19 +1,24 @@
 ---
 layout: new
+topic: "winter skin care for teenagers in Lithuania"
 title: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"  # Title fixed (50 chars, keyword upfront)
 subtitle: "Natūrali žiemos odos priežiūra paaugliams"             # H1-friendly, <40 chars
-description: "Geriausi natūralūs žiemos odos priežiūros patarimai paaugliams Lietuvoje – kaip išlaikyti odą sveiką ir drėkinamą šaltuoju metų laiku."  # Meta with keyword
+description: "Geriausi natūralūs žiemos odos priežiūros patarimai paaugliams Lietuvoje – kaip išlaikyti odą sveiką ir drėkinamą šaltuoju metų laiku."  
 date: "2025-11-18"
-img: "/8.jpeg"
+img: "/88.jpg"
+long_tail_keyword1_before_problem: "ziemos-odos-prieziura-paaugliams-lietuvoje"
+
+long_tail_keyword2_before_solution: "paaugliu-ziemos-odos-prieziuros-patarimai"
+
+long_tail_keyword3_before_do_dont_table: "geriausi-ziemos-odos-prieziuros-patarimai-paaugliams"
+
+long_tail_keyword4_before_routine: "paaugliu-ziemos-odos-prieziuros-rutina"
+
+long_tail_keyword5_before_FAQ: "dažniausiai-uzduodami-ziemos-odos-prieziuros-paaugliams-klausimai"
+
 img_alt: "Žiemos odos priežiūra paaugliams Lietuvoje"            # Alt text with keyword
 url: "žiemos-odos-priežiūra-paaugliams-lietuvoje"
 h1mainkeyword: "žiemos odos priežiūra paaugliams Lietuvoje"
-keyword2: "sausos odos žiemą Baltijos paaugliai"
-h2long_tail_keyword1_before_problem: "ziemos-odos-prieziura-paaugliams-lietuvoje"
-h2long_tail_keyword2_before_solution: "paaugliu-ziemos-odos-prieziuros-patarimai"
-h2long_tail_keyword3_before_do_dont_table: "geriausi-ziemos-odos-prieziuros-patarimai-paaugliams"
-h2long_tail_keyword4_before_routine: "paaugliu-ziemos-odos-prieziuros-rutina"
-h2long_tail_keyword5_before_FAQ: "dažniausiai-uzduodami-ziemos-odos-prieziuros-paaugliams-klausimai"
 
 problemTitle: "9 žiemos odos problemos, kurias kiekvienas Lietuvos paauglys gerai žino"
 problemList: 

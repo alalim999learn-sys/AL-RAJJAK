@@ -1,10 +1,11 @@
 ---
 layout: new
+topic: "simple skin care routine for beginners in Lithuania"
 title: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 subtitle: "Lengva 3–4 žingsnių rutina, kuri veikia net lietuvišką žiemą"
 description: "Rutina Lietuvoje: valymas, drėkinimas ir SPF – efektyvu nuo pirmos savaitės."
 date: "2025-11-17"
-img: "/5.jpeg"
+img: "/77.jpg"
 img_alt: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje – švelnūs produktai ir švytinti oda"
 url: "odos-priežiūros-patarimai-pradedantiesiems"
 # Main keyword শুরুতেই – Google.lt এবং Rank Math এর জন্য পারফেক্ট

@@ -1,10 +1,12 @@
 ---
 layout: new
+topic: "winter skin care adults Romania"
 title: "Cele Mai Bune Sfaturi de Îngrijire a Pielii iarna pentru Adulți în România"
 subtitle: "Îngrijirea pielii iarna pentru adulți – ghid complet și practic"
 description: Un Ghid Complet, Bazat pe Știință, pentru ca Adulții să Rămână Sănătoși, Energici și Protejați în Timpul Iernii
 date: "2025-01-15"
 img: "/7.jpeg"
+no: "3"
 h1mainkeyword: "îngrijirea pielii iarna adulți România"
 keyword2: "cele mai bune sfaturi îngrijirea pielii iarna adulți romania"
 intro: Drag prieten român, a venit iarna — -12°C, vânt care te urăște și piele mai uscată decât eticheta unei sticle de țuică. Arăți acum ca un vampir transilvănean de 200 de ani care a pierdut o bătaie cu un covrig.

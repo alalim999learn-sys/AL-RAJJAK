@@ -1,81 +1,95 @@
 ---
-layout: new
-title: "Žiemos odos priežiūra paaugliams Lietuvoje – sausai odai" # 57 simboliai, keyword pirmoje vietoje
-subtitle: "Praktiški patarimai sausai odai šaltomis žiemomis"       # H1-friendly, <40 simbolių
-description: "Žiemos odos priežiūra paaugliams Lietuvoje: moksliškai pagrįsti patarimai sausai odai šaltomis Baltijos žiemomis, kad išvengtumėte pleiskanojimo ir sudirginimo."
-date: "2025-11-18"
-img: "/6.jpeg"
-img_alt: "Žiemos odos priežiūra paaugliams sausai odai Lietuvoje" # Alt tekstas su keyword
-url: "Žiemos-odos-priežiūra-sausai-odai-Lietuvoje"
-h1mainkeyword: "Žiemos odos priežiūra paaugliams Lietuvoje"
+title: "Žiemos odos priežiūra sausai odai Lietuvoje: Esminiai patarimai ir rutinos"
 
-intro: "O, Lietuvos žiema – oras toks sausas, kad galėtum su savo kaktą tarkuoti. Sveiki atvykę į sezoną, kai kiekvieno paauglio veidas nusprendžia pasirodyti filme „Sahara: tęsinys“."
 
-h2long_tail_keyword1_before_problem: "ziemos-odos-prieziura-sausai-odai"
-h2long_tail_keyword2_before_solution: "sausos-odos-ziemos-prieziuros-patarimai"
-h2long_tail_keyword3_before_do_dont_table: "geriausi-ziemos-odos-prieziuros-patarimai-sausai-odai"
-h2long_tail_keyword4_before_routine: "ziemos-prieziuros-rutina-sausai-odai"
-h2long_tail_keyword5_before_FAQ: "dažniausiai-uzduodami-klausimai-sausa-oda-ziemos-metu"
+topic: winter skin care tips for dry skin
+description: "Sužinokite įrodytus žiemos odos priežiūros rutinas sausai odai Lietuvoje. Gaukite moksliniais tyrimais pagrįstus patarimus kovojant su sausumu, hidratacijos strategijas ir kasdienius įpročius, kurie padeda išlaikyti sveiką odą žvarbioje žiemą."
+date: "2025-12-07"
+img: "/5.jpg"
 
-problemTitle: "Kodėl jūsų oda nekęsti Lietuvos žiemą"
+intro: "Kai Lietuvoje žiema užkloja sniego sluoksniais, jūsų oda gali jaustis sausesnė nei dykuma—laikas drėkinti ir juoktis iš pleiskanų!"
+h1mainkeyword: "žiemos odos priežiūros patarimai sausai odai"
+h2long_tail_keyword1_before_problem: "kaip palaikyti odos drėkinimą žiemą sausai odai"
+h2long_tail_keyword2_before_solution: "žiemos odos priežiūros rutina sausai odai"
+h2long_tail_keyword3_before_do_dont_table: "efektyvūs žiemos odos priežiūros patarimai sausai odai"
+h2long_tail_keyword4_before_routine: "kaip išvengti sausos odos žiemą"
+h2long_tail_keyword5_before_FAQ: "kasdienė žiemos odos priežiūros rutina sausai odai"
+
+problemTitle: "Pagrindinės sausos odos priežastys Lietuvoje žiemą"
 problemList:
-  - "Šaltas oras mažina drėgmę tiek namuose, tiek lauke"
-  - "Šildomos patalpos ištraukia vandenį iš odos (transederminis vandens netekimas)"
-  - "Karštos dušai naikina natūralų odos lipidų barjerą"
-  - "Vėjo šalčio efektas nušluosto drėgmę nuo veido"
-  - "Paauglių hormonai + brendimo sebumo pokyčiai silpnina odos barjerą"
-  - "Maža drėgmė sukelia stratum corneum įtrūkimus (NEA)"
-  - "Cерамidų ir filagrino lygis žiemą krenta, ypač su FLG mutacija"
-  - "Perdažnas stiprių prausiklių naudojimas šalina natūralius aliejus"
-  - "Nepakankamas vandens gėrimas → dehidracija matosi veide (AAD)"
 
-solution: "Kaip nugalėti Baltijos žiemos sausumą"
+ - "Žemas lauko drėgmės lygis: Lietuvoje žiemą drėgmė dažnai nukrenta žemiau 30%, todėl oda praranda drėgmę."
+
+ - "Šildymo poveikis patalpose: Centrinis šildymas sausina patalpų orą, pablogindamas odos dehidrataciją."
+
+ - "Šaltos vėjai: Šalti Baltijos vėjai nuplėšia natūralius odos riebalus."
+
+ - "Karštos vonios: Ilgas karšto vandens poveikis pašalina apsauginius lipidus."
+
+ - "Sumažėjusi sebumo gamyba šaltuoju metų laiku: tyrimai rodo, kad žiemą odos natūralūs riebalai sumažėja net iki 20%. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Transepiderminis vandens netekimas (TEWL) padidėja žemoje drėgmėje; tyrimai rodo, kad TEWL padidėja 25% sausuose aplinkose. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Moksliniai įrodymai: Barjero funkcijos pažeidimas; šaltas oras silpnina stratum corneum, sukeldamas įtrūkimus. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Moksliniai įrodymai: Senėjimo pagreitėjimas; žiemos sausumas skatina smulkių linijų atsiradimą dėl kolageno žlugimo. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Moksliniai įrodymai: Niežėjimas dėl histamino išsiskyrimo; sausa oda sukelia uždegimines reakcijas. Šaltinis: Amerikos dermatologų akademija."
+
+solution: "Efektyvūs sprendimai sausai odai žiemą Lietuvoje"
 solutionList:
-  - "Naudokite kreminį, be kvapų prausiklį (CeraVe arba La Roche-Posay)"
-  - "Drėkinkite per 3 minutes po dušo (AAD ‘3 minutės taisyklė’)"
-  - "Naudokite tepalo tipo drėkiklį naktį (Aquaphor arba vazelinas)"
-  - "Nepamirškite plataus spektro SPF 30+ net žiemą"
-  - "Ieškokite humektantų + okliuzinių kombinacijų: hialurono rūgštis + petrolatas"
-  - "Cерамidų turintys drėkikliai atstato pažeistą odos barjerą"
-  - "Trumpi, šilti dušai (5–10 min max)"
-  - "Naudokite drėkintuvą kambaryje (tikslas 40–50% drėgmės)"
-  - "Gerkite pakankamai vandens"
-  - "Pasitarkite su gydytoju, jei oda jautri ar alergiška"
-  - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
-  - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
 
-comparisonTitle: "Žiemos odos taisyklės ir klaidos"
+ - "Naudokite drėkintuvą: pridėkite drėgmės vidaus orui kovai su šildymo sukeliamu sausumu."
+
+ - "Naudokite storas drėkinamąsias priemones: pasirinkite kremus su ceramidais ilgalaikei hidratacijai."
+
+ - "Apsaugokite odą drabužiais: pirštinės ir šalmai apsaugo nuo šaltų vėjų."
+
+ - "Trumpinkite vonias: ribokite vonios trukmę iki 5–10 minučių su šiltu vandeniu."
+
+ - "Hialurono rūgšties produktai; sulaiko 1000 kartų savo svorį vandenyje drėkinimui. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Avižų vonios; kolioidinės avižos ramina uždegimus pagal klinikinius tyrimus. Šaltinis: Amerikos dermatologų akademija."
+ 
+ - "Petrolatumo uždengimas; sukuria barjerą, kad išlaikytų drėgmę, įrodytas veiksmingumas. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Švelnus valymas; bekvapis muilas išsaugo odos pH balansą. Šaltinis: Amerikos dermatologų akademija."
+
+ - "Kasdien naudokite saulės kremą; UV spinduliai prasiskverbia pro debesis, apsaugodami odą nuo papildomo išsausėjimo. Šaltinis: Amerikos dermatologų akademija."
+ - "🚩Jei turite jautrią ar alergišką odą, pasitarkite su gydytoju."
+ - "🚩Prieš naudojimą kreipkitės į gydytoją, jei jaučiate sudirginimą ar alerginę reakciją."
+comparisonTitle: "Žiemos odos priežiūros patarimų palyginimas Lietuvoje"
 comparisonTable:
-  - {do: "5 minučių šilti dušai", dont: "30 minučių verdančio vandens dušai"}
-  - {do: "Palikti odą šiek tiek drėgną", dont: "Trinti rankšluosčiu stipriai"}
-  - {do: "Be kvapų kreminis prausiklis", dont: "SLS putų geliai"}
-  - {do: "Hialurono serumas + storas kremas", dont: "Tik plonas losjonas"}
-  - {do: "Dėvėti SPF kasdien", dont: "Praleisti kremą nuo saulės žiemą"}
-  - {do: "Naudoti drėkintuvą naktį", dont: "Miegoti prie šildytuvo"}
-  - {do: "Lūpų balzamas su petrolatu/bičių vašku", dont: "Laižyti lūpas"}
-  - {do: "Drėkinti rankas po kiekvieno plovimo", dont: "Leisti rankoms įtrūkti"}
-  - {do: "Tepalai sausoms vietoms (Aquaphor)", dont: "Tik plonas losjonas"}
 
-routineList:
-  - "Rytas: švelnus kreminis prausiklis → drėkinamasis kremas → SPF kremas"
-  - "Vakaras: švelnus prausiklis (ar drungnas vanduo) → storas drėkinamasis kremas arba tepalas"
-  - "Po dušo: per 3 minutes išsitepk drėkinamuoju kremu visą kūną"
-  - "Lūpas ir rankas tepk riebiu balzamu kelis kartus per dieną"
-  - "Kambaryje laikyk drėkintuvą + gerk vandenį + nevartok radiatoriaus tiesiogiai"
+{do: "Tepti drėkiklį iškart po vonios", dont: "Naudoti karštą vandenį vonioms"}
 
-faqlist:
-  - {question: "Ar žiemą galiu naudoti spuogų produktus?", answer: "Taip, bet labai atsargiai: salicilo rūgštį ar benzoilo peroksidą tik 2–3 kartus per savaitę. Retinolį/adapaleną tepkite ant plono drėkiklio sluoksnio, po to storą kremą. Jei oda raudonuos – sumažinkite dažnumą."}
-  - {question: "Ar Vaselinas veide saugus?", answer: "100% saugus ir dermatologų rekomenduojamas žiemą."}
-  - {question: "Kodėl mano oda žiemą blogesnė nei vasaros Ispanijoje?", answer: "Lietuvos žiemą drėgmė dažnai <30%, šildymas dar labiau sausina."}
-  - {question: "Ar lakštinės kaukės naudingos?", answer: "Laikinas drėkinimas, bet be storos kremo užrakinimo vanduo greitai išgaruoja."}
-  - {question: "Ar mityba gali padėti sausai odai?", answer: "Omega-3 riebalai (lašiša, silkė) ir pakankamai sveikų riebalų padeda barjerui iš vidaus."}
-  - {question: "Kada kreiptis į dermatologą?", answer: "Jei oda raudona, įtrūkusi, kraujuoja arba egzema pasireiškia kiekvieną žiemą – nedelskite."}
-linktitle1: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
-linkslug1: odos-priežiūros-rutina-po-30-Lietuva
-linktitle2: "Žiemos odos priežiūra paaugliams Lietuvoje – patarimai"
-linkslug2: žiemos-odos-priežiūra-paaugliams-lietuvoje
+{do: "Naudoti drėkintuvą kambaryje", dont: "Veikti odą tiesiogiai šaltu oru"}
 
-linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
-linkslug3: odos-priežiūros-patarimai-pradedantiesiems
+{do: "Nešioti medvilninius sluoksnius po vilnoniu drabužiu", dont: "Trinti odą sausu rankšluosčiu"}
 
+{do: "Kasdien gerti pakankamai vandens", dont: "Naudoti produktus su alkoholiu"}
+
+{do: "Pasirinkti bekvapius valiklius", dont: "Praleisti saulės kremą žiemą"}
+
+{do: "Apsaugoti lūpas balzamu", dont: "Per daug eksfolijuoti pleiskanojančią odą"}
+
+{do: "Valgyti maisto, turinčio omega-3 riebalų rūgščių", dont: "Ignoruoti nuolatinį sausumą"}
+
+{do: "Švelniai paminkykite odą po plovimo", dont: "Naudoti stiprius muilus"}
+
+{do: "Pasitarti su dermatologu, jei reikia", dont: "Atidėti hidratacijos rutiną"}
+
+faqList:
+
+{question: "Kas sukelia sausą odą Lietuvoje žiemą?", answer: "Žema drėgmė, šaltas vėjas ir šildymas patalpose yra pagrindinės sausos odos priežastys, nes jie nuplauna natūralią drėgmę."}
+
+{question: "Kaip dažnai turėčiau drėkinti odą žiemą?", answer: "Tepti drėkiklį bent du kartus per dieną, ypač po plovimo, kad išlaikytumėte optimalią žiemos odos priežiūrą sausai odai Lietuvoje."}
+
+{question: "Ar drėkintuvai veiksmingi sausai odai?", answer: "Taip, jie prideda būtinos drėgmės sausam patalpų orui žiemos metu Lietuvoje."}
+
+{question: "Kokios sudedamosios dalys padeda sausai odai?", answer: "Ieškokite produktų su hialurono rūgštimi, ceramidu ir shea sviestu, kad pasiektumėte efektyvią hidrataciją."}
+
+{question: "Ar dieta gali turėti įtakos žiemos sausai odai?", answer: "Taip, įtraukę omega-3 riebalų rūgštis iš žuvies ir riešutų galite padėti išlaikyti odos barjero sveikatą."}
+
+{question: "Kada reikėtų kreiptis į gydytoją dėl sausos odos?", answer: "Jei sausumas išlieka, atsiranda įtrūkimų arba sukelia skausmą, pasitarkite su specialistu dėl galimų pagrindinių priežasčių."}
 ---

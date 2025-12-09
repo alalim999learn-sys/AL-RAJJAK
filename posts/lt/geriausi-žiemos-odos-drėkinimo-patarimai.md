@@ -1,11 +1,12 @@
 ---
 layout: new
+topic : "how to moisturize dry skin naturally in winter"
 title: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
 subtitle: "Veiksmingi būdai išlaikyti drėgną ir sveiką odą net -20°C"
 description: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje? Patikrinti būdai nuo oro drėkintuvo iki aliejų ir medaus – be brangių kremų. Veikia jau po 3 dienų."
 date: "2025-01-15"
-img: "/2.jpeg"
-img_alt: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje – rankos tepamos aliejumi"
+img: "/14.jpg"
+#jojoba oil
 url: "geriausi-žiemos-odos-drėkinimo-patarimai"
 # Main & Long-tail keywords – Rank Math এবং Google-এর জন্য পারফেক্ট
 h1mainkeyword: "kaip žiemą natūraliai sudrėkinti sausą odą"

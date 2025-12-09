@@ -1,5 +1,6 @@
 ---
 layout: new
+
 title: "Natural Skincare Routine for Teenagers in Winter – Clear Skin Without Chemicals"
 subtitle: "How to Get Rid of Acne Naturally at 14–18 Years Old Even in Cold Weather"
 description: "Simple, proven winter skincare routine for oily & acne-prone teenage skin using only natural ingredients – no expensive creams, no harsh chemicals"

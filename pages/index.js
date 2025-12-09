@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Science-backed skincare and beauty advice. No sales, no products – just pure knowledge." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://lemonskn.com/" />
-
+<meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
         {/* Correct hreflang */}
         <link rel="alternate" hrefLang="en" href="https://lemonskn.com/" />
         <link rel="alternate" hrefLang="lt" href="https://lemonskn.com/lt" />

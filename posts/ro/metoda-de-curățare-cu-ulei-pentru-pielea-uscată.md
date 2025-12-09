@@ -1,10 +1,8 @@
 ---
 layout: new
 topic:  "oil cleansing method for dry skin"
-no: "3"
-## not translate topic 
-# exact markdown format 
-## full translate to romanian
+no: "5"
+
 title: "metoda de curățare cu ulei pentru pielea uscată"
 description: "Descoperă metoda de curățare cu ulei pentru pielea uscată — blândă, eficientă și puțin distractivă."
 date: "2025-12-03"

@@ -1,10 +1,11 @@
 ---
 layout: new
+topic: "gentle skin care for teenagers with acne in winter"
 title: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
 subtitle: "Kaip nuraminti spuoguotą odą -15°C šaltyje be stiprių priemonių"
 description: "Paauglių odos priežiūra su akne žiemą Lietuvoje: drėkinimas, barjero stiprinimas ir minimalus dirginimas."
 date: "2025-11-18"
-img: "/4.jpeg"
+img: "/pexels-mareefe-932587.jpg"
 img_alt: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą – jauna oda be paraudimo ir sausumo"
 url: odos-priežiūros-patarimai-paaugliui-su-akne
 # Main keyword শুরুতেই

@@ -1,7 +1,7 @@
 ---
 layout: new
 topic: "Nighttime Anti-Aging Skincare Routine"
-no: "4"
+no: "10"
 ## not translate topic 
 ## full translate to romanian
 title: "Rutina de îngrijire anti-îmbătrânire pe timp de noapte"
@@ -29,10 +29,10 @@ problemList:
   - "Umflături peste noapte care fac mișto de cafeaua ta de dimineață"
 solution: "Cum să câștigi la îngrijirea pielii pe timp de noapte fără să te transformi într-un experiment științific"
 solutionList:
-  - "Curăță blând pentru a îndepărta murdăria, poluarea și crema solară: Evită săpunurile dure care îndepărtează bariera pielii. (Știință: Curățarea corectă îmbunătățește funcția barierei. Sursă - AAD)"
+  - "Curăță blând pentru a îndepărta murdăria, poluarea și crema solară: Evită săpunurile dure care îndepărtează bariera pielii. (Știință: Curățarea corectă îmbunătățește funcția barierei. Sursă - American Academy of Dermatology)"
   - "Aplică ser cu retinol (începe ușor, 2-3x/săptămână) - Stimulează colagenul și reduce liniile fine. Încearcă opțiuni Gerovital sau Ivatherm. (Știință: Retinoizii cresc regenerarea celulară. Sursă - NIH)"
   - "Hidratează cu acid hialuronic: Menține pielea suplă în iernile uscate. (Știință: Acidul hialuronic atrage apa către piele. Sursă - Mayo Clinic)"
-  - "Folosește cremă de ochi cu cafeină: Reduce umflătura. (Știință: Cafeina constrânge vasele de sânge sub ochi. Sursă - AAD)"
+  - "Folosește cremă de ochi cu cafeină: Reduce umflătura. (Știință: Cafeina constrânge vasele de sânge sub ochi. Sursă - American Academy of Dermatology)"
   - "Exfoliază 1-2 ori pe săptămână - Îndepărtează celulele moarte pentru o textură mai netedă. Folosește AHA blând de la Elmiplant."
   - "Sigilează cu ulei facial blând, precum uleiul de cătină - Menține hidratarea peste noapte, potrivit pentru iernile românești."
   - "Dormi pe spate sau pe pernă de mătase - Previi liniile de somn cauzate de poziția cu fața în jos."
@@ -69,10 +69,10 @@ comparisonTable:
     dont: "Mergi la culcare cu machiaj complet"
 routineTitle: "Rutina ta de 10 pași anti-îmbătrânire pe timp de noapte"
 routineList:
-  - "Pas 1 - Curățare dublă - Demachiant + cleanser blând. Îndepărtează poluarea și crema solară (Sursă - AAD)"
+  - "Pas 1 - Curățare dublă - Demachiant + cleanser blând. Îndepărtează poluarea și crema solară (Sursă - American Academy of Dermatology)"
   - "Pas 2 - Tonifiere (Opțional) - Echilibrează pH-ul cu toner fără alcool"
   - "Pas 3 - Ser cu Retinol - 0,1-0,3% (2-3x/săptămână), Gerovital/Ivatherm. Stimulează colagenul (Sursă - NIH)"
-  - "Pas 4 - Cremă de ochi - Cu cafeină, reduce umflătura (Sursă - AAD)"
+  - "Pas 4 - Cremă de ochi - Cu cafeină, reduce umflătura (Sursă - American Academy of Dermatology)"
   - "Pas 5 - Ser cu acid hialuronic - Hidratare, ideal pentru ierni uscate (Sursă - Mayo Clinic)"
   - "Pas 6 - Exfoliere (1-2x/săptămână) - Îndepărtează celulele moarte cu AHA de la Elmiplant"
   - "Pas 7 - Hidratare - Cremă hidratantă, întărește bariera pielii"
@@ -81,7 +81,7 @@ routineList:
   - "Pas 10 - Siguranță - 🚩 Dacă ai piele sensibilă, consultă dermatologul"
 faqList:
   - question: "Pot să sar peste curățare dacă folosesc doar cremă solară?"
-    answer: "Nu. Reziduurile de cremă solară blochează porii și împiedică repararea — curățare blândă întotdeauna. (Sursă: AAD)"
+    answer: "Nu. Reziduurile de cremă solară blochează porii și împiedică repararea — curățare blândă întotdeauna. (Sursă: American Academy of Dermatology)"
   - question: "Este retinolul sigur pentru pielea sensibilă?"
     answer: "Da, începe cu 0,1-0,3% în fiecare a doua seară; crește treptat pentru a evita iritația. (Sursă: NIH)"
   - question: "Dormitul pe o parte strică pielea?"
@@ -91,7 +91,7 @@ faqList:
   - question: "Cât de des trebuie să hidratez seara?"
     answer: "O dată după seruri; straturile excesive blochează porii, mai ales în verile umede din România."
   - question: "Crema de ochi cu cafeină elimină cercurile întunecate?"
-    answer: "Reduce temporar umflătura prin vasoconstricție; genetica/pigmentarea necesită tratament separat. (Sursă - AAD)"
+    answer: "Reduce temporar umflătura prin vasoconstricție; genetica/pigmentarea necesită tratament separat. (Sursă - American Academy of Dermatology)"
 
 
 

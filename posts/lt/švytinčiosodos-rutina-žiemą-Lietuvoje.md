@@ -1,10 +1,11 @@
 ---
 layout: new
+topic: "glowing skin routine in winter in Lithuania"
 title: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
 subtitle: "Natūralūs patarimai švytinčiai odai žiemą Baltijos šalyse"
 description: "Moksliškai pagrįsta švytinčios odos rutina žiemą Lietuvoje. Kaip išsaugoti drėgmę, kovoti su tarša ir pasiekti tikrą švytėjimą Baltijos šalyse."
 date: "2025-12-02"
-img: "/9.jpeg"
+img: "/12.jpg"
 img_alt: "Švytinčios odos rutina žiemą Lietuvoje, drėkinimas ir apsauga nuo šalčio"
 url: "švytinčiosodos-rutina-žiemą-Lietuvoje"
 h1mainkeyword: "švytinčios odos rutina žiemą Lietuvoje"

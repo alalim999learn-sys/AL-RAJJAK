@@ -1,11 +1,12 @@
 ---
 layout: new
+topic: "Best Natural Skin Care Tips for Teenagers"
 title: "Natūralūs paauglių odos priežiūros patarimai Lietuvoje"
 subtitle: "Švelni odos priežiūra paaugliams su spuogais ir riebią T zoną turinčiais veidais"
 description: "Geriausi natūralūs paauglių odos priežiūros patarimai Lietuvoje: sužinok, kaip švelniai valdyti spuogus, riebalų perteklių ir drėkinti odą net žiemą."
 date: "2025-11-18"
-img: "/1.jpeg"
-
+img: "/14.jpg"
+#a girlwithout makeup
 url: "geriausi-natūralios-odos-priežiūros-patarimai-paaugliams"
 linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
 linkslug1: geriausi-žiemos-odos-drėkinimo-patarimai

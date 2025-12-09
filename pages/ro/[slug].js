@@ -217,7 +217,8 @@ export default function Post({ post, products, slug }) {
         <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
         <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/${slug}`} />
         <link rel="icon" href="/lemonskn.png" />
-
+ 
+        <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
         <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />

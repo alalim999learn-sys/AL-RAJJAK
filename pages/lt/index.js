@@ -16,7 +16,7 @@ export default function HomeLT() {
         <link rel="alternate" hrefLang="lt" href="https://lemonskn.com/lt/" />
         <link rel="alternate" hrefLang="ro" href="https://lemonskn.com/ro/" />
         <link rel="alternate" hrefLang="x-default" href="https://lemonskn.com/" />
-
+<meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
         {/* Favicon */}
         <link rel="icon" sizes="512x512" href="/lemonskn.png" />
         <link rel="apple-touch-icon" href="/lemonskn.png" />
