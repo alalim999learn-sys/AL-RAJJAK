@@ -1,5 +1,6 @@
 ---
 layout: new
+#index need
 topic: "glowing skin routine in winter in Lithuania"
 title: "Švytinčios odos rutina žiemą Lietuvoje – paprasta ir veiksminga"
 subtitle: "Natūralūs patarimai švytinčiai odai žiemą Baltijos šalyse"
@@ -13,11 +14,11 @@ h1mainkeyword: "švytinčios odos rutina žiemą Lietuvoje"
 
 intro: "Lietuviška žiema gali būti žiauri – šaltis, centrinis šildymas ir trumpa dienos šviesa išsausina odą. Ši rutina padės tavo odai išlikti švytinčiai net Vilniuje, Kaune ar Klaipėdoje."
 
-h2long_tail_keyword1_before_problem: "spindinti-odos-rutina-ziema-lietuvoje"
-h2long_tail_keyword2_before_solution: "ziemos-odos-spindesio-patarimai-lietuvoje"
-h2long_tail_keyword3_before_do_dont_table: "spindinti-odos-prieziura-ziemos-metu-lietuvoje"
-h2long_tail_keyword4_before_routine: "ziemos-odos-prieziuros-rutina-spindincioms-odoms"
-h2long_tail_keyword5_before_FAQ: "kaip-gauti-spindincią-odą-ziemos-metu-lietuvoje"
+h2long_tail_keyword1_before_problem: "spindinti odos rutina ziema lietuvoje"
+h2long_tail_keyword2_before_solution: "ziemos odos spindesio patarimai lietuvoje"
+h2long_tail_keyword3_before_do_dont_table: "spindinti odos prieziura ziemos metu lietuvoje"
+h2long_tail_keyword4_before_routine: "ziemos odos prieziuros rutina spindincioms odoms"
+h2long_tail_keyword5_before_FAQ: "kaip gauti spindincią odą ziemos metu lietuvoje"
 
 problemTitle: "9 priežastys, kodėl žiemos metu tavo oda Lietuvoje praranda spindesį"
 problemList:

@@ -9,11 +9,11 @@ img: "/14.jpg"
 h1mainkeyword: "Remedii Naturale pentru Pielea Grasă în Iarnă"
 no: "6"
 
-h2long_tail_keyword1_before_problem: "Remedii naturale eficiente pentru pielea grasă iarna – Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Remedii la domiciliu pentru controlul pielii grase în timpul iernii – Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Sfaturi de îngrijire iarna cu ingrediente naturale pentru pielea grasă – Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Cum să reduci excesul de sebum în mod natural iarna – Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Tratamente blânde și naturale pentru pielea grasă în vreme rece – FAQ"
+h2long_tail_keyword1 : "Remedii naturale eficiente pentru pielea grasă iarna – Probleme frecvente"
+h2long_tail_keyword2 : "Remedii la domiciliu pentru controlul pielii grase în timpul iernii – Ghid pas cu pas"
+h2long_tail_keyword3 : "Sfaturi de îngrijire iarna cu ingrediente naturale pentru pielea grasă – Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Cum să reduci excesul de sebum în mod natural iarna – Rutină sugerată"
+h2long_tail_keyword5 : "Tratamente blânde și naturale pentru pielea grasă în vreme rece – FAQ"
 
 intro: |
   Înfrunți iernile geroase din România? Pielea ta grasă poate reacționa cu luciu excesiv – dar remedii naturale o pot menține sub control fără dramatism!
@@ -103,7 +103,7 @@ linktitle2: "Îngrijire piele mixtă grasă iarnă"
 linkslug2: "ingrijire-piele-mixta-grasa-iarna"
 
 linktitle3: "Metoda de curățare cu ulei pentru pielea uscată"
-linkslug3: "metoda-de-curatare-cu-ulei-pentru-pielea-uscata"
+linkslug3: metoda-de-curățare-cu-ulei-pentru-pielea-uscată
 
 
 ---

@@ -33,26 +33,197 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
   return (
     <>
-      <style jsx global>{`
-        .new-layout__container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1rem; line-height: 1.8; color: #1f2937; font-family: system-ui, -apple-system, sans-serif; }
-        .new-layout__main-title { font-size: 2.9rem; font-weight: 800; text-align: center; color: #111; margin: 1.5rem 0 1rem; }
-        .new-layout__subtitle { font-size: 1.5rem; text-align: center; color: #4b5563; margin-bottom: 3.5rem; }
-        .new-layout__section-title { font-size: 2.2rem; font-weight: 700; margin: 4.5rem 0 1.8rem; position: relative; padding-bottom: 1rem; }
-        .new-layout__section-title::after { content: ""; position: absolute; left: 0; bottom: 0; width: 120px; height: 6px; background: #facc15; border-radius: 4px; }
-        .featured-img { width: 100%; max-width: 800px; margin: 3rem auto; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.15); display: block; }
-        .toc { background: #f8fafc; padding: 2rem; border-radius: 16px; border: 1px solid #e2e8f0; margin: 3.5rem 0; }
-        .toc h3 { margin: 0 0 1rem; font-size: 1.3rem; font-weight: 700; }
-        .toc ul { list-style: none; padding: 0; margin: 0; }
-        .toc li { margin: 0.7rem 0; }
-        .toc a { color: #1d4ed8; font-weight: 600; text-decoration: none; transition: all 0.2s; }
-        .toc a:hover { color: #facc15; text-decoration: underline; }
-        .internal-links { background: linear-gradient(135deg, #fffbeb, #fefce8); padding: 3rem 2rem; border-radius: 20px; margin: 4rem 0; }
-        .disclaimer-box { background: #eff6ff; border-left: 6px solid #3b82f6; padding: 2rem; border-radius: 0 12px 12px 0; margin: 4rem 0; }
-        @media (max-width: 768px) {
-          .new-layout__main-title { font-size: 2.3rem; }
-          .new-layout__section-title { font-size: 1.9rem; }
-        }
-      `}</style>
+       <style jsx global>{`
+  
+  /* ===== Container & Typography ===== */
+  .new-layout__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+    line-height: 1.8;
+    list-style: none;
+    color: var(--color-text);
+    font-family: system-ui, -apple-system, sans-serif;
+    
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-heading);
+    margin: 1.5rem 0 1rem;
+    font-weight: 700;
+  }
+
+  .new-layout__main-title {
+    font-size: 2.9rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+
+  .new-layout__section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 4.5rem 0 1.8rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .new-layout__section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 6px;
+    background: var(--color-accent);
+    border-radius: 4px;
+  }
+
+  /* ===== Images ===== */
+  .featured-img {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    display: block;
+  }
+  
+  /* ===== Table of Contents ===== */
+  .toc {
+    background: var(--color-bg-light);
+    padding: 0;
+    border-radius: 16px;
+   
+    margin: -19px 0;
+  }
+
+  .toc h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc li {
+    margin: 0.7rem 0;
+  }
+
+  .toc a {
+    color: #1d4ed8;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .toc a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  /* ===== Internal Links ===== */
+  .internal-links {
+    background: linear-gradient(135deg, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin: 4rem 0;
+    text-align: center;
+  }
+
+  .internal-links h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .internal-links .grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media(min-width: 768px) {
+    .internal-links .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* ===== Disclaimer ===== */
+  .disclaimer-box {
+    background: #eff6ff;
+    border-left: 6px solid var(--color-blue);
+    padding: 2rem;
+    border-radius: 0 12px 12px 0;
+    margin: 4rem 0;
+  }
+
+  .disclaimer-box h3 {
+    font-size: 2rem;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ===== Lists ===== */
+  ul.list-disc, ul.list-inside {
+    list-style: disc inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
+
+  ol.list-decimal {
+    list-style: decimal inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
+
+  /* ===== Comparison Table ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 2rem 0;
+  }
+
+  th {
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  td {
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  thead th {
+    background: #f3f4f6;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f9fafb;
+  }
+
+  /* ===== Boxes ===== */
+  .dermatologist-box {
+    background: #fee2e2;
+    border-left: 8px solid #ef4444;
+    padding: 2rem;
+    border-radius: 0 12px 12px 0;
+    margin: 3rem 0;
+  }
+
+  /* ===== Markdown Content ===== */
+  article.prose {
+    margin-top: 2rem;
+    line-height: 1.8;
+    max-width: none;
+  }
+`}</style>
+
+
 
       <div className="new-layout__container">
 
@@ -69,7 +240,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         <header className="text-center">
           <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword}</h1>
-          {frontmatter.subtitle && <p className="new-layout__subtitle">{frontmatter.subtitle}</p>}
+         
           {frontmatter.img && (
             <Image
               src={frontmatter.img}

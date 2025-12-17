@@ -1,6 +1,6 @@
 ---
 layout: new
-topic : "how to moisturize dry skin naturally in winter"
+topic :  best-winter-skin-hydration-tips
 title: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
 subtitle: "Veiksmingi būdai išlaikyti drėgną ir sveiką odą net -20°C"
 description: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje? Patikrinti būdai nuo oro drėkintuvo iki aliejų ir medaus – be brangių kremų. Veikia jau po 3 dienų."

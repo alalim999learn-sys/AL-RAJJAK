@@ -10,11 +10,11 @@ img: "/12.jpg"
 
 h1mainkeyword: "Sfaturi de noapte pentru controlul pielii grase iarna"
 
-h2long_tail_keyword1_before_problem: "Rutina de îngrijire nocturnă a pielii grase în iarnă - Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Cum să îngrijești pielea grasă noaptea în timpul iernii reci - Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Rutina blândă de seară pentru prevenirea coșurilor pe pielea grasă iarna - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Sfaturi de îngrijire nocturnă iarna pentru echilibrarea pielii grase - Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Rutină nocturnă pas cu pas pentru pielea grasă în climă rece - FAQ"
+h2long_tail_keyword1 : "Rutina de îngrijire nocturnă a pielii grase în iarnă - Probleme frecvente"
+h2long_tail_keyword2 : "Cum să îngrijești pielea grasă noaptea în timpul iernii reci - Ghid pas cu pas"
+h2long_tail_keyword3 : "Rutina blândă de seară pentru prevenirea coșurilor pe pielea grasă iarna - Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Sfaturi de îngrijire nocturnă iarna pentru echilibrarea pielii grase - Rutină sugerată"
+h2long_tail_keyword5 : "Rutină nocturnă pas cu pas pentru pielea grasă în climă rece - FAQ"
 
 intro: |
   Nopțile de iarnă din România pot face ca pielea grasă să se comporte ca un meteorolog confuz — uscată, strânsă, dar lucioasă. Câțiva pași inteligenți înainte de culcare te pot ajuta să te trezești cu pielea calmă, echilibrată și gata pentru o dimineață rece.
@@ -88,9 +88,9 @@ faqList:
 
 linktitle1: "Rutina de Dimineață pentru Piele Grasă iarna"
 linkslug1: "Rutina-de-Dimineață-pentru-Piele-Grasă-iarna"
+linktitle2: "Îngrijire piele mixtă grasă iarnă"
+linkslug2: "ingrijire-piele-mixta-grasa-iarna"
 
-linktitle2: "Rutina de Dimineață pentru Piele Mixtă în Iarna Românească"
-linkslug2: "Rutina-de-Dimineață-pentru-Piele-Mixtă-în-Iarna-Românească"
 
 linktitle3: "Rutina de îngrijire anti îmbătrânire pe timp de noapte"
 linkslug3: "Rutina-de-îngrijire-anti-îmbătrânire-pe-timp-de-noapte"

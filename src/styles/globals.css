@@ -4,22 +4,25 @@
 *::before,
 *::after {
   box-sizing: inherit;
+
 }
 
 html, body {
   margin: 0;
   padding: 0;
+  
   box-sizing: border-box;
 }
   * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      list-style: none;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+  
       color: #333;
       padding: 0;
       width: 100%;

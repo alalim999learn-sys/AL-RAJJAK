@@ -8,13 +8,13 @@ date: "4 Decembrie 2025"
 no: "14"
 img: "/ac.jpg"
 
-h1mainkeyword: "sfaturi ingrijire piele acnee iarna romania"
+h1mainkeyword: "Sfaturi pentru îngrijirea pielii predispuse la acnee în timpul iernii"
 
-h2long_tail_keyword1_before_problem: "Probleme Specifice României cu Pielea cu Acnee Iarna"
-h2long_tail_keyword2_before_solution: "Rutină Completă de Îngrijire pentru Iernile Românești"
-h2long_tail_keyword3_before_do_dont_table: "Reguli Esențiale Îngrijire Piețe Acnee – Iarna Românească"
-h2long_tail_keyword4_before_routine: "Rutină Zilnică Recomandată București Iarna"
-h2long_tail_keyword5_before_FAQ: "Întrebări Frecvente – Acnee în Iarna din România"
+h2long_tail_keyword1 : "Probleme Specifice României cu Pielea cu Acnee Iarna"
+h2long_tail_keyword2 : "Rutină Completă de Îngrijire pentru Iernile Românești"
+h2long_tail_keyword3 : "Reguli Esențiale Îngrijire Piețe Acnee – Iarna Românească"
+h2long_tail_keyword4 : "Rutină Zilnică Recomandată București Iarna"
+h2long_tail_keyword5 : "Întrebări Frecvente – Acnee în Iarna din România"
 
 intro: |
   Iernile din România (decembrie-februarie: -5°C până la 5°C, umiditate interioară 25-40%) pot complica îngrijirea pielii cu acnee. Vânturile reci din Carpați, încălzirea din blocuri și aerul uscat agravează aceste probleme. Iată soluții locale bazate pe știință pentru tine.

@@ -10,11 +10,11 @@ no: "2"
 
 h1mainkeyword: "îngrijire piele mixtă grasă iarnă"
 
-h2long_tail_keyword1_before_problem: "Sfaturi de îngrijire a pielii pentru pielea mixtă și grasă în iarnă - Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Cum să îngrijești pielea mixtă grasă în frig - Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Cea mai bună rutină de iarnă pentru pielea mixtă grasă - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Prevenirea coșurilor pentru pielea mixtă grasă în iarnă - Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Îngrijirea pielii în vreme rece pentru pielea mixtă și grasă - FAQ"
+h2long_tail_keyword1 : "Sfaturi de îngrijire a pielii pentru pielea mixtă și grasă în iarnă - Probleme frecvente"
+h2long_tail_keyword2 : "Cum să îngrijești pielea mixtă grasă în frig - Ghid pas cu pas"
+h2long_tail_keyword3 : "Cea mai bună rutină de iarnă pentru pielea mixtă grasă - Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Prevenirea coșurilor pentru pielea mixtă grasă în iarnă - Rutină sugerată"
+h2long_tail_keyword5 : "Îngrijirea pielii în vreme rece pentru pielea mixtă și grasă - FAQ"
 
 intro: |
   Brrr! Iernile Carpaților (-5°C până la 5°C, umiditate interioară între 25-35%) pot crea confuzie pielii mixte grase: obraji uscați, zona T lucioasă. Soluții românești bazate pe știință! (sursă: American Academy of Dermatology)
@@ -44,23 +44,33 @@ comparisonTitle: "Reguli de Aur pentru Pielea Mixtă – Iarna Românească"
 
 comparisonTable:
 
-{do: "Geluri hidratante ușoare", dont: "Creme grase pe față"}
+ - do: "Geluri hidratante ușoare"
+   dont: "Creme grase pe față"
 
-{do: "Curățare blândă dimineața și seara", dont: "Spălare excesivă"}
+ - do: "Curățare blândă dimineața și seara"
+   dont: "Spălare excesivă"
 
-{do: "Exfoliere de 2 ori pe săptămână", dont: "Scrub zilnic agresiv"}
+ - do: "Exfoliere de 2 ori pe săptămână"
+   dont: "Scrub zilnic agresiv" 
 
-{do: "Seruri hidratante aplicate în straturi", dont: "Sări peste hidratare"}
+ - do: "Seruri hidratante aplicate în straturi" 
+   dont: "Sări peste hidratare"
 
-{do: "Eșarfă de protecție împotriva vântului rece", dont: "Expunerea feței direct la vânt"}
+ - do: "Eșarfă de protecție împotriva vântului rece"
+   dont: "Expunerea feței direct la vânt"
 
-{do: "Dietă cu mămăligă și pește bogat în omega-3", dont: "Consumul zilnic de cozonaci"}
+ - do: "Dietă cu mămăligă și pește bogat în omega-3"
+   dont: "Consumul zilnic de cozonaci"
 
-{do: "Primer matifiant ușor înainte de machiaj", dont: "Pudră aplicată în exces"}
+ - do: "Primer matifiant ușor înainte de machiaj" 
+   dont: "Pudră aplicată în exces"
 
-{do: "Umidificator în bloc setat la 45%", dont: "Folosirea exclusivă a caloriferului"}
+ - do: "Umidificator în bloc setat la 45%" 
+   dont: "Folosirea exclusivă a caloriferului"
 
-{do: "Consult dermatologic la orice problemă", dont: "Utilizarea produselor agresive"}
+ - do: "Consult dermatologic la orice problemă"
+   dont: "Utilizarea produselor agresive"
+
 
 dermdermatologistsaywhattitle: "Ce Spun Dermatologii Români"
 dermatologistsaywhatlist:

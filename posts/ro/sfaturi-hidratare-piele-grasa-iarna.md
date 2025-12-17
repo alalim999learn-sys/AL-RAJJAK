@@ -9,11 +9,11 @@ img: "/13.jpg"
 no: "13"
 h1mainkeyword: "sfaturi hidratare piele grasa iarna"
 
-h2long_tail_keyword1_before_problem: "Sfaturi de hidratare iarnă pentru pielea grasă - Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Cele mai bune metode pentru a hidrata pielea grasă în frig - Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Ghid hidratare iarnă pentru pielea grasă - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Cum să menții pielea grasă hidratată iarna - Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Rutina de hidratare pentru pielea grasă iarna - FAQ"
+h2long_tail_keyword1 : "Sfaturi de hidratare iarnă pentru pielea grasă - Probleme frecvente"
+h2long_tail_keyword2 : "Cele mai bune metode pentru a hidrata pielea grasă în frig - Ghid pas cu pas"
+h2long_tail_keyword3 : "Ghid hidratare iarnă pentru pielea grasă - Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Cum să menții pielea grasă hidratată iarna - Rutină sugerată"
+h2long_tail_keyword5 : "Rutina de hidratare pentru pielea grasă iarna - FAQ"
 
 intro: |
   Iarna în România poate transforma pielea grasă într-un paradox: lucioasă, dar totodată deshidratată. Hai să descoperim împreună sfaturi de hidratare bazate pe știință care să ajute la echilibrul pielii tale!

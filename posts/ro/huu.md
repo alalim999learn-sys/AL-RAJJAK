@@ -74,16 +74,20 @@ faqList :
 - {question: " ",
   answer: " "}
 
----
+
 
 
 linktitle1:  
 linkslug1:  
 linktitle2: 
 linkslug2: 
-
 linktitle3: 
 linkslug3: 
 
 
 
+---
+
+git add . 
+git commit -m  "update"
+git push -u  origin main

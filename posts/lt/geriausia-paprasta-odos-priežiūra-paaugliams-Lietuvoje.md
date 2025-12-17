@@ -1,5 +1,6 @@
 ---
 layout: new
+topic: "best-simple-skincare-for-teens-in-Lithuania"
 title: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
 subtitle: "Paprasta ir efektyvi rutina paaugliams, kurie nenori sudėtingų 10 žingsnių schemų"
 description: "Realistiškas, moksliškai pagrįstas ir labai paprastas odos priežiūros gidas Lietuvos paaugliams, kurie nenori pusės kišenpinigių išleisti 15 kremams."

@@ -1,5 +1,6 @@
 ---
 layout: new
+topic: skin-care-routine-after-30-Lithuania
 title: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
 subtitle: Įprasta odos priežiūra, pagrįsta mokslo tyrimais, kad pasiektumėte jaunatvišką ir sveiką odą, nepaisant amžiaus pokyčių
 description: "Kas vyksta su oda po 30 metų, kodėl ji staiga „pavargsta“ ir kaip lietuvaitėms sukurti veiksmingą, bet nebrangią odos priežiūros rutiną – su mokslu pagrįstais patarimais ir realiais sprendimais."

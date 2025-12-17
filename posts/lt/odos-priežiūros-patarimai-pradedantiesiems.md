@@ -1,6 +1,6 @@
 ---
 layout: new
-topic: "simple skin care routine for beginners in Lithuania"
+topic: skin-care-tips-for-beginners
 title: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 subtitle: "Lengva 3–4 žingsnių rutina, kuri veikia net lietuvišką žiemą"
 description: "Rutina Lietuvoje: valymas, drėkinimas ir SPF – efektyvu nuo pirmos savaitės."

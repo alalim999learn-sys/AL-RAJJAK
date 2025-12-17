@@ -8,11 +8,15 @@ date: "2025-12-09"
 img: "oily-winter.jpg"
 no: "15"
 h1mainkeyword: "Remedii naturale pentru tenul gras iarna"
-h2long_tail_keyword1: "cum să controlezi tenul gras iarna natural"
-h2long_tail_keyword2: "remedii babesti ten gras frig Romania"
-h2long_tail_keyword3: "ingrediente din bucatarie pentru ten lucios iarna"
-h2long_tail_keyword4: "cum reduci sebumul in exces iarna natural"
-h2long_tail_keyword5: "tratament ten gras stralucitor iarna acasa"
+h2long_tail_keyword1: "cum să controlezi tenul gras iarna natural   – Probleme frecvente"
+h2long_tail_keyword2: "remedii babesti ten gras frig Romania  – Ghid pas cu pas "
+h2long_tail_keyword3: "ingrediente din bucatarie pentru ten lucios iarna – Ce să faci și ce să eviți"
+h2long_tail_keyword4: "cum reduci sebumul in exces iarna natural  – Rutină sugerată"
+h2long_tail_keyword5: "tratament ten gras stralucitor iarna acasa  – FAQ"
+
+
+
+
 
 intro: "Iarna românească îți transformă fața într-o fabrică de ulei? Cu aceste 7 remedii naturale și dovedite științific o oprim imediat!"
 
@@ -37,7 +41,7 @@ solutionList:
   - Mască cu fulgi de ovăz + iaurt o dată pe săptămână – beta-glucanii absorb uleiul în exces – recomandat AAD
   - Apă caldă cu lămâie în fiecare dimineață – hidratează din interior și echilibrează sebumul – Cleveland Clinic
   - Aburi cu mușețel o dată pe săptămână – curăță porii blând și elimină uleiul prins – National Eczema Association
-
+  - "🚩 Consultă un dermatolog înainte dacă ai afecțiuni sensibile sau reacții neobișnuite."
 dermatologistsaywhattitle: "Ce spun dermatologii americani despre controlul natural al tenului gras"
 dermatologistsaywhatlist:
   - „Pielea deshidratată produce mai mult ulei – folosește mereu un toner hidratant ușor.” — American Academy of Dermatology

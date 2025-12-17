@@ -9,11 +9,11 @@ img: "/77.jpg"
 no: "4"
 h1mainkeyword: "Îngrijirea pielii sensibile și mixte iarna"
 
-h2long_tail_keyword1_before_problem: "Sfaturi de îngrijire iarna pentru pielea sensibilă și mixtă – Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Cum să îngrijești pielea sensibilă și mixtă în vreme rece – Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Cea mai bună rutină de iarnă pentru pielea sensibilă și mixtă – Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Ghid de îngrijire a pielii în vreme rece pentru pielea sensibilă și mixtă – Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Protejarea pielii sensibile și mixte în lunile reci – FAQ"
+h2long_tail_keyword1 : "Sfaturi de îngrijire iarna pentru pielea sensibilă și mixtă – Probleme frecvente"
+h2long_tail_keyword2 : "Cum să îngrijești pielea sensibilă și mixtă în vreme rece – Ghid pas cu pas"
+h2long_tail_keyword3 : "Cea mai bună rutină de iarnă pentru pielea sensibilă și mixtă – Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Ghid de îngrijire a pielii în vreme rece pentru pielea sensibilă și mixtă – Rutină sugerată"
+h2long_tail_keyword5 : "Protejarea pielii sensibile și mixte în lunile reci – FAQ"
 
 intro: |
   Iernile românești: zăpada e distractivă, dar pielea ta poate protesta! Dacă este grasă aici, uscată acolo și sensibilă peste tot, hai să rezolvăm asta.
@@ -102,6 +102,6 @@ linkslug1: "Remedii-Naturale-pentru-Pielea-Grasă-în-Iarnă"
 linktitle2: "Rutina de Dimineață pentru Piele Grasă iarna"
 linkslug2: "Rutina-de-Dimineață-pentru-Piele-Grasă-iarna"
 
-linktitle3: "Rutina de Dimineață pentru Piele Mixtă în Iarna Românească"
-linkslug3: "Rutina-de-Dimineață-pentru-Piele-Mixtă-în-Iarna-Românească"
+linktitle3: "Rutina de Îngrijire de Dimineață pentru Piele Strălucitoare"
+linkslug3: "Rutina-de-Îngrijire-de-Dimineață-pentru-Piele-Strălucitoare"
 ---

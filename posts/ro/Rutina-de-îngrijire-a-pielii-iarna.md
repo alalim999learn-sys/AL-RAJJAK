@@ -9,11 +9,11 @@ img: "/90.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna"
 no: "9"
 
-h2long_tail_keyword1_before_problem: "Cea mai bună rutină de îngrijire a pielii pentru iarnă - Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Sfaturi și rutine pentru piele în vreme rece - Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Regim zilnic de îngrijire a pielii uscate și sensibile - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Rutina eficientă de îngrijire iarna pentru lunile reci - Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Ghid pas cu pas pentru îngrijirea pielii în ierni aspre - FAQ"
+h2long_tail_keyword1 : "Cea mai bună rutină de îngrijire a pielii pentru iarnă - Probleme frecvente"
+h2long_tail_keyword2 : "Sfaturi și rutine pentru piele în vreme rece - Ghid pas cu pas"
+h2long_tail_keyword3 : "Regim zilnic de îngrijire a pielii uscate și sensibile - Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Rutina eficientă de îngrijire iarna pentru lunile reci - Rutină sugerată"
+h2long_tail_keyword5 : "Ghid pas cu pas pentru îngrijirea pielii în ierni aspre - FAQ"
 
 intro: |
   Când temperatura în București scade sub zero și vântul rece suflă din Carpați, pielea nu doar că se simte uscată — ea declanșează o adevărată rebeliune. Iată cum să câștigi această bătălie.
@@ -87,9 +87,9 @@ faqList:
 linktitle1: "Rutina de Dimineață pentru Piele Grasă iarna"
 linkslug1: "Rutina-de-Dimineață-pentru-Piele-Grasă-iarna"
 
-linktitle2: "Rutina de Dimineață pentru Piele Mixtă în Iarna Românească"
-linkslug2: "Rutina-de-Dimineață-pentru-Piele-Mixtă-în-Iarna-Românească"
 
+linktitle2: "Sfaturi de noapte pentru controlul pielii grase iarna"
+linkslug2: "Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"
 linktitle3: "Rutina de îngrijire anti îmbătrânire pe timp de noapte"
 linkslug3: "Rutina-de-îngrijire-anti-îmbătrânire-pe-timp-de-noapte"
 ---

@@ -92,4 +92,15 @@ faqList:
 {question: "Ar dieta gali turėti įtakos žiemos sausai odai?", answer: "Taip, įtraukę omega-3 riebalų rūgštis iš žuvies ir riešutų galite padėti išlaikyti odos barjero sveikatą."}
 
 {question: "Kada reikėtų kreiptis į gydytoją dėl sausos odos?", answer: "Jei sausumas išlieka, atsiranda įtrūkimų arba sukelia skausmą, pasitarkite su specialistu dėl galimų pagrindinių priežasčių."}
+
+
+linktitle1: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
+linkslug1: geriausi-žiemos-odos-drėkinimo-patarimai
+
+linktitle2: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+linkslug2: odos-priežiūros-patarimai-paaugliui-su-akne
+
+linktitle3: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
+linkslug3: odos-priežiūros-patarimai-pradedantiesiems
+
 ---

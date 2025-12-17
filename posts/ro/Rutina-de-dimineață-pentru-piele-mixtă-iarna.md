@@ -7,13 +7,13 @@ no: "8"
 description: "Descoperă o rutină de dimineață pentru pielea mixtă, bazată pe știință, adaptată iernii românești. Abordează uscăciunea, excesul de sebum și alte probleme cu sfaturi de experți, ce să faci și ce să eviți, și FAQ pentru piele sănătoasă și radiantă."
 date: "6 Decembrie 2025"
 img: "/88.jpg"
-h1mainkeyword: "Rutina de Dimineață pentru Piele Mixtă în Iarna Românească"
+h1mainkeyword: Rutina de dimineață pentru piele mixtă iarna
 
-h2long_tail_keyword1_before_problem: "Rutina de dimineață iarnă pentru pielea mixtă - Probleme frecvente"
-h2long_tail_keyword2_before_solution: "Sfaturi pentru rutina de dimineață a pielii mixte iarna - Ghid pas cu pas"
-h2long_tail_keyword3_before_do_dont_table: "Cum să îngrijești pielea mixtă dimineața în iarnă - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine: "Cea mai bună rutină de dimineață pentru pielea mixtă iarna - Rutină sugerată"
-h2long_tail_keyword5_before_FAQ: "Ghid dimineață pentru pielea mixtă în vreme rece - FAQ"
+h2long_tail_keyword1 : "Rutina de dimineață iarnă pentru pielea mixtă - Probleme frecvente"
+h2long_tail_keyword2 : "Sfaturi pentru rutina de dimineață a pielii mixte iarna - Ghid pas cu pas"
+h2long_tail_keyword3 : "Cum să îngrijești pielea mixtă dimineața în iarnă - Ce să faci și ce să eviți"
+h2long_tail_keyword4 : "Cea mai bună rutină de dimineață pentru pielea mixtă iarna - Rutină sugerată"
+h2long_tail_keyword5 : "Ghid dimineață pentru pielea mixtă în vreme rece - FAQ"
 
 intro: |
   Iernile românești mușcă cu vânt rece și aer uscat, transformând pielea mixtă într-un mix complicat de zone grase și uscate. Hai să creăm o rutină care să o mențină echilibrată și luminoasă!

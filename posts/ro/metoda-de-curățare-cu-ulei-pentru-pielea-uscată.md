@@ -10,12 +10,12 @@ img: "/pexels-karola-g-4041391.jpg"
 
 h1mainkeyword: "metoda de curățare cu ulei pentru pielea uscată"
 
-h2long_tail_keyword1_before_problem: "tehnica de curățare cu ulei pentru pielea uscată - Probleme comune ale pielii"
-h2long_tail_keyword2_before_solution: "metoda de curățare pe bază de ulei pentru pielea uscată - Pași pentru o piele mai sănătoasă"
-h2long_tail_keyword3_before_do_dont_table: "curățare cu ulei pentru pielea uscată - Ce să faci și ce să eviți"
-h2long_tail_keyword4_before_routine:  "rutina de curățare cu ulei pentru pielea uscată - Ghid pas cu pas"
+h2long_tail_keyword1 : "tehnica de curățare cu ulei pentru pielea uscată - Probleme comune ale pielii"
+h2long_tail_keyword2 : "metoda de curățare pe bază de ulei pentru pielea uscată - Pași pentru o piele mai sănătoasă"
+h2long_tail_keyword3 : "curățare cu ulei pentru pielea uscată - Ce să faci și ce să eviți"
+h2long_tail_keyword4 :  "rutina de curățare cu ulei pentru pielea uscată - Ghid pas cu pas"
 
-h2long_tail_keyword5_before_FAQ: "metoda de curățare cu ulei pentru pielea uscată - Întrebări frecvente"
+h2long_tail_keyword5 : "metoda de curățare cu ulei pentru pielea uscată - Întrebări frecvente"
 
 subtitle: "Descoperă cum curățarea cu ulei transformă pielea uscată și solzoasă într-un ten moale și luminos, natural"
 intro: "Fața ta este mai uscată decât un martini al unui comedian. Ai aplicat toate cremele „ultra-hidratante” din Sephora, și totuși arăți ca o soparlă disperată după loțiune. Apoi cineva șoptește cuvintele interzise: „Doar freacă cu ulei.” Stai… ulei? Chestia pe care ni s-a spus că e inamicul public nr. 1 din 1995? Da, prietene. Bine ai venit la Metoda de Curățare cu Ulei (OCM). Nu e vrăjitorie. E chimie. Și funcționează."
