@@ -5,7 +5,7 @@ title: "Rutina de Îngrijire a Pielii iarna în România: Soluții pentru Piele 
 subtitle: "Protejează-ți pielea de iernile aspre din România cu o rutină bazată pe știință"
 description: "Descoperă o rutină simplă, aprobată de dermatologi, pentru pielea uscată în climatul rece și uscat din România. Combaterea uscăciunii, roșeții și cojirea cu ingrediente și obiceiuri dovedite științific."
 date: "6 Decembrie 2025"
-img: "/90.jpg"
+img: "/no9r.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna"
 no: "9"
 
@@ -21,9 +21,9 @@ intro: |
 problemTitle: "De ce suferă pielea mai mult iarna în România"
 problemList:
   - "Aerul rece reține mai puțină umiditate, crescând pierderea de apă transepidermală (TEWL) cu până la 25%. (Sursa: Journal of Investigative Dermatology via AAD)"
-  - "Încălzirea interioară reduce umiditatea la 10–20%, mai puțin decât în deșertul Sahara. (Sursa: ASHRAE)"
-  - "Vântul și temperaturile scăzute deteriorează lipidele barierei pielii, afectând funcția sa de protecție. (Sursa: National Rosacea Society)"
-  - "Dușurile fierbinți populare iarna elimină uleiurile naturale, agravând xerosisul. (Sursa: Mayo Clinic)"
+  - "Încălzirea interioară reduce umiditatea la 10–20%, mai puțin decât în deșertul Sahara.  "
+  - "Vântul și temperaturile scăzute deteriorează lipidele barierei pielii, afectând funcția sa de protecție.  "
+  - "Dușurile fierbinți populare iarna elimină uleiurile naturale, agravând xerosisul.  "
   - "Schimbările rapide de temperatură provoacă dilatarea vaselor de sânge și roșeață."
   - "Producția redusă de sebum în vreme rece scade factorul natural de hidratare."
   - "Apa dură din multe orașe românești lasă depuneri de calciu care usucă pielea."

@@ -47,7 +47,7 @@ solutionList:
 dermatologistsaywhattitle: "Ce spun dermatologii despre îngrijirea pielii mixte iarna"
 dermatologistsaywhatlist:
   - "În iarnă, treci la o cremă mai bogată cu ceramide sau acid hialuronic pentru a repara bariera pielii afectată de aerul rece și uscat. (American Academy of Dermatology)"
-  - "Alege demachiante cremoase, hidratante, în locul celor spumante; demachiantele dure elimină uleiurile naturale și agravează uscăciunea. (Mayo Clinic, Dr. Dawn Davis)"
+  - "Alege demachiante cremoase, hidratante, în locul celor spumante; demachiantele dure elimină uleiurile naturale și agravează uscăciunea. (Mayo Clinic)"
   - "Încălzirea interioară scade mult umiditatea – folosește un umidificator cu abur rece pentru a menține aerul între 40–60% și a preveni pierderea apei din piele. (American Academy of Dermatology)"
   - "Protecția solară este obligatorie tot anul; razele UVA care provoacă îmbătrânire trec prin nori și geamuri chiar și în iernile românești. (American Academy of Dermatology & Skin Cancer Foundation)"
   - "Limitează exfolierea la 1–2 ori pe săptămână cu exfolianți chimici blânzi pentru a evita compromiterea barierei deja stresate. (Mayo Clinic & National Eczema Association)"
@@ -95,8 +95,8 @@ faqList:
  - question: "De ce simt pielea mai strânsă iarna?"
    answer: "Umiditatea scăzută și încălzirea interioară extrag apă din piele, provocând senzația de strângere și uscăciune."
 
-linktitle1: "Îngrijirea pielii sensibile și mixte iarna"
-linkslug1: "Îngrijirea-pielii-sensibile-și-mixte-iarna"
+linktitle1: "Rutina de îngrijire a pielii iarna"
+linkslug1: "Rutina-de-îngrijire-a-pielii-iarna"
 linktitle2: "Sfaturi de noapte pentru controlul pielii grase iarna"
 linkslug2: "Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"
 linktitle3: "Rutina de Îngrijire de Dimineață pentru Piele Strălucitoare"

@@ -6,7 +6,7 @@ title: "Îngrijirea pielii echilibrate iarna"
 subtitle: "Îngrijire simplă, bazată pe știință, pentru lunile reci și uscate"
 description: "Protejează pielea echilibrată iarna în România cu hidratare, SPF și rutină simplă, aprobată de dermatologi."
 date: "2025-12-16"
-img: "winter-skincare-romania.jpg"
+img: "/no16r.jpeg"
 
  
 h1mainkeyword: "îngrijirea pielii echilibrate iarna"

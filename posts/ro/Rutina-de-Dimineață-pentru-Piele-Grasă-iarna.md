@@ -91,9 +91,6 @@ faqList:
 
 linktitle1: "Rutina de Dimineață pentru Piele Grasă iarna"
 linkslug1: "Rutina-de-Dimineață-pentru-Piele-Grasă-iarna"
-
-
-
 linktitle2: "Sfaturi de noapte pentru controlul pielii grase iarna"
 linkslug2: "Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"
 linktitle3: "Rutina de îngrijire anti îmbătrânire pe timp de noapte"

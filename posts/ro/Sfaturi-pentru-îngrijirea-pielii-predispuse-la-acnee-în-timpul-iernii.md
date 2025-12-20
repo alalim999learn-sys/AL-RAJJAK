@@ -6,7 +6,7 @@ subtitle: "Strategii Eficiente pentru Iernile Carpatice (-5°C la 5°C, Umiditat
 description: "Ghid complet pentru îngrijirea pielii cu acnee în iarna românească. Soluții pentru vânturile din Carpați, blocurile din București și încălzirea centrală."
 date: "4 Decembrie 2025"
 no: "14"
-img: "/ac.jpg"
+img: "/no14r.jpeg"
 
 h1mainkeyword: "Sfaturi pentru îngrijirea pielii predispuse la acnee în timpul iernii"
 

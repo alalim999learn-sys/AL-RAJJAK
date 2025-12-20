@@ -66,7 +66,7 @@ dermatologistsaywhatlist:
   - "Folosește hidratante fără parfum, ușoare și non-comedogenice pentru pielea grasă, în locul cremelor bogate. (AAD)"
   - "Evită apa fierbinte și demachiantele dure — curățarea blândă protejează bariera pielii. (AAD)"
   - "Reducerea sau evitarea exfolierii chimice/fizice iarna previne iritațiile și deteriorarea barierei. (AAD)"
-
+routineTitle: "Rutină"
 routineList:
   - "1. Curățare blândă — folosește un demachiant ușor, fără parfum, pentru a elimina impuritățile și excesul de sebum. Folosește apă călduță, nu fierbinte."
   - "2. Tamponează pielea — șterge ușor cu un prosop moale, evitând frecarea pentru a nu irita."

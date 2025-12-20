@@ -1,12 +1,13 @@
 ---
-no: " 1"
+no: "1"
 layout: new
 topic: skin care tips for acne prone skin romania
 title: "Îngrijirea tenului acneic iarna în România: Sfaturi care chiar funcționează"
 subtitle: "Cum să previi coșurile când e frig și uscat"
 description: "Ghid complet și bazat pe studii pentru tenul cu tendință acneică în climatele reci și uscate din România. Sfaturi de la dermatologi americani (AAD, Mayo Clinic, NIH) ca să ai ten curat toată iarna."
 date: "2025-12-08"
-img: "/ac.jpg"
+img: "/no1r.jpeg"
+
 h1mainkeyword: "Evitați Coșurile de Pe Pielea Grasă În Iarnă"
 h2long_tail_keyword1 : "Rutina de îngrijire a pielii acneice iarna – Probleme frecvente"
 h2long_tail_keyword2 : "Cum să previi apariția coșurilor iarna – Ghid pas cu pas"
@@ -40,7 +41,7 @@ solutionList:
   - " Aplică cremă cu SPF și iarna – AAD.org"
   - " Folosește benzoyl peroxide pentru controlul bacteriilor – NIH.gov"
   - " Gestionează stresul (meditație, somn) – MayoClinic.org"
-  - "  Consultă un dermatolog înainte dacă ai afecțiuni sensibile sau reacții neobișnuite."
+  - " 🚩Consultă un dermatolog înainte dacă ai afecțiuni sensibile sau reacții neobișnuite."
 dermatologistsaywhattitle: "Ce recomandă dermatologii americani pentru acneea de iarnă"
 dermatologistsaywhatlist:
   - "Hidratează imediat după spălare ca să blochezi apa în piele și să reduci producția compensatorie de sebum. — American Academy of Dermatology (AAD)"
@@ -96,8 +97,8 @@ faqList:
   - question: "Când să merg la dermatolog pentru acneea de iarnă?"
     answer: "Dacă ai coșuri dureroase, chisturi sau nu vezi îmbunătățiri după 8–12 săptămâni de rutină corectă."
 
-linktitle1: "Îngrijirea pielii sensibile și mixte iarna"
-linkslug1: "Îngrijirea-pielii-sensibile-și-mixte-iarna"
+linktitle1:  rutina de hidratare iarna pentru pielea grasă și cu acnee
+linkslug1:  rutina-de-hidratare-iarna-pentru-pielea-grasă-și-cu-acnee
 
 linktitle2: "Sfaturi de noapte pentru controlul pielii grase iarna"
 linkslug2: "Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"

@@ -10,7 +10,7 @@ description: "Sfaturi simple de îngrijire a pielii iarna pentru a menține tenu
 
 
 date: "2025-12-16"
-img: "winter-oily-skin-romania.jpg"
+img: "/no23r.jpeg"
 h1mainkeyword:  Protecția pielii iarna pentru tenul gras
 
 h2long_tail_keyword1: "Rutina de protecție a pielii iarna pentru ten gras - Probleme comune"

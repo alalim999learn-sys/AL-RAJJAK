@@ -5,7 +5,7 @@ title: "7 Remedii Naturale pentru Tenul Gras Iarna în România"
 subtitle: "Cum să scapi de strălucirea excesivă și coșuri – doar cu ingrediente din bucătărie"
 description: "Cele mai eficiente remedii naturale și dovedite științific pentru tenul gras în iernile reci și uscate din România. Redu sebumul în exces, previi coșurile și ai ten mat toată iarna – fără chimicale agresive."
 date: "2025-12-09"
-img: "oily-winter.jpg"
+img: "/no15r.jpeg"
 no: "15"
 h1mainkeyword: "Remedii naturale pentru tenul gras iarna"
 h2long_tail_keyword1: "cum să controlezi tenul gras iarna natural   – Probleme frecvente"
@@ -64,15 +64,15 @@ comparisonTable:
 
 routineTitle: "Rutină simplă de 4 pași pentru ten gras iarna"
 routineList:
-  - Dimineața: Spală-te cu cleanser spumant delicat
+  - Dimineața -  Spală-te cu cleanser spumant delicat
   - Aplică toner cu ceai verde rece sau oțet de mere diluat
   - Cremă gel hidratantă fără ulei
   - Cremă cu SPF matifiantă 30+
-  - Seara: Demachiere dublă dacă porți machiaj
+  - Seara -  Demachiere dublă dacă porți machiaj
   - Mască cu miere sau aloe 3x/săptămână
   - Același toner + cremă gel
-  - Săptămânal: Mască cu ovăz sau argilă
-  - Zilnic: Matifiază la prânz dacă e nevoie
+  - Săptămânal -  Mască cu ovăz sau argilă
+  - Zilnic -  Matifiază la prânz dacă e nevoie
 
 faqList:
   - {question: "De ce mi-e tenul mai gras iarna decât vara?",

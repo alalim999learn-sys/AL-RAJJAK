@@ -5,7 +5,7 @@ title: "Îngrijire Piele Mixtă Grasă în Iarna Românească: Ghid Științific
 subtitle: "Echilibru Perfect în Iernile Carpatice (-5°C până la 5°C, Umiditate 25-35%)"
 description: "Rutină completă pentru pielea mixtă grasă în iarna românească. Soluții pentru vânturile Carpaților, încălzirea blocurilor și aerul uscat din București."
 date: "6 Decembrie 2025"
-img: ""
+img: "/no2r.jpeg"
 no: "2"
 
 h1mainkeyword: "îngrijire piele mixtă grasă iarnă"
@@ -112,8 +112,9 @@ faqList:
  - question: "Cum previn acneea iarna?"
    answer: "Folosește produse non-comedogenice, exfoliază moderat și menține umiditatea ambientului. (sursă: American Academy of Dermatology)"
 
-linktitle1: "Îngrijirea pielii sensibile și mixte iarna"
-linkslug1: "Îngrijirea-pielii-sensibile-și-mixte-iarna"
+
+linktitle1: "Rutina de îngrijire a pielii iarna"
+linkslug1: "Rutina-de-îngrijire-a-pielii-iarna"
 
 linktitle2: "Sfaturi de noapte pentru controlul pielii grase iarna"
 linkslug2: "Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"

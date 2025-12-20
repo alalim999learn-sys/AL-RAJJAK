@@ -6,7 +6,7 @@ title: "Rutina de hidratare iarna pentru pielea grasă și cu acnee"
 subtitle: "Îngrijire simplă, bazată pe știință, pentru echilibrarea hidratării și a sebumului"
 description: "Sfaturi simple de îngrijire a pielii iarna pentru pielea grasă și cu tendință acneică în România, bazate pe recomandări științifice de încredere."
 date: "2025-12-16"
-img: "winter-hydration-oily-acne.jpg"
+img: "/no18r.jpeg"
 h1mainkeyword: "rutina de hidratare iarna pentru pielea grasă și cu acnee"
 
 h2long_tail_keyword1: "rutina de hidratare iarna pentru pielea grasă și cu acnee - Probleme comune"

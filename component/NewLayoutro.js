@@ -84,7 +84,7 @@ export default function NewLayoutro({ frontmatter = {}, content = "", slug = "" 
 
         /* ===== Images ===== */
         .featured-img {
-          width: 71%;
+          width: 77%;
           height: auto;
           margin:  auto;
           border-radius: 20px;

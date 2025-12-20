@@ -7,7 +7,7 @@ title: "Ingrediente Naturale pentru Îngrijirea Pielii Iarna pentru o Piele Săn
 subtitle: "Soluții naturale, susținute de știință, pentru îngrijirea pielii în sezonul rece"
 description: "Sfaturi simple de îngrijire naturală a pielii iarna pentru a-ți menține pielea sănătoasă, hidratată și strălucitoare în România, cu ingrediente sigure și validate științific."
 date: "2025-12-16"
-img: "natural-winter-skincare-romania.jpg"
+img: "/no19r.jpeg"
 h1mainkeyword: "ingrediente naturale pentru îngrijirea pielii iarna"
 
 h2long_tail_keyword1: "cele mai bune ingrediente naturale pentru pielea iarna - Probleme comune"
@@ -88,9 +88,9 @@ faqList :
 
 
 
+linktitle1: rutina îngrijire iarna acasă piele mixtă
+linkslug1: rutina-îngrijire-iarna-acasă-piele-mixtă
 
-linktitle1:  îngrijire piele mixtă grasă iarnă
-linkslug1:  îngrijirea-pielii-echilibrate-iarna
 linktitle2: Protecția pielii iarna pentru tenul gras
 linkslug2: Protecția-pielii-iarna-pentru-tenul-gras
 

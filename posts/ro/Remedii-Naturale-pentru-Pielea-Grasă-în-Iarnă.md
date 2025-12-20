@@ -36,7 +36,7 @@ solutionList:
   - "Mierea acționează ca umectant antibacterian, reducând sebumul fără a usca pielea. (pmc.ncbi.nlm.nih.gov)"
   - "Aloe vera calmează atât zonele uscate, cât și cele uleioase și hidratează blând. (healthline.com)"
   - "Fulgi de ovăz absorbi excesul de sebum și exfoliază ușor. (pmc.ncbi.nlm.nih.gov)"
-  - "Uleiul de arbore de ceai are proprietăți antibacteriene ce reduc acneea. (pmc.ncbi.nlm.nih.gov/articles/PMC4740760/)"
+  - "Uleiul de arbore de ceai are proprietăți antibacteriene ce reduc acneea. (pmc.ncbi.nlm.nih.gov)"
   - "Untul de shea oferă hidratare ușoară și protecție în condiții friguroase. (ewg.org)"
   - "Uleiul de migdale hrănește pielea fără a bloca porii. (ewg.org)"
   - "Uleiul de avocado hidratează pielea grasă și deshidratată. (ewg.org)"
@@ -96,8 +96,8 @@ faqList:
 - question: "Ce alimente ajută la reducerea pielii grase?"
   answer: "Fructe, legume și alimente bogate în omega-3, precum peștele de Dunăre."
 
-linktitle1: "Îngrijirea pielii sensibile și mixte iarna"
-linkslug1: "Îngrijirea-pielii-sensibile-și-mixte-iarna"
+linktitle1: "Rutina de îngrijire a pielii iarna"
+linkslug1: "Rutina-de-îngrijire-a-pielii-iarna"
 
 linktitle2: "Îngrijire piele mixtă grasă iarnă"
 linkslug2: "ingrijire-piele-mixta-grasa-iarna"

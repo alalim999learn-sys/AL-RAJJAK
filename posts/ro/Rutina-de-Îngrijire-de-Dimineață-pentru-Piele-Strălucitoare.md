@@ -8,7 +8,7 @@ title: "Rutina de Îngrijire de Dimineață pentru Piele Strălucitoare în Rom�
 subtitle: "Pași simpli pentru o piele radiantă în fiecare dimineață, chiar și în clima rece a României"
 description: "Rutina de dimineață ușoară pentru o piele radiantă și sănătoasă, adaptată climatului rece din România."
 date: "2025-12-03"
-img: "/pexels-karola-g-4041391.jpg"
+img: "/no11r.jpeg"
 h1mainkeyword: "Rutina de Îngrijire de Dimineață pentru Piele Strălucitoare"
 h2long_tail_keyword1 : "cea mai bună rutină de îngrijire de dimineață pentru piele strălucitoare - Probleme comune ale pielii"
 h2long_tail_keyword2 : "rutina zilnică de îngrijire de dimineață pentru piele strălucitoare - Pași pentru o piele mai sănătoasă"

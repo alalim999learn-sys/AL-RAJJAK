@@ -9,7 +9,7 @@ subtitle: "Sfaturi simple, bazate pe știință, pentru a preveni coșurile și 
 description: "Sfaturi simple de îngrijire a pielii iarna pentru adolescenți cu ten gras în România. Pași blânzi și bazati pe știință pentru curățare, hidratare, protecție solară și prevenirea coșurilor."
 
 date: "2025-12-16"
-img: "teen-oily-skin-winter.jpg"
+img: "/no24r.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna adolescenți ten gras"
 
 

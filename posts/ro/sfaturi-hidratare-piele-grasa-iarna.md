@@ -86,8 +86,8 @@ faqList:
   - {question: "Sunt utile măștile hidratante pentru pielea grasă?", answer: "Da, folosite de 1-2 ori pe săptămână, acestea restabilesc echilibrul de umiditate fără a înfunda porii."}
   - {question: "Influențează dieta hidratarea pielii?", answer: "Da, acizii grași omega-3 și antioxidanții susțin bariera pielii și îmbunătățesc retenția de apă."}
 
-linktitle1: "Îngrijirea pielii sensibile și mixte iarna"
-linkslug1: "Îngrijirea-pielii-sensibile-și-mixte-iarna"
+linktitle1: "Rutina de îngrijire a pielii iarna"
+linkslug1: "Rutina-de-îngrijire-a-pielii-iarna"
 
 linktitle2: "Îngrijire piele mixtă și grasă iarna"
 linkslug2: "ingrijire-piele-mixta-grasa-iarna"
