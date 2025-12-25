@@ -4,7 +4,7 @@ topic: overnight winter skin care routine for oily skin Romania
 title: "Rutina de Îngrijire Noaptea pentru Pielea Grasă în Iarna din România"
 subtitle: "Cum să menții pielea grasă echilibrată și sănătoasă în lunile reci și uscate"
 description: "O rutină de noapte informată de dermatologi pentru gestionarea pielii grase în iernile românești, cu sfaturi practice, ce să faci și ce să eviți, plus FAQ-uri."
-date: "6 Decembrie 2025"
+date: "2025-12-06"
 no: "12"
 img: "/12.jpg"
 

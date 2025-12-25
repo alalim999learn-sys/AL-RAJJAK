@@ -7,6 +7,7 @@ subtitle: "Pași simpli pentru echilibrarea zonelor uscate și uleioase în luni
 description: "Îngrijire simplă acasă iarna pentru pielea mixtă în România – menține echilibrul și hidratarea."
 date: "2025-12-16"
 img: "/no22r.jpg"
+
 h1mainkeyword: "rutina îngrijire iarna acasă piele mixtă"
 
 

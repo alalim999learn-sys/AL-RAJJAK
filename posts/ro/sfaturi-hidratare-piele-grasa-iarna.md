@@ -4,9 +4,10 @@ topic: winter hydration tips for oily skin Romania
 title: "Sfaturi de Hidratare pentru Pielea Grasă în Iarna Românească: Ghid Științific"
 subtitle: "Pași Simpli pentru a Menține Pielea Hidrataată Fără a Crește Excesul de Sebum"
 description: "Află cum să menții pielea grasă hidratată în timpul iernii dure din România. Descoperă sfaturi bazate pe știință, recomandări ale dermatologilor și rutine ușor de urmat pentru echilibrul pielii și controlul luciului."
-date: "4 Decembrie 2025"
+date: "2025-12-04"
 img: "/13.jpg"
 no: "13"
+
 h1mainkeyword: "sfaturi hidratare piele grasa iarna"
 
 h2long_tail_keyword1 : "Sfaturi de hidratare iarnă pentru pielea grasă - Probleme frecvente"

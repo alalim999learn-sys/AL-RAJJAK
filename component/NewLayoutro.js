@@ -4,6 +4,8 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
+// Line 1 এর ঠিক উপরে
+import Head from 'next/head';
 
 // Funcție pentru eliminarea HTML—pentru Google Rich Results
 const stripHtml = (str = "") => String(str || "").replace(/<[^>]*>/g, "").trim();

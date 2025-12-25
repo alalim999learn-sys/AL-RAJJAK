@@ -4,7 +4,7 @@ topic: morning routine for oily skin winter
 title: "Cea mai bună rutină de dimineață pentru pielea grasă în iarna aspră românească"
 subtitle: "Un ghid de îngrijire a pielii pentru sezonul rece susținut de știință"
 description: "Învățați rutina exactă de îngrijire a pielii dimineața, prietenoasă pentru iarnă, aprobată de dermatologi, pentru pielea grasă în timpul iernii din România, inclusiv probleme, soluții, tabel do/don't și FAQ-uri."
-date: "6 Decembrie 2025"
+date: "2025-12-06"
 img: "/77.jpg"
 no: "7"
 h1mainkeyword: "Rutina de Dimineață pentru Piele Grasă iarna"

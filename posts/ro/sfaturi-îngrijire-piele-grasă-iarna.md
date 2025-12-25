@@ -8,8 +8,9 @@ subtitle: "Control echilibrat al sebumului și hidratare în lunile reci"
 # seo friendly description
 description: "Sfaturi simple pentru îngrijirea pielii grase iarna, pentru a menține echilibrul, hidratarea și pielea fără luciu în România, bazate pe recomandări științifice de încredere."
 date: "2025-12-16"
-img: "/no21r.jpeg"
 h1mainkeyword: "sfaturi îngrijire piele grasă iarna"
+img: "/no21r.jpeg"
+
 
 h2long_tail_keyword1: "rutina de îngrijire iarna pentru pielea grasă - Probleme comune"
 h2long_tail_keyword2: "sfaturi hidratante pentru pielea grasă iarna - Soluții"

@@ -1,12 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <sitemap>
-      <loc>https://lemonskn.com/sitemap-ro.xml</loc>
-   </sitemap>
-   <sitemap>
-      <loc>https://lemonskn.com/sitemap-lt.xml</loc>
-   </sitemap>
-   <sitemap>
-      <loc>https://lemonskn.com/sitemap-static.xml</loc>
-   </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://lemonskn.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Romanian Static Pages -->
+  <url><loc>https://lemonskn.com/ro/</loc></url>
+  <url><loc>https://lemonskn.com/ro/huu</loc></url>
+  <url><loc>https://lemonskn.com/ro/about</loc></url>
+  <url><loc>https://lemonskn.com/ro/contact</loc></url>
+  <url><loc>https://lemonskn.com/ro/privacy-policy</loc></url>
+
+  <!-- Lithuanian Static Pages -->
+  <url><loc>https://lemonskn.com/lt/</loc></url>
+  <url><loc>https://lemonskn.com/lt/huu</loc></url>
+  <url><loc>https://lemonskn.com/lt/about</loc></url>
+  <url><loc>https://lemonskn.com/lt/contact</loc></url>
+  <url><loc>https://lemonskn.com/lt/privacy-policy</loc></url>
+  <url><loc>https://lemonskn.com/ro/Evitați-Coșurile-de-Pe-Pielea-Grasă-În-Iarnă</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/ingrediente-naturale-pentru-îngrijirea-pielii-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/îngrijirea-pielii-echilibrate-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/îngrijirea-pielii-iarna-adulți-România</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/ingrijire-piele-mixta-grasa-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/metoda-de-curățare-cu-ulei-pentru-pielea-uscată</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Protecția-pielii-iarna-pentru-tenul-gras</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Remedii-Naturale-pentru-Pielea-Grasă-în-Iarnă</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Remedii-naturale-pentru-tenul-gras-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-Dimineață-pentru-Piele-Grasă-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-dimineață-pentru-piele-mixtă-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/rutina-de-hidratare-iarna-pentru-pielea-grasă-și-cu-acnee</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-îngrijire-anti-îmbătrânire-pe-timp-de-noapte</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-îngrijire-a-pielii-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-îngrijire-a-pielii-iarna-adolescenți-ten-gras</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Rutina-de-Îngrijire-de-Dimineață-pentru-Piele-Strălucitoare</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/rutina-îngrijire-iarna-acasă-piele-mixtă</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/sfaturi-de-îngrijire-a-pielii-grase-iarna-pentru-un-ten-luminos</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/sfaturi-hidratare-piele-grasa-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/sfaturi-îngrijire-piele-grasă-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Sfaturi-pentru-controlul-sebumului-iarna</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/ro/Sfaturi-pentru-îngrijirea-pielii-predispuse-la-acnee-în-timpul-iernii</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
+
+  <!-- Lithuanian Articles -->
+  <url><loc>https://lemonskn.com/lt/geriausi-natūralios-odos-priežiūros-patarimai-paaugliams</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/geriausi-žiemos-odos-drėkinimo-patarimai</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/odos-priežiūros-patarimai-paaugliui-su-akne</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/odos-priežiūros-patarimai-pradedantiesiems</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/odos-priežiūros-rutina-po-30-Lietuva</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/švytinčiosodos-rutina-žiemą-Lietuvoje</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/žiemos-odos-priežiūra-paaugliams-lietuvoje</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lemonskn.com/lt/žiemos-odos-priežiūra-sausai-odai-lietuvoje</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
+</urlset>

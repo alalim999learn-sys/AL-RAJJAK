@@ -7,6 +7,7 @@ subtitle: "Piele echilibrată și fără exces de sebum chiar și în vreme rece
 description: "Sfaturi de îngrijire a pielii grase pentru un ten luminos iarna în România: menține pielea hidratată, echilibrată și fără luciu în sezonul rece."
 date: "2025-12-16"
 img: "/no17r.jpg"
+
 h1mainkeyword: "sfaturi de îngrijire a pielii grase iarna pentru un ten luminos"
 
 h2long_tail_keyword1: "rutina de îngrijire iarna pentru ten gras și luminos - Probleme comune"

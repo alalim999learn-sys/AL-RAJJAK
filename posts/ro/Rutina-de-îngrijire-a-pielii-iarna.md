@@ -4,7 +4,7 @@ topic: step-by-step winter skin care routine Romania
 title: "Rutina de Îngrijire a Pielii iarna în România: Soluții pentru Piele Uscată Care Funcționează"
 subtitle: "Protejează-ți pielea de iernile aspre din România cu o rutină bazată pe știință"
 description: "Descoperă o rutină simplă, aprobată de dermatologi, pentru pielea uscată în climatul rece și uscat din România. Combaterea uscăciunii, roșeții și cojirea cu ingrediente și obiceiuri dovedite științific."
-date: "6 Decembrie 2025"
+date: "2025-12-06"
 img: "/no9r.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna"
 no: "9"

@@ -4,7 +4,7 @@ topic: oily combination skin care in winter Romania
 title: "Îngrijire Piele Mixtă Grasă în Iarna Românească: Ghid Științific"
 subtitle: "Echilibru Perfect în Iernile Carpatice (-5°C până la 5°C, Umiditate 25-35%)"
 description: "Rutină completă pentru pielea mixtă grasă în iarna românească. Soluții pentru vânturile Carpaților, încălzirea blocurilor și aerul uscat din București."
-date: "6 Decembrie 2025"
+date: "2025-12-17"
 img: "/no2r.jpeg"
 no: "2"
 

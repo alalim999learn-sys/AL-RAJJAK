@@ -5,7 +5,7 @@ title: "Rutina de Dimineață pentru Piele Mixtă în Iarna Românească"
 subtitle: "Îngrijire Echilibrată pentru Strălucire în Vreme Rece"
 no: "8"
 description: "Descoperă o rutină de dimineață pentru pielea mixtă, bazată pe știință, adaptată iernii românești. Abordează uscăciunea, excesul de sebum și alte probleme cu sfaturi de experți, ce să faci și ce să eviți, și FAQ pentru piele sănătoasă și radiantă."
-date: "6 Decembrie 2025"
+date: "2025-12-06"
 img: "/88.jpg"
 h1mainkeyword: Rutina de dimineață pentru piele mixtă iarna
 

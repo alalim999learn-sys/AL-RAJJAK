@@ -4,7 +4,7 @@ topic: natural remedies for oily skin in winter Romania
 title: "Remedii Naturale pentru Pielea Grasă în Iarna din România"
 subtitle: "Sfaturi Științifice pentru Piele Echilibrată"
 description: "Descoperă remedii naturale eficiente pentru gestionarea pielii grase în iernile reci și uscate din România. Află soluții bazate pe știință pentru reducerea excesului de sebum, prevenirea coșurilor și menținerea unei pieli sănătoase și echilibrate în condiții dificile."
-date: "6 Decembrie 2025"
+date: "2025-12-06"
 img: "/14.jpg"
 h1mainkeyword: "Remedii Naturale pentru Pielea Grasă în Iarnă"
 no: "6"

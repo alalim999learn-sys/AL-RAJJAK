@@ -7,6 +7,7 @@ subtitle: "Strategii susținute de știință pentru echilibrarea sebumului și 
 description: "Sfaturi simple pentru iarnă pentru a menține pielea grasă sub control și strălucitoare în România, bazate pe recomandări științifice de încredere."
 date: "2025-12-16"
 img: "/no20r.jpeg"
+
 h1mainkeyword: "Sfaturi pentru controlul sebumului iarna"
 
 h2long_tail_keyword1: "cum să controlezi pielea grasă iarna - Probleme comune"
