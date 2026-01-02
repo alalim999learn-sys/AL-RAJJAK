@@ -8,6 +8,7 @@ subtitle: "Sfaturi simple, bazate pe știință, pentru a preveni coșurile și 
 # seo friendly description
 description: "Sfaturi simple de îngrijire a pielii iarna pentru adolescenți cu ten gras în România. Pași blânzi și bazati pe știință pentru curățare, hidratare, protecție solară și prevenirea coșurilor."
 
+canonical: "lemonskn.com/ro/Rutina-de-îngrijire-a-pielii-iarna-adolescenți-ten-gras"
 date: "2025-12-16"
 img: "/no24r.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna adolescenți ten gras"

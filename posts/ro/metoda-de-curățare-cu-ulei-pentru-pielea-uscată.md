@@ -4,12 +4,11 @@ topic:  "oil cleansing method for dry skin"
 layout: new
 
 no: "5"
-
 title: "metoda de curățare cu ulei pentru pielea uscată"
 description: "Descoperă metoda de curățare cu ulei pentru pielea uscată — blândă, eficientă și puțin distractivă."
 date: "2025-12-03"
 img: "/no5r.jpeg"
-
+canonical: "lemonskn.com/ro/metoda-de-curățare-cu-ulei-pentru-pielea-uscată"
 h1mainkeyword: "metoda de curățare cu ulei pentru pielea uscată"
 
 h2long_tail_keyword1 : "tehnica de curățare cu ulei pentru pielea uscată - Probleme comune ale pielii"

@@ -1,6 +1,7 @@
 ---
 layout: new
 topic: skin-care-tips-for-beginners
+canonical: "lemonskn.com/lt/odos-priežiūros-patarimai-pradedantiesiems"
 title: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
 subtitle: "Lengva 3–4 žingsnių rutina, kuri veikia net lietuvišką žiemą"
 description: "Rutina Lietuvoje: valymas, drėkinimas ir SPF – efektyvu nuo pirmos savaitės."
@@ -9,14 +10,14 @@ img: "/77.jpg"
 img_alt: "Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje – švelnūs produktai ir švytinti oda"
 url: "odos-priežiūros-patarimai-pradedantiesiems"
 # Main keyword শুরুতেই – Google.lt এবং Rank Math এর জন্য পারফেক্ট
-h1mainkeyword: "paprasta odos priežiūros rutina pradedantiesiems Lietuvoje"
+h1mainkeyword: Paprasta odos priežiūros rutina pradedantiesiems
 
-# Long-tail keywords H2-এর জন্য
-h2long_tail_keyword1_before_problem: "kodėl pradedantiesiems Lietuvoje oda išsausėja žiemą"
-h2long_tail_keyword2_before_solution: "paprasta odos priežiūros rutina pradedantiesiems"
-h2long_tail_keyword3_before_do_dont_table: "geriausi odos priežiūros patarimai pradedantiesiems"
-h2long_tail_keyword4_before_routine: "lengva kasdienė odos priežiūros rutina namuose"
-h2long_tail_keyword5_before_FAQ: "pagrindiniai odos priežiūros žingsniai pradedantiesiems"
+ 
+h2long_tail_keyword1 : "kodėl pradedantiesiems Lietuvoje oda išsausėja žiemą"
+h2long_tail_keyword2 : "paprasta odos priežiūros rutina pradedantiesiems"
+h2long_tail_keyword3 : "geriausi odos priežiūros patarimai pradedantiesiems"
+h2long_tail_keyword4 : "lengva kasdienė odos priežiūros rutina namuose"
+h2long_tail_keyword5 : "pagrindiniai odos priežiūros žingsniai pradedantiesiems"
 
 # পেজে অবশ্যই এই H1 থাকবে
 # <h1>Paprasta odos priežiūros rutina pradedantiesiems Lietuvoje</h1>

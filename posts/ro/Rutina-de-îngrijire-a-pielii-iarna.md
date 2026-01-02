@@ -8,7 +8,7 @@ date: "2025-12-06"
 img: "/no9r.jpg"
 h1mainkeyword: "Rutina de îngrijire a pielii iarna"
 no: "9"
-
+canonical: "lemonskn.com/ro/Rutina-de-îngrijire-a-pielii-iarna"
 h2long_tail_keyword1 : "Cea mai bună rutină de îngrijire a pielii pentru iarnă - Probleme frecvente"
 h2long_tail_keyword2 : "Sfaturi și rutine pentru piele în vreme rece - Ghid pas cu pas"
 h2long_tail_keyword3 : "Regim zilnic de îngrijire a pielii uscate și sensibile - Ce să faci și ce să eviți"

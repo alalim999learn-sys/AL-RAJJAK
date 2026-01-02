@@ -214,32 +214,35 @@ export default function Post({ post, products, slug }) {
 
   return (
     <>
-      <Head>
-        <title>{frontmatter.title}</title>
-        <meta name="description" content={frontmatter.description} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
-        
-       
-        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/ro/${slug}`} />
-        <link rel="icon" href="/lemonskn.png" />
+     <Head>
+  <title>{frontmatter.title}</title>
+  <meta name="description" content={frontmatter.description} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
+
+  <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
  
-        <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
-        <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.description} />
-        <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
-        <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
-        <meta property="og:locale" content="ro_RO" />
-        <meta property="og:type" content="article" />
+  <link rel="icon" href="/lemonskn.png" />
 
-        <meta name="twitter:card" content="summary_large_image" />
+  {/* নতুন লাইন: Meta Language tag */}
+  <meta httpEquiv="content-language" content="ro-RO" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData, null, 2) }}
-        />
-      </Head>
+  <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
+  <meta property="og:title" content={frontmatter.title} />
+  <meta property="og:description" content={frontmatter.description} />
+  <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
+  <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:type" content="article" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData, null, 2) }}
+  />
+</Head>
+
 
       <Layoutro>
         <LayoutComponent

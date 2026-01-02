@@ -8,6 +8,7 @@ description: "Sfaturi de îngrijire a pielii grase pentru un ten luminos iarna �
 date: "2025-12-16"
 img: "/no17r.jpg"
 
+canonical: "lemonskn.com/ro/sfaturi-de-îngrijire-a-pielii-grase-iarna-pentru-un-ten-luminos"
 h1mainkeyword: "sfaturi de îngrijire a pielii grase iarna pentru un ten luminos"
 
 h2long_tail_keyword1: "rutina de îngrijire iarna pentru ten gras și luminos - Probleme comune"

@@ -1,6 +1,7 @@
 ---
 no: "1"
 layout: new
+canonical: "lemonskn.com/ro/Evitați-Coșurile-de-Pe-Pielea-Grasă-În-Iarnă"
 topic: skin care tips for acne prone skin romania
 title: "Îngrijirea tenului acneic iarna în România: Sfaturi care chiar funcționează"
 subtitle: "Cum să previi coșurile când e frig și uscat"

@@ -8,7 +8,7 @@ subtitle: "Strategii simple și bazate pe știință pentru controlul sebumului 
 # seo friendly description
 description: "Sfaturi simple de îngrijire a pielii iarna pentru a menține tenul gras echilibrat, hidratat și protejat în România, cu pași ușor de urmat pentru curățare, hidratare și protecție solară."
 
-
+canonical: "lemonskn.com/ro/Protecția-pielii-iarna-pentru-tenul-gras"
 date: "2025-12-16"
 img: "/no23r.jpeg"
 h1mainkeyword:  Protecția pielii iarna pentru tenul gras

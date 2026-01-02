@@ -1,28 +1,32 @@
 ---
 layout: new
 topic: "best-simple-skincare-for-teens-in-Lithuania"
+canonical: "lemonskn.com/lt/geriausia-paprasta-odos-priežiūra-paaugliams-Lietuvoje"
 title: "Paprasta odos priežiūros rutina paaugliams Lietuvoje"
 subtitle: "Paprasta ir efektyvi rutina paaugliams, kurie nenori sudėtingų 10 žingsnių schemų"
 description: "Realistiškas, moksliškai pagrįstas ir labai paprastas odos priežiūros gidas Lietuvos paaugliams, kurie nenori pusės kišenpinigių išleisti 15 kremams."
 date: "2025-11-18"
 img: "/pexels-karola-g-4041391.jpg"
 
-keyword1: "geriausia paprasta odos priežiūra paaugliams Lietuvoje"
-keyword2: "Paprasta odos priežiūros rutina paaugliams"
+h1mainkeyword: geriausia paprasta odos priežiūra paaugliams
+
+
+
+h2long_tail_keyword1: lengva odos priežiūros rutina paaugliams
+
+h2long_tail_keyword2: paprasti odos priežiūros patarimai paauglių odai
+
+h2long_tail_keyword3: pradedantiesiems skirtas odos priežiūros vadovas paaugliams
+
+h2long_tail_keyword4: veiksmingos odos priežiūros priemonės paaugliams
+
+h2long_tail_keyword5: kasdienio odos priežiūros gidas paaugliams
 
 intro: >
   Labas, Lietuvos paaugli! Tavo veidas šiuo metu elgiasi tarsi pigus siaubo filmas.
   Atsipalaiduok – tau nereikia 10 žingsnių rutinos ir pusės darbo užmokesčio.
   Keturi produktai ir nuoseklumas išgelbės tavo odą.
-long_tail_keyword1_before_problem: "geriausia-paaugliu-odos-prieziuros-rutina-lietuvoje"
 
-long_tail_keyword2_before_solution: "paprasta-odos-prieziura-paaugliams-lietuvoje"
-
-long_tail_keyword3_before_do_dont_table: "paaugliu-odos-prieziuros-patarimai-lietuvoje"
-
-long_tail_keyword4_before_routine: "lengvas-paaugliu-odos-prieziuros-gidas-lietuvoje"
-
-long_tail_keyword5_before_FAQ: "pradedantiesiems-skirta-paaugliu-odos-prieziura-lietuvoje"
 
 problemTitle: "9 priežastys, kodėl tavo oda šiuo metu maištauja"
 problemList:

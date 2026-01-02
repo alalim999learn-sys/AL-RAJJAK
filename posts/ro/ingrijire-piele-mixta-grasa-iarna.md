@@ -8,6 +8,7 @@ date: "2025-12-17"
 img: "/no2r.jpeg"
 no: "2"
 
+canonical: "lemonskn.com/ro/ingrijire-piele-mixta-grasa-iarna"
 h1mainkeyword: "îngrijire piele mixtă grasă iarnă"
 
 h2long_tail_keyword1 : "Sfaturi de îngrijire a pielii pentru pielea mixtă și grasă în iarnă - Probleme frecvente"

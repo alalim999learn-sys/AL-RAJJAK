@@ -10,15 +10,14 @@ description: ""
 date: ""
 image1: ""
 img: ""
-keyword1: ""
-keyword2: ""
+ 
 intro: ""  #  a funny short intro 
 
-h2long_tail_keyword1_before_problem: ""
-h2long_tail_keyword2_before_solution: ""
-h2long_tail_keyword3_before_do_dont_table: ""
-h2long_tail_keyword4_before_routine: ""
-h2long_tail_keyword5_before_FAQ: ""
+h2long_tail_keyword1: ""
+h2long_tail_keyword2: ""
+h2long_tail-keyword3: ""
+h2long_tail_keyword4: ""
+h2long_tail_keyword5: ""
 
 problemTitle: ""
 problemList: [] # 9 problem total 5 with science with source usa based non profit website and 4 normal

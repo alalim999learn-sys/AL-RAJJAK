@@ -8,7 +8,7 @@ description: "Descoperă o rutină de dimineață pentru pielea mixtă, bazată 
 date: "2025-12-06"
 img: "/88.jpg"
 h1mainkeyword: Rutina de dimineață pentru piele mixtă iarna
-
+canonical: "lemonskn.com/ro/Rutina-de-dimineață-pentru-piele-mixtă-iarna"
 h2long_tail_keyword1 : "Rutina de dimineață iarnă pentru pielea mixtă - Probleme frecvente"
 h2long_tail_keyword2 : "Sfaturi pentru rutina de dimineață a pielii mixte iarna - Ghid pas cu pas"
 h2long_tail_keyword3 : "Cum să îngrijești pielea mixtă dimineața în iarnă - Ce să faci și ce să eviți"

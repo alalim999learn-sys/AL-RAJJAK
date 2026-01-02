@@ -1,6 +1,7 @@
 ---
 layout: new
 topic: skin-care-routine-after-30-Lithuania
+canonical: "lemonskn.com/lt/odos-priežiūros-rutina-po-30-Lietuva"
 title: "Odą prižiūrėti po 30: paprasta rutina, kuri veikia (be stebuklingų kremų)"
 subtitle: Įprasta odos priežiūra, pagrįsta mokslo tyrimais, kad pasiektumėte jaunatvišką ir sveiką odą, nepaisant amžiaus pokyčių
 description: "Kas vyksta su oda po 30 metų, kodėl ji staiga „pavargsta“ ir kaip lietuvaitėms sukurti veiksmingą, bet nebrangią odos priežiūros rutiną – su mokslu pagrįstais patarimais ir realiais sprendimais."
@@ -10,11 +11,11 @@ img: "/90.jpg"
 h1mainkeyword: "Odos priežiūros rutina po 30"
 url: "odos-priežiūros-rutina-po-30-Lietuva"
 intro: "30-metė veidrodyje staiga atrodo kaip 29-metė su lengvu pagirių sindromu. Sveika atvykusi į klubą, kuriame kolagenas išeina atostogų be grįžimo bilieto."
-h2long_tail_keyword1_before_problem: "Rytinė ir vakarinė odos priežiūros rutina po 30"
-h2long_tail_keyword2_before_solution: "Odos priežiūros patarimai po 30 metų"
-h2long_tail_keyword3_before_do_dont_table: "Anti-senėjimo odos priežiūros rutina po 30"
-h2long_tail_keyword4_before_routine: "Efektyvi odos priežiūra po 30 metų amžiaus"
-h2long_tail_keyword5_before_FAQ: "Kasdienė odos priežiūros rutina po 30 metų"
+h2long_tail_keyword1 : "Rytinė ir vakarinė odos priežiūros rutina po 30"
+h2long_tail_keyword2 : "Odos priežiūros patarimai po 30 metų"
+h2long_tail_keyword3 : "Anti-senėjimo odos priežiūros rutina po 30"
+h2long_tail_keyword4 : "Efektyvi odos priežiūra po 30 metų amžiaus"
+h2long_tail_keyword5 : "Kasdienė odos priežiūros rutina po 30 metų"
 problemTitle: "9 dažniausios odos problemos po 30 metų (ir kodėl jos atsiranda)"
 problemList:
   - Pirmosios ryškios mimikos raukšlės (ypač kaktoje ir apie akis)

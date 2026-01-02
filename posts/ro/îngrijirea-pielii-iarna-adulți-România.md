@@ -8,7 +8,7 @@ date: "2025-01-15"
 img: "/7.jpeg"
 no: "3"
 h1mainkeyword: "îngrijirea pielii iarna adulți România"
-
+canonical: "lemonskn.com/ro/îngrijirea-pielii-iarna-adulți-România"
 intro: Drag prieten român, a venit iarna — -12°C, vânt care te urăște și piele mai uscată decât eticheta unei sticle de țuică. Arăți acum ca un vampir transilvănean de 200 de ani care a pierdut o bătaie cu un covrig.
  Relaxează-te. Am petrecut ultimele 7 zile citind doar sursele de top
  - American Academy of Dermatology (aad.org)

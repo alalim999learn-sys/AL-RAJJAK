@@ -1,7 +1,7 @@
 ---
 layout: new
 title: "Žiemos odos priežiūra sausai odai Lietuvoje: Esminiai patarimai ir rutinos"
-
+canonical: "lemonskn.com/lt/Žiemos-odos-priežiūra-sausai-odai-Lietuvoje"
 topic: "winter skin care tips for dry skin"
 description: "Sužinokite įrodytus žiemos odos priežiūros rutinas sausai odai Lietuvoje. Gaukite moksliniais tyrimais pagrįstus patarimus kovojant su sausumu, hidratacijos strategijas ir kasdienius įpročius, kurie padeda išlaikyti sveiką odą žvarbioje žiemą."
 date: "2025-12-07"
@@ -10,11 +10,11 @@ img: "/5.jpg"
 intro: "Kai Lietuvoje žiema užkloja sniego sluoksniais, jūsų oda gali jaustis sausesnė nei dykuma – laikas drėkinti ir juoktis iš pleiskanų!"
 
 h1mainkeyword: "žiemos odos priežiūros patarimai sausai odai"
-h2long_tail_keyword1_before_problem: "kaip palaikyti odos drėkinimą žiemą sausai odai"
-h2long_tail_keyword2_before_solution: "žiemos odos priežiūros rutina sausai odai"
-h2long_tail_keyword3_before_do_dont_table: "efektyvūs žiemos odos priežiūros patarimai sausai odai"
-h2long_tail_keyword4_before_routine: "kaip išvengti sausos odos žiemą"
-h2long_tail_keyword5_before_FAQ: "kasdienė žiemos odos priežiūros rutina sausai odai"
+h2long_tail_keyword1 : "kaip palaikyti odos drėkinimą žiemą sausai odai"
+h2long_tail_keyword2 : "žiemos odos priežiūros rutina sausai odai"
+h2long_tail_keyword3 : "efektyvūs žiemos odos priežiūros patarimai sausai odai"
+h2long_tail_keyword4 : "kaip išvengti sausos odos žiemą"
+h2long_tail_keyword5 : "kasdienė žiemos odos priežiūros rutina sausai odai"
 
 problemTitle: "Pagrindinės sausos odos priežastys Lietuvoje žiemą"
 problemList:

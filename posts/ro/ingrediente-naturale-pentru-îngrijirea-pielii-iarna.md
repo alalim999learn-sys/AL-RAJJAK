@@ -2,7 +2,7 @@
 layout: new
 no: "19"
 topic: natural winter skin care ingredients Romania # don't translate topic
-
+canonical: "lemonskn.com/ro/ingrediente-naturale-pentru-îngrijirea-pielii-iarna"
 title: "Ingrediente Naturale pentru Îngrijirea Pielii Iarna pentru o Piele Sănătoasă în România"
 subtitle: "Soluții naturale, susținute de știință, pentru îngrijirea pielii în sezonul rece"
 description: "Sfaturi simple de îngrijire naturală a pielii iarna pentru a-ți menține pielea sănătoasă, hidratată și strălucitoare în România, cu ingrediente sigure și validate științific."

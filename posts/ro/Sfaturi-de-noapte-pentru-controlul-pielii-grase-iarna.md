@@ -8,6 +8,7 @@ date: "2025-12-06"
 no: "12"
 img: "/12.jpg"
 
+canonical: "lemonskn.com/ro/Sfaturi-de-noapte-pentru-controlul-pielii-grase-iarna"
 h1mainkeyword: "Sfaturi de noapte pentru controlul pielii grase iarna"
 
 h2long_tail_keyword1 : "Rutina de îngrijire nocturnă a pielii grase în iarnă - Probleme frecvente"

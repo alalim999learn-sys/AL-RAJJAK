@@ -8,7 +8,7 @@ description: "Sfaturi simple de îngrijire a pielii iarna pentru pielea grasă �
 date: "2025-12-16"
 img: "/no18r.jpeg"
 h1mainkeyword: "rutina de hidratare iarna pentru pielea grasă și cu acnee"
-
+canonical: "lemonskn.com/ro/rutina-de-hidratare-iarna-pentru-pielea-grasă-și-cu-acnee"
 h2long_tail_keyword1: "rutina de hidratare iarna pentru pielea grasă și cu acnee - Probleme comune"
 h2long_tail_keyword2: "cum să hidratezi pielea grasă și acneică iarna - Soluții"
 h2long_tail_keyword3: "prevenirea deshidratării pielii grase și acneice iarna - Ce să faci și ce să eviți"

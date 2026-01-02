@@ -1,5 +1,6 @@
 ---
 layout: new
+canonical: "lemonskn.com/lt/geriausi-žiemos-odos-drėkinimo-patarimai"
 topic :  best-winter-skin-hydration-tips
 title: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje"
 subtitle: "Veiksmingi būdai išlaikyti drėgną ir sveiką odą net -20°C"
@@ -7,17 +8,16 @@ description: "Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje? Patikr
 date: "2025-01-15"
 img: "/14.jpg"
 #jojoba oil
-url: "geriausi-žiemos-odos-drėkinimo-patarimai"
+
 # Main & Long-tail keywords – Rank Math এবং Google-এর জন্য পারফেক্ট
 h1mainkeyword: "kaip žiemą natūraliai sudrėkinti sausą odą"
-h2long_tail_keyword1_before_problem: "kodėl žiemą oda tampa sausa Lietuvoje"
-h2long_tail_keyword2_before_solution: "kaip žiemą natūraliai sudrėkinti sausą odą"
-h2long_tail_keyword3_before_do_dont_table: "geriausi žiemos odos drėkinimo patarimai"
-h2long_tail_keyword4_before_routine: "žiemos odos drėkinimo rutina namuose"
-h2long_tail_keyword5_before_FAQ: "veiksmingi būdai drėkinti odą žiemą be kremų"
+h2long_tail_keyword1: "kodėl žiemą oda tampa sausa Lietuvoje"
+h2long_tail_keyword2: "kaip žiemą natūraliai sudrėkinti sausą odą"
+h2long_tail_keyword3: "geriausi žiemos odos drėkinimo patarimai"
+h2long_tail_keyword4: "žiemos odos drėkinimo rutina namuose"
+h2long_tail_keyword5: "veiksmingi būdai drėkinti odą žiemą be kremų"
 
-# H1 – পেজে যেন এইটা থাকে (টেমপ্লেটে রাখো)
-# <h1>Kaip žiemą natūraliai sudrėkinti sausą odą Lietuvoje</h1>
+
 
 intro: >
   Žiema Lietuvoje – tai ne tik sniegas ir cepelinai, bet ir sausos, tempiančios, pleiskanojančios odos sezonas.

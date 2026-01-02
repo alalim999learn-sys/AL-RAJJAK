@@ -7,6 +7,8 @@ description: "Cele mai eficiente remedii naturale și dovedite științific pent
 date: "2025-12-09"
 img: "/no15r.jpeg"
 no: "15"
+
+canonical: "lemonskn.com/ro/Remedii-naturale-pentru-tenul-gras-iarna"
 h1mainkeyword: "Remedii naturale pentru tenul gras iarna"
 h2long_tail_keyword1: "cum să controlezi tenul gras iarna natural   – Probleme frecvente"
 h2long_tail_keyword2: "remedii babesti ten gras frig Romania  – Ghid pas cu pas "

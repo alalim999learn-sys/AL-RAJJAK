@@ -69,6 +69,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:alt" content="Lemonskn Logo" />
         <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
         <meta name="twitter:card" content="summary_large_image" />
+           <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c" />
       </Head>
 
       {/* Page Component */}

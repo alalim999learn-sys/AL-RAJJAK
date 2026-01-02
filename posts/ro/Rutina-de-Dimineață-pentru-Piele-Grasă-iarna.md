@@ -7,6 +7,9 @@ description: "Învățați rutina exactă de îngrijire a pielii dimineața, pri
 date: "2025-12-06"
 img: "/77.jpg"
 no: "7"
+
+canonical: "lemonskn.com/ro/Rutina-de-Dimineață-pentru-Piele-Grasă-iarna"
+
 h1mainkeyword: "Rutina de Dimineață pentru Piele Grasă iarna"
 h2long_tail_keyword1 : "Rutina de dimineață iarnă pentru pielea grasă – Probleme frecvente"
 h2long_tail_keyword2 : "Cea mai bună rutină de dimineață pentru controlul pielii grase iarna – Ghid pas cu pas"

@@ -8,6 +8,7 @@ date: "4 Decembrie 2025"
 no: "14"
 img: "/no14r.jpeg"
 
+canonical: "lemonskn.com/ro/Sfaturi-pentru-îngrijirea-pielii-predispuse-la-acnee-în-timpul-iernii"
 h1mainkeyword: "Sfaturi pentru îngrijirea pielii predispuse la acnee în timpul iernii"
 
 h2long_tail_keyword1 : "Probleme Specifice României cu Pielea cu Acnee Iarna"

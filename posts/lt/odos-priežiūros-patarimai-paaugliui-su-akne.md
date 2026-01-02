@@ -2,6 +2,7 @@
 layout: new
 topic: skin-care-tips-for-a-teenager-with-acne
 title: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą"
+canonical: "lemonskn.com/lt/odos-priežiūros-patarimai-paaugliui-su-akne"
 subtitle: "Kaip nuraminti spuoguotą odą -15°C šaltyje be stiprių priemonių"
 description: "Paauglių odos priežiūra su akne žiemą Lietuvoje: drėkinimas, barjero stiprinimas ir minimalus dirginimas."
 date: "2025-11-18"
@@ -10,16 +11,19 @@ img_alt: "Švelni odos priežiūra paaugliams su akne Lietuvos žiemą – jauna
 url: odos-priežiūros-patarimai-paaugliui-su-akne
 # Main keyword শুরুতেই
 h1mainkeyword: "švelni odos priežiūra paaugliams su akne žiemą"
+h2long_tail_keyword1: švelni žieminė odos priežiūra paaugliams su akne
 
-# Long-tail keywords – Google & Rank Math-এর জন্য পারফেক্ট
-h2long_tail_keyword1_before_problem: "kodėl žiemą spuogai paaugliams Lietuvoje pablogėja"
-h2long_tail_keyword2_before_solution: "švelni odos priežiūra paaugliams su akne žiemą"
-h2long_tail_keyword3_before_do_dont_table: "geriausi patarimai odos priežiūrai paaugliams su spuogais žiemą"
-h2long_tail_keyword4_before_routine: "žiemos odos priežiūros rutina paaugliams su akne"
-h2long_tail_keyword5_before_FAQ: "kaip nuraminti spuoguotą odą žiemą Lietuvoje"
+h2long_tail_keyword2: paauglių odos priežiūra su akne žiemą
 
-# পেজে অবশ্যই এই H1 থাকবে
-# <h1>Švelni odos priežiūra paaugliams su akne Lietuvos žiemą</h1>
+h2long_tail_keyword3: rūpestingas odos valymas paaugliams su akne žiemą
+
+h2long_tail_keyword4: švelnus odos priežiūros režimas paaugliams žiemą
+
+h2long_tail_keyword5: paauglių aknės priežiūra šaltuoju metų laiku
+
+
+
+ 
 
 intro: >
   Lietuvos žiema + paauglystės hormonai = spuogų ir sausumo chaosas.  

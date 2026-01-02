@@ -8,6 +8,7 @@ description: "Sfaturi simple pentru iarnă pentru a menține pielea grasă sub c
 date: "2025-12-16"
 img: "/no20r.jpeg"
 
+canonical: "lemonskn.com/ro/Sfaturi-pentru-controlul-sebumului-iarna"
 h1mainkeyword: "Sfaturi pentru controlul sebumului iarna"
 
 h2long_tail_keyword1: "cum să controlezi pielea grasă iarna - Probleme comune"

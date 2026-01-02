@@ -7,8 +7,7 @@ subtitle: "Îngrijire simplă, bazată pe știință, pentru lunile reci și usc
 description: "Protejează pielea echilibrată iarna în România cu hidratare, SPF și rutină simplă, aprobată de dermatologi."
 date: "2025-12-16"
 img: "/no16r.jpeg"
-
- 
+canonical: "lemonskn.com/ro/îngrijirea-pielii-echilibrate-iarna"
 h1mainkeyword: "îngrijirea pielii echilibrate iarna"
 
 h2long_tail_keyword1: "rutina de îngrijire a pielii echilibrate iarna - Probleme comune"

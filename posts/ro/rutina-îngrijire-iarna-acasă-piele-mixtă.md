@@ -7,9 +7,8 @@ subtitle: "Pași simpli pentru echilibrarea zonelor uscate și uleioase în luni
 description: "Îngrijire simplă acasă iarna pentru pielea mixtă în România – menține echilibrul și hidratarea."
 date: "2025-12-16"
 img: "/no22r.jpg"
-
 h1mainkeyword: "rutina îngrijire iarna acasă piele mixtă"
-
+canonical: "lemonskn.com/ro/rutina-îngrijire-iarna-acasă-piele-mixtă"
 
 h2long_tail_keyword1: "rutina de hidratare acasă iarna piele mixtă - Probleme comune"
 h2long_tail_keyword2: "rutina de control al sebumului acasă iarna piele mixtă - Soluții"

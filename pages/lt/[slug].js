@@ -204,7 +204,7 @@ export default function Post({ post, products, slug }) {
         <link rel="canonical" href={`https://lemonskn.com/lt/${slug}`} />
       
         <link rel="alternate" hrefLang="lt" href={`https://lemonskn.com/lt/${slug}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://lemonskn.com/lt/${slug}`} />
+       
 
         <link rel="icon" href="/lemonskn.png" />
 

@@ -8,6 +8,7 @@ date: "2025-12-04"
 img: "/13.jpg"
 no: "13"
 
+canonical: "lemonskn.com/ro/sfaturi-hidratare-piele-grasa-iarna"
 h1mainkeyword: "sfaturi hidratare piele grasa iarna"
 
 h2long_tail_keyword1 : "Sfaturi de hidratare iarnă pentru pielea grasă - Probleme frecvente"
