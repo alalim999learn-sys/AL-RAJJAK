@@ -15,11 +15,11 @@ h1mainkeyword: "Švytinčios odos priežiūros rutina žiemą"
 
 intro: "Lietuviška žiema gali būti žiauri – šaltis, centrinis šildymas ir trumpa dienos šviesa išsausina odą. Ši rutina padės tavo odai išlikti švytinčiai net Vilniuje, Kaune ar Klaipėdoje."
 
-h2long_tail_keyword1 : "spindinti odos rutina ziema lietuvoje"
-h2long_tail_keyword2 : "ziemos odos spindesio patarimai lietuvoje"
-h2long_tail_keyword3 : "spindinti odos prieziura ziemos metu lietuvoje"
-h2long_tail_keyword4 : "ziemos odos prieziuros rutina spindincioms odoms"
-h2long_tail_keyword5 : "kaip gauti spindincią odą ziemos metu lietuvoje"
+h2long_tail_keyword1: "spindinti odos rutina žiema"
+h2long_tail_keyword2: "žiemos odos spindesio patarimai"
+h2long_tail_keyword3: "spindinti odos priežiūra žiemos metu"
+h2long_tail_keyword4: "žiemos odos priežiūros rutina spindinčioms odoms"
+h2long_tail_keyword5: "kaip gauti spindinčią odą žiemos metu"
 
 problemTitle: "9 priežastys, kodėl žiemos metu tavo oda Lietuvoje praranda spindesį"
 problemList:

@@ -240,7 +240,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         <header className="text-center">
           <h1 className="new-layout__main-title">{frontmatter.h1mainkeyword}</h1>
-         
+       
           {frontmatter.img && (
             <Image
               src={frontmatter.img}
@@ -264,7 +264,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {frontmatter.problemTitle && (
           <>
-            {frontmatter.h2long_tail_keyword1_before_problem && <h2>{frontmatter.h2long_tail_keyword1_before_problem}</h2>}
+            {frontmatter.h2long_tail_keyword1  && <h2>{frontmatter.h2long_tail_keyword1 } - problema</h2>}
             <h3 id="problema" className="new-layout__section-title">{frontmatter.problemTitle}</h3>
             {problemList.length > 0 && (
               <div className="bg-red-50 border-l-8 border-red-500 p-8 rounded-r-xl my-10">
@@ -280,7 +280,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {(frontmatter.solution || solutionList.length > 0) && (
           <section id="sprendimas">
-            {frontmatter.h2long_tail_keyword2_before_solution && <h2>{frontmatter.h2long_tail_keyword2_before_solution}</h2>}
+            {frontmatter.h2long_tail_keyword2  && <h2>{frontmatter.h2long_tail_keyword2 } - sprendimas</h2>}
             <h3 className="new-layout__section-title">Sprendimas</h3>
             {frontmatter.solution && <div className="my-8 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: frontmatter.solution }} />}
             {solutionList.length > 0 && (
@@ -293,7 +293,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {comparisonTable.length > 0 && (
           <section id="daryk-nedaryk">
-            {frontmatter.h2long_tail_keyword3_before_do_dont_table && <h2>{frontmatter.h2long_tail_keyword3_before_do_dont_table}</h2>}
+            {frontmatter.h2long_tail_keyword3  && <h2>{frontmatter.h2long_tail_keyword3 } - daryk nedaryk </h2>}
             <h3 className="new-layout__section-title">{frontmatter.comparisonTitle || "Daryk / Nedaryk"}</h3>
             <div className="overflow-x-auto my-10">
               <table className="w-full border-collapse text-left">
@@ -318,7 +318,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {routineList.length > 0 && (
           <section id="rutina">
-            {frontmatter.h2long_tail_keyword4_before_routine && <h2>{frontmatter.h2long_tail_keyword4_before_routine}</h2>}
+            {frontmatter.h2long_tail_keyword4  && <h2>{frontmatter.h2long_tail_keyword4 } - rutina</h2>}
             <h3 className="new-layout__section-title">{frontmatter.routineTitle || "Odos priežiūros rutina"}</h3>
             <ol className="list-decimal list-inside space-y-6 my-10 text-lg font-medium">
               {routineList.map((step, i) => <li key={i} dangerouslySetInnerHTML={{ __html: step }} />)}
@@ -328,7 +328,7 @@ export default function NewLayoutlt({ frontmatter = {}, content = "", slug = "" 
 
         {faqList.length > 0 && (
           <section id="faq">
-            {frontmatter.h2long_tail_keyword5_before_FAQ && <h2>{frontmatter.h2long_tail_keyword5_before_FAQ}</h2>}
+            {frontmatter.h2long_tail_keyword5  && <h2>{frontmatter.h2long_tail_keyword5 } - FAQ</h2>}
             <h3 className="new-layout__section-title">Dažniausiai užduodami klausimai</h3>
             <div className="space-y-8 my-12">
               {faqList.map((faq, i) => (
