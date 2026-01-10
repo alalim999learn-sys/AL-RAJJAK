@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Detect language from URL
     const path = window.location.pathname;
-    if (path.startsWith('/ro')) setLanguage('ro');  // রোমানিয়ান
-    else if (path.startsWith('/lt')) setLanguage('lt'); // লিথুয়ানিয়ান
-    else setLanguage('en');  // ডিফল্ট ইংরেজি
+    if (path.startsWith('/ro')) setLanguage('ro');  // Romanian
+    else if (path.startsWith('/lt')) setLanguage('lt'); // Lithuanian
+    else setLanguage('en');  // Default English
 
     // Check existing cookie consent
     const match = document.cookie.match(/(^| )cookie-consent=([^;]+)/);
@@ -26,6 +26,23 @@ function MyApp({ Component, pageProps }) {
 
     return () => window.removeEventListener('resize', checkPageHeight);
   }, []);
+
+  // Google Analytics initialization (only if consent accepted)
+  useEffect(() => {
+    if (cookieConsent === true) {
+      const script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-NDCFES0B19";
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+
+      gtag('js', new Date());
+      gtag('config', 'G-NDCFES0B19');
+    }
+  }, [cookieConsent]);
 
   const setConsentCookie = (value) => {
     document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}`;
@@ -69,7 +86,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:alt" content="Lemonskn Logo" />
         <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
         <meta name="twitter:card" content="summary_large_image" />
-           <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c" />
+        <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c" />
       </Head>
 
       {/* Page Component */}
@@ -93,10 +110,32 @@ function MyApp({ Component, pageProps }) {
         >
           <span>{cookieText} </span>
           <div style={{ marginTop: '10px' }}>
-            <button onClick={acceptCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#4CAF50', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              onClick={acceptCookies}
+              style={{
+                margin: '0 8px',
+                padding: '8px 16px',
+                background: '#4CAF50',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+            >
               {accept}
             </button>
-            <button onClick={rejectCookies} style={{ margin: '0 8px', padding: '8px 16px', background: '#f44336', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+            <button
+              onClick={rejectCookies}
+              style={{
+                margin: '0 8px',
+                padding: '8px 16px',
+                background: '#f44336',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+            >
               {reject}
             </button>
           </div>
@@ -126,5 +165,7 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+
 
 export default MyApp;

@@ -45,14 +45,7 @@
 
 
 
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -117,6 +110,7 @@ import rehypeStringify from 'rehype-stringify';
 import Layoutro from '../../component/Layoutro';
 import OldLayoutro, { getStructuredData as getOldSchema } from '../../component/OldLayoutro';
 import NewLayoutro, { getStructuredData as getNewSchema } from '../../component/NewLayoutro';
+import HuuLayoutro from '../../component/HUUlayoutro'; // নতুন layout
 
 export async function getStaticPaths() {
   const postsDir = path.join(process.cwd(), 'posts/ro');
@@ -130,7 +124,6 @@ export async function getStaticPaths() {
   const paths = files
     .map(file => {
       const slug = file.replace(/\.md$/, '').trim();
-      // empty slug বা 'ro' slug এড়ান
       if (!slug || slug.toLowerCase() === 'ro') return null;
       return { params: { slug } };
     })
@@ -168,7 +161,8 @@ export async function getStaticProps({ params }) {
         const p = frontmatter[`pros${n}${j}`];
         if (p && p !== '@') pros.push(p.trim());
         const r = frontmatter[`review${n}${j}`];
-        if (r && r !== '@') reviews.push(r.trim());
+       if (r && r !== '@') reviews.push(r.trim());
+
       }
 
       return {
@@ -204,45 +198,49 @@ export default function Post({ post, products, slug }) {
   }
 
   const { frontmatter, content } = post;
-  const layoutType = frontmatter.layout || 'old';
-  const LayoutComponent = layoutType === 'new' ? NewLayoutro : OldLayoutro;
+  const layoutType = frontmatter.layout?.toLowerCase() || 'old';
 
-  const structuredData = layoutType === 'new'
-    ? getNewSchema({ frontmatter, slug })
-    : getOldSchema({ frontmatter, products, slug });
+  let LayoutComponent;
+  let structuredData = null;
 
+  if (layoutType === 'new') {
+    LayoutComponent = NewLayoutro;
+    structuredData = getNewSchema({ frontmatter, slug });
+  } else if (layoutType === 'huu') {
+    LayoutComponent = HuuLayoutro;
+    // schema দরকার নেই
+  } else {
+    LayoutComponent = OldLayoutro;
+    structuredData = getOldSchema({ frontmatter, products, slug });
+  }
 
   return (
     <>
-     <Head>
-  <title>{frontmatter.title}</title>
-  <meta name="description" content={frontmatter.description} />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
+      <Head>
+        <title>{frontmatter.title}</title>
+        <meta name="description" content={frontmatter.description} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://lemonskn.com/ro/${slug}`} />
+        <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
+        <link rel="icon" href="/lemonskn.png" />
+        <meta httpEquiv="content-language" content="ro-RO" />
 
-  <link rel="alternate" hrefLang="ro" href={`https://lemonskn.com/ro/${slug}`} />
- 
-  <link rel="icon" href="/lemonskn.png" />
+        <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={frontmatter.description} />
+        <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
+        <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
 
-  {/* নতুন লাইন: Meta Language tag */}
-  <meta httpEquiv="content-language" content="ro-RO" />
-
-  <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c"/>
-  <meta property="og:title" content={frontmatter.title} />
-  <meta property="og:description" content={frontmatter.description} />
-  <meta property="og:image" content={frontmatter.img || "https://lemonskn.com/lemonskn.png"} />
-  <meta property="og:url" content={`https://lemonskn.com/ro/${slug}`} />
-  <meta property="og:locale" content="ro_RO" />
-  <meta property="og:type" content="article" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData, null, 2) }}
-  />
-</Head>
-
+        {structuredData && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData, null, 2) }}
+          />
+        )}
+      </Head>
 
       <Layoutro>
         <LayoutComponent
@@ -255,5 +253,3 @@ export default function Post({ post, products, slug }) {
     </>
   );
 }
-
-
