@@ -165,7 +165,7 @@ export default function OldLayoutro({ frontmatter = {}, content = "", products =
       <div className="old-layout-wrapper">
         {/* Header */}
         <header className="old-header">
-          <h1 className="old-title">{frontmatter.keyword1 || frontmatter.title || "Geriausi pasirinkimai"}</h1>
+          <h1 className="old-title">{frontmatter.keyword1}</h1>
           {frontmatter.keyword2 && <h2 className="old-subtitle">{frontmatter.keyword2}</h2>}
           {frontmatter.huuuuuuuuu && <p className="old-intro">{frontmatter.huuuuuuuuu}</p>}
         </header>

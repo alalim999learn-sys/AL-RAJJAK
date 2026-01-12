@@ -86,7 +86,7 @@
 
 
 
-
+ 
 
 
 
@@ -104,7 +104,6 @@ import matter from 'gray-matter';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
-import rehypeSanitize from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
 
 import Layoutro from '../../component/Layoutro';
@@ -143,9 +142,8 @@ export async function getStaticProps({ params }) {
 
     const processedContent = await unified()
       .use(remarkParse)
-      .use(remarkRehype)
-      .use(rehypeSanitize)
-      .use(rehypeStringify)
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeStringify, { allowDangerousHtml: true })
       .process(markdownContent || '');
 
     const contentHtml = processedContent.toString();
@@ -161,8 +159,7 @@ export async function getStaticProps({ params }) {
         const p = frontmatter[`pros${n}${j}`];
         if (p && p !== '@') pros.push(p.trim());
         const r = frontmatter[`review${n}${j}`];
-       if (r && r !== '@') reviews.push(r.trim());
-
+        if (r && r !== '@') reviews.push(r.trim());
       }
 
       return {
@@ -207,9 +204,9 @@ export default function Post({ post, products, slug }) {
     LayoutComponent = NewLayoutro;
     structuredData = getNewSchema({ frontmatter, slug });
   } else if (layoutType === 'huu') {
-    LayoutComponent = HuuLayoutro;
-    // schema দরকার নেই
-  } else {
+  LayoutComponent = HuuLayoutro;
+  structuredData = null;
+} else {
     LayoutComponent = OldLayoutro;
     structuredData = getOldSchema({ frontmatter, products, slug });
   }

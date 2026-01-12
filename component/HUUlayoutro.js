@@ -1,37 +1,61 @@
-// component/HuuLayoutro.js
-export function getStructuredData({ frontmatter, slug }) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": frontmatter.title,
-    "url": `https://lemonskn.com/ro/${slug}`,
-    "description": frontmatter.description,
-    "image": frontmatter.img || "https://lemonskn.com/lemonskn.png",
-    "author": { "@type": "Person", "name": "Huu Author" },
-    "publisher": { "@type": "Organization", "name": "Lemonskn" }
-  };
-}
+// component/HUUlayoutro.js
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
-export default function HuuLayoutro({ frontmatter, content, products, slug }) {
+export default function HuuLayoutro({ frontmatter, content }) {
+  // Remove <header> and <h1> tags from raw HTML
+  const sanitizedContent = content
+    .replace(/<header.*?>.*?<\/header>/gi, '')
+    .replace(/<h1.*?>.*?<\/h1>/gi, '');
+
   return (
-    <div className="huu-layout" style={{ background: '#fff3e0', padding: '25px', borderRadius: '12px' }}>
-      <h2 style={{ color: '#e65100' }}>{frontmatter.title}</h2>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-      
-      {products?.length > 0 && (
-        <div className="huu-products" style={{ marginTop: '20px' }}>
-          <h3>Products</h3>
-          {products.map((p, i) => (
-            <div key={i} style={{ marginBottom: '10px', padding: '10px', border: '1px solid #e65100' }}>
-              <h4>{p.productName}</h4>
-              <p>{p.intro}</p>
-              <p>Price: {p.price || 'N/A'}</p>
-            </div>
-          ))}
-        </div>
-      )}
+    <div style={{ padding: '0', background: '#fff', borderRadius: '12px' }}>
+      {/* Media query for small screens */}
+      <style>
+        {`
+          
 
-      <footer style={{ marginTop: '20px', fontStyle: 'italic' }}>Huu Layout Footer</footer>
+          @media (max-width: 600px) {
+            .responsive-img {
+              width: 100%;      
+            }
+          }
+        `}
+      </style>
+
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          h1: () => null, // remove h1 completely
+          h2: ({ node, ...props }) => (
+            <h2
+              style={{
+                textAlign: 'left',
+                margin: '1em 0',
+                fontWeight: 'bold'
+              }}
+              {...props}
+            />
+          ),
+          p: ({ node, ...props }) => (
+            <p
+              style={{
+                textAlign: 'left',
+                lineHeight: '1.6',
+                margin: '0.5em 0'
+              }}
+              {...props}
+            />
+          ),
+          img: ({ node, ...props }) => (
+            <img className="responsive-img" {...props} />
+          ),
+        }}
+      >
+        {sanitizedContent}
+      </ReactMarkdown>
     </div>
   );
 }
