@@ -11,12 +11,7 @@ export default function HuuLayoutro({ frontmatter, content }) {
   return (
     <div style={{ padding: '0', background: '#fff', borderRadius: '12px' }}>
       <style>{`
-        .responsive-img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin: 1em 0;
-        }
+       
 
         @media (max-width: 600px) {
           .responsive-img {
