@@ -10,6 +10,9 @@ export default function HuuLayoutro({ frontmatter, content }) {
   return (
     <div style={{ padding: '0', background: '#fff', borderRadius: '12px' }}>
       <style>{`
+       .hint{
+       color: black;
+       }
         @media (max-width: 600px) {
           .responsive-img {
             width: 100%;
@@ -75,9 +78,10 @@ export default function HuuLayoutro({ frontmatter, content }) {
       </ReactMarkdown>
 
       {/* Disclaimer Section at the bottom */}
-      <section className="disclaimer-box my-20">
-        <h3 className="text-2xl font-bold text-blue-900 mb-6">Notă medicală importantă</h3>
-        <p className="text-lg leading-relaxed text-gray-800">
+      
+   <section className="hint" style={{ color: 'black' }}>
+        <h3 className="hint" style={{ color: 'black' , textAlign: "center",margin: "15px 0px "}}>Notă medicală importantă</h3>
+        <p className="hint" style={{ color: 'black' }}>
           Acest articol are scop informativ și <strong>nu constituie sfat medical.</strong>
           Rezultatele pot varia în funcție de tipul de piele sau alergii.
           <strong>Consultați un dermatolog înainte de a modifica rutina de îngrijire.</strong>
