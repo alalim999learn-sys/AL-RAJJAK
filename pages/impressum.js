@@ -28,8 +28,8 @@ export default function Impressum() {
         <section>
           <h2>Kontakt (Contact)</h2>
           <p>
-            Telefon: [+8801601177293]<br />
-            E-Mail: [shanonkhan47@gmail.com]<br />
+            Telefon: +8801601177293<br />
+            E-Mail: shanonkhan47@gmail.com<br />
             Website: <a href="https://lemonskn.com">www.lemonskn.com</a>
           </p>
         </section>
@@ -38,7 +38,7 @@ export default function Impressum() {
           <h2>Redaktionell verantwortlich (Accountable for content)</h2>
           <p>
             Shanon Khan<br />
-            [আপনার ঠিকানা আবার এখানে দিতে পারেন]
+           
           </p>
         </section>
 

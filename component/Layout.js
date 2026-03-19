@@ -1,4 +1,3 @@
-//C:\Users\Shanon\al-rajjak\component\Layout.js
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -18,7 +17,7 @@ export default function Layout({ children }) {
     const handleScroll = () => setHasShadow(window.scrollY > 0);
     window.addEventListener('scroll', handleScroll);
 
-    // ১. ভাষা শনাক্তকরণ (Path Based)
+    // 1. Language Detection (Path Based)
     let currentLang = 'en';
     if (path.startsWith('/es')) {
       currentLang = 'es';
@@ -27,7 +26,7 @@ export default function Layout({ children }) {
     }
     setLangCode(currentLang);
 
-    // ২. সিকিউরিটি কুকি সেটআপ (সেশন ম্যানেজমেন্ট)
+    // 2. Security Cookie Setup
     const cookieName = `ls_sec_${currentLang}`;
     const cookieValue = `security_active_${currentLang}`;
     if (!document.cookie.includes(cookieName)) {
@@ -37,36 +36,39 @@ export default function Layout({ children }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ৩. মেনু ডাটা (আপনার নতুন ফাইল স্ট্রাকচার অনুযায়ী)
+  // 3. Menu Data - Fixed typos and added leading slashes for proper routing
   const menuData = {
     en: {
       home: "Terminal (Home)", homeUrl: "/",
       about: "About Me", aboutUrl: "/about",
+      impressum: "Legal Notice", impressumUrl: "/impressum",
+      privacy: "Privacy Policy", privacyUrl: "/privacy-policy",
       terms: "Terms & Conditions", termsUrl: "/terms",
       ver: "VER: 2.0.1-STABLE"
     },
     es: {
       home: "Terminal (Inicio)", homeUrl: "/es",
       about: "Sobre mí", aboutUrl: "/es/about",
+      impressum: "Aviso Legal", impressumUrl: "/es/impressum",
+      privacy: "Privacidad", privacyUrl: "/es/privacy",
       terms: "Términos y Condiciones", termsUrl: "/es/terms",
       ver: "VER: 2.0.1-ESTABLE"
     },
     de: {
       home: "Terminal (Home)", homeUrl: "/de",
-      about: "Über mich", aboutUrl: "/de/ueber-mich", // রিনেম করা পাথ
-      legal: "Impressum", legalUrl: "/de/impressum",
+      about: "Über mich", aboutUrl: "/de/ueber-mich",
+      impressum: "Impressum", impressumUrl: "/de/impressum",
       privacy: "Datenschutz", privacyUrl: "/de/datenschutz",
-      terms: "AGB", termsUrl: "/de/AGB",
+      terms: "AGB", termsUrl: "/de/agb", // Small 'agb' matches your file cleanup
       ver: "VER: 2.0.1-STABIL"
     }
   };
 
-  const currentMenu = menuData[langCode];
+  const currentMenu = menuData[langCode] || menuData.en;
 
   const openSidebar = () => setSidebarActive(true);
   const closeSidebar = () => setSidebarActive(false);
 
-  // হাইড্রেশন এরর এড়াতে মাউন্ট হওয়ার আগে কিছুই রেন্ডার হবে না
   if (!isMounted) return null;
 
   // --- Styles ---
@@ -117,18 +119,13 @@ export default function Layout({ children }) {
           <li><Link href={currentMenu.homeUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.home}</Link></li>
           <li><Link href={currentMenu.aboutUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.about}</Link></li>
           
-          {/* জার্মান পেজগুলোর জন্য কন্ডিশনাল লিঙ্ক (Impressum, Datenschutz, AGB) */}
-          {langCode === 'de' && (
-            <>
-              <li><Link href={currentMenu.legalUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.legal}</Link></li>
-              <li><Link href={currentMenu.privacyUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.privacy}</Link></li>
-            </>
-          )}
-          
+          {/* Always show Legal links for all languages - safer for GDPR/DSGVO */}
+          <li><Link href={currentMenu.impressumUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.impressum}</Link></li>
+          <li><Link href={currentMenu.privacyUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.privacy}</Link></li>
           <li><Link href={currentMenu.termsUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.terms}</Link></li>
         </ul>
 
-        {/* ল্যাঙ্গুয়েজ সুইচার */}
+        {/* Language Switcher */}
         <div style={{ marginTop: '20px', display: 'flex', gap: '15px', borderTop: '1px solid #334155', paddingTop: '15px' }}>
             <Link href="/" style={{fontSize: '12px', color: '#10b981', textDecoration: 'none', fontWeight: 'bold'}}>EN</Link>
             <Link href="/es" style={{fontSize: '12px', color: '#10b981', textDecoration: 'none', fontWeight: 'bold'}}>ES</Link>

@@ -1,4 +1,4 @@
-//C:\Users\Shanon\al-rajjak\pages\de\about.js
+// C:\Users\Shanon\al-rajjak\pages\de\about.js
 import Layout from '../../component/Layout';
 import Head from 'next/head';
 
@@ -7,8 +7,8 @@ export default function UeberMich() {
     name: "Shanon Khan",
     age: 24,
     location: "East Nakhalpara, Dhaka, Bangladesch",
-    linkedin: "https://www.linkedin.com/in/YOUR_LINKEDIN_URL",
-    facebook: "https://www.facebook.com/YOUR_FB_URL"
+    facebook: "https://www.facebook.com/people/Mohammad-Shanon/pfbid0pcMBM8riHDh8c8Ph1jffQJEafnpvVKQ1JcQRj7AmJqSgxpvF4qt7pqrLkBR9CghHl/",
+    email: "shanonkhan47@gmail.com"
   };
 
   return (
@@ -19,7 +19,7 @@ export default function UeberMich() {
 
       <div style={{ padding: '40px', color: '#cbd5e1', maxWidth: '900px', margin: 'auto', lineHeight: '1.8', fontFamily: 'sans-serif', backgroundColor: '#0f172a' }}>
         
-        {/* --- প্রোফাইল হেডার --- */}
+        {/* --- Profile Header --- */}
         <section style={{ display: 'flex', alignItems: 'center', gap: '30px', marginBottom: '40px' }} className="profile-header">
           <div style={{ flexShrink: 0 }}>
             <img 
@@ -35,7 +35,7 @@ export default function UeberMich() {
           </div>
         </section>
 
-        {/* --- একাডেমিক এক্সেলেন্স (Physics 97, ICT 91) --- */}
+        {/* --- Academic Excellence --- */}
         <section style={{ marginBottom: '40px' }}>
           <h2 style={{ color: '#fff', borderBottom: '1px solid #334155', paddingBottom: '10px' }}>Akademische Exzellenz</h2>
           <p>
@@ -62,7 +62,7 @@ export default function UeberMich() {
           </div>
         </section>
 
-        {/* --- ইঞ্জিনিয়ারিং ছেড়ে কেমিস্ট্রিতে আসার গল্প --- */}
+        {/* --- Why Chemistry/Decision --- */}
         <section style={{ marginBottom: '40px', backgroundColor: '#1e293b', padding: '25px', borderRadius: '12px' }}>
           <h2 style={{ color: '#fff' }}>Mein Fokus: Warum Chemie statt Ingenieurwesen?</h2>
           <p>
@@ -74,7 +74,7 @@ export default function UeberMich() {
           </p>
         </section>
 
-        {/* --- টেক জার্নি ও বিরতি (২০২০ থেকে) --- */}
+        {/* --- Tech Journey --- */}
         <section style={{ borderLeft: '6px solid #10b981', paddingLeft: '20px', marginBottom: '40px' }}>
           <h2 style={{ color: '#fff' }}>Ehrlichkeit & Tech-Reise (Seit 2020)</h2>
           <p>
@@ -85,11 +85,15 @@ export default function UeberMich() {
           </p>
         </section>
 
-        {/* --- সোশ্যাল লিঙ্কস --- */}
+        {/* --- Updated Social Links (LinkedIn Removed) --- */}
         <section style={{ textAlign: 'center', marginTop: '50px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-            <a href={profileData.linkedin} target="_blank" rel="noopener noreferrer" className="social-btn linkedin">LinkedIn</a>
-            <a href={profileData.facebook} target="_blank" rel="noopener noreferrer" className="social-btn facebook">Facebook</a>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <a href={profileData.facebook} target="_blank" rel="noopener noreferrer" className="social-btn facebook">
+              Kontakt via Facebook
+            </a>
+            <a href={`mailto:${profileData.email}`} className="social-btn email">
+              E-Mail senden
+            </a>
           </div>
         </section>
 
@@ -102,17 +106,17 @@ export default function UeberMich() {
           .score-card.grey { border-bottom-color: #475569; }
           .score-label { color: #94a3b8; font-size: 13px; }
           .score-value { color: #fff; font-size: 22px; font-weight: bold; }
-          .social-btn { padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; color: white; }
-          .linkedin { background: #0077b5; }
+          .social-btn { padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; color: white; display: inline-block; }
           .facebook { background: #1877f2; }
+          .email { background: transparent; border: 1px solid #10b981; color: #10b981; }
           .social-btn:hover { opacity: 0.8; transform: translateY(-2px); }
-          @media (max-width: 600px) { .profile-header { flex-direction: column; text-align: center; } }
+          .email:hover { background: #10b981; color: #fff; }
+          @media (max-width: 600px) { 
+            .profile-header { flex-direction: column; text-align: center; } 
+            .social-btn { width: 100%; }
+          }
         `}</style>
       </div>
     </Layout>
   );
 }
-
-
-
-

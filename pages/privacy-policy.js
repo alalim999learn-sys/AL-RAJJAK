@@ -1,3 +1,4 @@
+//C:\Users\Shanon\al-rajjak\pages\privacy-policy.js
 import Layout from '../component/Layout';
 
 export default function PrivacyPolicy() {
