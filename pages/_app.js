@@ -1,57 +1,27 @@
-// pages/_app.js
 import Head from 'next/head';
 import '../src/styles/globals.css';
 import { useEffect, useState } from 'react';
 
-function MyApp({ Component, pageProps }) {
-  const [cookieConsent, setCookieConsent] = useState(null); // null = undecided
-  const [language, setLanguage] = useState('lt');
-  const [isShortPage, setIsShortPage] = useState(false);
+export default function MyApp({ Component, pageProps }) {
+  const [cookieConsent, setCookieConsent] = useState(null);
+  const [language, setLanguage] = useState('en');
 
   useEffect(() => {
-    // Detect language from URL
+    // 1. Detect language from URL
     const path = window.location.pathname;
-    if (path.startsWith('/ro')) setLanguage('ro');  // Romanian
-    else if (path.startsWith('/lt')) setLanguage('lt'); // Lithuanian
-    else setLanguage('en');  // Default English
+    if (path.startsWith('/es')) setLanguage('es');
+    else if (path.startsWith('/de')) setLanguage('de');
+    else setLanguage('en');
 
-    // Check existing cookie consent
+    // 2. Check existing cookie consent
     const match = document.cookie.match(/(^| )cookie-consent=([^;]+)/);
     if (match) setCookieConsent(match[2] === 'true');
-
-    // Detect if page is shorter than viewport
-    const checkPageHeight = () => setIsShortPage(document.body.scrollHeight <= window.innerHeight);
-    checkPageHeight();
-    window.addEventListener('resize', checkPageHeight);
-
-    return () => window.removeEventListener('resize', checkPageHeight);
   }, []);
 
-  // Google Analytics initialization (only if consent accepted)
-  useEffect(() => {
-    if (cookieConsent === true) {
-      const script = document.createElement('script');
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-NDCFES0B19";
-      script.async = true;
-      document.head.appendChild(script);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;
-
-      gtag('js', new Date());
-      gtag('config', 'G-NDCFES0B19');
-    }
-  }, [cookieConsent]);
-
   const setConsentCookie = (value) => {
-    document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}`;
+    document.cookie = `cookie-consent=${value}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`;
     setCookieConsent(value === 'true');
   };
-
-  const acceptCookies = () => setConsentCookie('true');
-  const rejectCookies = () => setConsentCookie('false');
-  const openCookieSettings = () => setCookieConsent(null);
 
   const texts = {
     en: {
@@ -60,112 +30,57 @@ function MyApp({ Component, pageProps }) {
       reject: 'Reject',
       settings: 'Cookie Settings'
     },
-    lt: {
-      cookieText: 'Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį.',
-      accept: 'Priimti',
-      reject: 'Atmesti',
-      settings: 'Slapukų nustatymai'
+    es: {
+      cookieText: 'Este sitio web utiliza cookies para mejorar su experiencia de navegación.',
+      accept: 'Aceptar',
+      reject: 'Rechazar',
+      settings: 'Configuración de Cookies'
     },
-    ro: {
-      cookieText: 'Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare.',
-      accept: 'Acceptă',
-      reject: 'Refuză',
-      settings: 'Setări Cookie'
+    de: {
+      cookieText: 'Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern.',
+      accept: 'Akzeptieren',
+      reject: 'Ablehnen',
+      settings: 'Cookie-Einstellungen'
     }
   };
 
-  const { cookieText, accept, reject, settings } = texts[language];
+  const currentText = texts[language] || texts.en;
 
   return (
     <>
       <Head>
         <link rel="icon" href="/lemonskn.png" />
         <meta property="og:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="Lemonskn Logo" />
-        <meta name="twitter:image" content="https://lemonskn.com/lemonskn-logo-512.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="p:domain_verify" content="37aa5fb8283aca18395c940eaaf8b19c" />
       </Head>
 
-      {/* Page Component */}
       <Component {...pageProps} cookieConsent={cookieConsent} />
 
-      {/* Cookie Banner */}
       {cookieConsent === null && (
-        <div
-          style={{
-            padding: '1em',
-            backgroundColor: '#222',
-            color: '#fff',
-            position: 'fixed',
-            bottom: 0,
-            width: '100%',
-            textAlign: 'center',
-            zIndex: 9999,
-            fontSize: '14px',
-            lineHeight: '1.5',
-          }}
-        >
-          <span>{cookieText} </span>
+        <div style={{
+          padding: '1em', backgroundColor: '#222', color: '#fff',
+          position: 'fixed', bottom: 0, width: '100%', textAlign: 'center',
+          zIndex: 9999, fontSize: '14px'
+        }}>
+          <span>{currentText.cookieText} </span>
           <div style={{ marginTop: '10px' }}>
-            <button
-              onClick={acceptCookies}
-              style={{
-                margin: '0 8px',
-                padding: '8px 16px',
-                background: '#4CAF50',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer'
-              }}
-            >
-              {accept}
+            <button onClick={() => setConsentCookie('true')} style={{ margin: '0 8px', padding: '8px 16px', background: '#4CAF50', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+              {currentText.accept}
             </button>
-            <button
-              onClick={rejectCookies}
-              style={{
-                margin: '0 8px',
-                padding: '8px 16px',
-                background: '#f44336',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer'
-              }}
-            >
-              {reject}
+            <button onClick={() => setConsentCookie('false')} style={{ margin: '0 8px', padding: '8px 16px', background: '#f44336', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+              {currentText.reject}
             </button>
           </div>
         </div>
       )}
 
-      {/* Cookie Settings Button (after consent) */}
       {cookieConsent !== null && (
         <div style={{ textAlign: 'center', margin: '2em 0' }}>
-          <button
-            onClick={openCookieSettings}
-            style={{
-              backgroundColor: '#4CAF50',
-              color: 'white',
-              padding: '10px 20px',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-              fontSize: '14px',
-              fontWeight: 'bold',
-            }}
-          >
-            {settings}
+          <button onClick={() => setCookieConsent(null)} style={{ backgroundColor: '#4CAF50', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+            {currentText.settings}
           </button>
         </div>
       )}
     </>
   );
 }
-
-
-
-export default MyApp;

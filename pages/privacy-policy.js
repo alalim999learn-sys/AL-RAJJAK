@@ -1,87 +1,63 @@
 import Layout from '../component/Layout';
 
-export default function PrivacyPolicyPage() {
+export default function PrivacyPolicy() {
   return (
     <Layout>
-    
-      <div className="privacy-container">
-        <h1>Privacy Policy</h1>
+      <div style={{ padding: '40px', color: '#cbd5e1', maxWidth: '900px', margin: 'auto', lineHeight: '1.8' }}>
+        <h1 style={{ color: '#10b981', borderBottom: '1px solid #334155', paddingBottom: '10px' }}>Privacy Policy</h1>
+        <p style={{ fontStyle: 'italic', fontSize: '14px' }}>Effective Date: March 18, 2026</p>
 
-        <p>
-          At <strong>lemonskn.com</strong>, we respect your privacy. This website does not track you,
-          does not use analytics tools, and does not collect personal data from visitors.
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>1. Our Commitment to Data Sovereignty</h2>
+          <p>
+            At <strong>lemonskn SECURITY</strong>, we operate with a "Security First" mindset. This portfolio 
+            is designed to provide information without compromising your digital footprint. We do not track, 
+            sell, or profile our visitors for marketing purposes.
+          </p>
+        </section>
 
-        <h2>Cookies</h2>
-        <p>
-          We only use a basic cookie to remember your cookie consent choice (Accept or Reject).
-          This cookie does not collect any personal data, and it is not used for advertising or
-          tracking.
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>2. Zero Data Collection (No Contact Forms)</h2>
+          <p>
+            To ensure the highest level of security and to comply with global privacy standards (GDPR/DSGVO), 
+            <strong>this website does not utilize contact forms</strong>. We do not collect your name, email address, 
+            or any personal identifiers through this site. For all professional inquiries, please connect 
+            via our verified <strong>LinkedIn</strong> or <strong>Facebook</strong> links.
+          </p>
+        </section>
 
-        <h2>Contact Form</h2>
-        <p>
-          If you use the contact form, the data you enter (name, email, message) is not stored on
-          any server. It is only used temporarily to display a “Thank You” message. We do not store,
-          share, or process that information in any way.
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>3. Font Privacy (Google-Fonts-Free)</h2>
+          <p>
+            This website is <strong>100% Google-Fonts-free</strong>. We do not load external typography 
+            from third-party servers. All fonts are rendered locally from your system, preventing unauthorized 
+            IP tracking by external providers. This ensures complete privacy and faster loading speeds.
+          </p>
+        </section>
 
-        <h2>No Analytics or Advertising</h2>
-        <p>
-          This website does not use Google Analytics, Facebook Pixel, or any ad tracking tools.
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>4. Technical Security Cookies</h2>
+          <p>
+            We use a single "Strictly Necessary" technical cookie (e.g., <code>ls_sec_en</code>) to maintain 
+            the integrity of the system and prevent malicious activity. This cookie does not track your 
+            behavior across other sites and is automatically managed by your browser.
+          </p>
+        </section>
 
-        <h2>Affiliate Links (Future Use)</h2>
-        <p>
-          Currently, we do not use affiliate links. In the future, we may participate in programs
-          like Awin . If affiliate links are added, they may include tracking provided by
-          those networks. When that happens, we will update this Privacy Policy and implement a
-          proper cookie consent manager (CMP).
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>5. Third-Party Redirection</h2>
+          <p>
+            Links to external social media platforms (LinkedIn, Facebook) are provided for secure communication. 
+            Once you leave <strong>lemonskn.com</strong>, the privacy policies of those respective 
+            platforms will apply.
+          </p>
+        </section>
 
-        <h2>Your Rights</h2>
-        <p>
-          Since we don’t store or process any personal data, there is nothing to request or delete.
-          However, if you have questions, feel free to <a href="/contact">contact us</a>.
-        </p>
-
-        <h2>Last Updated</h2>
-        <p>This privacy policy was last updated on October 5, 2025.</p>
-
-        <style jsx>{`
-          .privacy-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.7;
-          }
-
-          h1 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-          }
-
-          h2 {
-            font-size: 1.3rem;
-            margin-top: 2rem;
-            color: #111;
-          }
-
-          p {
-            margin-bottom: 1.2rem;
-          }
-
-          a {
-            color: #e91e63;
-            text-decoration: none;
-          }
-
-          a:hover {
-            text-decoration: underline;
-          }
-        `}</style>
+        <section style={{ marginTop: '40px', borderTop: '1px solid #334155', paddingTop: '20px', textAlign: 'center' }}>
+          <p style={{ color: '#475569', fontSize: '13px' }}>
+            Built for Secure Systems. Verified GDPR/DSGVO Standards.
+          </p>
+        </section>
       </div>
     </Layout>
   );

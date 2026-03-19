@@ -1,67 +1,67 @@
-import Head from 'next/head';
-import Link from 'next/link';
 import Layout from '../component/Layout';
+import Head from 'next/head';
 
-export default function AboutPage() {
+export default function TermsEnglish() {
+  const lastUpdated = "March 19, 2026";
+
   return (
     <Layout>
       <Head>
-        <title>About - lemonskn.com</title>
-        <meta name="description" content="About the owner of lemonskn.com - fashion and beauty tips, honest reviews, and affordable style inspiration." />
+        <title>Terms & Conditions | Lemonskn SECURITY</title>
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <main className="about-container">
- 
-<h1>About Me</h1> 
-<p> Hi! I’m the owner of lemonskn.com — a fashion and beauty enthusiast who loves sharing tips on makeup, skincare, and stylish outfits, from everyday looks to elegant dresses. </p>
- <p> I started this blog to help others discover affordable beauty products, trendy clothing, and honest reviews of items I’ve personally tested. Whether you're searching for the perfect lipstick or the ideal evening dress, I’m here to help. </p>
-  <p> All my posts are based on real experience, not advertisements. I collaborate with trusted partners like Zalando and Awin to recommend only the products I truly love — and yes, I may earn a small commission if you purchase through my links, at no extra cost to you. </p>
-   <p> Thank you for visiting — I hope my articles inspire you to look and feel your best! </p>
-    <p> 💌 Want to get in touch? Visit the <Link href="/contact">Contact</Link> page. </p>
-      </main>
+      <div style={{ padding: '40px', color: '#cbd5e1', maxWidth: '900px', margin: 'auto', lineHeight: '1.8', fontFamily: 'sans-serif' }}>
+        <h1 style={{ color: '#10b981', borderBottom: '1px solid #334155', paddingBottom: '10px' }}>General Terms and Conditions</h1>
+        <p style={{ fontStyle: 'italic', fontSize: '14px' }}>Last Updated: {lastUpdated}</p>
 
-      <style jsx>{`
-        .about-container {
-          max-width: 700px;
-          margin: 0 auto;
-          padding: 2rem 1rem;
-          font-family: Arial, sans-serif;
-          color: #333;
-          line-height: 1.7;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>1. Scope of Services</h2>
+          <p>
+            Shanon Khan (Lemonskn SECURITY) provides specialized technical services including:
+          </p>
+          <ul>
+            <li><strong>WordPress Security Hardening:</strong> Implementation of a proprietary 39-point protocol.</li>
+            <li><strong>Malware Remediation:</strong> Identification and removal of malicious code.</li>
+            <li><strong>Application Development:</strong> Custom Flutter and Next.js development.</li>
+          </ul>
+        </section>
 
-        h1 {
-          font-size: 2rem;
-          margin-bottom: 1rem;
-          color: #222;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>2. Client Responsibilities</h2>
+          <p>
+            To perform security audits or development, the client must provide necessary administrative access. 
+            <strong> Essential:</strong> The client is responsible for creating a full backup of all data before any technical work begins. Lemonskn SECURITY is not liable for data loss occurring due to existing system instabilities.
+          </p>
+        </section>
 
-        p {
-          margin-bottom: 1.2rem;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>3. Security Disclaimer</h2>
+          <p>
+            While my 39-point protocol significantly reduces attack surfaces, in the field of cybersecurity, 100% immunity is technically impossible. 
+            My liability is limited to the professional execution of the agreed-upon security measures. I am not liable for damages caused by zero-day exploits or third-party hardware failures.
+          </p>
+        </section>
 
-        a {
-          color: #e91e63;
-          text-decoration: none;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>4. Payment & Refund Policy</h2>
+          <p>
+            Services are billed as fixed-price projects or hourly rates. 
+            <strong> Refund Policy:</strong> As these are highly customized digital services (Section 356 (4) BGB / EU Consumer Law), the right of withdrawal expires once the technical execution has started with the client's consent. Deposits are non-refundable.
+          </p>
+        </section>
 
-        a:hover {
-          text-decoration: underline;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <h2 style={{ color: '#fff', fontSize: '20px' }}>5. Legal Jurisdiction</h2>
+          <p>
+            The primary legal framework for services is the law of <strong>Bangladesh</strong>. For European clients, relevant EU consumer protection standards are respected where applicable.
+          </p>
+        </section>
 
-        @media (max-width: 600px) {
-          .about-container {
-            padding: 1.5rem 1rem;
-          }
-
-          h1 {
-            font-size: 1.5rem;
-          }
-        }
-      `}</style>
+        <footer style={{ marginTop: '50px', borderTop: '1px solid #334155', paddingTop: '20px', textAlign: 'center', fontSize: '12px', color: '#475569' }}>
+          <p>© 2026 lemonskn.com | Shanon Khan - Dhaka, Bangladesh</p>
+        </footer>
+      </div>
     </Layout>
   );
 }
-
-
-
