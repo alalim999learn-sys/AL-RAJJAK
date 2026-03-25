@@ -1,3 +1,4 @@
+//C:\Users\Shanon\al-rajjak\component\Layout.js
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -36,7 +37,7 @@ export default function Layout({ children }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 3. Menu Data - Fixed typos and added leading slashes for proper routing
+  // 3. Menu Data - আপনার ফাইল স্ট্রাকচার অনুযায়ী লিঙ্কগুলো আপডেট করা হয়েছে
   const menuData = {
     en: {
       home: "Terminal (Home)", homeUrl: "/",
@@ -48,10 +49,10 @@ export default function Layout({ children }) {
     },
     es: {
       home: "Terminal (Inicio)", homeUrl: "/es",
-      about: "Sobre mí", aboutUrl: "/es/about",
-      impressum: "Aviso Legal", impressumUrl: "/es/impressum",
-      privacy: "Privacidad", privacyUrl: "/es/privacy",
-      terms: "Términos y Condiciones", termsUrl: "/es/terms",
+      about: "Sobre mí", aboutUrl: "/es/sobre-me",
+      impressum: "Aviso Legal", impressumUrl: "/es/aviso-legal",
+      privacy: "Privacidad", privacyUrl: "/es/política-de-privacidad",
+      terms: "Términos", termsUrl: "/es/terminos", // যদি terminos ফাইল থাকে
       ver: "VER: 2.0.1-ESTABLE"
     },
     de: {
@@ -59,7 +60,7 @@ export default function Layout({ children }) {
       about: "Über mich", aboutUrl: "/de/ueber-mich",
       impressum: "Impressum", impressumUrl: "/de/impressum",
       privacy: "Datenschutz", privacyUrl: "/de/datenschutz",
-      terms: "AGB", termsUrl: "/de/agb", // Small 'agb' matches your file cleanup
+      terms: "AGB", termsUrl: "/de/agb",
       ver: "VER: 2.0.1-STABIL"
     }
   };
@@ -71,7 +72,7 @@ export default function Layout({ children }) {
 
   if (!isMounted) return null;
 
-  // --- Styles ---
+  // --- Styles (CSS-in-JS) ---
   const headerStyle = {
     position: 'fixed', top: 0, width: '100%', height: '60px',
     backgroundColor: '#0f172a', display: 'flex', alignItems: 'center',
@@ -118,11 +119,8 @@ export default function Layout({ children }) {
         <ul style={{ listStyle: 'none', padding: 0 }}>
           <li><Link href={currentMenu.homeUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.home}</Link></li>
           <li><Link href={currentMenu.aboutUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.about}</Link></li>
-          
-          {/* Always show Legal links for all languages - safer for GDPR/DSGVO */}
           <li><Link href={currentMenu.impressumUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.impressum}</Link></li>
           <li><Link href={currentMenu.privacyUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.privacy}</Link></li>
-          <li><Link href={currentMenu.termsUrl} style={navLinkStyle} onClick={closeSidebar}>{currentMenu.terms}</Link></li>
         </ul>
 
         {/* Language Switcher */}

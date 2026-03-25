@@ -1,4 +1,4 @@
-// pages/impressum.js
+// C:\Users\Shanon\al-rajjak\pages\de\impressum.js
 import Head from 'next/head';
 import Layout from '../../component/Layout';
 

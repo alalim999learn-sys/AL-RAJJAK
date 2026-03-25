@@ -3,16 +3,16 @@
 
 import Link from 'next/link';
 import { ShieldCheck, Lock, Terminal } from 'lucide-react';
-import { usePathname } from 'next/navigation'; // ফিক্স: App Router এর জন্য usePathname
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
-  const pathname = usePathname(); // ফিক্স: pathname সরাসরি এখান থেকে আসবে
+  const pathname = usePathname();
 
   // ১. ভাষা শনাক্তকরণ
   const isGerman = pathname?.startsWith('/de');
   const isSpanish = pathname?.startsWith('/es');
 
-  // ২. ল্যাঙ্গুয়েজ অনুযায়ী অনুবাদ (আপনার রিনেম করা পাথ অনুযায়ী)
+  // ২. ল্যাঙ্গুয়েজ অনুযায়ী অনুবাদ এবং সঠিক পাথ কনফিগারেশন
   const translations = {
     en: {
       mission: "Hardening WordPress environments and building secure digital infrastructures.",
@@ -22,7 +22,11 @@ export default function Footer() {
       privacy: "Privacy Policy",
       terms: "Terms",
       copyright: "Built with Next.js & Hardened Logic.",
-      aboutUrl: "/about"
+      homeUrl: "/",
+      aboutUrl: "/about",
+      legalUrl: "/impressum",
+      privacyUrl: "/privacy-policy",
+      termsUrl: "/terms"
     },
     de: {
       mission: "Härtung von WordPress-Umgebungen und Aufbau sicherer digitaler Infrastrukturen.",
@@ -32,7 +36,11 @@ export default function Footer() {
       privacy: "Datenschutz",
       terms: "AGB",
       copyright: "Erstellt mit Next.js & Hardened Logic.",
-      aboutUrl: "/de/ueber-mich" // আপনার নতুন রিনেম করা পাথ
+      homeUrl: "/de",
+      aboutUrl: "/de/ueber-mich",
+      legalUrl: "/de/impressum",
+      privacyUrl: "/de/datenschutz",
+      termsUrl: "/de/agb"
     },
     es: {
       mission: "Fortalecimiento de entornos WordPress y construcción de infraestructuras digitales seguras.",
@@ -42,12 +50,16 @@ export default function Footer() {
       privacy: "Privacidad",
       terms: "Términos",
       copyright: "Creado con Next.js y Lógica Reforzada.",
-      aboutUrl: "/es/about"
+      homeUrl: "/es",
+      aboutUrl: "/es/sobre-me",
+      legalUrl: "/es/aviso-legal",
+      privacyUrl: "/es/política-de-privacidad",
+      termsUrl: "/es/terminos" // যদি terminos.js ফাইল থাকে
     }
   };
 
+  // বর্তমান ভাষা নির্বাচন
   const t = isGerman ? translations.de : isSpanish ? translations.es : translations.en;
-  const langPrefix = isGerman ? '/de' : isSpanish ? '/es' : '';
 
   // --- Styles ---
   const footerStyle = {
@@ -95,27 +107,18 @@ export default function Footer() {
         </p>
       </div>
 
-      {/* Primary Navigation */}
+      {/* Primary Navigation (Home & About) */}
       <div style={{ marginBottom: '20px' }}>
-        <Link href={langPrefix || "/"} style={navLinkStyle}>{t.home}</Link>
+        <Link href={t.homeUrl} style={navLinkStyle}>{t.home}</Link>
         <span style={{ color: '#334155' }}>|</span>
         <Link href={t.aboutUrl} style={navLinkStyle}>{t.about}</Link>
       </div>
 
-      {/* Legal Links (German Market Optimized) */}
+      {/* Legal Links - আপনার ফাইল নাম অনুযায়ী ডায়নামিক করা হয়েছে */}
       <div style={{ marginBottom: '30px', borderTop: '1px solid #1e293b', paddingTop: '20px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px' }}>
-        {isGerman ? (
-          <>
-            <Link href="/de/impressum" style={navLinkStyle}>{t.legal}</Link>
-            <Link href="/de/datenschutz" style={navLinkStyle}>{t.privacy}</Link>
-            <Link href="/de/AGB" style={navLinkStyle}>{t.terms}</Link>
-          </>
-        ) : (
-          <>
-            <Link href={`${langPrefix}/terms`} style={navLinkStyle}>{t.terms}</Link>
-            <Link href={`${langPrefix}/privacy`} style={navLinkStyle}>{t.privacy}</Link>
-          </>
-        )}
+        <Link href={t.legalUrl} style={navLinkStyle}>{t.legal}</Link>
+        <Link href={t.privacyUrl} style={navLinkStyle}>{t.privacy}</Link>
+        <Link href={t.termsUrl} style={navLinkStyle}>{t.terms}</Link>
       </div>
 
       {/* Security Badges */}

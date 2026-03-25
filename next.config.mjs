@@ -1,3 +1,4 @@
+//C:\Users\Shanon\al-rajjak\next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -5,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  output: 'export', // <-- এটা add করতে হবে
+  // output: 'export' ডিলিট করা হয়েছে যাতে API কাজ করে
 
   async headers() {
     return [
@@ -19,11 +20,11 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval'", // Next.js এর জন্য প্রয়োজন
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https:",
               "font-src 'self'",
-              "connect-src 'self'",
+              "connect-src 'self' https://api.groq.com", // Groq API কে অনুমতি দেওয়া হয়েছে
               "object-src 'none'",
               "base-uri 'self'",
               "frame-ancestors 'none'",
