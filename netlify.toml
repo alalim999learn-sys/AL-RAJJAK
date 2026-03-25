@@ -1,10 +1,6 @@
 [build]
-  # এই কমান্ডটি আপনার প্রজেক্ট বিল্ড করবে
   command = "npm run build"
-  
-  # যেহেতু আমরা এপিআই (Chatbot) ব্যবহার করছি, তাই পাবলিশ ডিরেক্টরি হবে .next
   publish = ".next"
 
 [[plugins]]
-  # এই প্লাগইনটি Next.js এর এপিআই এবং ডাইনামিক রাউটগুলো নেটলিফাইতে সচল রাখে
   package = "@netlify/plugin-nextjs"
