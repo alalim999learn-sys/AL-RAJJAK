@@ -213,7 +213,7 @@ export const shopsData = {
   // 17. Keisari Group
   "keisari_group_germany": {
     name: "Keisari Sinsheim GmbH (Group HQ)",
-    logo: "/images/logos/keisari.png",
+    logo: "/images/logos/keisari_logo_dark_brown.png",
     description: "Exklusive Sushi & Fusion Restaurantkette. Fokus auf High-End Gastronomie.",
     management: { name: "Philipp Strähle", title: "Geschäftsführer" },
     locations: ["Heidelberg", "Sinsheim", "Stuttgart", "Heilbronn"],
