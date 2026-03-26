@@ -157,6 +157,108 @@ export const shopsData = {
       ustId: "DE202238570",
       responsible_person: "Giorgio Giaimo"
     }
-  }
-
+  },
+  "fragrance_of_the_heart": {
+    name: "The Fragrance of the Heart Restaurant-Café",
+    logo: "/images/logos/fragrance.png", // Placeholder path
+    description: "Hausgemachte vegane & vegetarische Küche in Heidelberg. Inspiriert von der Philosophie Sri Chinmoys – Essen, das Körper, Herz und Seele nährt.",
+    owner: "Ellen Brandt",
+    management_title: "Einzelunternehmen / Inhaberin",
+    openingHours: {
+      mon_tue_thu_fri: "11:00 - 18:00 Uhr",
+      sat_sun: "09:00 - 18:00 Uhr",
+      wed: "Ruhetag",
+      note: "ACHTUNG: Ab Mo., 16.3. wegen Umbauarbeiten für ca. 2 Wochen geschlossen!"
+    },
+    products: ["Burger", "Burritos", "Veggie Bowls", "Quesadillas", "Vegane Torten", "Spezialitätenkaffee"],
+    address: "Bahnhofstraße 7, 69115 Heidelberg",
+    contact: { 
+      tel: "06221 7248558", 
+      email: "info@fragranceoftheheart.de", 
+      web: "www.fragranceoftheheart.de" 
+    },
+    legal: { 
+      ustId: "DE425928615", 
+      responsible_content: "Ellen Brandt" 
+    },
+    mission_status: "Target 20/33"
+  },
+"katzentempel_gmbh": {
+    name: "Katzentempel GmbH (Franchise Zentrale)",
+    logo: "/images/logos/katzentempel.png",
+    description: "Deutschlands erstes Katzen-Restaurant-Konzept. Vegane Speisen in Gesellschaft von Tierschutzkatzen. Ein Ort für Nachhaltigkeit und Tierwohl.",
+    owner: "Thomas Leidner",
+    management_title: "Geschäftsführer",
+    locations: [
+      "Augsburg", "Berlin Mitte", "Bochum", "Bremen", "Dortmund", 
+      "Erlangen", "Freiburg", "Hamburg", "Heidelberg", "Köln", 
+      "Leipzig", "München", "Nürnberg", "Regensburg"
+    ],
+    products: ["Hausgemachtes Dinkelbrot", "Vegane Burger", "Vegane Torten", "Frühstück", "Merchandise"],
+    address: "Eichenweg 4a, 85774 Unterföhring, Deutschland",
+    contact: { 
+      tel: "089 20077076", 
+      email: "info@katzentempel.de", 
+      web: "www.katzentempel.de" 
+    },
+    legal: { 
+      ustId: "DE307018475", 
+      hrb: "225021 (Amtsgericht München)",
+      responsible_content: "Thomas Leidner"
+    },
+    mission_status: "Target 21/33"
+  },
+  "papi_heidelberg": {
+    name: "PAPI Heidelberg - Neapolitanische Küche",
+    logo: "/images/logos/papi.png",
+    description: "Authentische neapolitanische Küche im Herzen von Heidelberg. Ein Ort für beste Zutaten, Leidenschaft und Gastfreundschaft.",
+    owner: "Suna Kilic",
+    management_title: "Geschäftsführerin (GLADIO 1461 GmbH & Co. KG)",
+    openingHours: {
+      mon_wed_sun: "11:00 – 23:00 Uhr",
+      thu_sat: "11:00 – 01:00 Uhr"
+    },
+    products: ["Neapolitanische Pizza", "Pasta", "Events & Feiern", "Drinks"],
+    address: "Hauptstraße 202, 69117 Heidelberg",
+    contact: { 
+      tel: "06221 6563098", 
+      email: "info@papi-heidelberg.de", 
+      web: "www.papi-heidelberg.de" 
+    },
+    legal: { 
+      hrb: "Amtsgericht Mannheim",
+      company: "GLADIO 1461 GmbH & Co. KG",
+      responsible_content: "Suna Kilic"
+    },
+    mission_status: "Target 23/33"
+  },
+  "restaurant_darwisch": {
+    name: "Restaurant Darwisch",
+    logo: "/images/logos/darwisch.png",
+    description: "Authentische persische Küche in Heidelberg. Ein traditionsreiches Restaurant, das Gastfreundschaft und orientalische Spezialitäten vereint.",
+    owner: "Afsaneh Dargahi",
+    management_title: "Inhaberin",
+    openingHours: {
+      mon_fri: "17:30 – 22:30 Uhr",
+      sat_sun_holidays: "12:00 – 22:30 Uhr"
+    },
+    products: ["Persische Grillspezialitäten", "Traditionelle Reisgerichte", "Vegetarische Vorspeisen", "Hausgemachte Desserts"],
+    address: "Rohrbacher Straße 22, 69115 Heidelberg",
+    contact: { 
+      tel: "06221 619333", 
+      fax: "06221 619329",
+      email: "darwischrestaurant@gmail.com", 
+      web: "www.darwisch.com" 
+    },
+    legal: { 
+      ustId: "DE406798587", 
+      responsible_content: "Afsaneh Dargahi",
+      supervisory_authority: "Gesundheitsamt"
+    },
+    social: {
+      facebook: "https://www.facebook.com/pages/Darwisch/118100231580257",
+      instagram: "https://www.instagram.com/darwisch_heidelberg/"
+    },
+    mission_status: "Target 24/33"
+  },
 };
