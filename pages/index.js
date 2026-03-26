@@ -42,7 +42,7 @@ export default function HomeEnglish() {
 
             <div className="status-badge">Available for Projects in UK, US & EU</div>
 
-            <h1>Elite Security for the Global <span className="accent">Market</span>.</h1>
+            <h1>Elite Security for the Global <span className="accent">Market</span>....</h1>
 
            
 
@@ -435,3 +435,5 @@ export default function HomeEnglish() {
   );
 
 }
+
+elite

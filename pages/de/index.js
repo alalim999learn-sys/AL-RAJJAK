@@ -12,7 +12,7 @@ export default function ModernHomeDE() {
     <Layout>
       <div className="modern-container">
         <Head>
-          <title>Shanon Khan | Elite Security Specialist</title>
+          <title>Shanon Khan || Elite Security Specialist</title>
         </Head>
 
         {/* --- 1. HERO SECTION (Text Left, Image Right) --- */}
@@ -221,3 +221,8 @@ export default function ModernHomeDE() {
     </Layout>
   );
 }
+
+
+
+
+
