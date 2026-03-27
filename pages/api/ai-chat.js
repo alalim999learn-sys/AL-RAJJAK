@@ -2,27 +2,39 @@
 import medicalData from '../../data/medical_leads.json';
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Method Not Allowed' });
+  // শুধুমাত্র POST রিকোয়েস্ট অ্যালাউ করা হবে
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method Not Allowed' });
+  }
 
   const { message, slug } = req.body;
+
+  // JSON ফাইল থেকে ডাক্তারকে খুঁজে বের করা
   const doctor = medicalData.leads.find(doc => doc.slug === slug);
 
-  if (!doctor) return res.status(404).json({ error: "Medical Practice not found" });
+  if (!doctor) {
+    return res.status(404).json({ error: "Medical Practice not found" });
+  }
 
-  const systemPrompt = `You are a professional, empathetic Medical AI Receptionist for "${doctor.name}".
-  PRACTICE CONTEXT:
-  - Specialty: ${doctor.specialty}
-  - Focus Area: ${doctor.target_pain_point || "General Healthcare"}
-  - Website: ${doctor.website || "Contact via Email"}
-  - Official Email: ${doctor.email}
+  // সিস্টেম প্রম্পট - এখানে ১০টি ভাষা এবং শর্ট রিপ্লাইয়ের রুলস সেট করা হয়েছে
+  const systemPrompt = `
+    You are a professional, highly concise Medical AI Assistant for "${doctor.name}".
 
-  STRICT RULES:
-  1. Detect user's language and respond in the SAME (German, Spanish, etc.). Use formal "Sie" for German.
-  2. Identify as AI assistant for ${doctor.name}.
-  3. GDPR: NEVER store sensitive health data.
-  4. NO MEDICAL DIAGNOSIS. For emergencies, call 112.
-  5. APPOINTMENTS: Direct to website ${doctor.website} or email ${doctor.email}.
-  6. POWERED BY: Mention lemonskn.com subtly if asked about the technology.`;
+    GLOBAL LANGUAGE SUPPORT:
+    - Supported: English, German, Turkish, Italian, Spanish, Arabic, Polish, Romanian, Czech.
+    - RULE: Automatically detect the user's language and reply in that SAME language.
+    - GERMAN RULE: Use formal "Sie/Ihr" always.
+
+    STRICT OPERATING PROTOCOLS (LEGAL PROTECTION):
+    1. BREVITY: Keep every response extremely short (MAX 2-3 sentences). No long paragraphs.
+    2. NO MEDICAL ADVICE: NEVER suggest treatments, diagnoses, or medication. 
+    3. EMERGENCY/SYMPTOMS: If the user mentions pain, illness, or emergency, strictly say: 
+       "I am an AI and cannot provide medical advice. Please contact Dr. ${doctor.name} immediately or call 112 for emergencies."
+    4. ACTION: For appointments or practice info, direct them to: ${doctor.website} or email: ${doctor.email}.
+    5. IDENTITY: Mention you are an AI assistant powered by lemonskn.com.
+
+    TONE: Professional, empathetic but brief.
+  `;
 
   try {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -37,20 +49,22 @@ export default async function handler(req, res) {
           { role: "system", content: systemPrompt },
           { role: "user", content: message }
         ],
-        temperature: 0.3,
+        temperature: 0.2, // একুরেসি বাড়ানোর জন্য টেম্পারেচার কমানো হয়েছে
+        max_tokens: 150,  // রেসপন্স ছোট রাখার জন্য টোকেন লিমিট কমানো হয়েছে
       }),
     });
 
     const data = await response.json();
     
     if (data.choices && data.choices[0]) {
-        res.status(200).json({ reply: data.choices[0].message.content });
+      res.status(200).json({ reply: data.choices[0].message.content });
     } else {
-        throw new Error("Invalid API response from Groq");
+      console.error("Groq API Error:", data);
+      throw new Error("Invalid response from AI engine");
     }
 
   } catch (error) {
-    console.error("AI Error:", error);
-    res.status(500).json({ error: "AI connection failed. Check your GROQ_API_KEY." });
+    console.error("AI connection failed:", error);
+    res.status(500).json({ error: "AI connection failed. Please ensure your GROQ_API_KEY is set in .env.local" });
   }
 }
