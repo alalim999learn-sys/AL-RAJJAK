@@ -1,0 +1,16 @@
+{
+  "leads": [
+    {
+      "name": "Dr. Nikolai Holm-Hadulla",
+      "slug": "dr-holm-hadulla",
+      "specialty": "Pediatrics",
+      "email": "info@kinderarzt-holmhadulla.com"
+    },
+    {
+      "name": "Dr. Anna Lauer",
+      "slug": "dr-lauer",
+      "specialty": "Preventive Medicine",
+      "email": "info@dr-lauer.de"
+    }
+  ]
+}
