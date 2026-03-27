@@ -208,7 +208,7 @@ export const shopsData = {
     "recruitment_needs": ["Sushi Koch", "Servicekraft", "Betriebsleitung", "Serviceleitung"]
   },
 
-  "ArtHotel": {
+  "artHotel": {
     "name": "Restaurant Romer (ArtHotel Betriebs GmbH)",
     "logo": "/images/logos/art.png", 
     "description": "Ein Ort der Esskultur im Herzen von Heidelberg. Saisonal-frische regionale Küche und unkonventionelles Genießen.",
