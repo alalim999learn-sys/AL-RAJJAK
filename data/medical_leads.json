@@ -4,13 +4,17 @@
       "name": "Dr. Nikolai Holm-Hadulla",
       "slug": "dr-holm-hadulla",
       "specialty": "Pediatrics",
-      "email": "info@kinderarzt-holmhadulla.com"
+      "email": "info@kinderarzt-holmhadulla.com",
+      "website": "https://kinderarzt-holmhadulla.com",
+      "target_pain_point": "Patient scheduling and child healthcare inquiries"
     },
     {
       "name": "Dr. Anna Lauer",
       "slug": "dr-lauer",
       "specialty": "Preventive Medicine",
-      "email": "info@dr-lauer.de"
+      "email": "info@dr-lauer.de",
+      "website": "https://dr-lauer.de",
+      "target_pain_point": "Preventive checkups and wellness consultations"
     }
   ]
 }
